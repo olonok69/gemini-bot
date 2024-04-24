@@ -1,10 +1,6 @@
-runtime: python310
+runtime: python
 env: flex
-
+entrypoint: streamlit run main.py --server.port 8080
 runtime_config:
-  python_version: 3
-
-entrypoint: streamlit run main.py --server.port $PORT
-
-automatic_scaling:
-  max_num_instances: 1
+    operating_system: "ubuntu22"
+    runtime_version: "3.11"
