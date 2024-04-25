@@ -1,6 +1,15 @@
-# https://streamlit.io/
-
 # streamlit and google-cloud-aiplatform
+
+
+# https://streamlit.io/
+# https://cloud.google.com/appengine/docs/an-overview-of-app-engine
+# https://cloud.google.com/appengine/docs/flexible/managing-projects-apps-billing
+# https://cloud.google.com/appengine/docs/flexible
+# https://cloud.google.com/appengine/docs/flexible/configuration-files
+# https://cloud.google.com/appengine/docs/flexible/reference/app-yaml?tab=python#syntax
+# https://cloud.google.com/appengine/docs/flexible/python/runtime
+# https://cloud.google.com/run/docs/configuring/session-affinity#yaml
+# https://cloud.google.com/appengine/docs/flexible/reference/app-yaml?tab=python#services
 
 
 import streamlit as st
