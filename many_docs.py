@@ -10,7 +10,7 @@ from vertexai.generative_models import GenerativeModel
 import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
-from src.work_gemini import get_chat_response, prepare_prompt
+from src.work_gemini import get_chat_response, prepare_prompt, start_chat
 from src.helpers import write_history_multi, reset_session_multi
 import copy
 
@@ -21,9 +21,10 @@ OUT_FOLDER = os.path.join(ROOT_DIR, "out")
 TMP_FOLDER = os.path.join(ROOT_DIR, "tmp")
 
 
-def reload_page(st, ss, chat):
+def reload_page(st, ss, model):
     # delete files
     write_history_multi(st)
+    chat = start_chat(model)
     reset_session_multi(st, ss, chat)
     files = [f.unlink() for f in Path(f"{TMP_FOLDER}").glob("*") if f.is_file()]
     files = [f.unlink() for f in Path(f"{OUT_FOLDER}").glob("*") if f.is_file()]
@@ -35,7 +36,7 @@ def change_status(st, status):
     st.session_state["prompt_enter_press"] = True
 
 
-def main(chat):
+def main(model):
     st.set_page_config(layout="wide")
     row1_1, row1_2 = st.columns((2, 3))
 
@@ -48,7 +49,7 @@ def main(chat):
     if "initialized" not in st.session_state:
         st.session_state["initialized"] = "False"
     if "chat" not in st.session_state:
-        st.session_state["chat"] = chat
+        st.session_state["chat"] = start_chat(model)
     if "list_images_multi" not in st.session_state:
         st.session_state["list_images_multi"] = []
 
@@ -187,52 +188,53 @@ def main(chat):
                 if prompt == "terminar":
                     print("terminar")
                     # reload page and delete temp files
-                    reload_page(st, ss, chat)
-                if st.session_state["initialized"] == "False":
+                    reload_page(st, ss, model)
+                else:
+                    if st.session_state["initialized"] == "False":
 
-                    response = get_chat_response(
-                        st.session_state["chat"], st.session_state["prompt"]
-                    )
-                    st.session_state["chat_answers_history"].append(response)
-                    st.session_state["user_prompt_history"].append(
-                        st.session_state["prompt_introduced"]
-                    )
-                    st.session_state["chat_history"].append(
-                        (st.session_state["prompt_introduced"], response)
-                    )
-                    st.session_state["initialized"] = "True"
-                    st.session_state["buttom_send_clicked"] = True
+                        response = get_chat_response(
+                            st.session_state["chat"], st.session_state["prompt"]
+                        )
+                        st.session_state["chat_answers_history"].append(response)
+                        st.session_state["user_prompt_history"].append(
+                            st.session_state["prompt_introduced"]
+                        )
+                        st.session_state["chat_history"].append(
+                            (st.session_state["prompt_introduced"], response)
+                        )
+                        st.session_state["initialized"] = "True"
+                        st.session_state["buttom_send_clicked"] = True
 
-                # next sends to google we take it from chat object
-                elif st.session_state["initialized"] == "True":
-                    prompt1 = [f"""{prompt} """]
-                    # actualiza status
-                    st.session_state["prompt_introduced"] = prompt
-                    print(prompt1)
-                    response = get_chat_response(st.session_state["chat"], prompt1)
-                    # actualiza buffer chat
-                    st.session_state["chat_answers_history"].append(response)
-                    st.session_state["user_prompt_history"].append(prompt1[0])
-                    st.session_state["chat_history"].append((prompt1[0], response))
-                    st.session_state["buttom_send_clicked"] = True
-                    st.session_state["buttom_resfresh_clicked"] = True
+                    # next sends to google we take it from chat object
+                    elif st.session_state["initialized"] == "True":
+                        prompt1 = [f"""{prompt} """]
+                        # actualiza status
+                        st.session_state["prompt_introduced"] = prompt
+                        print(prompt1)
+                        response = get_chat_response(st.session_state["chat"], prompt1)
+                        # actualiza buffer chat
+                        st.session_state["chat_answers_history"].append(response)
+                        st.session_state["user_prompt_history"].append(prompt1[0])
+                        st.session_state["chat_history"].append((prompt1[0], response))
+                        st.session_state["buttom_send_clicked"] = True
+                        st.session_state["buttom_resfresh_clicked"] = True
 
-                # write chat in window
-                if len(st.session_state["chat_answers_history"]) > 0:
-                    list1 = copy.deepcopy(st.session_state["chat_answers_history"])
-                    list2 = copy.deepcopy(st.session_state["user_prompt_history"])
+                    # write chat in window
+                    if len(st.session_state["chat_answers_history"]) > 0:
+                        list1 = copy.deepcopy(st.session_state["chat_answers_history"])
+                        list2 = copy.deepcopy(st.session_state["user_prompt_history"])
 
-                    if len(st.session_state["chat_answers_history"]) > 1:
-                        list1.reverse()
+                        if len(st.session_state["chat_answers_history"]) > 1:
+                            list1.reverse()
 
-                    if len(st.session_state["user_prompt_history"]) > 1:
-                        list2.reverse()
+                        if len(st.session_state["user_prompt_history"]) > 1:
+                            list2.reverse()
 
-                    for i, j in zip(list1, list2):
-                        message1 = st.chat_message("user")
-                        message1.write(j)
-                        message2 = st.chat_message("assistant")
-                        message2.write(i)
+                        for i, j in zip(list1, list2):
+                            message1 = st.chat_message("user")
+                            message1.write(j)
+                            message2 = st.chat_message("assistant")
+                            message2.write(i)
 
 
 if __name__ == "__main__":
@@ -264,5 +266,5 @@ if __name__ == "__main__":
             "top_p": 0.95,
         },
     )
-    chat = model.start_chat(response_validation=False)
-    main(chat=chat)
+
+    main(model=model)
