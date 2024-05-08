@@ -18,6 +18,11 @@ def get_chat_response(chat: ChatSession, prompt: str) -> str:
         return "error"
 
 
+def start_chat(model):
+    chat = model.start_chat(response_validation=False)
+    return chat
+
+
 def prepare_prompt(list_images, question, page_select, st):
     """
     Prepare the prompt for the chat session

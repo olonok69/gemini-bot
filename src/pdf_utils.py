@@ -1,4 +1,3 @@
-import pdf2image
 import os
 import pathlib
 import fitz
