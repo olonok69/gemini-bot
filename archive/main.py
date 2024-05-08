@@ -62,12 +62,12 @@ def main(chat):
                 im_b64 = base64.b64encode(im_bytes).decode("utf8")
                 image = Part.from_data(data=im_b64, mime_type="application/pdf")
                 content.append(image)
-            prompt1 = [f"""{question2} """] + content
+            prompt1 = [f"""{question} """] + content
             response = get_chat_response(st.session_state["chat"], prompt1)
 
             st.session_state["chat_answers_history"].append(response)
-            st.session_state["user_prompt_history"].append(question2)
-            st.session_state["chat_history"].append((question2, response))
+            st.session_state["user_prompt_history"].append(question)
+            st.session_state["chat_history"].append((question, response))
             st.session_state["initialized"] = "True"
 
         elif st.session_state["initialized"] == "True":

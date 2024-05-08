@@ -7,3 +7,9 @@ runtime_config:
 
 network:
   session_affinity: true
+
+runtime: custom
+env: flex
+
+network:
+  session_affinity: true
