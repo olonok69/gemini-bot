@@ -79,7 +79,6 @@ def upload(list_pages, numpages, st):
     parent_path = pathlib.Path(__file__).parent.resolve()
     save_path = os.path.join(parent_path, "data")
     complete_name = st.session_state["file_name"]
-    print(complete_name)
 
     # write list of images to session
     if len(st.session_state["list_images"]) == 0:
