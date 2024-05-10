@@ -1,5 +1,6 @@
 from vertexai.generative_models import GenerativeModel, Part, ChatSession
 import base64
+import logging
 
 
 def get_chat_response(chat: ChatSession, prompt: str) -> str:
@@ -13,8 +14,7 @@ def get_chat_response(chat: ChatSession, prompt: str) -> str:
                 text_response.append(chunk.text)
         return "".join(text_response)
     except:
-        for chuck in responses:
-            print(chuck)
+
         return "error"
 
 
@@ -44,7 +44,7 @@ def prepare_prompt(list_images, question, page_select, st):
         content.append(image)
     prompt = [f"""{question} """] + content
     if len(content) > 0 and len(question) > 0:
-        print("here")
+        logging.info("Gemini app: prompt ready")
         st.session_state["prompt"] = prompt
         st.session_state.value = 5
         st.session_state["chat_true"] = "chat activo"
