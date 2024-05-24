@@ -286,7 +286,7 @@ if __name__ == "__main__":
         credentials=vertex_credentials,
     )
     model = GenerativeModel(
-        "gemini-1.5-pro-preview-0409",
+        "gemini-1.5-flash-preview-0514",
         system_instruction=[
             """You a helpful agent who helps to extract relevant information from documents"""
         ],
