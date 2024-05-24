@@ -8,3 +8,5 @@ st-pages
 PyMuPDF
 streamlit_pdf_viewer
 ipython
+google-cloud-logging
+scikit-learn
