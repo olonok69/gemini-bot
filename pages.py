@@ -1,4 +1,4 @@
-from st_pages import Page, show_pages, add_page_title
+from st_pages import Page, show_pages, Section
 import os
 import subprocess
 import sys
@@ -15,24 +15,15 @@ os.makedirs(TMP_FOLDER, exist_ok=True)
 os.makedirs(ANSWERS_FOLDER, exist_ok=True)
 
 
-# def apt_get_update():
-#     subprocess.call(["apt-get", "update"])
-
-
-# def apt_get_install():
-#     subprocess.call(
-#         ["apt-get", "install", "python3-pip", "libpoppler-dev", "poppler-utils"]
-#     )
-
-
-# Specify what pages should be shown in the sidebar, and what their titles and icons
-# should be
 show_pages(
     [
         Page("home.py", "Home", "🏠"),
-        Page("1_doc.py", "1 Documento", "✏️"),
-        Page("many_docs.py", "1+ Documentos", ":books:"),
-        Page("display.py", "Ver Respuestas", ":eye:"),
+        Section("Prompts", "📃"),
+        Page("prompts/add.py", "Add prompt", "➕"),
+        Page("prompts/modify.py", "Modify prompt", "💱"),
+        Page("1_doc.py", "1 Documento", "✏️", in_section=False),
+        Page("many_docs.py", "1+ Documentos", ":books:", in_section=False),
+        Page("display.py", "Ver Respuestas", ":eye:", in_section=False),
     ]
 )
 # Page("1_doc.py", "1 Documento", ":books:"),
