@@ -21,6 +21,7 @@ show_pages(
         Section("Prompts", "📃"),
         Page("prompts/add.py", "Add prompt", "➕"),
         Page("prompts/modify.py", "Modify prompt", "💱"),
+        Page("prompts/delete.py", "Delete prompt", "❌"),
         Page("1_doc.py", "1 Documento", "✏️", in_section=False),
         Page("many_docs.py", "1+ Documentos", ":books:", in_section=False),
         Page("display.py", "Ver Respuestas", ":eye:", in_section=False),
