@@ -5,5 +5,6 @@ from .src.helpers import (
     reset_session_1,
     write_history_multi,
     reset_session_multi,
+    visualiza,
 )
 from .src.utils import print_stack, create_client_logging
