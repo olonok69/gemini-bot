@@ -1,5 +1,8 @@
 import copy
 import datetime
+import os
+import json
+import streamlit as st
 
 
 def write_history_1(st):
@@ -129,3 +132,35 @@ def reset_session_multi(st, ss, chat):
     st.session_state["buttom_send_not_clicked"] = False
     st.session_state["prompt_enter_press"] = False
     return
+
+
+@st.experimental_dialog("Choose prompt?")
+def visualiza(st, path):
+    file = st.session_state["select_box"]
+    with open(os.path.join(path, file), "r") as f:
+        prompt_dict = json.load(f)
+
+    txt = st.text_area(
+        "Introduce name of the prompt",
+        value=prompt_dict.get("name_prompt"),
+        key="name_prompt",
+    )
+    txt3 = st.text_area(
+        "Introduce keywords",
+        value=prompt_dict.get("keywords"),
+        key="keywords",
+    )
+    txt2 = st.text_area(
+        "Introduce prompt",
+        height=300,
+        key="prompt",
+        value=prompt_dict.get("prompt"),
+    )
+    if st.button("Accept"):
+        st.session_state["prompt_introduced"] = (
+            prompt_dict.get("name_prompt") + "\n" + prompt_dict.get("prompt")
+        )
+        return
+    if st.button("No accept"):
+        st.session_state["prompt_introduced"] = ""
+        return

@@ -1,24 +1,38 @@
 import streamlit as st
 import os
-import json
-from os import listdir
-from os.path import isfile, join
 from prompts.utils import remove
+import pandas as pd
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DICTS_DIR = os.path.join(ROOT_DIR, "dicts")
+DATA_DIR = os.path.join(ROOT_DIR, "table")
 os.makedirs(DICTS_DIR, exist_ok=True)
+os.makedirs(DATA_DIR, exist_ok=True)
 
+# open table with all prompts
+fname = os.path.join(DATA_DIR, "prompts.csv")
+fname2 = os.path.join(DATA_DIR, "prompts_backup.csv")
 
-onlyfiles = [f for f in listdir(DICTS_DIR) if isfile(join(DICTS_DIR, f))]
+if os.path.isfile(fname):
+    df = pd.read_csv(fname)
+    df.to_csv(fname2, index=False)
+else:
+    df = pd.DataFrame(columns=["id", "name_prompt", "prompt", "keywords"])
+    df.to_csv(fname, index=False)
+
+# all names of the prompts
+onlyfiles = df["name_prompt"].to_list()
 
 
 def visualiza():
+    """
+    Visualiza prompt
+    """
     file = st.session_state["select_box"]
-    with open(os.path.join(DICTS_DIR, file), "r") as f:
-        prompt_dict = json.load(f)
+    # transform the row into a dictionary
+    prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
+    id_ = prompt_dict["id"]
 
-    txt, txt2, txt3 = "-1", "-1", "-1"
     txt = st.text_area(
         "Introduce name of the prompt",
         value=prompt_dict.get("name_prompt"),
@@ -40,7 +54,7 @@ def visualiza():
         type="primary",
         key="save_button",
         on_click=remove,
-        args=[file, DICTS_DIR],
+        args=[df, id_, fname],
     )
 
 

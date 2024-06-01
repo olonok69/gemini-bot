@@ -1,29 +1,32 @@
-FROM ubuntu:22.04
+FROM python:3.11-slim
 
-# Set environment variables
-ARG DEBIAN_FRONTEND=noninteractive
-ENV TZ=Europe/Minsk
-
+ENV USER_APP=app
 # Install necessary packages
-RUN apt update && \
-    apt install -y software-properties-common wget && \
-    add-apt-repository ppa:deadsnakes/ppa && \
-    apt-get update -y && \
-    apt install -y python3.11 python3-pip python3-venv virtualenv libpoppler-dev poppler-utils
+RUN apt-get update && apt-get -y upgrade \
+    && apt-get install -y libsm6 libxext6 git net-tools  python3-magic nano iputils-ping procps \
+    && pip install --upgrade pip \
+    && pip --version
 
-WORKDIR /gemini
 # Ref:
 # * https://github.com/GoogleCloudPlatform/python-runtime/blob/8cdc91a88cd67501ee5190c934c786a7e91e13f1/README.md#kubernetes-engine--other-docker-hosts
 # * https://github.com/GoogleCloudPlatform/python-runtime/blob/8cdc91a88cd67501ee5190c934c786a7e91e13f1/scripts/testdata/hello_world_golden/Dockerfile
-LABEL python_version=python3
-RUN virtualenv  /env -p python3.11
+
+RUN groupadd ${USER_APP} && useradd --create-home -g ${USER_APP} ${USER_APP}
+ENV PATH /home/${USER_APP}/.local/bin:${PATH}
+
+WORKDIR /home/${USER_APP}/gemini
 
 ENV VIRTUAL_ENV /env
 ENV PATH /env/bin:$PATH
-COPY ./requirements.txt /gemini/requirements.txt
+COPY ./requirements.txt /home/${USER_APP}/gemini/requirements.txt
 
 
-RUN pip install -r /gemini/requirements.txt
+RUN pip install -r /home/${USER_APP}/gemini/requirements.txt
 COPY . .
+RUN chown -R ${USER_APP}:${USER_APP} /home/${USER_APP}/gemini 
 
-ENTRYPOINT [ "streamlit", "run", "pages.py", "--server.port", "8080" ]
+RUN chmod -R 776 /home/${USER_APP}
+EXPOSE 8501
+USER ${USER_APP}
+
+ENTRYPOINT [ "streamlit", "run", "pages.py", "--server.port", "8501" ]

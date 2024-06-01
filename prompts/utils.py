@@ -1,9 +1,15 @@
 import os
+import pandas as pd
 
 
-def remove(file, dir):
+def remove(df, id_, fname):
     """
-    delete prompt
+    delete prompt from dataframe and save to csv file
+    :param df: dataframe
+    :param id_: id of prompt
+    :param fname: csv file name
+    :return: dataframe
     """
-    os.remove(os.path.join(dir, file))
+    df = df.drop(df[df["id"] == id_].index)
+    df.to_csv(fname, index=False)
     return

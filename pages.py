@@ -23,6 +23,7 @@ show_pages(
         Page("prompts/modify.py", "Modify prompt", "💱"),
         Page("prompts/delete.py", "Delete prompt", "❌"),
         Page("1_doc.py", "1 Documento", "✏️", in_section=False),
+        Page("1_doc_esp.py", "1 Doc+prompt", "📝", in_section=False),
         Page("many_docs.py", "1+ Documentos", ":books:", in_section=False),
         Page("display.py", "Ver Respuestas", ":eye:", in_section=False),
     ]
