@@ -1,6 +1,8 @@
 FROM python:3.11-slim
 
-ENV USER_APP=app
+# USER to Run this docker
+ARG user_app
+ENV USER_APP $user_app
 # Install necessary packages
 RUN apt-get update && apt-get -y upgrade \
     && apt-get install -y libsm6 libxext6 git net-tools  python3-magic nano iputils-ping procps \
@@ -16,16 +18,15 @@ ENV PATH /home/${USER_APP}/.local/bin:${PATH}
 
 WORKDIR /home/${USER_APP}/gemini
 
-ENV VIRTUAL_ENV /env
-ENV PATH /env/bin:$PATH
 COPY ./requirements.txt /home/${USER_APP}/gemini/requirements.txt
 
 
 RUN pip install -r /home/${USER_APP}/gemini/requirements.txt
 COPY . .
-RUN chown -R ${USER_APP}:${USER_APP} /home/${USER_APP}/gemini 
 
+RUN chown -R ${USER_APP}:${USER_APP} /home/${USER_APP}/gemini 
 RUN chmod -R 776 /home/${USER_APP}
+
 EXPOSE 8501
 USER ${USER_APP}
 
