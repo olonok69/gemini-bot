@@ -10,3 +10,8 @@ streamlit_pdf_viewer
 ipython
 google-cloud-logging
 scikit-learn
+langchain-pinecone
+langchain 
+langchain-community 
+xmltodict
+pubmed-api
