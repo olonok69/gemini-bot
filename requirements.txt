@@ -15,3 +15,7 @@ langchain
 langchain-community 
 xmltodict
 pubmed-api
+chroma
+langchain-chroma
+langchain-google-genai
+pypdf
