@@ -8,3 +8,4 @@ from .src.helpers import (
     visualiza,
 )
 from .src.utils import print_stack, create_client_logging
+from .pericial.gemini_fn import embed_fn, secciones
