@@ -13,8 +13,6 @@ from langchain_core.documents import Document
 from langchain_pinecone import PineconeVectorStore
 from typing import Dict
 
-st.title("Modifica Seccion Pericial")
-
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT_DIR, "table")
 # create durs if does not exists
@@ -98,6 +96,7 @@ def visualiza(df: pd.DataFrame, fname: str, vectorstore: PineconeVectorStore):
     Args:
         df (pd.DataFrame): dataframe with all prompts
         fname (str): name of the file
+        vectorstore (PineconeVectorStore): vectorstore with all sections
     """
     file = st.session_state["select_box_pm"]
 
@@ -172,10 +171,10 @@ if __name__ == "__main__":
     if "PINECONE_INDEX_NAME" not in os.environ:
         os.environ["PINECONE_INDEX_NAME"] = "forensic"
     embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-
+    # access to Pinecone
     pc = Pinecone(api_key=config.get("PINECONE_API_KEY"))
     index = pc.Index("forensic")
-
+    # vectore store
     vectorstore = PineconeVectorStore(embedding=embeddings, index_name="forensic")
 
     main(embeddings, index, vectorstore)
