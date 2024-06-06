@@ -86,7 +86,7 @@ def main(embeddings, index, vectorstore):
         st.session_state["index"] = index
     if "vectorstore" not in st.session_state:
         st.session_state["vectorstore"] = vectorstore
-    st.title("Add Pericial")
+    st.title("Similarity Search Forensic Reports")
     title = st.text_area(
         "Introduce texto a Buscar Pericial 👇", height=100, key="search_pericial"
     )

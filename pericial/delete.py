@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 from pathlib import Path
-import uuid
 import json
 from dotenv import dotenv_values
 import pandas as pd
@@ -12,6 +11,9 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from pinecone import Pinecone
 from langchain_core.documents import Document
 from langchain_pinecone import PineconeVectorStore
+from typing import Dict
+
+st.title("Borra Seccion Pericial")
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT_DIR, "table")
@@ -29,51 +31,77 @@ else:
     df = pd.DataFrame(columns=["id", "Title", "Text", "pinecone_id"])
     df.to_csv(fname, index=False)
 
+# all names of the prompts
+onlyfiles = df["Title"].to_list()
 
-def save_text(
-    title: str,
-    text: str,
-    seccion: str,
+
+def remove(
     df: pd.DataFrame,
+    id_: str,
+    pine_id: str,
     fname: str,
     vectorstore: PineconeVectorStore,
 ):
     """
-    save text in the dataframe and generate embeddings
-    params:
-    title (str): text to save
-    text (str): text to save
-    seccion (str): seccion to save
+    Delete section Pericial from Datafrane and Vectorstore
+    Args:
     df (pd.DataFrame): dataframe with all sections
-    fname (str): filename to save dataframe
-    index (PineconeVectorStore): vector store to save embeddings
+    id_ (str): id of the section to delete
+    pine_id (str): id of the vector in pinecone
+    fname (str): name of the file
+    vectorstore (PineconeVectorStore): vectorstore of the sections
     """
-    if len(seccion + " - " + title + text) > 4500:
-        text = text[:4500]
+    # get id of the prompt
 
-    p_dict = {}
-    p_dict["id"] = str(uuid.uuid4())
-    p_dict["Title"] = seccion + " - " + title
-    p_dict["Text"] = text
-    temp_df = pd.DataFrame([p_dict], columns=["id", "Title", "Text"])
-
-    d = Document(
-        page_content=title.strip() + "\n" + text.strip(),
-        metadata={"text": text.strip(), "title": title.strip(), "sections": seccion},
-    )
-    index = vectorstore.add_documents(documents=[d])
-    temp_df["pinecone_id"] = index[0]
-    print(index[0])
-    # check if id already exists, if not add to dataframe
-
-    df = pd.concat([df, temp_df], ignore_index=True)
-    df.to_csv(fname, index=False)
+    try:
+        vectorstore.delete([pine_id])
+        df = df.drop(df[df["id"] == id_].index)
+        df.to_csv(fname, index=False)
+    except:
+        raise AttributeError(
+            f"Error al borrar la seccion dataframe: {id}, Pinecone: {pine_id}"
+        )
     return
+
+
+def visualiza(df: pd.DataFrame, fname: str, vectorstore: PineconeVectorStore):
+    """
+    Visualize Seccion
+    Args:
+        df (pd.DataFrame): dataframe with all prompts
+        fname (str): name of the file
+        vectorstore (PineconeVectorStore): vectorstore with all prompts
+    """
+    file = st.session_state["select_box_pm"]
+
+    # transform the row into a dictionary
+    prompt_dict = df[df.Title == file].to_dict(orient="records")[0]
+    id_ = prompt_dict["id"]
+    pine_id = prompt_dict["pinecone_id"]
+    txt = st.text_area(
+        "Title 👇",
+        value=prompt_dict.get("Title"),
+        key="tt_title",
+    )
+
+    txt2 = st.text_area(
+        "Content Section 👇",
+        height=300,
+        key="tt_text",
+        value=prompt_dict.get("Text"),
+    )
+    st.button(
+        "Delete",
+        type="primary",
+        key="save_button",
+        on_click=remove,
+        args=[df, id_, pine_id, fname, vectorstore],
+    )
 
 
 def main(embeddings, index, vectorstore):
     """
-    main function to add prompts
+    main function to delete secciones
     params:
     embeddings (GoogleGenerativeAIEmbeddings): model to generate embeddings
     index (Pinecone.Index): vector store to save embeddings
@@ -86,34 +114,14 @@ def main(embeddings, index, vectorstore):
         st.session_state["index"] = index
     if "vectorstore" not in st.session_state:
         st.session_state["vectorstore"] = vectorstore
-    st.title("Add Pericial")
-    title = st.text_area("Introduce Titulo Pericial 👇", height=100, key="title")
 
-    if len(title) > 0:
-        text = st.text_area(
-            "Introduce Texto seccion Pericial 👇", height=300, key="text"
-        )
-        if text:
-            seccion = st.selectbox(
-                "selecciona seccion 👇",
-                secciones,
-                key="select_box",
-            )
-            if seccion:
-                st.button(
-                    "Save",
-                    type="primary",
-                    key="save_button",
-                    on_click=save_text,
-                    args=[
-                        title,
-                        text,
-                        seccion,
-                        df,
-                        fname,
-                        st.session_state["vectorstore"],
-                    ],
-                )
+    option = st.selectbox(
+        "select prompt",
+        onlyfiles,
+        on_change=visualiza,
+        args=[df, fname, st.session_state["vectorstore"]],
+        key="select_box_pm",
+    )
 
 
 if __name__ == "__main__":
