@@ -42,10 +42,9 @@ def save_text(fname: str, prompt_dict: Dict, df: pd.DataFrame):
     # if name_prompt_change
     if st.session_state["name_prompt"] != prompt_dict.get("name_prompt"):
 
-        name_prompt = st.session_state["name_prompt"]
         p_dict["name_prompt"] = st.session_state["name_prompt"]
     else:
-        name_prompt = prompt_dict.get("name_prompt")
+
         p_dict["name_prompt"] = prompt_dict.get("name_prompt")
 
     # if prompt_change
@@ -83,21 +82,21 @@ def visualiza(df: pd.DataFrame, fname: str):
     prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
     txt, txt2, txt3 = "-1", "-1", "-1"
     txt = st.text_area(
-        "Introduce name of the prompt",
+        "Modify name of the prompt 👇",
         value=prompt_dict.get("name_prompt"),
         key="name_prompt",
         on_change=save_text,
         args=[fname, prompt_dict, df],
     )
     txt3 = st.text_area(
-        "Introduce keywords",
+        "Modify keywords 👇",
         value=prompt_dict.get("keywords"),
         key="keywords",
         on_change=save_text,
         args=[fname, prompt_dict, df],
     )
     txt2 = st.text_area(
-        "Introduce prompt",
+        "Modify prompt 👇",
         height=300,
         key="prompt",
         value=prompt_dict.get("prompt"),

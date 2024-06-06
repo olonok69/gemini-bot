@@ -1,8 +1,7 @@
 from st_pages import Page, show_pages, Section
 import os
-import os
-from pathlib import Path
 
+import streamlit as st
 from dotenv import dotenv_values
 
 # Optional -- adds the title and icon to the current page
@@ -16,8 +15,11 @@ os.makedirs(OUT_FOLDER, exist_ok=True)
 os.makedirs(TMP_FOLDER, exist_ok=True)
 os.makedirs(ANSWERS_FOLDER, exist_ok=True)
 
+st.title("Forensic Reports Tools. Powered by Gemini, Langchain and Pinecone")
+
 
 def main():
+
     show_pages(
         [
             Page("home.py", "Home", "🏠"),
@@ -57,6 +59,20 @@ def main():
                 "pericial/add.py",
                 "Add Section Pericial",
                 "➕",
+                is_section=False,
+                in_section=True,
+            ),
+            Page(
+                "pericial/modify.py",
+                "Modify Section Pericial",
+                "💱",
+                is_section=False,
+                in_section=True,
+            ),
+            Page(
+                "pericial/delete.py",
+                "Delete Section Pericial",
+                "❌",
                 is_section=False,
                 in_section=True,
             ),
