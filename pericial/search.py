@@ -5,7 +5,7 @@ import uuid
 import json
 from dotenv import dotenv_values
 import pandas as pd
-from pericial.gemini_fn import secciones, embed_fn
+from pericial.gemini_fn import secciones
 from google.oauth2 import service_account
 import vertexai
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
