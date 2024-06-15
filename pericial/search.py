@@ -5,70 +5,24 @@ import uuid
 import json
 from dotenv import dotenv_values
 import pandas as pd
-from pericial.gemini_fn import secciones
+from pericial.gemini_fn import (
+    secciones,
+    get_embeddings_model,
+    get_pinecone_objects,
+    pericial_prompt_selected,
+)
 from google.oauth2 import service_account
 import vertexai
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from pinecone import Pinecone
-from langchain_core.documents import Document
-from langchain_pinecone import PineconeVectorStore
+from src.helpers import visualiza_pericial
+from src.files import open_table_periciales
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT_DIR, "table")
 # create durs if does not exists
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# open table with all prompts
-fname = os.path.join(DATA_DIR, "periciales.csv")
-fname2 = os.path.join(DATA_DIR, "periciales_backup.csv")
-
-if os.path.isfile(fname):
-    df = pd.read_csv(fname)
-    df.to_csv(fname2, index=False)
-else:
-    df = pd.DataFrame(columns=["id", "Title", "Text", "pinecone_id"])
-    df.to_csv(fname, index=False)
-
-
-def save_text(
-    title: str,
-    text: str,
-    seccion: str,
-    df: pd.DataFrame,
-    fname: str,
-    vectorstore: PineconeVectorStore,
-):
-    """
-    save text in the dataframe and generate embeddings
-    params:
-    title (str): text to save
-    text (str): text to save
-    seccion (str): seccion to save
-    df (pd.DataFrame): dataframe with all sections
-    fname (str): filename to save dataframe
-    index (PineconeVectorStore): vector store to save embeddings
-    """
-    if len(seccion + " - " + title + text) > 4500:
-        text = text[:4500]
-
-    p_dict = {}
-    p_dict["id"] = str(uuid.uuid4())
-    p_dict["Title"] = seccion + " - " + title
-    p_dict["Text"] = text
-    temp_df = pd.DataFrame([p_dict], columns=["id", "Title", "Text"])
-
-    d = Document(
-        page_content=title.strip() + "\n" + text.strip(),
-        metadata={"text": text.strip(), "title": title.strip(), "sections": seccion},
-    )
-    index = vectorstore.add_documents(documents=[d])
-    temp_df["pinecone_id"] = index[0]
-    print(index[0])
-    # check if id already exists, if not add to dataframe
-
-    df = pd.concat([df, temp_df], ignore_index=True)
-    df.to_csv(fname, index=False)
-    return
+# open periciales table
+fname, fname2, df = open_table_periciales(DATA_DIR)
 
 
 def main(embeddings, index, vectorstore):
@@ -86,9 +40,17 @@ def main(embeddings, index, vectorstore):
         st.session_state["index"] = index
     if "vectorstore" not in st.session_state:
         st.session_state["vectorstore"] = vectorstore
+    if "pericial_prompt_selected" not in st.session_state:
+        st.session_state["pericial_prompt_selected"] = False
+    if "seccion_introduced" not in st.session_state:
+        st.session_state["seccion_introduced"] = ""
+
     st.title("Similarity Search Forensic Reports")
     title = st.text_area(
-        "Introduce texto a Buscar Pericial 👇", height=100, key="search_pericial"
+        "Introduce texto a Buscar Pericial separa con una # y dame el numero de documentos a buscar 👇",
+        height=100,
+        key="search_pericial",
+        placeholder="Ejemplo: texto a buscar aqui y no puede haber este caracter-->#  10",
     )
 
     if len(title) > 0:
@@ -98,37 +60,40 @@ def main(embeddings, index, vectorstore):
             key="select_box",
         )
         if seccion:
+            numero = title.split("#")[-1].strip()
+            title = title.split("#")[0].strip()
             v_query = embeddings.embed_query(title)
             r = index.query(
                 vector=list(v_query),
-                top_k=1,
+                top_k=int(numero),
                 include_metadata=True,
                 filter={"sections": seccion},
             )
             if len(r["matches"]) > 0:
-                st.write(
-                    f'Score Similarity: {r["matches"][0]["score"]} , Id: {r["matches"][0]["id"]}'
+                list_matches = []
+                list_matches_textos = []
+                for match in r["matches"]:
+
+                    list_matches.append(match["id"])
+                    itemlist = str(match["score"]) + ", " + match["metadata"]["text"]
+
+                    list_matches_textos.append(itemlist)
+                seccion2 = st.selectbox(
+                    "selecciona match 👇",
+                    list_matches_textos,
+                    key="select_box_2",
+                    on_change=pericial_prompt_selected,
+                    args=[st],
                 )
-                st.write(r["matches"][0]["metadata"]["text"])
+                if seccion2 and st.session_state["pericial_prompt_selected"] == True:
+                    visualiza_pericial(st, df, list_matches_textos, list_matches)
 
 
 if __name__ == "__main__":
+    # read config from .env file
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
     config = dotenv_values(os.path.join(path.parent.absolute(), "keys", ".env"))
-    with open(
-        os.path.join(
-            path.parent.absolute(), "keys", "complete-tube-421007-9a7c35cd44e2.json"
-        )
-    ) as source:
-        info = json.load(source)
-
-    vertex_credentials = service_account.Credentials.from_service_account_info(info)
-    vertexai.init(
-        project=config["PROJECT"],
-        location=config["REGION"],
-        credentials=vertex_credentials,
-    )
     # key access gemini
     if "GOOGLE_API_KEY" not in os.environ:
         os.environ["GOOGLE_API_KEY"] = config.get("GEMINI-API-KEY")
@@ -136,11 +101,25 @@ if __name__ == "__main__":
         os.environ["PINECONE_API_KEY"] = config.get("PINECONE_API_KEY")
     if "PINECONE_INDEX_NAME" not in os.environ:
         os.environ["PINECONE_INDEX_NAME"] = "forensic"
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-
-    pc = Pinecone(api_key=config.get("PINECONE_API_KEY"))
-    index = pc.Index("forensic")
-
-    vectorstore = PineconeVectorStore(embedding=embeddings, index_name="forensic")
+    # load GCP service account
+    with open(
+        os.path.join(
+            path.parent.absolute(), "keys", "complete-tube-421007-9a7c35cd44e2.json"
+        )
+    ) as source:
+        info = json.load(source)
+    # Login to Vertex AI
+    vertex_credentials = service_account.Credentials.from_service_account_info(info)
+    vertexai.init(
+        project=config["PROJECT"],
+        location=config["REGION"],
+        credentials=vertex_credentials,
+    )
+    # get embeddings model
+    embeddings = get_embeddings_model(model_name=config.get("EMBEDDINGS"))
+    # get Pinecone objects
+    index, vectorstore = get_pinecone_objects(
+        config=config, embeddings=embeddings, index_name="forensic"
+    )
 
     main(embeddings, index, vectorstore)

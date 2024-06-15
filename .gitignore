@@ -2,3 +2,5 @@ __pycache__
 keys/
 answers/
 prompts/dicts
+out/
+tmp/

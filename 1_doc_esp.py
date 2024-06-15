@@ -12,98 +12,58 @@ import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
 from src.work_gemini import get_chat_response, prepare_prompt, start_chat
-from src.helpers import write_history_1, reset_session_1
+from src.helpers import (
+    reset_session_1,
+    init_session_1_prompt,
+    save_df_many,
+    visualiza_1_prompt,
+)
 from src.utils import create_client_logging, print_stack
 import logging
 import copy
-import pandas as pd
-
+from src.files import open_table_answers, create_folders, open_table_prompts
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUT_FOLDER = os.path.join(ROOT_DIR, "out")
-TMP_FOLDER = os.path.join(ROOT_DIR, "tmp")
-
-DICTS_DIR = os.path.join(ROOT_DIR, "prompts", "dicts")
-DATA_DIR = os.path.join(ROOT_DIR, "prompts", "table")
-
-os.makedirs(DICTS_DIR, exist_ok=True)
-os.makedirs(DATA_DIR, exist_ok=True)
+# Create folders
+OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(ROOT_DIR)
+# open table with all prompts
+pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
 
 # open table with all prompts
-fname = os.path.join(DATA_DIR, "prompts.csv")
-fname2 = os.path.join(DATA_DIR, "prompts_backup.csv")
-
-if os.path.isfile(fname):
-    df = pd.read_csv(fname)
-    df.to_csv(fname2, index=False)
-else:
-    df = pd.DataFrame(columns=["id", "name_prompt", "prompt", "keywords"])
-    df.to_csv(fname, index=False)
+fname, fname2, df = open_table_prompts(PROMPTS_DIR)
 
 # all names of the prompts
 onlyfiles = df["name_prompt"].to_list()
-
-
-@st.experimental_dialog("Choose prompt?")
-def visualiza(st, df, page_select, numpages):
-    """
-    Visualize the prompt
-    Args:
-        st (streamlit): streamlit object
-        df (pd.DataFrame): dataframe with all prompts
-        page_select (int): page selected
-        numpages (int): number of pages
-    """
-    # get the name of the file
-    file = st.session_state["select_box"]
-    # transform the row into a dictionary
-    prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
-    id_ = prompt_dict["id"]
-
-    txt = st.text_area(
-        "Introduce name of the prompt",
-        value=prompt_dict.get("name_prompt"),
-        key="name_prompt",
-    )
-    txt3 = st.text_area(
-        "Introduce keywords",
-        value=prompt_dict.get("keywords"),
-        key="keywords",
-    )
-    txt2 = st.text_area(
-        "Introduce prompt",
-        height=300,
-        key="prompt",
-        value=prompt_dict.get("prompt"),
-    )
-    if st.button("Accept"):
-        st.session_state["prompt_introduced"] = (
-            prompt_dict.get("name_prompt") + "\n" + prompt_dict.get("prompt")
-        )
-        st.session_state["file_prompt_selected"] = True
-        upload(page_select, numpages, st)
-        st.session_state.value == 3
-        st.rerun()
-
-    if st.button("No accept"):
-        st.session_state["prompt_introduced"] = ""
-        st.session_state["file_prompt_selected"] = False
-        st.session_state.value == 2
-        st.rerun()
 
 
 def selected(st):
     st.session_state["file_prompt_selected"] = True
 
 
-def reload_page(st, ss, model):
+def reload_page(st, ss, model, df_answers, pname):
     """
     reload page
+    params:
+    st (streamlit): streamlit object
+    ss (streamlit.session_state): streamlit session state
+    model (vertexai.generative_models.GenerativeModel): model
+    df_answers (pd.DataFrame): dataframe with all answers
 
     """
     # delete files
-    write_history_1(st)
+    # write_history_1(st)
+    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    # get filename
+    filename = st.session_state["file_history"]
+    # save the response of Model
+    save_df_many(
+        list2=list2,
+        df=df_answers,
+        fname=pname,
+        prompt=st.session_state["prompt_introduced"],
+        filename=filename,
+    )
     chat = start_chat(model)
     reset_session_1(st, ss, chat)
     files = [f.unlink() for f in Path(f"{TMP_FOLDER}").glob("*") if f.is_file()]
@@ -117,42 +77,7 @@ def main(model):
     row1_1, row1_2 = st.columns((2, 3))
     try:
         # Initialize Vars
-        if "user_prompt_history" not in st.session_state:
-            st.session_state["user_prompt_history"] = []
-        if "chat_answers_history" not in st.session_state:
-            st.session_state["chat_answers_history"] = []
-        if "chat_history" not in st.session_state:
-            st.session_state["chat_history"] = []
-        if "initialized" not in st.session_state:
-            st.session_state["initialized"] = "False"
-        if "chat" not in st.session_state:
-            st.session_state["chat"] = start_chat(model)
-        if "list_images" not in st.session_state:
-            st.session_state["list_images"] = []
-        # placeholder for multiple files
-        if "file_name" not in st.session_state:
-            st.session_state["file_name"] = "no file"
-        if "file_history" not in st.session_state:
-            st.session_state["file_history"] = "no file"
-        if "prompt_introduced" not in st.session_state:
-            st.session_state["prompt_introduced"] = ""
-        if "prompt" not in st.session_state:
-            st.session_state["prompt"] = ""
-        if "chat_true" not in st.session_state:
-            st.session_state["chat_true"] = "no_chat"
-        if "buttom_popup" not in st.session_state:
-            st.session_state["buttom_popup"] = "no_buttom"
-        if "buttom_has_send" not in st.session_state:
-            st.session_state["buttom_has_send"] = "no_buttom"
-        if "pdf_ref" not in ss:
-            ss.pdf_ref = None
-        if "value" not in st.session_state:
-            st.session_state.value = 0
-        # buttom send to gemini
-        if "buttom_send_not_clicked" not in st.session_state:
-            st.session_state["buttom_send_not_clicked"] = False
-        if "file_prompt_selected" not in st.session_state:
-            st.session_state["file_prompt_selected"] = False
+        init_session_1_prompt(st, ss, model)
 
         with row1_1:
             # st.header("File Picker")
@@ -216,7 +141,7 @@ def main(model):
                         st.session_state["file_prompt_selected"] == True
                         and st.session_state["prompt_introduced"] == ""
                     ):
-                        visualiza(st, df, page_select, numpages)
+                        visualiza_1_prompt(st, df, page_select, numpages)
 
                     if st.session_state[
                         "prompt_introduced"
@@ -283,7 +208,7 @@ def main(model):
                             f"Gemini 1 Page: Terminar Chat session {st.session_state.value}"
                         )
                         # reload page and delete temp files
-                        reload_page(st, ss, model)
+                        reload_page(st, ss, model, df_answers, pname)
                     else:
                         if st.session_state["initialized"] == "False":
 
@@ -368,7 +293,7 @@ if __name__ == "__main__":
         credentials=vertex_credentials,
     )
     model = GenerativeModel(
-        "gemini-1.5-flash-preview-0514",
+        config["MODEL"],
         system_instruction=[
             """You a helpful agent who helps to extract relevant information from documents"""
         ],
@@ -380,7 +305,7 @@ if __name__ == "__main__":
         },
         generation_config={
             "max_output_tokens": 8192,
-            "temperature": 0.1,
+            "temperature": 1,
             "top_p": 0.95,
         },
     )
