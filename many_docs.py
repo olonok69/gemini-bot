@@ -11,75 +11,63 @@ import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
 from src.work_gemini import get_chat_response, prepare_prompt, start_chat
-from src.helpers import write_history_multi, reset_session_multi
+from src.helpers import (
+    reset_session_multi,
+    init_session_multi,
+    save_df_many,
+    get_filename_multi,
+)
 from src.utils import create_client_logging, print_stack
-import logging
+from src.files import open_table_answers, create_folders
 import copy
+import logging
 
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUT_FOLDER = os.path.join(ROOT_DIR, "out")
-TMP_FOLDER = os.path.join(ROOT_DIR, "tmp")
+# Create folders
+OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(ROOT_DIR)
+# open table with all prompts
+pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
 
 
-def reload_page(st, ss, model):
+def reload_page(st, ss, model, df, fname):
     # delete files
-    write_history_multi(st)
+    # write response of model to table
+    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    # get filename
+    filename = get_filename_multi(st)
+    # save the response of Model
+    save_df_many(
+        list2=list2,
+        df=df,
+        fname=fname,
+        prompt=st.session_state["prompt_introduced"],
+        filename=filename,
+    )
+    # restart chat
     chat = start_chat(model)
     reset_session_multi(st, ss, chat)
-    files = [f.unlink() for f in Path(f"{TMP_FOLDER}").glob("*") if f.is_file()]
-    files = [f.unlink() for f in Path(f"{OUT_FOLDER}").glob("*") if f.is_file()]
     streamlit_js_eval(js_expressions="parent.window.location.reload()")
 
 
 def change_status(st, status):
+    """
+    change status of session state
+    """
     st.session_state.value = status
     st.session_state["prompt_enter_press"] = True
 
 
 def main(model):
+    """
+    main loop. Get Model
+    """
     st.set_page_config(layout="wide")
     row1_1, row1_2 = st.columns((2, 3))
     try:
         # Initialize Vars
-        if "user_prompt_history" not in st.session_state:
-            st.session_state["user_prompt_history"] = []
-        if "chat_answers_history" not in st.session_state:
-            st.session_state["chat_answers_history"] = []
-        if "chat_history" not in st.session_state:
-            st.session_state["chat_history"] = []
-        if "initialized" not in st.session_state:
-            st.session_state["initialized"] = "False"
-        if "chat" not in st.session_state:
-            st.session_state["chat"] = start_chat(model)
-        if "list_images_multi" not in st.session_state:
-            st.session_state["list_images_multi"] = []
-
-        # placeholder for multiple files
-        if "multi_file_name" not in st.session_state:
-            st.session_state["multi_file_name"] = []
-        if "multi_file_pages" not in st.session_state:
-            st.session_state["multi_file_pages"] = []
-        if "prompt_introduced" not in st.session_state:
-            st.session_state["prompt_introduced"] = ""
-        if "prompt" not in st.session_state:
-            st.session_state["prompt"] = ""
-        if "chat_true" not in st.session_state:
-            st.session_state["chat_true"] = "no_chat"
-        if "buttom_popup" not in st.session_state:
-            st.session_state["buttom_popup"] = "no_buttom"
-        if "buttom_has_send" not in st.session_state:
-            st.session_state["buttom_has_send"] = "no_buttom"
-        if "pdf_ref" not in ss:
-            ss.pdf_ref = None
-        if "value" not in st.session_state:
-            st.session_state.value = 0
-        # buttom send to gemini
-        if "buttom_send_not_clicked" not in st.session_state:
-            st.session_state["buttom_send_not_clicked"] = False
-        if "prompt_enter_press" not in st.session_state:
-            st.session_state["prompt_enter_press"] = False
+        init_session_multi(st, ss, model)
 
         with row1_1:
             # st.header("File Picker")
@@ -203,7 +191,7 @@ def main(model):
                             f"Gemini multi Page: Terminar Chat session {st.session_state.value}"
                         )
                         # reload page and delete temp files
-                        reload_page(st, ss, model)
+                        reload_page(st, ss, model, df_answers, pname)
                     else:
                         if st.session_state["initialized"] == "False":
 
@@ -288,7 +276,7 @@ if __name__ == "__main__":
         credentials=vertex_credentials,
     )
     model = GenerativeModel(
-        "gemini-1.5-flash-preview-0514",
+        config["MODEL"],
         system_instruction=[
             """You a helpful agent who helps to extract relevant information from documents"""
         ],

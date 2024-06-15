@@ -84,13 +84,13 @@ def main():
                 in_section=True,
             ),
             Section("Pubmed", "🩻"),
-            Page(
-                "pubmed/search.py",
-                "Search in Pubmed",
-                "🔍",
-                is_section=False,
-                in_section=True,
-            ),
+            # Page(
+            #     "pubmed/search.py",
+            #     "Search in Pubmed",
+            #     "🔍",
+            #     is_section=False,
+            #     in_section=True,
+            # ),
             Page(
                 "pubmed/retrieve.py",
                 "Search many in Pubmed",

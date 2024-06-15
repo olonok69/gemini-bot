@@ -1,4 +1,5 @@
 from vertexai.generative_models import GenerativeModel, Part, ChatSession
+import vertexai.generative_models as generative_models
 import base64
 import logging
 
@@ -51,3 +52,23 @@ def prepare_prompt(list_images, question, page_select, st):
         st.session_state["buttom_send_not_clicked"] = True
 
     return
+
+
+def init_model(config):
+    return GenerativeModel(
+        config["MODEL"],
+        system_instruction=[
+            """You a helpful agent who helps to extract relevant information from documents"""
+        ],
+        safety_settings={
+            generative_models.HarmCategory.HARM_CATEGORY_HATE_SPEECH: generative_models.HarmBlockThreshold.BLOCK_ONLY_HIGH,
+            generative_models.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: generative_models.HarmBlockThreshold.BLOCK_ONLY_HIGH,
+            generative_models.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: generative_models.HarmBlockThreshold.BLOCK_ONLY_HIGH,
+            generative_models.HarmCategory.HARM_CATEGORY_HARASSMENT: generative_models.HarmBlockThreshold.BLOCK_ONLY_HIGH,
+        },
+        generation_config={
+            "max_output_tokens": 8192,
+            "temperature": 1,
+            "top_p": 0.95,
+        },
+    )

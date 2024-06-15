@@ -20,7 +20,7 @@ from vertexai.generative_models import GenerativeModel, Part, ChatSession
 import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
-from constants import question, question2
+from archive.constants import question, question2
 
 
 def get_chat_response(chat: ChatSession, prompt: str) -> str:

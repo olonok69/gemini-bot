@@ -3,6 +3,12 @@ import datetime
 import os
 import json
 import streamlit as st
+import pandas as pd
+import uuid
+import datetime
+from typing import List
+from src.work_gemini import start_chat
+from src.pdf_utils import count_pdf_pages, upload
 
 
 def write_history_1(st):
@@ -53,8 +59,8 @@ def write_history_multi(st):
         list2.reverse()
 
     for i, j in zip(list1, list2):
-        text = text + "user :" + j + "\n"
-        text = text + "assistant :" + i + "\n"
+        text = text + "user : " + j + "\n"
+        text = text + "assistant : " + i + "\n"
     text0 = ""
     for file in st.session_state["multi_file_name"]:
         text0 = text0 + file.replace(".pdf", "") + "_"
@@ -73,7 +79,7 @@ def open_popup(st):
     """
     if st.session_state["buttom_popup"] != "no_buttom":
         with st.popover("Open popover"):
-            st.markdown("Pega Contenido a Salvar de este fichero👇")
+            st.markdown("Pega Contenido a Salvar de este fichero 👇")
             txt = st.text_input("Paste here the content you want to save")
         if len(txt) > 0:
             with open(f"answers/test.txt", "w") as f:
@@ -107,6 +113,52 @@ def reset_session_1(st, ss, chat):
     return
 
 
+def init_session_1_prompt(st, ss, model):
+    """
+    initialize session state for multiple files option
+    param: st  session
+    param: ss  session state
+    param: model  chat (gemini model)
+    """
+    if "user_prompt_history" not in st.session_state:
+        st.session_state["user_prompt_history"] = []
+    if "chat_answers_history" not in st.session_state:
+        st.session_state["chat_answers_history"] = []
+    if "chat_history" not in st.session_state:
+        st.session_state["chat_history"] = []
+    if "initialized" not in st.session_state:
+        st.session_state["initialized"] = "False"
+    if "chat" not in st.session_state:
+        st.session_state["chat"] = start_chat(model)
+    if "list_images" not in st.session_state:
+        st.session_state["list_images"] = []
+    # placeholder for multiple files
+    if "file_name" not in st.session_state:
+        st.session_state["file_name"] = "no file"
+    if "file_history" not in st.session_state:
+        st.session_state["file_history"] = "no file"
+    if "prompt_introduced" not in st.session_state:
+        st.session_state["prompt_introduced"] = ""
+    if "prompt" not in st.session_state:
+        st.session_state["prompt"] = ""
+    if "chat_true" not in st.session_state:
+        st.session_state["chat_true"] = "no_chat"
+    if "buttom_popup" not in st.session_state:
+        st.session_state["buttom_popup"] = "no_buttom"
+    if "buttom_has_send" not in st.session_state:
+        st.session_state["buttom_has_send"] = "no_buttom"
+    if "pdf_ref" not in ss:
+        ss.pdf_ref = None
+    if "value" not in st.session_state:
+        st.session_state.value = 0
+    # buttom send to gemini
+    if "buttom_send_not_clicked" not in st.session_state:
+        st.session_state["buttom_send_not_clicked"] = False
+    if "file_prompt_selected" not in st.session_state:
+        st.session_state["file_prompt_selected"] = False
+    return
+
+
 def reset_session_multi(st, ss, chat):
     """
     Reset session
@@ -134,7 +186,55 @@ def reset_session_multi(st, ss, chat):
     return
 
 
-@st.experimental_dialog("Choose prompt?")
+def init_session_multi(st, ss, model):
+    """
+    initialize session state for multiple files option
+    param: st  session
+    param: ss  session state
+    param: model  chat (gemini model)
+    """
+    # Initialize Vars
+    if "user_prompt_history" not in st.session_state:
+        st.session_state["user_prompt_history"] = []
+    if "chat_answers_history" not in st.session_state:
+        st.session_state["chat_answers_history"] = []
+    if "chat_history" not in st.session_state:
+        st.session_state["chat_history"] = []
+    if "initialized" not in st.session_state:
+        st.session_state["initialized"] = "False"
+    if "chat" not in st.session_state:
+        st.session_state["chat"] = start_chat(model)
+    if "list_images_multi" not in st.session_state:
+        st.session_state["list_images_multi"] = []
+
+    # placeholder for multiple files
+    if "multi_file_name" not in st.session_state:
+        st.session_state["multi_file_name"] = []
+    if "multi_file_pages" not in st.session_state:
+        st.session_state["multi_file_pages"] = []
+    if "prompt_introduced" not in st.session_state:
+        st.session_state["prompt_introduced"] = ""
+    if "prompt" not in st.session_state:
+        st.session_state["prompt"] = ""
+    if "chat_true" not in st.session_state:
+        st.session_state["chat_true"] = "no_chat"
+    if "buttom_popup" not in st.session_state:
+        st.session_state["buttom_popup"] = "no_buttom"
+    if "buttom_has_send" not in st.session_state:
+        st.session_state["buttom_has_send"] = "no_buttom"
+    if "pdf_ref" not in ss:
+        ss.pdf_ref = None
+    if "value" not in st.session_state:
+        st.session_state.value = 0
+    # buttom send to gemini
+    if "buttom_send_not_clicked" not in st.session_state:
+        st.session_state["buttom_send_not_clicked"] = False
+    if "prompt_enter_press" not in st.session_state:
+        st.session_state["prompt_enter_press"] = False
+    return
+
+
+@st.experimental_dialog("Choose prompt 👇")
 def visualiza(st, path):
     file = st.session_state["select_box"]
     with open(os.path.join(path, file), "r") as f:
@@ -164,3 +264,171 @@ def visualiza(st, path):
     if st.button("No accept"):
         st.session_state["prompt_introduced"] = ""
         return
+
+
+def save_df_many(list2: List, df: pd.DataFrame, fname: str, prompt: str, filename: str):
+    """
+    Save prompt to a json file
+    :param name_prompt: name of the prompt
+    :param prompt: prompt
+    :param keywords: keywords
+    :param df: dataframe with all prompts
+    """
+    if len(list2) > 1:
+        list2.reverse()
+    p_dict = {}
+    p_dict["id"] = str(uuid.uuid4())
+    p_dict["filename"] = filename
+    p_dict["timestamp"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    p_dict["prompt"] = prompt.replace(",", "")
+    p_dict["respuesta_chat"] = list2[0].replace(",", "")
+    row = pd.DataFrame(p_dict, index=[0])
+    df = pd.concat([df, row], ignore_index=True)
+    df.to_csv(fname, index=False)
+
+    return
+
+
+def get_filename_multi(st):
+    """
+    extract filename from multi file name
+    """
+
+    text0 = ""
+    for file in st.session_state["multi_file_name"]:
+        text0 = text0 + file.replace(".pdf", "") + "_"
+    filename = text0[:-1]
+    return filename
+
+
+@st.experimental_dialog("Choose prompt 👇", width="large")
+def visualiza_1_prompt(st, df, page_select, numpages):
+    """
+    Visualize the prompt
+    Args:
+        st (streamlit): streamlit object
+        df (pd.DataFrame): dataframe with all prompts
+        page_select (int): page selected
+        numpages (int): number of pages
+    """
+    # get the name of the file
+    file = st.session_state["select_box"]
+    # transform the row into a dictionary
+    prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
+    id_ = prompt_dict["id"]
+
+    txt = st.text_area(
+        "Introduce name of the prompt",
+        value=prompt_dict.get("name_prompt"),
+        key="name_prompt",
+    )
+    txt3 = st.text_area(
+        "Introduce keywords",
+        value=prompt_dict.get("keywords"),
+        key="keywords",
+    )
+    txt2 = st.text_area(
+        "Introduce prompt",
+        height=300,
+        key="prompt",
+        value=prompt_dict.get("prompt"),
+    )
+    if st.button("Accept"):
+        st.session_state["prompt_introduced"] = (
+            prompt_dict.get("name_prompt") + "\n" + prompt_dict.get("prompt")
+        )
+        st.session_state["file_prompt_selected"] = True
+        upload(page_select, numpages, st)
+        st.session_state.value == 3
+        st.rerun()
+
+    if st.button("No accept"):
+        st.session_state["prompt_introduced"] = ""
+        st.session_state["file_prompt_selected"] = False
+        st.session_state.value == 2
+        st.rerun()
+
+
+@st.experimental_dialog("Confirm Selection 👇", width="large")
+def visualiza_display_page(st, selection_dict):
+    """
+    Visualize the answers and selected
+    Args:
+        st (streamlit): streamlit object
+        selection_dict (dict): dictionary with the selected answers
+    """
+    # get the name of the file
+
+    txt = st.text_area(
+        "File and Timestamp",
+        value=selection_dict.get("file_and_answer"),
+        key="file_and_answer",
+        height=70,
+    )
+    txt3 = st.text_area(
+        "Prompt sent to Gemini",
+        value=selection_dict.get("prompt"),
+        key="prompt",
+    )
+    txt2 = st.text_area(
+        "Response Gemini",
+        height=300,
+        key="respuesta_chat",
+        value=selection_dict.get("respuesta_chat"),
+    )
+    if st.button("Accept"):
+        st.session_state["answer_introduced"] = selection_dict
+        st.session_state["file_prompt_selected_visualiza"] = True
+        st.rerun()
+
+    if st.button("No accept"):
+        st.session_state["answer_introduced"] = {}
+        st.session_state["file_prompt_selected_visualiza"] = False
+        st.rerun()
+    return
+
+
+@st.experimental_dialog("Choose Pericial 👇", width="large")
+def visualiza_pericial(st, df, list_matches_textos, list_matches):
+    """
+    Visualize the prompt
+    Args:
+        st (streamlit): streamlit object
+        df (pd.DataFrame): dataframe with all prompts
+        text_selection (text): pericial selected to visualization
+    """
+    # get the name of the file
+    seccion2 = st.session_state["select_box_2"]
+    pos = list_matches_textos.index(seccion2)
+    idv = list_matches[pos]
+
+    data = df[df["pinecone_id"] == idv]
+    data = data.to_dict("records")
+    text_seccion = data[0].get("Text")
+    # transform the row into a dictionary
+
+    txt = st.text_area(
+        "Similarity Score",
+        value=f'Score Similarity: {seccion2.split(", ")[0]}',
+        key="similarity_area",
+    )
+    txt3 = st.text_area(
+        "Title Pericial keywords",
+        value=idv,
+        key="title_area",
+    )
+    txt2 = st.text_area(
+        "texto seccion Pericial",
+        height=300,
+        key="seccion_area",
+        value=text_seccion,
+    )
+    if st.button("Accept"):
+        st.session_state["seccion_introduced"] = text_seccion
+        st.session_state["pericial_prompt_selected"] = True
+        st.rerun()
+
+    if st.button("No accept"):
+        st.session_state["seccion_introduced"] = ""
+        st.session_state["pericial_prompt_selected"] = False
+        st.rerun()

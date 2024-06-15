@@ -1,9 +1,8 @@
 import streamlit as st
 import os.path
 from pathlib import Path
-from streamlit_pdf_viewer import pdf_viewer
 from streamlit import session_state as ss
-from src.pdf_utils import count_pdf_pages, upload
+from src.pdf_utils import count_pdf_pages, upload_files
 from google.oauth2 import service_account
 from streamlit_js_eval import streamlit_js_eval
 import vertexai
@@ -12,72 +11,75 @@ import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
 from src.work_gemini import get_chat_response, prepare_prompt, start_chat
-from src.helpers import (
-    reset_session_1,
-    init_session_1_prompt,
-    save_df_many,
-    visualiza_1_prompt,
-)
+from src.helpers import write_history_multi, reset_session_multi
 from src.utils import create_client_logging, print_stack
 import logging
 import copy
-from src.files import open_table_answers, create_folders, open_table_prompts
+
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-# Create folders
-OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(ROOT_DIR)
-# open table with all prompts
-pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
-
-# open table with all prompts
-fname, fname2, df = open_table_prompts(PROMPTS_DIR)
-
-# all names of the prompts
-onlyfiles = df["name_prompt"].to_list()
+OUT_FOLDER = os.path.join(ROOT_DIR, "out")
+TMP_FOLDER = os.path.join(ROOT_DIR, "tmp")
 
 
-def selected(st):
-    st.session_state["file_prompt_selected"] = True
-
-
-def reload_page(st, ss, model, df_answers, pname):
-    """
-    reload page
-    params:
-    st (streamlit): streamlit object
-    ss (streamlit.session_state): streamlit session state
-    model (vertexai.generative_models.GenerativeModel): model
-    df_answers (pd.DataFrame): dataframe with all answers
-
-    """
+def reload_page(st, ss, model):
     # delete files
-    # write_history_1(st)
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
-    # get filename
-    filename = st.session_state["file_history"]
-    # save the response of Model
-    save_df_many(
-        list2=list2,
-        df=df_answers,
-        fname=pname,
-        prompt=st.session_state["prompt_introduced"],
-        filename=filename,
-    )
+    write_history_multi(st)
     chat = start_chat(model)
-    reset_session_1(st, ss, chat)
+    reset_session_multi(st, ss, chat)
     files = [f.unlink() for f in Path(f"{TMP_FOLDER}").glob("*") if f.is_file()]
     files = [f.unlink() for f in Path(f"{OUT_FOLDER}").glob("*") if f.is_file()]
     streamlit_js_eval(js_expressions="parent.window.location.reload()")
 
 
+def change_status(st, status):
+    st.session_state.value = status
+    st.session_state["prompt_enter_press"] = True
+
+
 def main(model):
-    # two columns
     st.set_page_config(layout="wide")
     row1_1, row1_2 = st.columns((2, 3))
     try:
         # Initialize Vars
-        init_session_1_prompt(st, ss, model)
+        if "user_prompt_history" not in st.session_state:
+            st.session_state["user_prompt_history"] = []
+        if "chat_answers_history" not in st.session_state:
+            st.session_state["chat_answers_history"] = []
+        if "chat_history" not in st.session_state:
+            st.session_state["chat_history"] = []
+        if "initialized" not in st.session_state:
+            st.session_state["initialized"] = "False"
+        if "chat" not in st.session_state:
+            st.session_state["chat"] = start_chat(model)
+        if "list_images_multi" not in st.session_state:
+            st.session_state["list_images_multi"] = []
+
+        # placeholder for multiple files
+        if "multi_file_name" not in st.session_state:
+            st.session_state["multi_file_name"] = []
+        if "multi_file_pages" not in st.session_state:
+            st.session_state["multi_file_pages"] = []
+        if "prompt_introduced" not in st.session_state:
+            st.session_state["prompt_introduced"] = ""
+        if "prompt" not in st.session_state:
+            st.session_state["prompt"] = ""
+        if "chat_true" not in st.session_state:
+            st.session_state["chat_true"] = "no_chat"
+        if "buttom_popup" not in st.session_state:
+            st.session_state["buttom_popup"] = "no_buttom"
+        if "buttom_has_send" not in st.session_state:
+            st.session_state["buttom_has_send"] = "no_buttom"
+        if "pdf_ref" not in ss:
+            ss.pdf_ref = None
+        if "value" not in st.session_state:
+            st.session_state.value = 0
+        # buttom send to gemini
+        if "buttom_send_not_clicked" not in st.session_state:
+            st.session_state["buttom_send_not_clicked"] = False
+        if "prompt_enter_press" not in st.session_state:
+            st.session_state["prompt_enter_press"] = False
 
         with row1_1:
             # st.header("File Picker")
@@ -88,25 +90,37 @@ def main(model):
                     "Upload PDF file",
                     type=("pdf"),
                     key="pdf",
-                    accept_multiple_files=False,
+                    accept_multiple_files=True,
                     disabled=st.session_state["buttom_send_not_clicked"],
                 )  # accept_multiple_files=True,
                 if uploaded_files:
-                    logging.info(f"Gemini 1 Page: file uploaded {uploaded_files.name}")
+                    logging.info(
+                        f"Gemini multi Page: Files Uploaded {len(uploaded_files)}"
+                    )
                 if uploaded_files:
                     # To read file as bytes:
-                    im_bytes = uploaded_files.getvalue()
-                    file_path = f"{TMP_FOLDER}/{uploaded_files.name}"
-                    with open(file_path, "wb") as f:
-                        f.write(im_bytes)
-                        f.close()
-                    if ss.pdf:
-                        ss.pdf_ref = im_bytes
-                    numpages = count_pdf_pages(file_path)
-                    st.session_state["file_name"] = file_path
-                    st.session_state["file_history"] = uploaded_files.name
+                    for file in uploaded_files:
+                        im_bytes = file.read()
+                        file_path = f"{TMP_FOLDER}/{file.name}"
+                        with open(file_path, "wb") as f:
+                            f.write(im_bytes)
+                            f.close()
+                        if file.name not in st.session_state["multi_file_name"]:
+                            st.session_state["multi_file_name"].append(file.name)
+                            st.session_state["multi_file_pages"].append(
+                                count_pdf_pages(file_path)
+                            )
+                        if ss.pdf:
+                            ss.pdf_ref = im_bytes
+
+                    texto = ""
+                    for i, j in zip(
+                        st.session_state["multi_file_name"],
+                        st.session_state["multi_file_pages"],
+                    ):
+                        texto = texto + f"file: {i} {j} paginas\n"
                     st.session_state["upload_state"] = (
-                        f"Numero de paginas del fichero {uploaded_files.name} : {numpages}"
+                        f"Number of files uploaded {len(st.session_state['multi_file_name'])}\n{texto}"
                     )
                 st.session_state.value = 1  # file uploaded
 
@@ -115,73 +129,54 @@ def main(model):
             with row1_1:
                 if st.session_state.value >= 1:
                     binary_data = ss.pdf_ref
-                    pdf_viewer(input=binary_data, width=700, height=400)
-                    logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
-                    page_select = st.text_input(
-                        "Elige paginas a extraer 👇",
-                        key="page_select",
-                        placeholder="Selecciona paginas seguidas por comas. Ejemplo 1,3,4,5",
-                        disabled=st.session_state["buttom_send_not_clicked"],
-                    )
 
-                    if page_select and st.session_state.value >= 1:
-                        st.session_state.value = 2  # pages selected
-                        st.session_state["upload_state"] = (
-                            f"paginas seleccionadas {page_select}"
-                        )
-                        st.selectbox(
-                            "select prompt 👇",
-                            onlyfiles,
-                            on_change=selected,
-                            args=[st],
-                            key="select_box",
+                    if len(
+                        st.session_state["multi_file_name"]
+                    ) > 0 and st.session_state.value in [1, 2, 3]:
+                        st.session_state.value = 2
+                        introduce_prompt = st.text_input(
+                            "Introduce instruccion a mandar a gemini 👇",
+                            key="introduce_prompt",
                             disabled=st.session_state["buttom_send_not_clicked"],
                         )
-                    if (
-                        st.session_state["file_prompt_selected"] == True
-                        and st.session_state["prompt_introduced"] == ""
-                    ):
-                        visualiza_1_prompt(st, df, page_select, numpages)
+                        # placeholder=f"Extraer fechas, nombre y apellidos de todos los {len(st.session_state['multi_file_name'])} ficheros",
+                        if introduce_prompt and st.session_state.value in [2, 3]:
+                            logging.info(
+                                f"Gemini multi Page: Intruccion introduced, session state {st.session_state.value}"
+                            )
+                            upload_files(st)
+                            st.session_state["upload_state"] = (
+                                f"Instruccion introducida\n{introduce_prompt}"
+                            )
+                            st.session_state["prompt_introduced"] = introduce_prompt
 
-                    if st.session_state[
-                        "prompt_introduced"
-                    ] != "" and st.session_state.value in [2, 3]:
-                        st.session_state["upload_state"] = (
-                            f"Instruccion introducida\n{st.session_state['prompt_introduced'] }"
-                        )
-                        st.session_state.value = 3
-
-                    if (
-                        st.session_state["buttom_send_not_clicked"] == True
-                        and st.session_state["chat_true"] == "chat activo"
-                    ):
-                        # chat active session 5
-                        st.session_state.value = 5
-                        print(st.session_state.value)
-                        logging.info(
-                            f"Gemini 1 Page: Session Initialized, first prompt send, session state {st.session_state.value}"
-                        )
-                    if st.session_state["initialized"] == "True":
-                        st.session_state["upload_state"] = (
-                            f"Instruccion introducida\n {st.session_state['prompt_introduced']}"
-                        )
+                            if (
+                                st.session_state["buttom_send_not_clicked"] == True
+                                and st.session_state["chat_true"] == "chat activo"
+                            ):
+                                # chat active session 5
+                                st.session_state.value = 5
+                                logging.info(
+                                    f"Gemini multi Page: Session Initialized, first prompt send, session state {st.session_state.value}"
+                                )
+                            if st.session_state["initialized"] == "True":
+                                st.session_state["upload_state"] = (
+                                    f"Instruccion introducida\n {st.session_state['prompt_introduced']}"
+                                )
 
             with row1_2:
 
                 upload_state = st.text_area(
-                    "Status selection", "", key="upload_state", height=120
+                    "Status selection", "", key="upload_state", height=130
                 )
-                if (
-                    st.session_state.value == 3
-                    and st.session_state["file_prompt_selected"] == True
-                ):
+                if st.session_state.value == 3 and introduce_prompt:
                     if st.button(
                         "Send Promt to Gemini",
                         on_click=prepare_prompt,
                         args=[
-                            st.session_state["list_images"],
+                            st.session_state["list_images_multi"],
                             st.session_state["prompt_introduced"],
-                            page_select,
+                            "all",
                             st,
                         ],
                         key="buttom_send",
@@ -195,7 +190,7 @@ def main(model):
 
                 if st.session_state["chat_true"] == "chat activo":
                     logging.info(
-                        f"Gemini 1 Page: Chat active session {st.session_state.value}"
+                        f"Gemini multi Page: Chat active session {st.session_state.value}"
                     )
                     st.session_state["chat_true"] = "chat activo"
                     prompt = st.chat_input(
@@ -205,10 +200,10 @@ def main(model):
                     # first send to google is what we introduce in the input text
                     if prompt == "terminar":
                         logging.info(
-                            f"Gemini 1 Page: Terminar Chat session {st.session_state.value}"
+                            f"Gemini multi Page: Terminar Chat session {st.session_state.value}"
                         )
                         # reload page and delete temp files
-                        reload_page(st, ss, model, df_answers, pname)
+                        reload_page(st, ss, model)
                     else:
                         if st.session_state["initialized"] == "False":
 
@@ -231,7 +226,7 @@ def main(model):
                             # actualiza status
                             st.session_state["prompt_introduced"] = prompt
                             logging.info(
-                                f"Gemini 1 Page: Session Initialized, second prompt session state {st.session_state.value}"
+                                f"Gemini multi Page: Session Initialized, second prompt session state {st.session_state.value}"
                             )
                             response = get_chat_response(
                                 st.session_state["chat"], prompt1
@@ -269,7 +264,7 @@ def main(model):
 
         # get the sys stack and log to gcloud
         text = print_stack()
-        text = "Gemini 1 Page " + text
+        text = "Gemini multi Page: " + text
         logging.error(text)
 
 
@@ -293,7 +288,7 @@ if __name__ == "__main__":
         credentials=vertex_credentials,
     )
     model = GenerativeModel(
-        config["MODEL"],
+        "gemini-1.5-pro-001",
         system_instruction=[
             """You a helpful agent who helps to extract relevant information from documents"""
         ],
@@ -305,9 +300,9 @@ if __name__ == "__main__":
         },
         generation_config={
             "max_output_tokens": 8192,
-            "temperature": 1,
+            "temperature": 0.1,
             "top_p": 0.95,
         },
     )
-    logging.info("Gemini 1 Page: Model loaded")
+    logging.info("Gemini multi Page:  Model loaded")
     main(model=model)
