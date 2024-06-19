@@ -4,6 +4,9 @@ import os
 import streamlit as st
 from dotenv import dotenv_values
 
+
+st.set_page_config(layout="wide", initial_sidebar_state="expanded")
+
 # Optional -- adds the title and icon to the current page
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -42,7 +45,7 @@ def main():
                 in_section=True,
             ),
             Section("Chat Gemini", "♊"),
-            Page("1_doc.py", "1 Documento", "✏️", is_section=False, in_section=True),
+            # Page("1_doc.py", "1 Documento", "✏️", is_section=False, in_section=True),
             Page(
                 "1_doc_esp.py", "1 Doc+prompt", "📝", is_section=False, in_section=True
             ),
@@ -53,7 +56,13 @@ def main():
                 is_section=False,
                 in_section=True,
             ),
-            Page("display.py", "Ver Respuestas", ":eye:", in_section=False),
+            Page(
+                "display.py",
+                "Combina Respuestas",
+                ":eye:",
+                is_section=False,
+                in_section=True,
+            ),
             Section("Periciales", "🧑‍⚕️"),
             Page(
                 "pericial/add.py",

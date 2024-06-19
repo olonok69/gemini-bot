@@ -1,10 +1,8 @@
 import streamlit as st
 import os
 from pathlib import Path
-import uuid
 import json
 from dotenv import dotenv_values
-import pandas as pd
 from pericial.gemini_fn import (
     secciones,
     get_embeddings_model,
@@ -33,6 +31,7 @@ def main(embeddings, index, vectorstore):
     index (Pinecone.Index): vector store to save embeddings
     vectorstore (PineconeVectorStore): vector store to save embeddings
     """
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 
     if "embeddings" not in st.session_state:
         st.session_state["embeddings"] = embeddings
@@ -57,6 +56,7 @@ def main(embeddings, index, vectorstore):
         seccion = st.selectbox(
             "selecciona seccion 👇",
             secciones,
+            index=None,
             key="select_box",
         )
         if seccion:
@@ -81,6 +81,7 @@ def main(embeddings, index, vectorstore):
                 seccion2 = st.selectbox(
                     "selecciona match 👇",
                     list_matches_textos,
+                    index=None,
                     key="select_box_2",
                     on_change=pericial_prompt_selected,
                     args=[st],

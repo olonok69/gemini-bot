@@ -4,6 +4,9 @@ from typing import Dict
 import pandas as pd
 
 
+# setup page
+st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DICTS_DIR = os.path.join(ROOT_DIR, "dicts")
 os.makedirs(DICTS_DIR, exist_ok=True)

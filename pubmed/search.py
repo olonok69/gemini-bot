@@ -1,14 +1,13 @@
 import streamlit as st
 import os
 from typing import Dict
-import pandas as pd
+
 from langchain_community.tools.pubmed.tool import PubmedQueryRun
-from langchain_community.retrievers import PubMedRetriever
-import pprint
+
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-
+st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 tool = PubmedQueryRun(verbose=True)
 
 

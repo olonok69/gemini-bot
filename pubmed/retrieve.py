@@ -9,7 +9,7 @@ import pprint
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-# retriever = PubMedRetriever(verbose=True)
+st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 
 
 def visualiza(docs: str):

@@ -129,6 +129,7 @@ def main(embeddings, index, vectorstore):
     index (Pinecone.Index): vector store to save embeddings
     vectorstore (PineconeVectorStore): vector store to save embeddings
     """
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 
     if "embeddings" not in st.session_state:
         st.session_state["embeddings"] = embeddings

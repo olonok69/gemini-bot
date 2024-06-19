@@ -24,17 +24,6 @@ OUT_FOLDER = os.path.join(ROOT_DIR, "out")
 TMP_FOLDER = os.path.join(ROOT_DIR, "tmp")
 
 
-def open_popup():
-    if st.session_state["buttom_popup"] != "no_buttom":
-        with st.popover("Open popover"):
-            st.markdown("Pega Contenido a Salvar de este fichero👇")
-            txt = st.text_input("Paste here the content you want to save")
-        if len(txt) > 0:
-            with open(f"answers/test.txt", "w") as f:
-                f.write(txt)
-                f.close()
-
-
 def reload_page(st, ss, model):
     # delete files
     write_history_1(st)
@@ -46,7 +35,7 @@ def reload_page(st, ss, model):
 
 
 def main(model):
-    st.set_page_config(layout="wide")
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
     row1_1, row1_2 = st.columns((2, 3))
     try:
         # Initialize Vars
