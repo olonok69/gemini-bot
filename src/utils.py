@@ -22,7 +22,7 @@ def print_stack():
     for err in stack_trace:
         error = error + str(err) + "\n"
 
-    return
+    return error
 
 
 def create_client_logging(vertex_credentials):
