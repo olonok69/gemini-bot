@@ -13,6 +13,8 @@ from .helpers import (
     visualiza_1_prompt,
     visualiza_display_page,
     visualiza_pericial,
+    reset_session_visualiza,
+    init_visualiza,
 )
 from .utils import print_stack, create_client_logging
 from .files import (
@@ -21,4 +23,6 @@ from .files import (
     open_table_prompts,
     file_selector,
     open_table_periciales,
+    open_table_answers_no_case,
+    open_table_answers_final,
 )

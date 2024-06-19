@@ -41,7 +41,7 @@ def selected(st):
     st.session_state["file_prompt_selected"] = True
 
 
-def reload_page(st, ss, model, df_answers, pname):
+def reload_page_1_doc(st, ss, model, df_answers, pname):
     """
     reload page
     params:
@@ -71,13 +71,21 @@ def reload_page(st, ss, model, df_answers, pname):
     streamlit_js_eval(js_expressions="parent.window.location.reload()")
 
 
-def main(model):
+def main(model, col1, col2):
     # two columns
-    st.set_page_config(layout="wide")
-    row1_1, row1_2 = st.columns((2, 3))
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    if "vcol1doc" in st.session_state and "vcol2doc" in st.session_state:
+        col1 = st.session_state["vcol1doc"]
+        col2 = st.session_state["vcol2doc"]
+
+    row1_1, row1_2 = st.columns((col1, col2))
     try:
         # Initialize Vars
-        init_session_1_prompt(st, ss, model)
+        # Initialice state
+        if "init_run_1" not in st.session_state:
+            st.session_state["init_run_1"] = False
+        if st.session_state["init_run_1"] == False:
+            init_session_1_prompt(st, ss, model, col1, col2)
 
         with row1_1:
             # st.header("File Picker")
@@ -115,7 +123,13 @@ def main(model):
             with row1_1:
                 if st.session_state.value >= 1:
                     binary_data = ss.pdf_ref
-                    pdf_viewer(input=binary_data, width=700, height=400)
+                    if st.session_state["vcol1doc"] == 40:
+                        width = 700
+                    elif st.session_state["vcol1doc"] == 20:
+                        width = 350
+                    else:
+                        width = 700
+                    pdf_viewer(input=binary_data, width=width, height=400)
                     logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
                     page_select = st.text_input(
                         "Elige paginas a extraer 👇",
@@ -132,6 +146,7 @@ def main(model):
                         st.selectbox(
                             "select prompt 👇",
                             onlyfiles,
+                            index=None,
                             on_change=selected,
                             args=[st],
                             key="select_box",
@@ -157,6 +172,11 @@ def main(model):
                     ):
                         # chat active session 5
                         st.session_state.value = 5
+                        col1 = 20
+                        col2 = 80
+                        st.session_state["vcol1doc"] = 20
+                        st.session_state["vcol2doc"] = 80
+                        st.session_state["expander_2"] = False
                         print(st.session_state.value)
                         logging.info(
                             f"Gemini 1 Page: Session Initialized, first prompt send, session state {st.session_state.value}"
@@ -167,10 +187,13 @@ def main(model):
                         )
 
             with row1_2:
-
-                upload_state = st.text_area(
-                    "Status selection", "", key="upload_state", height=120
-                )
+                with st.expander(
+                    "���️Instruccion to send to Gemini 👇",
+                    expanded=st.session_state["expander_2"],
+                ):
+                    upload_state = st.text_area(
+                        "Status selection", "", key="upload_state", height=200
+                    )
                 if (
                     st.session_state.value == 3
                     and st.session_state["file_prompt_selected"] == True
@@ -192,6 +215,11 @@ def main(model):
                         st.session_state["buttom_has_send"] = "buttom_Send"
                         st.session_state.value = 5
                         st.session_state["buttom_send_not_clicked"] = True
+                        col1 = 20
+                        col2 = 80
+                        st.session_state["vcol1doc"] = 20
+                        st.session_state["vcol2doc"] = 80
+                        st.session_state["expander_2"] = False
 
                 if st.session_state["chat_true"] == "chat activo":
                     logging.info(
@@ -208,7 +236,7 @@ def main(model):
                             f"Gemini 1 Page: Terminar Chat session {st.session_state.value}"
                         )
                         # reload page and delete temp files
-                        reload_page(st, ss, model, df_answers, pname)
+                        reload_page_1_doc(st, ss, model, df_answers, pname)
                     else:
                         if st.session_state["initialized"] == "False":
 
@@ -274,6 +302,9 @@ def main(model):
 
 
 if __name__ == "__main__":
+    global col1, col2
+
+    col1, col2 = 40, 60
     config = dotenv_values("keys/.env")
     with open("keys/complete-tube-421007-9a7c35cd44e2.json") as source:
         info = json.load(source)
@@ -310,4 +341,8 @@ if __name__ == "__main__":
         },
     )
     logging.info("Gemini 1 Page: Model loaded")
-    main(model=model)
+    main(
+        model=model,
+        col1=col1,
+        col2=col2,
+    )

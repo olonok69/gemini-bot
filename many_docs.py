@@ -1,6 +1,5 @@
 import streamlit as st
 import os.path
-from pathlib import Path
 from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages, upload_files
 from google.oauth2 import service_account
@@ -18,7 +17,7 @@ from src.helpers import (
     get_filename_multi,
 )
 from src.utils import create_client_logging, print_stack
-from src.files import open_table_answers, create_folders
+from src.files import open_table_answers, create_folders, open_table_answers_no_case
 import copy
 import logging
 
@@ -29,6 +28,9 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(ROOT_DIR)
 # open table with all prompts
 pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
+pname_no_case, pname2_no_case, df_answers_no_case = open_table_answers_no_case(
+    ANSWERS_DIR
+)
 
 
 def reload_page(st, ss, model, df, fname):
@@ -59,15 +61,21 @@ def change_status(st, status):
     st.session_state["prompt_enter_press"] = True
 
 
-def main(model):
+def main(model, col1, col2):
     """
     main loop. Get Model
     """
-    st.set_page_config(layout="wide")
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    if "vcol1mdoc" in st.session_state and "vcol2mdoc" in st.session_state:
+        col1 = st.session_state["vcol1mdoc"]
+        col2 = st.session_state["vcol2mdoc"]
     row1_1, row1_2 = st.columns((2, 3))
     try:
         # Initialize Vars
-        init_session_multi(st, ss, model)
+        if "init_run_2" not in st.session_state:
+            st.session_state["init_run_2"] = False
+        if st.session_state["init_run_2"] == False:
+            init_session_multi(st, ss, model, col1, col2)
 
         with row1_1:
             # st.header("File Picker")
@@ -127,8 +135,14 @@ def main(model):
                             key="introduce_prompt",
                             disabled=st.session_state["buttom_send_not_clicked"],
                         )
+                        checkbox1 = st.checkbox("Case Query")
+                        if checkbox1:
+                            st.session_state["case_query"] = True
+                        else:
+                            st.session_state["case_query"] = False
                         # placeholder=f"Extraer fechas, nombre y apellidos de todos los {len(st.session_state['multi_file_name'])} ficheros",
                         if introduce_prompt and st.session_state.value in [2, 3]:
+                            print(st.session_state["case_query"])
                             logging.info(
                                 f"Gemini multi Page: Intruccion introduced, session state {st.session_state.value}"
                             )
@@ -144,6 +158,11 @@ def main(model):
                             ):
                                 # chat active session 5
                                 st.session_state.value = 5
+                                col1 = 1
+                                col2 = 4
+                                st.session_state["vcol1mdoc"] = 1
+                                st.session_state["vcol2mdoc"] = 4
+                                st.session_state["expander_3"] = False
                                 logging.info(
                                     f"Gemini multi Page: Session Initialized, first prompt send, session state {st.session_state.value}"
                                 )
@@ -153,10 +172,13 @@ def main(model):
                                 )
 
             with row1_2:
-
-                upload_state = st.text_area(
-                    "Status selection", "", key="upload_state", height=130
-                )
+                with st.expander(
+                    "���️Instruccion to send to Gemini 👇",
+                    expanded=st.session_state["expander_3"],
+                ):
+                    upload_state = st.text_area(
+                        "Status selection", "", key="upload_state", height=130
+                    )
                 if st.session_state.value == 3 and introduce_prompt:
                     if st.button(
                         "Send Promt to Gemini",
@@ -175,6 +197,11 @@ def main(model):
                         st.session_state["buttom_has_send"] = "buttom_Send"
                         st.session_state.value = 5
                         st.session_state["buttom_send_not_clicked"] = True
+                        col1 = 1
+                        col2 = 4
+                        st.session_state["vcol1mdoc"] = 1
+                        st.session_state["vcol2mdoc"] = 4
+                        st.session_state["expander_3"] = False
 
                 if st.session_state["chat_true"] == "chat activo":
                     logging.info(
@@ -191,7 +218,12 @@ def main(model):
                             f"Gemini multi Page: Terminar Chat session {st.session_state.value}"
                         )
                         # reload page and delete temp files
-                        reload_page(st, ss, model, df_answers, pname)
+                        if st.session_state["case_query"] == True:
+                            reload_page(st, ss, model, df_answers, pname)
+                        else:
+                            reload_page(
+                                st, ss, model, df_answers_no_case, pname_no_case
+                            )
                     else:
                         if st.session_state["initialized"] == "False":
 
@@ -257,6 +289,9 @@ def main(model):
 
 
 if __name__ == "__main__":
+    global col1, col2
+
+    col1, col2 = 2, 3
     config = dotenv_values("keys/.env")
     with open("keys/complete-tube-421007-9a7c35cd44e2.json") as source:
         info = json.load(source)
@@ -293,4 +328,8 @@ if __name__ == "__main__":
         },
     )
     logging.info("Gemini multi Page:  Model loaded")
-    main(model=model)
+    main(
+        model=model,
+        col1=col1,
+        col2=col2,
+    )

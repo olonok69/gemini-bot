@@ -11,7 +11,7 @@ from pinecone import Pinecone
 from langchain_pinecone import PineconeVectorStore
 
 
-st.title("Borra Seccion Pericial")
+st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT_DIR, "table")

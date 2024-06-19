@@ -13,6 +13,8 @@ from .src.helpers import (
     visualiza_1_prompt,
     visualiza_display_page,
     visualiza_pericial,
+    reset_session_visualiza,
+    init_visualiza,
 )
 from .src.utils import print_stack, create_client_logging
 from .pericial.gemini_fn import (
@@ -21,6 +23,7 @@ from .pericial.gemini_fn import (
     get_embeddings_model,
     get_pinecone_objects,
     pericial_prompt_selected,
+    section_prompt_selected,
 )
 from .src.files import (
     open_table_answers,
@@ -28,4 +31,6 @@ from .src.files import (
     open_table_prompts,
     file_selector,
     open_table_periciales,
+    open_table_answers_no_case,
+    open_table_answers_final,
 )

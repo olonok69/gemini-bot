@@ -110,10 +110,14 @@ def reset_session_1(st, ss, chat):
     ss.pdf_ref = None
     st.session_state.value = 0
     st.session_state["buttom_send_not_clicked"] = False
+    st.session_state["init_run_1"] = False
+    st.session_state["vcol1doc"] = 40
+    st.session_state["vcol2doc"] = 60
+    st.session_state["expander_2"] = True
     return
 
 
-def init_session_1_prompt(st, ss, model):
+def init_session_1_prompt(st, ss, model, col1, col2):
     """
     initialize session state for multiple files option
     param: st  session
@@ -156,6 +160,13 @@ def init_session_1_prompt(st, ss, model):
         st.session_state["buttom_send_not_clicked"] = False
     if "file_prompt_selected" not in st.session_state:
         st.session_state["file_prompt_selected"] = False
+    if "vcol1doc" not in st.session_state:
+        st.session_state["vcol1doc"] = col1
+    if "vcol2doc" not in st.session_state:
+        st.session_state["vcol2doc"] = col2
+    if "expander_2" not in st.session_state:
+        st.session_state["expander_2"] = True
+    st.session_state["init_run_1"] = True
     return
 
 
@@ -183,10 +194,15 @@ def reset_session_multi(st, ss, chat):
     st.session_state.value = 0
     st.session_state["buttom_send_not_clicked"] = False
     st.session_state["prompt_enter_press"] = False
+    st.session_state["init_run_2"] = False
+    st.session_state["vcol1mdoc"] = 2
+    st.session_state["vcol2mdoc"] = 3
+    st.session_state["expander_3"] = True
+    st.session_state["case_query"] = False
     return
 
 
-def init_session_multi(st, ss, model):
+def init_session_multi(st, ss, model, col1, col2):
     """
     initialize session state for multiple files option
     param: st  session
@@ -231,6 +247,121 @@ def init_session_multi(st, ss, model):
         st.session_state["buttom_send_not_clicked"] = False
     if "prompt_enter_press" not in st.session_state:
         st.session_state["prompt_enter_press"] = False
+    if "vcol1mdoc" not in st.session_state:
+        st.session_state["vcol1mdoc"] = col1
+    if "vcol2mdoc" not in st.session_state:
+        st.session_state["vcol2mdoc"] = col2
+    if "expander_3" not in st.session_state:
+        st.session_state["expander_3"] = True
+    if "case_query" not in st.session_state:
+        st.session_state["case_query"] = False
+    st.session_state["init_run_2"] = True
+    return
+
+
+def init_visualiza(st, model, embeddings, index, vectorstore, col1, col2):
+    """
+    Initialize session state for visualization
+    param: st  session
+    param: model  chat (gemini model)
+    param: embeddings  embeddings model
+    param: index  index of the document
+    param: vectorstore  vectorstore of the document
+
+    """
+    if "user_prompt_history" not in st.session_state:
+        st.session_state["user_prompt_history"] = []
+    if "chat_answers_history" not in st.session_state:
+        st.session_state["chat_answers_history"] = []
+    if "chat_history" not in st.session_state:
+        st.session_state["chat_history"] = []
+    if "initialized" not in st.session_state:
+        st.session_state["initialized"] = "False"
+    if "chat" not in st.session_state:
+        st.session_state["chat"] = start_chat(model)
+    if "upload_state" not in st.session_state:
+        st.session_state["upload_state"] = ""
+    if "file_prompt_selected_visualiza" not in st.session_state:
+        st.session_state["file_prompt_selected_visualiza"] = False
+
+    if "answer_introduced" not in st.session_state:
+        st.session_state["answer_introduced"] = {}
+    if "file_and_answer_select_has_changed" not in st.session_state:
+        st.session_state["file_and_answer_select_has_changed"] = False
+    if "embeddings" not in st.session_state:
+        st.session_state["embeddings"] = embeddings
+    if "index" not in st.session_state:
+        st.session_state["index"] = index
+    if "vectorstore" not in st.session_state:
+        st.session_state["vectorstore"] = vectorstore
+    if "pericial_prompt_selected" not in st.session_state:
+        st.session_state["pericial_prompt_selected"] = False
+    if "section_prompt_selected" not in st.session_state:
+        st.session_state["section_prompt_selected"] = False
+    if "seccion_introduced" not in st.session_state:
+        st.session_state["seccion_introduced"] = ""
+    if "expander_1" not in st.session_state:
+        st.session_state["expander_1"] = True
+    if "chat_true" not in st.session_state:
+        st.session_state["chat_true"] = "no_chat"
+    if "instruction_to_be_send" not in st.session_state:
+        st.session_state["instruction_to_be_send"] = ""
+    if "buttom_send_visualiza" not in st.session_state:
+        st.session_state["buttom_send_visualiza"] = False
+    if "chat_true_visualiza" not in st.session_state:
+        st.session_state["chat_true_visualiza"] = False
+    if "b_accept_inside_pericial" not in st.session_state:
+        st.session_state["b_accept_inside_pericial"] = False
+    if "vcol1" not in st.session_state:
+        st.session_state["vcol1"] = col1
+    if "vcol2" not in st.session_state:
+        st.session_state["vcol2"] = col2
+    if "prompt_combined_filename" not in st.session_state:
+        st.session_state["prompt_combined_filename"] = "Default"
+    if "prompt_introduced" not in st.session_state:
+        st.session_state["prompt_introduced"] = ""
+    st.session_state["init_run"] = True
+
+    return
+
+
+def reset_session_visualiza(st, model, embeddings, index, vectorstore):
+    """
+    reset session state for visualization
+    param: st  session
+    param: model  chat (gemini model)
+    param: embeddings  embeddings model
+    param: index  index of the document
+    param: vectorstore  vectorstore of the document
+
+    """
+
+    st.session_state["user_prompt_history"] = []
+    st.session_state["chat_answers_history"] = []
+    st.session_state["chat_history"] = []
+    st.session_state["initialized"] = "False"
+    st.session_state["chat"] = start_chat(model)
+    st.session_state["upload_state"] = ""
+    st.session_state["file_prompt_selected_visualiza"] = False
+    st.session_state["answer_introduced"] = {}
+    st.session_state["file_and_answer_select_has_changed"] = False
+    st.session_state["embeddings"] = embeddings
+    st.session_state["index"] = index
+    st.session_state["vectorstore"] = vectorstore
+    st.session_state["pericial_prompt_selected"] = False
+    st.session_state["section_prompt_selected"] = False
+    st.session_state["seccion_introduced"] = ""
+    st.session_state["expander_1"] = True
+    st.session_state["chat_true"] = "no_chat"
+    st.session_state["instruction_to_be_send"] = ""
+    st.session_state["buttom_send_visualiza"] = False
+    st.session_state["chat_true_visualiza"] = False
+    st.session_state["init_run"] = False
+    st.session_state["b_accept_inside_pericial"] = False
+    st.session_state["vcol1"] = 50
+    st.session_state["vcol2"] = 50
+    st.session_state["prompt_combined_filename"] = "Default"
+    st.session_state["prompt_introduced"] = ""
     return
 
 
@@ -376,19 +507,15 @@ def visualiza_display_page(st, selection_dict):
         key="respuesta_chat",
         value=selection_dict.get("respuesta_chat"),
     )
-    if st.button("Accept"):
+    if st.button("Accept", key="accept_inside_select_answer"):
         st.session_state["answer_introduced"] = selection_dict
         st.session_state["file_prompt_selected_visualiza"] = True
         st.rerun()
 
-    if st.button("No accept"):
-        st.session_state["answer_introduced"] = {}
-        st.session_state["file_prompt_selected_visualiza"] = False
-        st.rerun()
     return
 
 
-@st.experimental_dialog("Choose Pericial 👇", width="large")
+@st.experimental_dialog("Confirma Pericial 👇", width="large")
 def visualiza_pericial(st, df, list_matches_textos, list_matches):
     """
     Visualize the prompt
@@ -423,12 +550,15 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
         key="seccion_area",
         value=text_seccion,
     )
-    if st.button("Accept"):
+    if st.button("Accept", key="accept_inside_pericial"):
+        st.session_state["b_accept_inside_pericial"] = True
         st.session_state["seccion_introduced"] = text_seccion
         st.session_state["pericial_prompt_selected"] = True
+        st.session_state["chat_true"] = "chat activo"
+        st.session_state["vcol1"] = 30
+        st.session_state["vcol2"] = 70
+        st.session_state["buttom_send_visualiza"] = True
+
         st.rerun()
 
-    if st.button("No accept"):
-        st.session_state["seccion_introduced"] = ""
-        st.session_state["pericial_prompt_selected"] = False
-        st.rerun()
+    return
