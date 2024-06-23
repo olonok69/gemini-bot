@@ -12,10 +12,14 @@ google-cloud-logging
 scikit-learn
 langchain-pinecone
 langchain 
-langchain-community 
+langchain-community
+langchain-experimental 
 xmltodict
 pubmed-api
 chroma
 langchain-google-genai
 pypdf
 pinecone-client
+semanticscholar
+langchainhub
+lark
