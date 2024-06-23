@@ -4,7 +4,7 @@ services:
     image: gemini-bot:latest
     hostname: gemini-bot       
     ports:
-      - 8501:8051
+      - 8501:8501
     volumes:
       - /home/olonok_gmail_com/prompts/table:/home/app/gemini/prompts/table
       - /home/olonok_gmail_com/answers:/home/app/gemini/answers
