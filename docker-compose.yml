@@ -1,0 +1,18 @@
+services:
+  custom_classifier:
+    container_name: gemini-bot
+    image: gemini-bot:latest
+    hostname: gemini-bot       
+    ports:
+      - 8501:8051
+    volumes:
+      - /home/olonok_gmail_com/prompts/table:/home/app/gemini/prompts/table
+      - /home/olonok_gmail_com/answers:/home/app/gemini/answers
+      - /home/olonok_gmail_com/periciales/table:/home/app/gemini/pericial/table
+      - /home/olonok_gmail_com/kb/docs:/home/app/gemini/kb/docs
+      - /home/olonok_gmail_com/kb/chroma_db:/home/app/gemini/kb/chroma_db
+    restart: always
+    networks:
+      - network
+networks:
+  network:
