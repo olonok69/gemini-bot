@@ -1,5 +1,5 @@
 services:
-  custom_classifier:
+  gemini_bot:
     container_name: gemini-bot
     image: gemini-bot:latest
     hostname: gemini-bot       
