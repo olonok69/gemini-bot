@@ -23,3 +23,4 @@ pinecone-client
 semanticscholar
 langchainhub
 lark
+langchain-chroma
