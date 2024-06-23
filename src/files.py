@@ -143,7 +143,7 @@ def file_selector(st, df: pd.DataFrame):
         args=[st],
         disabled=st.session_state["buttom_send_visualiza"],
     )
-    print(st.session_state["file_and_answer_select"])
+    # print(st.session_state["file_and_answer_select"])
 
     selection = df[df["file_and_answer"] == selected_filename]
 

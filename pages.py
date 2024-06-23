@@ -45,7 +45,6 @@ def main():
                 in_section=True,
             ),
             Section("Chat Gemini", "♊"),
-            # Page("1_doc.py", "1 Documento", "✏️", is_section=False, in_section=True),
             Page(
                 "1_doc_esp.py", "1 Doc+prompt", "📝", is_section=False, in_section=True
             ),
@@ -92,7 +91,7 @@ def main():
                 is_section=False,
                 in_section=True,
             ),
-            Section("Pubmed", "🩻"),
+            Section("Knowledge Base", "🩻"),
             # Page(
             #     "pubmed/search.py",
             #     "Search in Pubmed",
@@ -101,8 +100,8 @@ def main():
             #     in_section=True,
             # ),
             Page(
-                "pubmed/retrieve.py",
-                "Search many in Pubmed",
+                "kb/kb_look.py",
+                "Search in KB",
                 "👀",
                 is_section=False,
                 in_section=True,

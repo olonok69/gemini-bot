@@ -4,3 +4,6 @@ answers/
 prompts/dicts
 out/
 tmp/
+kb/chroma_db/
+kb/docs/
+chroma_db/chroma.sqlite3
