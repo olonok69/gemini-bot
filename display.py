@@ -174,7 +174,7 @@ def main(model, embeddings, index, vectorstore, col1, col2):
                                 + f" + Seccion: {seccion}"
                             )
                             st.session_state["prompt_combined_filename"] = file
-                            print(file)
+
         if (
             st.session_state["chat_true"] == "chat activo"
             and st.session_state["b_accept_inside_pericial"] == True
@@ -183,6 +183,7 @@ def main(model, embeddings, index, vectorstore, col1, col2):
             col2 = 70
             st.session_state["chat_true"] = "chat activo"
             st.session_state["b_accept_inside_pericial"] = True
+            st.session_state["buttom_send_visualiza"] = True
 
     with row1_2:
         if (
@@ -194,19 +195,29 @@ def main(model, embeddings, index, vectorstore, col1, col2):
                 expanded=st.session_state["expander_1"],
             ):
                 st.session_state["instruction_to_be_send"] = (
-                    "Formatear este texto : \n"
-                    + st.session_state["seccion_introduced"]
-                    + "\n"
-                    + "Usa este Ejemplo:\n"
+                    "Formatear este texto: \n"
                     + st.session_state["answer_introduced"].get("respuesta_chat")
+                    + "\n\n"
+                    + "Usa este Ejemplo:"
+                    + "\n\n"
+                    + st.session_state["seccion_introduced"]
                 )
                 st.text_area(
-                    "Intr Gemini",
+                    "Intruction to be send to gemini Gemini",
                     height=300,
                     key="prompt_1_sample",
                     value=st.session_state["instruction_to_be_send"],
                     disabled=st.session_state["buttom_send_visualiza"],
                 )
+            if st.button(
+                "Send Instruction", disabled=st.session_state["buttom_send_visualiza"]
+            ):
+                st.session_state["chat_true"] = "chat activo"
+                st.session_state["vcol1"] = 30
+                st.session_state["vcol2"] = 70
+                st.session_state["buttom_send_visualiza"] = True
+                st.session_state["expander_1"] = False
+                st.rerun()
             # Conversacion con el modelo
             if st.session_state["chat_true"] == "chat activo":
                 # change status

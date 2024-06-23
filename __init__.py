@@ -34,3 +34,6 @@ from .src.files import (
     open_table_answers_no_case,
     open_table_answers_final,
 )
+
+from .kb.templates import second_prompt, first_prompt, query_prompt
+from .kb.chains import get_complete_chain, get_retrieval_chain

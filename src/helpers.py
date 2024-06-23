@@ -554,10 +554,6 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
         st.session_state["b_accept_inside_pericial"] = True
         st.session_state["seccion_introduced"] = text_seccion
         st.session_state["pericial_prompt_selected"] = True
-        st.session_state["chat_true"] = "chat activo"
-        st.session_state["vcol1"] = 30
-        st.session_state["vcol2"] = 70
-        st.session_state["buttom_send_visualiza"] = True
 
         st.rerun()
 

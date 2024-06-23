@@ -5,14 +5,32 @@ from langchain.chains import create_retrieval_chain
 from langchain_chroma import Chroma
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
+from google.oauth2 import service_account
+from dotenv import dotenv_values
+import json
+import vertexai
+import chromadb
 
+client = chromadb.PersistentClient(path="test-large-batch")
+
+config = dotenv_values("keys/.env")
+with open("keys/complete-tube-421007-9a7c35cd44e2.json") as source:
+    info = json.load(source)
+
+vertex_credentials = service_account.Credentials.from_service_account_info(info)
+vertexai.init(
+    project=config["PROJECT"],
+    location=config["REGION"],
+    credentials=vertex_credentials,
+)
+google_api_key = config["GEMINI-API-KEY"]
 # Streamlit app config
 st.subheader("Generative Q&A with LangChain, Gemini and Chroma")
 with st.sidebar:
-    google_api_key = st.text_input("Google API key", type="password")
     source_doc = st.file_uploader("Source document", type="pdf")
 col1, col2 = st.columns([4, 1])
 query = col1.text_input("Query", label_visibility="collapsed")
+
 os.environ["GEMINI_API_KEY"] = google_api_key
 
 # Session state initialization for documents and retrievers
@@ -42,9 +60,14 @@ if submit:
 
                     # Generate embeddings for the pages, and store in Chroma vector database
                     embeddings = GoogleGenerativeAIEmbeddings(
-                        model="models/embedding-001"
+                        model="models/embeddings-004",
+                        credentials=vertex_credentials,
+                        google_api_key=google_api_key,
                     )
-                    vectorstore = Chroma.from_documents(pages, embeddings)
+                    batch_size = 50
+                    for i in range(0, len(pages), batch_size):
+                        batch = pages[i : i + batch_size]
+                        vectorstore = Chroma.add_documents(pages, embeddings)
 
                     # Configure Chroma as a retriever with top_k=5
                     st.session_state.retriever = vectorstore.as_retriever(
@@ -58,7 +81,9 @@ if submit:
 
             try:
                 # Initialize the ChatGoogleGenerativeAI module, create and invoke the retrieval chain
-                llm = ChatGoogleGenerativeAI(model="gemini-pro")
+                llm = ChatGoogleGenerativeAI(
+                    model="gemini-1.5-pro-001", credentials=vertex_credentials
+                )
 
                 template = """
                 You are a helpful AI assistant. Answer based on the context provided. 
