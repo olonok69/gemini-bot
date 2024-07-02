@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from langchain_pinecone import PineconeVectorStore
 
 
 def open_table_answers(answers_dir: str):
@@ -150,3 +151,58 @@ def file_selector(st, df: pd.DataFrame):
     if not selection.empty:
         selection_dict = selection.to_dict(orient="records")[0]
     return selection_dict
+
+
+def remove_prompts(df, id_, fname):
+    """
+    delete prompt from dataframe and save to csv file
+    :param df: dataframe
+    :param id_: id of prompt
+    :param fname: csv file name
+    :return: dataframe
+    """
+    df = df.drop(df[df["id"] == id_].index)
+    df.to_csv(fname, index=False)
+    return
+
+
+def remove_anwers(df, id_, fname):
+    """
+    delete prompt from dataframe and save to csv file
+    :param df: dataframe
+    :param id_: id of prompt
+    :param fname: csv file name
+    :return: dataframe
+    """
+    df = df.drop(df[df["id"] == id_].index)
+    df.to_csv(fname, index=False)
+    return
+
+
+def remove_pericial(
+    df: pd.DataFrame,
+    id_: str,
+    pine_id: str,
+    fname: str,
+    vectorstore: PineconeVectorStore,
+):
+    """
+    Delete section Pericial from Datafrane and Vectorstore
+    Args:
+    df (pd.DataFrame): dataframe with all sections
+    id_ (str): id of the section to delete
+    pine_id (str): id of the vector in pinecone
+    fname (str): name of the file
+    vectorstore (PineconeVectorStore): vectorstore of the sections
+    """
+    # get id of the prompt
+
+    try:
+        vectorstore.delete([pine_id])
+        df = df.drop(df[df["id"] == id_].index)
+        df.to_csv(fname, index=False)
+    except:
+        raise AttributeError(
+            f"Error al borrar la seccion dataframe: {id}, Pinecone: {pine_id}"
+        )
+    return
