@@ -1,6 +1,6 @@
-from st_pages import Page, show_pages, Section
 import os
-
+from st_pages import Page, show_pages, Section
+import shutil
 import streamlit as st
 from dotenv import dotenv_values
 
@@ -25,21 +25,19 @@ def main():
 
     show_pages(
         [
-            Page("home.py", "Home", "🏠"),
-            Section("Prompts", "📃"),
+            Page("pages/home.py", "Home", "🏠"),
+            Section("Maintenance", "📃"),
+            Page("add.py", "Add Entrance", "➕", is_section=False, in_section=True),
             Page(
-                "prompts/add.py", "Add prompt", "➕", is_section=False, in_section=True
-            ),
-            Page(
-                "prompts/modify.py",
-                "Modify prompt",
+                "modifica.py",
+                "Modify entrance",
                 "💱",
                 is_section=False,
                 in_section=True,
             ),
             Page(
-                "prompts/delete.py",
-                "Delete prompt",
+                "delete.py",
+                "Delete entrance",
                 "❌",
                 is_section=False,
                 in_section=True,
@@ -56,7 +54,7 @@ def main():
                 in_section=True,
             ),
             Page(
-                "display.py",
+                "combina.py",
                 "Combina Respuestas",
                 ":eye:",
                 is_section=False,
@@ -64,45 +62,22 @@ def main():
             ),
             Section("Periciales", "🧑‍⚕️"),
             Page(
-                "pericial/add.py",
-                "Add Section Pericial",
-                "➕",
-                is_section=False,
-                in_section=True,
-            ),
-            Page(
-                "pericial/modify.py",
-                "Modify Section Pericial",
-                "💱",
-                is_section=False,
-                in_section=True,
-            ),
-            Page(
-                "pericial/delete.py",
-                "Delete Section Pericial",
-                "❌",
-                is_section=False,
-                in_section=True,
-            ),
-            Page(
                 "pericial/search.py",
                 "Similarity Search",
                 "🕵️",
-                is_section=False,
-                in_section=True,
             ),
             Section("Knowledge Base", "🩻"),
-            # Page(
-            #     "pubmed/search.py",
-            #     "Search in Pubmed",
-            #     "🔍",
-            #     is_section=False,
-            #     in_section=True,
-            # ),
             Page(
                 "kb/kb_look.py",
                 "Search in KB",
                 "👀",
+                is_section=False,
+                in_section=True,
+            ),
+            Page(
+                "kb/kb_semantic.py",
+                "Google Scholar",
+                "📖",
                 is_section=False,
                 in_section=True,
             ),
@@ -114,7 +89,9 @@ if __name__ == "__main__":
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
     config = dotenv_values(os.path.join(ROOT_DIR, "keys", ".env"))
-
+    folder_path = "chroma_db_google"
+    if os.path.exists(folder_path) and os.path.isdir(folder_path):
+        shutil.rmtree(folder_path)
     # key access gemini
     if "GOOGLE_API_KEY" not in os.environ:
         os.environ["GOOGLE_API_KEY"] = config.get("GEMINI-API-KEY")

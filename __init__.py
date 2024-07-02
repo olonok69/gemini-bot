@@ -33,7 +33,47 @@ from .src.files import (
     open_table_periciales,
     open_table_answers_no_case,
     open_table_answers_final,
+    remove_prompts,
+    remove_pericial,
+    remove_anwers,
 )
 
-from .kb.templates import second_prompt, first_prompt, query_prompt
-from .kb.chains import get_complete_chain, get_retrieval_chain
+from .kb.templates import (
+    second_prompt,
+    first_prompt,
+    query_prompt,
+    semantic_query,
+    combine_research_prompt,
+)
+from .kb.chains import (
+    get_complete_chain,
+    get_retrieval_chain,
+    create_semantic_retrieval_chain,
+    create_retrieval_qa_source_chain,
+    create_Runnable_Parallel_chain,
+    create_combine_parallel_outputs_chain,
+    create_complete_chain,
+)
+
+
+from .src.maintenance import (
+    save_text_add_prompt,
+    save_text_add_pericial,
+    visualiza_add_prompt,
+    visualiza_add_pericial,
+    selected_add,
+    save_text_modifica_prompt,
+    visualiza_modify_prompt,
+    selected_modify_prompt,
+    selected_modify_percial,
+    visualiza_pericial_modifica,
+    visualiza_delete_prompt,
+    selected_delete,
+    selected_modifica,
+    selected_delete_prompt,
+    selected_delete_percial,
+    visualiza_delete_pericial,
+    selected_delete_answer_gemini,
+    selected_delete_answer_gemini_nocase,
+    visualiza_delete_answer_gemini_no_case,
+)

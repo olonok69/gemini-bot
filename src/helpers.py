@@ -114,6 +114,7 @@ def reset_session_1(st, ss, chat):
     st.session_state["vcol1doc"] = 40
     st.session_state["vcol2doc"] = 60
     st.session_state["expander_2"] = True
+
     return
 
 
@@ -470,13 +471,13 @@ def visualiza_1_prompt(st, df, page_select, numpages):
         )
         st.session_state["file_prompt_selected"] = True
         upload(page_select, numpages, st)
-        st.session_state.value == 3
+        st.session_state.value = 3
         st.rerun()
 
     if st.button("No accept"):
         st.session_state["prompt_introduced"] = ""
         st.session_state["file_prompt_selected"] = False
-        st.session_state.value == 2
+        st.session_state.value = 2
         st.rerun()
 
 

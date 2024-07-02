@@ -1,12 +1,10 @@
-import streamlit as st
-import json
 import os
 import uuid
 import pandas as pd
+import streamlit as st
 
 # setup page
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DICTS_DIR = os.path.join(ROOT_DIR, "dicts")
 DATA_DIR = os.path.join(ROOT_DIR, "table")

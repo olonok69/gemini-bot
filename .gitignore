@@ -1,9 +1,13 @@
 __pycache__
 keys/
 answers/
-prompts/dicts
+prompts/dicts/
+prompts/table/
 out/
 tmp/
 kb/chroma_db/
 kb/docs/
 chroma_db/chroma.sqlite3
+pericial/table
+pericial/table/periciales.csv
+prompts/table/prompts.csv
