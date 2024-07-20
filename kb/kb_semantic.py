@@ -155,12 +155,13 @@ if __name__ == "__main__":
             credentials=vertex_credentials,
             google_api_key=google_api_key,
         ),
-        persist_directory="chroma_db_google",
-    )
+    )  # persist_directory="chroma_db_google",
     # Initialize
+
     web_research_retriever = WebResearchRetriever.from_llm(
         vectorstore=vectorstore, llm=llm, search=search
     )
+
     main(
         api_wrapper=api_wrapper,
         web_research_retriever=web_research_retriever,
