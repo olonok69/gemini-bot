@@ -11,6 +11,7 @@ services:
       - /home/olonok_gmail_com/periciales/table:/home/app/gemini/pericial/table
       - /home/olonok_gmail_com/kb/docs:/home/app/gemini/kb/docs
       - /home/olonok_gmail_com/kb/chroma_db:/home/app/gemini/kb/chroma_db
+      - /home/olonok_gmail_com/kb/faiss:/home/app/gemini/kb/faiss
     restart: always
     networks:
       - network
