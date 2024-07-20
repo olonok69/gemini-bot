@@ -26,7 +26,7 @@ def main():
     show_pages(
         [
             Page("pages/home.py", "Home", "🏠"),
-            Section("Maintenance", "📃"),
+            Section("-- Sec -- Maintenance", "📃"),
             Page("add.py", "Add Entrance", "➕", is_section=False, in_section=True),
             Page(
                 "modifica.py",
@@ -42,7 +42,7 @@ def main():
                 is_section=False,
                 in_section=True,
             ),
-            Section("Chat Gemini", "♊"),
+            Section("-- Sec -- Chat Gemini", "♊"),
             Page(
                 "1_doc_esp.py", "1 Doc+prompt", "📝", is_section=False, in_section=True
             ),
@@ -60,13 +60,13 @@ def main():
                 is_section=False,
                 in_section=True,
             ),
-            Section("Periciales", "🧑‍⚕️"),
+            Section("-- Sec -- Periciales", "🧑‍⚕️"),
             Page(
                 "pericial/search.py",
                 "Similarity Search",
                 "🕵️",
             ),
-            Section("Knowledge Base", "🩻"),
+            Section("-- Sec -- Knowledge Base", "🩻"),
             Page(
                 "kb/kb_semantic_faiss.py",
                 "Search in KB",

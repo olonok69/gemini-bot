@@ -9,6 +9,7 @@ from dotenv import dotenv_values
 import json
 import vertexai
 import streamlit as st
+from streamlit_js_eval import streamlit_js_eval
 from pathlib import Path
 from kb.templates import semantic_query, combine_research_prompt
 from kb.chains import (
@@ -54,12 +55,11 @@ def visualiza_context(st, out):
                     break
 
 
-def main(api_wrapper, web_research_retriever, llm, col1, col2):
+def main(api_wrapper, web_research_retriever, llm, col1, col2, placeholder):
 
     if "checkbox2" not in st.session_state:
         st.session_state["checkbox2"] = False
 
-    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
     # if "vcol1mdoc" in st.session_state and "vcol2mdoc" in st.session_state:
     #    col1 = st.session_state["vcol1mdoc"]
     #    col2 = st.session_state["vcol2mdoc"]
@@ -67,6 +67,9 @@ def main(api_wrapper, web_research_retriever, llm, col1, col2):
 
     with row1_1:
         query = st.text_input("Enter your query here 👇")
+        if st.button("Salir"):
+            placeholder.empty()
+            st.stop()
         if len(query) > 0:
             with row1_2:
 
@@ -102,7 +105,7 @@ def main(api_wrapper, web_research_retriever, llm, col1, col2):
 
                         st.text_area(
                             "Knowledge Base Response 👇",
-                            height=300,
+                            height=600,
                             key="kb_text1",
                             value=response["d"].content,
                         )
@@ -118,54 +121,57 @@ if __name__ == "__main__":
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
     path = path.parent.absolute()
-    print(path)
+    # Set page layout
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    placeholder_kb_1 = st.empty()
+    with placeholder_kb_1.container():
+        config = dotenv_values(os.path.join(path, "keys", ".env"))
+        with open(
+            os.path.join(path, "keys", "complete-tube-421007-9a7c35cd44e2.json")
+        ) as source:
+            info = json.load(source)
 
-    config = dotenv_values(os.path.join(path, "keys", ".env"))
-    with open(
-        os.path.join(path, "keys", "complete-tube-421007-9a7c35cd44e2.json")
-    ) as source:
-        info = json.load(source)
-
-    vertex_credentials = service_account.Credentials.from_service_account_info(info)
-    vertexai.init(
-        project=config["PROJECT"],
-        location=config["REGION"],
-        credentials=vertex_credentials,
-    )
-    google_api_key = config["GEMINI-API-KEY"]
-    os.environ["GEMINI_API_KEY"] = google_api_key
-    os.environ["GOOGLE_API_KEY"] = config.get("GOOGLE_API_KEY")
-    os.environ["GOOGLE_CSE_ID"] = config.get("GOOGLE_CSE_ID")
-    os.environ["USER_AGENT"] = "GEMINI-BOT"
-    llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash-001", credentials=vertex_credentials
-    )
-    # api Semantic search
-    api_wrapper = SemanticScholarAPIWrapper(
-        doc_content_chars_max=10000, top_k_results=10
-    )
-    # api google search
-    search = GoogleSearchAPIWrapper()
-
-    # Vectorstore
-
-    vectorstore = Chroma(
-        embedding_function=GoogleGenerativeAIEmbeddings(
-            model=config.get("EMBEDDINGS2"),
+        vertex_credentials = service_account.Credentials.from_service_account_info(info)
+        vertexai.init(
+            project=config["PROJECT"],
+            location=config["REGION"],
             credentials=vertex_credentials,
-            google_api_key=google_api_key,
-        ),
-    )  # persist_directory="chroma_db_google",
-    # Initialize
+        )
+        google_api_key = config["GEMINI-API-KEY"]
+        os.environ["GEMINI_API_KEY"] = google_api_key
+        os.environ["GOOGLE_API_KEY"] = config.get("GOOGLE_API_KEY")
+        os.environ["GOOGLE_CSE_ID"] = config.get("GOOGLE_CSE_ID")
+        os.environ["USER_AGENT"] = "GEMINI-BOT"
+        llm = ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash-001", credentials=vertex_credentials
+        )
+        # api Semantic search
+        api_wrapper = SemanticScholarAPIWrapper(
+            doc_content_chars_max=10000, top_k_results=10
+        )
+        # api google search
+        search = GoogleSearchAPIWrapper()
 
-    web_research_retriever = WebResearchRetriever.from_llm(
-        vectorstore=vectorstore, llm=llm, search=search
-    )
+        # Vectorstore
 
-    main(
-        api_wrapper=api_wrapper,
-        web_research_retriever=web_research_retriever,
-        llm=llm,
-        col1=col1,
-        col2=col2,
-    )
+        vectorstore = Chroma(
+            embedding_function=GoogleGenerativeAIEmbeddings(
+                model=config.get("EMBEDDINGS2"),
+                credentials=vertex_credentials,
+                google_api_key=google_api_key,
+            ),
+        )  # persist_directory="chroma_db_google",
+        # Initialize
+
+        web_research_retriever = WebResearchRetriever.from_llm(
+            vectorstore=vectorstore, llm=llm, search=search
+        )
+
+        main(
+            api_wrapper=api_wrapper,
+            web_research_retriever=web_research_retriever,
+            llm=llm,
+            col1=col1,
+            col2=col2,
+            placeholder=placeholder_kb_1,
+        )

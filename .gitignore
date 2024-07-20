@@ -14,3 +14,4 @@ chroma_db/chroma.sqlite3
 pericial/table
 pericial/table/periciales.csv
 prompts/table/prompts.csv
+archive/commands.txt
