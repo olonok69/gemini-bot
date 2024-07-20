@@ -6,6 +6,8 @@ prompts/table/
 out/
 tmp/
 kb/chroma_db/
+kb/faiss/forensic.faiss
+kb/faiss/forensic.pkl
 kb/faiss/
 kb/docs/
 chroma_db/chroma.sqlite3
