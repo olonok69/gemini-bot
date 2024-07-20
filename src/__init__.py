@@ -15,6 +15,8 @@ from .helpers import (
     visualiza_pericial,
     reset_session_visualiza,
     init_visualiza,
+    init_session_faiss,
+    reset_session_faiss,
 )
 from .utils import print_stack, create_client_logging
 from .files import (

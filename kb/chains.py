@@ -1,6 +1,7 @@
 from langchain.chains.query_constructor.base import AttributeInfo
 from langchain.retrievers.self_query.base import SelfQueryRetriever
 from operator import itemgetter
+from typing import List, Dict
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnablePassthrough
 
@@ -9,6 +10,11 @@ from langchain.chains import create_retrieval_chain
 from langchain_community.tools.semanticscholar.tool import SemanticScholarQueryRun
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain_core.runnables import RunnableParallel
+from langchain.chains import create_history_aware_retriever, create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_core.chat_history import BaseChatMessageHistory
+from langchain_community.chat_message_histories import ChatMessageHistory
+from langchain_core.runnables.history import RunnableWithMessageHistory
 
 
 def create_self_query_retriever(llm, vectorstore, query_prompt):
@@ -150,3 +156,95 @@ def create_complete_chain(map_chain, second_chain):
         "context": map_chain,
     } | RunnablePassthrough.assign(d=second_chain)
     return complete_chain
+
+
+def function_create_history_aware_retriever(llm, retriever, prompt):
+    """
+    Create history aware retriever
+    Args:
+        llm: LLM model
+        retriever: retriever
+        prompt: contextualize query prompt
+    """
+    history_aware_retriever = create_history_aware_retriever(llm, retriever, prompt)
+    return history_aware_retriever
+
+
+def function_create_stuff_documents_chain(llm, prompt):
+    """
+    Create stuff documents chain
+    Args:
+        llm: LLM model
+        prompt: contextualize query prompt
+    """
+    stuff_documents_chain = create_stuff_documents_chain(llm, prompt)
+    return stuff_documents_chain
+
+
+def function_create_retrieval_chain(chain, retriever):
+    """
+    Create retrieval chain
+    Args:
+        chain: question_answer_chain
+        retriever: retriever
+    """
+    retrieval_chain = create_retrieval_chain(retriever, chain)
+    return retrieval_chain
+
+
+def create_runnablewithmessagehistory(chain, store: Dict):
+    """
+    Create Runnable with message history
+    Args:
+        chain: chain
+        store: store
+    """
+
+    def get_session_history(session_id: str) -> BaseChatMessageHistory:
+
+        if session_id not in store:
+            store[session_id] = ChatMessageHistory()
+        return store[session_id]
+
+    conversational_rag_chain = RunnableWithMessageHistory(
+        chain,
+        get_session_history,
+        input_messages_key="input",
+        history_messages_key="chat_history",
+        output_messages_key="answer",
+    )
+    return conversational_rag_chain
+
+
+def create_conversational_rag_chain(llm, retriever, contex_q_prompt, qaprompt, store):
+    """
+    Compose all chains in a single function
+    Args:
+        llm: LLM model
+        retriever: retriever
+        contextualize_q_prompt: contextualize query prompt
+        qa_prompt: qa prompt
+        store: store
+    """
+    # create history aware retriever
+    history_aware_retriever = function_create_history_aware_retriever(
+        llm=llm,
+        retriever=retriever,
+        prompt=contex_q_prompt,
+    )
+
+    # create question_answer_chain
+    question_answer_chain = function_create_stuff_documents_chain(
+        llm=llm, prompt=qaprompt
+    )
+
+    # create retrieval chain
+    rag_chain = function_create_retrieval_chain(
+        chain=question_answer_chain,
+        retriever=history_aware_retriever,
+    )
+    # create runnable with message history
+    conversational_rag_chain = create_runnablewithmessagehistory(
+        store=store, chain=rag_chain
+    )
+    return conversational_rag_chain

@@ -68,7 +68,7 @@ def main():
             ),
             Section("Knowledge Base", "🩻"),
             Page(
-                "kb/kb_look.py",
+                "kb/kb_semantic_faiss.py",
                 "Search in KB",
                 "👀",
                 is_section=False,

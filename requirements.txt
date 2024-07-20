@@ -27,5 +27,8 @@ langchain-chroma
 google-ai-generativelanguage
 semanticscholar 
 langchainhub 
-google-generativeai==0.6.0
+google-generativeai
 langchain-google-community
+beautifulsoup4
+html2text
+faiss-cpu

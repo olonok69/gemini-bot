@@ -1,0 +1,29 @@
+sudo docker build --pull --rm --build-arg user_app=app -f "Dockerfile" -t gemini-bot:latest "."
+sudo docker run -p 8501:8501 -v "/home/olonok_gmail_com/prompts/table:/home/app/gemini/prompts/table" -v "/home/olonok_gmail_com/answers:/home/app/gemini/answers"  -v "/home/olonok_gmail_com/periciales/table:/home/app/gemini/pericial/table" gemini-bot:latest &
+
+
+sudo docker stop 2b9a362d1462
+
+sudo docker exec -it 2b9a362d1462 bash
+
+
+conductor camión mayor 30 dolores de espalda e historial alcoholismo# 5
+
+python -m streamlit run many_docs_2.py
+python -m streamlit run pages.py
+
+
+De este documento extrae como se determina el grado de minusvalía
+De este documento extrae la sección completa CODIFICACIÓN EN GRUPOS DE ORDENACIÓN
+De este documento extrae las INDEMNIZACIONES POR CAUSA DE MUERTE , en lo que se refiere a perjuicio personal particular
+
+
+hombre adulto mayor 50 con problemas alcohol  y profesión camionero o conductor con dolores de espalda#5
+
+
+
+Dame la sección completa, INDEMNIZACIONES POR CAUSA DE MUERTE PERJUICIO PERSONAL BÁSICO en la Categoría 1. El Cónyuge viudo,  según el Boletín Oficial del 2015?
+Y de la misma tabla Categoría 2. Los Ascendientes?
+De la misma tabla puedes darme la Categoría 3. Los Descendientes?
+De la misma tabla puedes darme la Categoría 4. Los Hermanos?
+Cambiamos de tema, me puedes decir que nos dice el Artículo 61 (literalmente). Valoración de las indemnizaciones por causa de muerte del mismo Boletín Oficial del 2015?
