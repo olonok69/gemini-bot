@@ -12,7 +12,7 @@ google-cloud-logging
 scikit-learn
 langchain-pinecone
 langchain 
-langchain-community
+langchain-community==0.2.6
 langchain-experimental 
 xmltodict
 pubmed-api
