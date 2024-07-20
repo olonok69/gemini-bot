@@ -106,7 +106,19 @@ def selected_file_kb(st):
     st.session_state["file_kb_faiss_selected"] = True
 
 
-def main(vectorstore, llm, col1, col2, onlyfiles, pname_no_case, df_answers_no_case):
+def main(vectorstore, llm, col1, col2, onlyfiles, fname, df, placeholder):
+    """
+    Main loop
+    Args:
+        st ([type]): session stramlit
+        model ([type]): llm
+        col1 ([type]): size col 1
+        col2 ([type]): size col 2
+        onlyfiles ([type]): list of files to fill selectbox
+        fname ([type]): name dataframe filename  final aswers
+        df ([type]): dataframe  final aswers
+        placeholder ([type]): conatiner to reset
+    """
 
     try:
 
@@ -122,7 +134,7 @@ def main(vectorstore, llm, col1, col2, onlyfiles, pname_no_case, df_answers_no_c
         init_session_faiss(st, col1, col2, llm)
         if st.session_state["llm"] == None:
             st.session_state["llm"] = llm
-
+        # Col 1 = row1_1
         with row1_1:
             seccion = st.selectbox(
                 "Selecciona fichero 👇",
@@ -143,6 +155,10 @@ def main(vectorstore, llm, col1, col2, onlyfiles, pname_no_case, df_answers_no_c
             query = st.text_input(
                 "Enter your intruction here 👇. To end conversation, write terminar# then number of answer to save or all, ex. terminar#1 or terminar#all"
             )
+            # if you press salir any time you close the conainer
+            if st.button("Salir"):
+                placeholder.empty()
+                st.stop()
             if (
                 st.session_state["select_file_faiss"] != None
                 and len(query) > 5
@@ -152,7 +168,7 @@ def main(vectorstore, llm, col1, col2, onlyfiles, pname_no_case, df_answers_no_c
                 and len(query) > 5
                 and not st.session_state["checkbox3"]
             ):
-
+                # Col 2 = row1_2
                 with row1_2:
                     if (
                         st.session_state["select_file_faiss"]
@@ -203,8 +219,8 @@ def main(vectorstore, llm, col1, col2, onlyfiles, pname_no_case, df_answers_no_c
                         if "terminar#" in query:  # end conversation
                             reload_page_kb_faiss(
                                 st,
-                                df_answers_no_case,
-                                pname_no_case,
+                                df,
+                                fname,
                                 query,
                                 placeholder_kb,
                             )
@@ -342,6 +358,7 @@ if __name__ == "__main__":
             col1=col1,
             col2=col2,
             onlyfiles=onlyfiles,
-            pname_no_case=pname_no_case,
-            df_answers_no_case=df_answers_no_case,
+            fname=pname_no_case,
+            df=df_answers_no_case,
+            placeholder=placeholder_kb,
         )

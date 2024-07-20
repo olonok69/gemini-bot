@@ -23,15 +23,15 @@ os.makedirs(DATA_DIR, exist_ok=True)
 fname, fname2, df = open_table_periciales(DATA_DIR)
 
 
-def main(embeddings, index, vectorstore):
+def main(embeddings, index, vectorstore, placeholder):
     """
     main function to add prompts
     params:
     embeddings (GoogleGenerativeAIEmbeddings): model to generate embeddings
     index (Pinecone.Index): vector store to save embeddings
     vectorstore (PineconeVectorStore): vector store to save embeddings
+    placeholder (str): application container
     """
-    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 
     if "embeddings" not in st.session_state:
         st.session_state["embeddings"] = embeddings
@@ -51,6 +51,10 @@ def main(embeddings, index, vectorstore):
         key="search_pericial",
         placeholder="Ejemplo: texto a buscar aqui y no puede haber este caracter-->#  10",
     )
+    # if salir kill container
+    if st.button("Salir"):
+        placeholder.empty()
+        st.stop()
 
     if len(title) > 0:
         seccion = st.selectbox(
@@ -94,33 +98,41 @@ if __name__ == "__main__":
     # read config from .env file
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
-    config = dotenv_values(os.path.join(path.parent.absolute(), "keys", ".env"))
-    # key access gemini
-    if "GOOGLE_API_KEY" not in os.environ:
-        os.environ["GOOGLE_API_KEY"] = config.get("GEMINI-API-KEY")
-    if "PINECONE_API_KEY" not in os.environ:
-        os.environ["PINECONE_API_KEY"] = config.get("PINECONE_API_KEY")
-    if "PINECONE_INDEX_NAME" not in os.environ:
-        os.environ["PINECONE_INDEX_NAME"] = "forensic"
-    # load GCP service account
-    with open(
-        os.path.join(
-            path.parent.absolute(), "keys", "complete-tube-421007-9a7c35cd44e2.json"
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    placeholder_search = st.empty()
+    with placeholder_search.container():
+        config = dotenv_values(os.path.join(path.parent.absolute(), "keys", ".env"))
+        # key access gemini
+        if "GOOGLE_API_KEY" not in os.environ:
+            os.environ["GOOGLE_API_KEY"] = config.get("GEMINI-API-KEY")
+        if "PINECONE_API_KEY" not in os.environ:
+            os.environ["PINECONE_API_KEY"] = config.get("PINECONE_API_KEY")
+        if "PINECONE_INDEX_NAME" not in os.environ:
+            os.environ["PINECONE_INDEX_NAME"] = "forensic"
+        # load GCP service account
+        with open(
+            os.path.join(
+                path.parent.absolute(), "keys", "complete-tube-421007-9a7c35cd44e2.json"
+            )
+        ) as source:
+            info = json.load(source)
+        # Login to Vertex AI
+        vertex_credentials = service_account.Credentials.from_service_account_info(info)
+        vertexai.init(
+            project=config["PROJECT"],
+            location=config["REGION"],
+            credentials=vertex_credentials,
         )
-    ) as source:
-        info = json.load(source)
-    # Login to Vertex AI
-    vertex_credentials = service_account.Credentials.from_service_account_info(info)
-    vertexai.init(
-        project=config["PROJECT"],
-        location=config["REGION"],
-        credentials=vertex_credentials,
-    )
-    # get embeddings model
-    embeddings = get_embeddings_model(model_name=config.get("EMBEDDINGS"))
-    # get Pinecone objects
-    index, vectorstore = get_pinecone_objects(
-        config=config, embeddings=embeddings, index_name="forensic"
-    )
+        # get embeddings model
+        embeddings = get_embeddings_model(model_name=config.get("EMBEDDINGS"))
+        # get Pinecone objects
+        index, vectorstore = get_pinecone_objects(
+            config=config, embeddings=embeddings, index_name="forensic"
+        )
 
-    main(embeddings, index, vectorstore)
+        main(
+            embeddings=embeddings,
+            index=index,
+            vectorstore=vectorstore,
+            placeholder=placeholder_search,
+        )

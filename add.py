@@ -16,10 +16,6 @@ from src.files import (
 )
 from src.maintenance import visualiza_add_prompt, visualiza_add_pericial, selected_add
 
-
-# setup page
-st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Create folders
@@ -31,7 +27,7 @@ DATA_DIR = os.path.join(ROOT_DIR, "pericial", "table")
 pname, name2, df_pericial = open_table_periciales(DATA_DIR)
 
 
-def main(options, embeddings, index, vectorstore):
+def main(options, embeddings, index, vectorstore, placeholder):
     """
     Main function
     Argr:
@@ -39,7 +35,11 @@ def main(options, embeddings, index, vectorstore):
         embeddings: embeddings model
         index: pinecone index
         vectorstore: pinecone vectorstore
+        placeholder: placeholder for the app
     """
+    if st.button("Salir"):
+        placeholder.empty()
+        st.stop()
     if "selector_selected_add" not in st.session_state:
         st.session_state["selector_selected_add"] = False
 
@@ -74,32 +74,42 @@ if __name__ == "__main__":
     # access to keys and service account
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
-    config = dotenv_values(os.path.join(ROOT_DIR, "keys", ".env"))
-    with open(
-        os.path.join(ROOT_DIR, "keys", "complete-tube-421007-9a7c35cd44e2.json")
-    ) as source:
-        info = json.load(source)
-    # Initialize vertex ai
-    vertex_credentials = service_account.Credentials.from_service_account_info(info)
-    vertexai.init(
-        project=config["PROJECT"],
-        location=config["REGION"],
-        credentials=vertex_credentials,
-    )
-    # key access gemini
-    if "GOOGLE_API_KEY" not in os.environ:
-        os.environ["GOOGLE_API_KEY"] = config.get("GEMINI-API-KEY")
-    if "PINECONE_API_KEY" not in os.environ:
-        os.environ["PINECONE_API_KEY"] = config.get("PINECONE_API_KEY")
-    if "PINECONE_INDEX_NAME" not in os.environ:
-        os.environ["PINECONE_INDEX_NAME"] = "forensic"
+    # Set page layout
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    placeholder_add = st.empty()
+    with placeholder_add.container():
+        config = dotenv_values(os.path.join(ROOT_DIR, "keys", ".env"))
+        with open(
+            os.path.join(ROOT_DIR, "keys", "complete-tube-421007-9a7c35cd44e2.json")
+        ) as source:
+            info = json.load(source)
+        # Initialize vertex ai
+        vertex_credentials = service_account.Credentials.from_service_account_info(info)
+        vertexai.init(
+            project=config["PROJECT"],
+            location=config["REGION"],
+            credentials=vertex_credentials,
+        )
+        # key access gemini
+        if "GOOGLE_API_KEY" not in os.environ:
+            os.environ["GOOGLE_API_KEY"] = config.get("GEMINI-API-KEY")
+        if "PINECONE_API_KEY" not in os.environ:
+            os.environ["PINECONE_API_KEY"] = config.get("PINECONE_API_KEY")
+        if "PINECONE_INDEX_NAME" not in os.environ:
+            os.environ["PINECONE_INDEX_NAME"] = "forensic"
 
-    # configure embeddings and Pinecone vectorstore
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+        # configure embeddings and Pinecone vectorstore
+        embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
 
-    pc = Pinecone(api_key=config.get("PINECONE_API_KEY"))
-    index = pc.Index("forensic")
+        pc = Pinecone(api_key=config.get("PINECONE_API_KEY"))
+        index = pc.Index("forensic")
 
-    vectorstore = PineconeVectorStore(embedding=embeddings, index_name="forensic")
-    # call to main
-    main(options=options, embeddings=embeddings, index=index, vectorstore=vectorstore)
+        vectorstore = PineconeVectorStore(embedding=embeddings, index_name="forensic")
+        # call to main
+        main(
+            options=options,
+            embeddings=embeddings,
+            index=index,
+            vectorstore=vectorstore,
+            placeholder=placeholder_add,
+        )
