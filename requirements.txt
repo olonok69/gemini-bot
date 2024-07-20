@@ -25,7 +25,6 @@ langchainhub
 lark
 langchain-chroma
 google-ai-generativelanguage
-semanticscholar 
 langchainhub 
 google-generativeai
 langchain-google-community
