@@ -6,6 +6,7 @@ prompts/table/
 out/
 tmp/
 kb/chroma_db/
+kb/faiss/
 kb/docs/
 chroma_db/chroma.sqlite3
 pericial/table

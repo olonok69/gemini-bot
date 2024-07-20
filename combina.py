@@ -86,6 +86,7 @@ def reload_page(st, model, embeddings, index, vectorstore, fname, df, placeholde
     chat = start_chat(model)
     reset_session_visualiza(st, model, embeddings, index, vectorstore)
     placeholder.empty()
+    st.stop()
     return
 
 

@@ -2,7 +2,9 @@ FROM python:3.11-slim
 
 # USER to Run this docker
 ARG user_app
+
 ENV USER_APP $user_app
+ENV FAISS_ENABLE_GPU ON
 # Install necessary packages
 RUN apt-get update && apt-get -y upgrade \
     && apt-get install -y libsm6 libxext6 git net-tools  python3-magic nano iputils-ping procps \
@@ -22,6 +24,7 @@ COPY ./requirements.txt /home/${USER_APP}/gemini/requirements.txt
 
 
 RUN pip install -r /home/${USER_APP}/gemini/requirements.txt
+
 COPY . .
 
 RUN chown -R ${USER_APP}:${USER_APP} /home/${USER_APP}/gemini 

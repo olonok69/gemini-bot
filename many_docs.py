@@ -60,6 +60,7 @@ def reload_page(st, ss, model, df, fname, placeholder):
     chat = start_chat(model)
     reset_session_multi(st, ss, chat)
     placeholder.empty()
+    st.stop()
     return
 
 

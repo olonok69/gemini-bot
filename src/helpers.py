@@ -366,6 +366,87 @@ def reset_session_visualiza(st, model, embeddings, index, vectorstore):
     return
 
 
+def init_session_faiss(st, col1, col2, llm):
+    """
+    initialize session state busqueda faiss
+    param: st  session
+    param: ss  session state
+    param: model  chat (gemini model)
+    """
+    # Initialize Vars
+    if "user_prompt_history_faiss" not in st.session_state:
+        st.session_state["user_prompt_history_faiss"] = []
+    if "chat_answers_history_faiss" not in st.session_state:
+        st.session_state["chat_answers_history_faiss"] = []
+    if "chat_history_faiss" not in st.session_state:
+        st.session_state["chat_history_faiss"] = []
+    if "initialized_faiss" not in st.session_state:
+        st.session_state["initialized_faiss"] = "False"
+    if "checkbox3" not in st.session_state:
+        st.session_state["checkbox3"] = False
+    if "store" not in st.session_state:
+        st.session_state["store"] = {}
+    if "expander_4" not in st.session_state:
+        st.session_state["expander_4"] = True
+    if "history_conversation_with_model" not in st.session_state:
+        st.session_state["history_conversation_with_model"] = []
+    if "buttom_visualiza_faiss_clicked" not in st.session_state:
+        st.session_state["buttom_visualiza_faiss_clicked"] = False
+    if "docs_context_names" not in st.session_state:
+        st.session_state["docs_context_names"] = []
+    if "docs_context" not in st.session_state:
+        st.session_state["docs_context"] = []
+    if "current_prompt" not in st.session_state:
+        st.session_state["current_prompt"] = ""
+    if "answer_prompt" not in st.session_state:
+        st.session_state["answer_prompt"] = ""
+    if "file_faiss_selected" not in st.session_state:
+        st.session_state["file_faiss_selected"] = False
+    if "file_kb_faiss_selected" not in st.session_state:
+        st.session_state["file_kb_faiss_selected"] = False
+    if "name_file_kb_faiss_selected" not in st.session_state:
+        st.session_state["name_file_kb_faiss_selected"] = "None"
+    if "kb_faiss_retriever" not in st.session_state:
+        st.session_state["kb_faiss_retriever"] = None
+    if "llm" not in st.session_state:
+        st.session_state["llm"] = llm
+    if "conversational_rag_chain" not in st.session_state:
+        st.session_state["conversational_rag_chain"] = None
+
+    st.session_state["init_run_faiss"] = True
+    return
+
+
+def reset_session_faiss(st):
+    """
+    initialize session state busqueda faiss
+    param: st  session
+    """
+    # Initialize Vars
+
+    st.session_state["user_prompt_history_faiss"] = []
+    st.session_state["chat_answers_history_faiss"] = []
+    st.session_state["chat_history_faiss"] = []
+    st.session_state["initialized_faiss"] = "False"  #
+    st.session_state["checkbox3"] = False
+    st.session_state["store"] = {}
+    st.session_state["expander_4"] = True
+    st.session_state["history_conversation_with_model"] = []
+    st.session_state["buttom_visualiza_faiss_clicked"] = False
+    st.session_state["docs_context_names"] = []
+    st.session_state["docs_context"] = []
+    st.session_state["current_prompt"] = ""
+    st.session_state["answer_prompt"] = ""
+    st.session_state["file_faiss_selected"] = False
+    st.session_state["file_kb_faiss_selected"] = False
+    st.session_state["name_file_kb_faiss_selected"] = "None"
+    st.session_state["kb_faiss_retriever"] = None
+    st.session_state["init_run_faiss"] = True
+    st.session_state["llm"] = None
+    st.session_state["conversational_rag_chain"] = None
+    return
+
+
 @st.experimental_dialog("Choose prompt 👇")
 def visualiza(st, path):
     file = st.session_state["select_box"]

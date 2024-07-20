@@ -71,6 +71,7 @@ def reload_page_1_doc(st, ss, model, df_answers, pname, placeholder):
     files = [f.unlink() for f in Path(f"{OUT_FOLDER}").glob("*") if f.is_file()]
 
     placeholder.empty()
+    st.stop()
     return
 
 
@@ -145,7 +146,7 @@ def main(model, col1, col2):
                             placeholder="Selecciona paginas seguidas por comas. Ejemplo 1,3,4,5",
                             disabled=st.session_state["buttom_send_not_clicked"],
                         )
-
+                        # if page select TODO control that page is all or a number
                         if page_select and st.session_state.value >= 1:
                             st.session_state.value = 2  # pages selected
                             st.session_state["upload_state"] = (
