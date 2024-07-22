@@ -21,6 +21,7 @@ from src.helpers import (
     reset_session_visualiza,
     init_visualiza,
     save_df_many,
+    reload_page_combina,
 )
 from src.work_gemini import init_model, start_chat, get_chat_response
 from pericial.gemini_fn import (
@@ -53,43 +54,8 @@ def concat_date_row(row):
     return f"{row['filename']} - {row['timestamp']}"
 
 
+# create list of files and answers concatenate filename + timestamp
 df_answers["file_and_answer"] = df_answers.apply(concat_date_row, axis=1)
-
-
-def reload_page_combina(
-    st, model, embeddings, index, vectorstore, fname, df, placeholder
-):
-    """
-    refresh page and initialize variables
-    Args:
-        st ([type]): session stramlit
-        model ([type]): llm
-        embeddings ([type]): llm embeddings
-        index ([type]): index pinecone
-        vectorstore ([type]): vectorstore pinecone
-        fname ([type]): name dataframe filename  final aswers
-        df ([type]): dataframe  final aswers
-        placeholder ([type]): conatiner to reset
-    """
-    # delete files
-    # write response of model to table
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
-    # get filename
-    filename = st.session_state["prompt_combined_filename"]
-    # save the response of Model
-    save_df_many(
-        list2=list2,
-        df=df,
-        fname=fname,
-        prompt=st.session_state["prompt_introduced"],
-        filename=filename,
-    )
-    # restart chat
-    chat = start_chat(model)
-    reset_session_visualiza(st, model, embeddings, index, vectorstore)
-    placeholder.empty()
-    st.stop()
-    return
 
 
 def main(model, embeddings, index, vectorstore, col1, col2, placeholder):

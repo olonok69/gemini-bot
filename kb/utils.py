@@ -10,6 +10,48 @@ def load_file(path):
     return pages
 
 
+def get_docs_to_add_vectorstore_faiss(pages, file, category="legal"):
+    """
+    get components to add to Faiss
+    Args:
+        pages (_type_): Langchain Documents
+        file (_type_): name of file
+        category (str, optional): _description_. Defaults to "legal".
+    Returns:
+        documents, ids, metadatas
+    """
+    # get components to add to Faiss
+    documents = []
+    ids = []
+    metadatas = []
+
+    for page in pages:
+
+        metadatas.append(
+            {"page": page.metadata.get("page"), "filename": file, "category": category}
+        )
+        ids.append(uuid.uuid1().hex)
+        documents.append(page.page_content)
+
+    return documents, ids, metadatas
+
+
+def add_new_documents_to_faiss(st, documents, ids, metadatas):
+    """
+    add new documents to Faiss
+    Args:
+        documents (_type_): list of documents
+        ids (_type_): list of ids
+        metadatas (_type_): list of metadatas
+
+    """
+    # add new documents to Faiss
+    st.session_state["faiss_vectorstore"].add_texts(
+        texts=documents, ids=ids, metadatas=metadatas
+    )
+    return st.session_state["faiss_vectorstore"].index.ntotal
+
+
 def get_docs_to_add_vectorstore(pages, file, google_ef):
     # get components to add to Chroma
     documents = []

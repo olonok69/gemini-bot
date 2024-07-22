@@ -15,3 +15,7 @@ pericial/table
 pericial/table/periciales.csv
 prompts/table/prompts.csv
 archive/commands.txt
+kb/faiss2/forensic.faiss
+kb/faiss2/forensic.pkl
+kb/prompts/table/prompts_backup.csv
+kb/prompts/table/prompts.csv

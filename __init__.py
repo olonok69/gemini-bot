@@ -17,6 +17,9 @@ from .src.helpers import (
     init_visualiza,
     init_session_faiss,
     reset_session_faiss,
+    reload_page_combina,
+    init_session_add_kb,
+    reset_session_add_kb,
 )
 from .src.utils import print_stack, create_client_logging
 from .pericial.gemini_fn import (
@@ -88,4 +91,9 @@ from .src.maintenance import (
 )
 
 from .kb.controls import visualiza_context_faiss
-from .kb.utils import sumup_history, update_list_answers_queries
+from .kb.utils import (
+    sumup_history,
+    update_list_answers_queries,
+    get_docs_to_add_vectorstore_faiss,
+    add_new_documents_to_faiss,
+)

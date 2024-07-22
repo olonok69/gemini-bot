@@ -17,6 +17,9 @@ from .helpers import (
     init_visualiza,
     init_session_faiss,
     reset_session_faiss,
+    reload_page_combina,
+    init_session_add_kb,
+    reset_session_add_kb,
 )
 from .utils import print_stack, create_client_logging
 from .files import (
