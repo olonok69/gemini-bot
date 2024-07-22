@@ -9,6 +9,7 @@ from src.files import (
     open_table_answers_final,
     file_selector,
     open_table_periciales,
+    open_table_answers_no_case,
 )
 import pandas as pd
 from dotenv import dotenv_values
@@ -44,6 +45,10 @@ OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(ROO
 pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
 # open table answer final
 pfname, pfname2, df_answers_final = open_table_answers_final(ANSWERS_DIR)
+# open table answer final no case
+pname_no_case, pname2_no_case, df_answers_no_case = open_table_answers_no_case(
+    ANSWERS_DIR
+)
 # open periciales table
 DATA_DIR = os.path.join(ROOT_DIR, "pericial", "table")
 fname, fname2, df = open_table_periciales(DATA_DIR)
@@ -55,7 +60,9 @@ def concat_date_row(row):
 
 
 # create list of files and answers concatenate filename + timestamp
-df_answers["file_and_answer"] = df_answers.apply(concat_date_row, axis=1)
+df_answers_no_case["file_and_answer"] = df_answers_no_case.apply(
+    concat_date_row, axis=1
+)
 
 
 def main(model, embeddings, index, vectorstore, col1, col2, placeholder):
@@ -87,7 +94,7 @@ def main(model, embeddings, index, vectorstore, col1, col2, placeholder):
         if st.button("Salir"):
             placeholder.empty()
             st.stop()
-        selection_dict = file_selector(st, df_answers)
+        selection_dict = file_selector(st, df_answers_no_case)
         if (
             len(selection_dict.keys()) >= 5
             and st.session_state["file_prompt_selected_visualiza"] == False

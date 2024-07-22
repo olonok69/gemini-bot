@@ -24,4 +24,9 @@ from .chains import (
 
 from .controls import visualiza_context_faiss
 
-from .utils import sumup_history, update_list_answers_queries
+from .utils import (
+    sumup_history,
+    update_list_answers_queries,
+    get_docs_to_add_vectorstore_faiss,
+    add_new_documents_to_faiss,
+)

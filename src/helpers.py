@@ -171,6 +171,66 @@ def init_session_1_prompt(st, ss, model, col1, col2):
     return
 
 
+def init_session_add_kb(st, ss, vectorstore):
+    """
+    initialize session state for multiple files option
+    param: st  session
+    param: ss  session state
+    param: vectorstore  faiss vector store
+    """
+    # placeholder for multiple files
+    if "file_name" not in st.session_state:
+        st.session_state["file_name"] = "no file"
+    if "file_history" not in st.session_state:
+        st.session_state["file_history"] = "no file"
+    if "upload_state" not in st.session_state:
+        st.session_state["upload_state"] = ""
+    if "faiss_vectorstore" not in st.session_state:
+        st.session_state["faiss_vectorstore"] = vectorstore
+    if "pages" not in st.session_state:
+        st.session_state["pages"] = []
+    if "documents" not in st.session_state:
+        st.session_state["documents"] = []
+    if "ids" not in st.session_state:
+        st.session_state["ids"] = []
+    if "metadatas" not in st.session_state:
+        st.session_state["metadatas"] = []
+    if "pdf_ref" not in ss:
+        ss.pdf_ref = None
+    if "value" not in st.session_state:
+        st.session_state.value = 0
+
+    if "add_file_kb_selected" not in st.session_state:
+        st.session_state["add_file_kb_selected"] = False
+
+    st.session_state["init_run_add_kb"] = True
+    return
+
+
+def reset_session_add_kb(st, ss):
+    """
+    initialize session state for multiple files option
+    param: st  session
+    param: ss  session state
+    param: vectorstore  faiss vector store
+    """
+    # placeholder for multiple files
+
+    st.session_state["file_name"] = "no file"
+    st.session_state["file_history"] = "no file"
+    st.session_state["upload_state"] = ""
+    st.session_state["faiss_vectorstore"] = None
+    st.session_state["pages"] = []
+    st.session_state["documents"] = []
+    st.session_state["ids"] = []
+    st.session_state["metadatas"] = []
+    ss.pdf_ref = None
+    st.session_state.value = 0
+    st.session_state["add_file_kb_selected"] = False
+    st.session_state["init_run_add_kb"] = True
+    return
+
+
 def reset_session_multi(st, ss, chat):
     """
     Reset session
@@ -639,4 +699,39 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
 
         st.rerun()
 
+    return
+
+
+def reload_page_combina(
+    st, model, embeddings, index, vectorstore, fname, df, placeholder
+):
+    """
+    refresh page and initialize variables
+    Args:
+        st ([type]): session stramlit
+        model ([type]): llm
+        embeddings ([type]): llm embeddings
+        index ([type]): index pinecone
+        vectorstore ([type]): vectorstore pinecone
+        fname ([type]): name dataframe filename  final aswers
+        df ([type]): dataframe  final aswers
+        placeholder ([type]): conatiner to reset
+    """
+    # delete files
+    # write response of model to table
+    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    # get filename
+    filename = st.session_state["prompt_combined_filename"]
+    # save the response of Model
+    save_df_many(
+        list2=list2,
+        df=df,
+        fname=fname,
+        prompt=st.session_state["prompt_introduced"],
+        filename=filename,
+    )
+    # restart
+    reset_session_visualiza(st, model, embeddings, index, vectorstore)
+    placeholder.empty()
+    st.stop()
     return
