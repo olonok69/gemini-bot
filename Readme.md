@@ -22,8 +22,8 @@ Home
 ![alt text](docs/images/home.png)
 
 Main Sections
-- Maintenance: We can add , modify and delete entries in the tables Propmts, Forensic reports and Gemini Answers.
-- Chat Gemini: Here we interact with the model:
+- Maintenance [here](docs/maintenance.md) : We can add , modify and delete entries in the tables Propmts, Forensic reports and Gemini Answers.
+- Chat Gemini [here](docs/chat_gemini.md): Here we interact with the model:
     - 1 Doc+ Prompt: Here you can use a Document (PDF) and a Prompt (from our table or you can write one) to extract and format the content of the document. We use this option to extract the factual information we got from patients in form or medical reports , prescriptions etc. You Interacts with the llm in a Multimodal Chabot Conversation and refine the answer provided by the model. When you are satisfaced with the answer you can save the answers provided by Gemini or abamdone.
     - 1 + Documents:  Here you can use multiple documents related to a case or any other topic like medical research or law to dialog with the LLM to extract relevant information. You can decide if later apply the answer/extraction to a case or no. Also you can decide if save the conversation or no.
     - Combine periciales: Here you can combine the Gemini Answers you got in the previous two options with past forensic reports. These past forensic reports are kept in a pinecone vectore store colection. You can query the vector Store using Natural Language to find a previous report which suit with the current case you are working on. When you made a search you receive top 5 most similar reports and you can look at their content to decide if that can be use as example. 
