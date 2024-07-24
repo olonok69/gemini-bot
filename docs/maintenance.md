@@ -1,5 +1,6 @@
 # Seccion Maintenance
-
+ We can add , modify and delete entries in the tables Propmts, Forensic reports and Gemini Answers.
+ 
 ## Add Entrance
 
 ![alt text](images/add.png)

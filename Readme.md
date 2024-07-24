@@ -34,8 +34,8 @@ Main Sections
         - Medico-Legal Considerations: Medical Regulations and Law Framework that apply to the case.
         - Conclusions: Final conclusion for this case. Usually 3 to 4 bulletpoints as summary for the court.
     - Combine KB: Here you can combine Gemini Answers which are not extracted from case documents (like extracted from medical Research, legislation or other) with Previous Forensic Reports. Same than previous but here we combine the sections with External Information we got either from our Knowledge Base or from a extraction in a conversation with Gemini. ALso posible to add information we get from Pubmed or Google Scholar (This need a refinement).
-- Periciales: Here we can query our Forensic vector store and visualize reports sections.
-- Knowledge Base:
+- Periciales [here](docs/Periciales.md): Here we can query our Forensic vector store and visualize reports sections.
+- Knowledge Base [here](docs/KB.md):
     - Search in KB: Here we have created a Knowledge Base from documents. We Initially have upload all legislation and Law that apply to Forensic Medicine into a category, but we can upload documents to other sections. Here you Interact with the model in a conversation and you can decide at the end if to save the whole conversation (only Gemini anwers) or only a part to later use it in combine with your current case.
     - Google Scholar: Here we look for relevant Documents, Research and Information related to Medical Conditions , rare topics, law or anything that the Doctor need to support the case in Google Sholar and Google.
     - Pubmed : Here we do the same than with Google Scholar, but in Pubmed. This section is temporarily hide due to redesing.
