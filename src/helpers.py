@@ -9,6 +9,7 @@ import datetime
 from typing import List
 from src.work_gemini import start_chat
 from src.pdf_utils import count_pdf_pages, upload
+from pathlib import Path
 
 
 def write_history_1(st):
@@ -115,6 +116,43 @@ def reset_session_1(st, ss, chat):
     st.session_state["vcol2doc"] = 60
     st.session_state["expander_2"] = True
 
+    return
+
+
+def reload_page_1_doc(
+    st, ss, model, df_answers, pname, placeholder, tmp_folder, out_folder
+):
+    """
+    reload page
+    params:
+    st (streamlit): streamlit object
+    ss (streamlit.session_state): streamlit session state
+    model (vertexai.generative_models.GenerativeModel): model
+    df_answers (pd.DataFrame): dataframe with all answers
+
+    """
+    # delete files
+    # write_history_1(st)
+    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    # get filename
+    filename = st.session_state["file_history"]
+    # save the response of Model
+    save_df_many(
+        list2=list2,
+        df=df_answers,
+        fname=pname,
+        prompt=st.session_state["prompt_introduced"],
+        filename=filename,
+    )
+
+    chat = start_chat(model)
+    reset_session_1(st, ss, chat)
+    # delete files in temp
+    _ = [f.unlink() for f in Path(f"{tmp_folder}").glob("*") if f.is_file()]
+    _ = [f.unlink() for f in Path(f"{out_folder}").glob("*") if f.is_file()]
+
+    placeholder.empty()
+    st.stop()
     return
 
 
@@ -318,6 +356,46 @@ def init_session_multi(st, ss, model, col1, col2):
         st.session_state["case_query"] = False
     st.session_state["init_run_2"] = True
     return
+
+
+def reload_page_many_docs(st, ss, model, df, fname, placeholder):
+    """
+    refresh page and initialize variables page may docs
+    Args:
+        st ([type]): session stramlit
+        model ([type]): llm
+        fname ([type]): name dataframe filename  final aswers
+        df ([type]): dataframe  final aswers
+        placeholder ([type]): conatiner to reset
+    """
+    # delete files
+    # write response of model to table
+    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    # get filename
+    filename = get_filename_multi(st)
+    # save the response of Model
+    save_df_many(
+        list2=list2,
+        df=df,
+        fname=fname,
+        prompt=st.session_state["prompt_introduced"],
+        filename=filename,
+    )
+    # restart chat
+    chat = start_chat(model)
+    reset_session_multi(st, ss, chat)
+    placeholder.empty()
+
+    st.stop()
+    return
+
+
+def change_status(st, status):
+    """
+    change status of session state
+    """
+    st.session_state.value = status
+    st.session_state["prompt_enter_press"] = True
 
 
 def init_visualiza(st, model, embeddings, index, vectorstore, col1, col2):

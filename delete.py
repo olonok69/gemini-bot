@@ -3,7 +3,6 @@ import os
 from pathlib import Path
 import json
 from dotenv import dotenv_values
-from pericial.gemini_fn import secciones
 from google.oauth2 import service_account
 import vertexai
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
@@ -29,6 +28,7 @@ from src.maintenance import (
     visualiza_delete_answer_gemini_no_case,
 )
 
+#### OPEN all necesary Tables
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Create folders
@@ -38,13 +38,10 @@ fname, fname2, df_prompts = open_table_prompts(PROMPTS_DIR)
 # open periciales table
 DATA_DIR = os.path.join(ROOT_DIR, "pericial", "table")
 pname, name2, df_pericial = open_table_periciales(DATA_DIR)
-
 # open table with all prompts
 paname, paname2, df_answers = open_table_answers(ANSWERS_DIR)
 # open table answer final
 pfname, pfname2, df_answers_final = open_table_answers_final(ANSWERS_DIR)
-
-
 # all names of the prompts
 onlyfiles_prompts = df_prompts["name_prompt"].to_list()
 # all names of the perciales
@@ -55,15 +52,12 @@ onlyfiles_anwers_gemini2 = df_answers["filename"].to_list()
 onlyfiles_anwers_gemini3 = df_answers["timestamp"].to_list()
 onlyfiles_anwers_gemini4 = []
 for x, y in zip(onlyfiles_anwers_gemini2, onlyfiles_anwers_gemini3):
-
     onlyfiles_anwers_gemini4.append(x + "_" + y)
-
 
 # No case
 pname_no_case, pname2_no_case, df_answers_no_case = open_table_answers_no_case(
     ANSWERS_DIR
 )
-
 onlyfiles_anwers_gemini2_nocase = df_answers_no_case["filename"].to_list()
 onlyfiles_anwers_gemini3_nocase = df_answers_no_case["timestamp"].to_list()
 onlyfiles_anwers_gemini4_nocase = []
@@ -119,7 +113,7 @@ def main(options, embeddings, index, vectorstore, placeholder):
     if st.session_state["selector_selected_delete"] == True:
         if st.session_state.select_box_delete == "Prompts":
             # fname, fname2, df_prompts
-            option = st.selectbox(
+            _ = st.selectbox(
                 "select prompt 👇",
                 onlyfiles_prompts,
                 on_change=selected_delete_prompt,
@@ -131,7 +125,7 @@ def main(options, embeddings, index, vectorstore, placeholder):
 
         elif st.session_state.select_box_delete == "Periciales":
             # pname, name2, df_pericial
-            option_pericial = st.selectbox(
+            _ = st.selectbox(
                 "select pericial 👇",
                 onlyfiles_periciales,
                 on_change=selected_delete_percial,
@@ -146,7 +140,7 @@ def main(options, embeddings, index, vectorstore, placeholder):
                 )
         elif st.session_state.select_box_delete == "Answer_gemini":
             # pname, name2, df_pericial
-            option_pericial = st.selectbox(
+            _ = st.selectbox(
                 "select answer from gemini 👇",
                 onlyfiles_anwers_gemini4,
                 on_change=selected_delete_answer_gemini,
@@ -158,7 +152,7 @@ def main(options, embeddings, index, vectorstore, placeholder):
 
         elif st.session_state.select_box_delete == "Answer_gemini_no_case":
             # pname, name2, df_pericial
-            option_pericial_no_case = st.selectbox(
+            _ = st.selectbox(
                 "select answer from gemini 👇",
                 onlyfiles_anwers_gemini4_nocase,
                 on_change=selected_delete_answer_gemini_nocase,

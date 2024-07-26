@@ -22,7 +22,7 @@ from src.maintenance import (
     visualiza_pericial_modifica,
 )
 
-
+# Read all Dataframe need in this page
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Create folders
@@ -32,7 +32,6 @@ fname, fname2, df_prompts = open_table_prompts(PROMPTS_DIR)
 # open periciales table
 DATA_DIR = os.path.join(ROOT_DIR, "pericial", "table")
 pname, name2, df_pericial = open_table_periciales(DATA_DIR)
-
 # all names of the prompts
 onlyfiles_prompts = df_prompts["name_prompt"].to_list()
 # all names of the perciales
@@ -51,16 +50,14 @@ def main(options, embeddings, index, vectorstore, placeholder):
     """
     if st.button("Salir"):
         placeholder.empty()
+        st.empty()
         st.stop()
     if "selector_selected_modifica" not in st.session_state:
         st.session_state["selector_selected_modifica"] = False
-
     if "selector_selected_section" not in st.session_state:
         st.session_state["selector_selected_section"] = False
-
     if "selector_selected_pericial" not in st.session_state:
         st.session_state["selector_selected_pericial"] = False
-
     if "embeddings" not in st.session_state:
         st.session_state["embeddings"] = embeddings
     if "index" not in st.session_state:
@@ -68,6 +65,7 @@ def main(options, embeddings, index, vectorstore, placeholder):
     if "vectorstore" not in st.session_state:
         st.session_state["vectorstore"] = vectorstore
 
+    # select which type of document to modify
     selector1 = st.selectbox(
         "Select type of document to modify. Pericial or Prompt to extract Information from document 👇",
         options,
@@ -114,6 +112,7 @@ if __name__ == "__main__":
     path = Path(ROOT_DIR)
     # Set page layout
     st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    # create container to hold all components of this page
     placeholder_modifica = st.empty()
     with placeholder_modifica.container():
         config = dotenv_values(os.path.join(ROOT_DIR, "keys", ".env"))
@@ -138,10 +137,8 @@ if __name__ == "__main__":
 
         # configure embeddings and Pinecone vectorstore
         embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-
         pc = Pinecone(api_key=config.get("PINECONE_API_KEY"))
         index = pc.Index("forensic")
-
         vectorstore = PineconeVectorStore(embedding=embeddings, index_name="forensic")
         # call to main
         main(
