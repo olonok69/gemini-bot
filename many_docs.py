@@ -3,18 +3,16 @@ import os.path
 from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages, upload_files
 from google.oauth2 import service_account
-from streamlit_js_eval import streamlit_js_eval
 import vertexai
 from vertexai.generative_models import GenerativeModel
 import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
-from src.work_gemini import get_chat_response, prepare_prompt, start_chat
+from src.work_gemini import get_chat_response, prepare_prompt
 from src.helpers import (
-    reset_session_multi,
     init_session_multi,
-    save_df_many,
-    get_filename_multi,
+    reload_page_many_docs,
+    change_status,
 )
 from src.utils import create_client_logging, print_stack
 from src.files import open_table_answers, create_folders, open_table_answers_no_case
@@ -31,45 +29,6 @@ pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
 pname_no_case, pname2_no_case, df_answers_no_case = open_table_answers_no_case(
     ANSWERS_DIR
 )
-
-
-def reload_page(st, ss, model, df, fname, placeholder):
-    """
-    refresh page and initialize variables
-    Args:
-        st ([type]): session stramlit
-        model ([type]): llm
-        fname ([type]): name dataframe filename  final aswers
-        df ([type]): dataframe  final aswers
-        placeholder ([type]): conatiner to reset
-    """
-    # delete files
-    # write response of model to table
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
-    # get filename
-    filename = get_filename_multi(st)
-    # save the response of Model
-    save_df_many(
-        list2=list2,
-        df=df,
-        fname=fname,
-        prompt=st.session_state["prompt_introduced"],
-        filename=filename,
-    )
-    # restart chat
-    chat = start_chat(model)
-    reset_session_multi(st, ss, chat)
-    placeholder.empty()
-    st.stop()
-    return
-
-
-def change_status(st, status):
-    """
-    change status of session state
-    """
-    st.session_state.value = status
-    st.session_state["prompt_enter_press"] = True
 
 
 def main(model, col1, col2, placeholder):
@@ -92,7 +51,7 @@ def main(model, col1, col2, placeholder):
             st.session_state["init_run_2"] = False
         if st.session_state["init_run_2"] == False:
             init_session_multi(st, ss, model, col1, col2)
-
+        # Col 1 Upload file and write prompt
         with row1_1:
             # if salir kill placeholder
             if st.button("Salir"):
@@ -116,6 +75,7 @@ def main(model, col1, col2, placeholder):
                     # To read file as bytes:
                     for file in uploaded_files:
                         im_bytes = file.read()
+                        # save file in tmp folder
                         file_path = f"{TMP_FOLDER}/{file.name}"
                         with open(file_path, "wb") as f:
                             f.write(im_bytes)
@@ -129,6 +89,7 @@ def main(model, col1, col2, placeholder):
                             ss.pdf_ref = im_bytes
 
                     texto = ""
+                    # write in status Area Text
                     for i, j in zip(
                         st.session_state["multi_file_name"],
                         st.session_state["multi_file_pages"],
@@ -143,8 +104,7 @@ def main(model, col1, col2, placeholder):
         if ss.pdf_ref:
             with row1_1:
                 if st.session_state.value >= 1:
-                    binary_data = ss.pdf_ref
-
+                    # if file uploaded
                     if len(
                         st.session_state["multi_file_name"]
                     ) > 0 and st.session_state.value in [1, 2, 3]:
@@ -154,6 +114,7 @@ def main(model, col1, col2, placeholder):
                             key="introduce_prompt",
                             disabled=st.session_state["buttom_send_not_clicked"],
                         )
+                        # checkbox  to decide if the answer go to case or not
                         checkbox1 = st.checkbox("Case Query")
                         if checkbox1:
                             st.session_state["case_query"] = True
@@ -165,12 +126,13 @@ def main(model, col1, col2, placeholder):
                             logging.info(
                                 f"Gemini multi Page: Intruccion introduced, session state {st.session_state.value}"
                             )
+                            # call upload fuction to read the pdf file
                             upload_files(st)
                             st.session_state["upload_state"] = (
                                 f"Instruccion introducida\n{introduce_prompt}"
                             )
                             st.session_state["prompt_introduced"] = introduce_prompt
-
+                            # send not clicked but send file and initial prompt to Gemini
                             if (
                                 st.session_state["buttom_send_not_clicked"] == True
                                 and st.session_state["chat_true"] == "chat activo"
@@ -185,12 +147,14 @@ def main(model, col1, col2, placeholder):
                                 logging.info(
                                     f"Gemini multi Page: Session Initialized, first prompt send, session state {st.session_state.value}"
                                 )
+                            # update status
                             if st.session_state["initialized"] == "True":
                                 st.session_state["upload_state"] = (
                                     f"Instruccion introducida\n {st.session_state['prompt_introduced']}"
                                 )
-
+            # Col 2 Status box, write prompt, Conversation with Model
             with row1_2:
+                # expander contains text area with status and button send instruction to Gemini
                 with st.expander(
                     "���️Instruccion to send to Gemini 👇",
                     expanded=st.session_state["expander_3"],
@@ -198,6 +162,7 @@ def main(model, col1, col2, placeholder):
                     upload_state = st.text_area(
                         "Status selection", "", key="upload_state", height=130
                     )
+                # Dedice when to show butten send instruction
                 if st.session_state.value == 3 and introduce_prompt:
                     if st.button(
                         "Send Promt to Gemini",
@@ -211,6 +176,7 @@ def main(model, col1, col2, placeholder):
                         key="buttom_send",
                         disabled=st.session_state["buttom_send_not_clicked"],
                     ):
+                        # Prompt send to Gemini
                         print("after_click_buttom_send")
                         st.session_state["chat_true"] = "chat activo"
                         st.session_state["buttom_has_send"] = "buttom_Send"
@@ -221,12 +187,13 @@ def main(model, col1, col2, placeholder):
                         st.session_state["vcol1mdoc"] = 1
                         st.session_state["vcol2mdoc"] = 4
                         st.session_state["expander_3"] = False
-
+                # if chat active
                 if st.session_state["chat_true"] == "chat activo":
                     logging.info(
                         f"Gemini multi Page: Chat active session {st.session_state.value}"
                     )
                     st.session_state["chat_true"] = "chat activo"
+                    # chat object to speak with Gemini
                     prompt = st.chat_input(
                         "Enter your questions here", disabled=not input
                     )
@@ -238,9 +205,9 @@ def main(model, col1, col2, placeholder):
                         )
                         # reload page and delete temp files
                         if st.session_state["case_query"] == True:
-                            reload_page(st, ss, model, df_answers, pname)
+                            reload_page_many_docs(st, ss, model, df_answers, pname)
                         else:
-                            reload_page(
+                            reload_page_many_docs(
                                 st,
                                 ss,
                                 model,
@@ -249,8 +216,10 @@ def main(model, col1, col2, placeholder):
                                 placeholder,
                             )
                     else:
-                        if st.session_state["initialized"] == "False":
+                        # check if chat initialized
 
+                        if st.session_state["initialized"] == "False":
+                            # in first prompt we send the document and the prompt introduced manually
                             response = get_chat_response(
                                 st.session_state["chat"], st.session_state["prompt"]
                             )
@@ -305,6 +274,7 @@ def main(model, col1, col2, placeholder):
                                 message2 = st.chat_message("assistant")
                                 message2.write(i)
     except:
+        # if exception log error to google for debugging purposes
         placeholder.empty()
         # get the sys stack and log to gcloud
         text = print_stack()

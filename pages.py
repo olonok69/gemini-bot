@@ -5,23 +5,10 @@ import streamlit as st
 from dotenv import dotenv_values
 
 
-st.set_page_config(layout="wide", initial_sidebar_state="expanded")
-
-# Optional -- adds the title and icon to the current page
-# where I am
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUT_FOLDER = os.path.join(ROOT_DIR, "out")
-TMP_FOLDER = os.path.join(ROOT_DIR, "tmp")
-ANSWERS_FOLDER = os.path.join(ROOT_DIR, "answers")
-# create folders if they don't exist
-os.makedirs(OUT_FOLDER, exist_ok=True)
-os.makedirs(TMP_FOLDER, exist_ok=True)
-os.makedirs(ANSWERS_FOLDER, exist_ok=True)
-
-st.title("Forensic Reports Tools. Powered by Gemini, Langchain and Pinecone")
-
-
 def main():
+    st.set_page_config(layout="wide", initial_sidebar_state="expanded")
+
+    st.title("Forensic Reports Tools. Powered by Gemini y Langchain")
 
     show_pages(
         [
@@ -100,8 +87,16 @@ def main():
 
 
 if __name__ == "__main__":
+    # setup environtment
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-
+    OUT_FOLDER = os.path.join(ROOT_DIR, "out")
+    TMP_FOLDER = os.path.join(ROOT_DIR, "tmp")
+    ANSWERS_FOLDER = os.path.join(ROOT_DIR, "answers")
+    # create folders if they don't exist
+    os.makedirs(OUT_FOLDER, exist_ok=True)
+    os.makedirs(TMP_FOLDER, exist_ok=True)
+    os.makedirs(ANSWERS_FOLDER, exist_ok=True)
+    # read env file
     config = dotenv_values(os.path.join(ROOT_DIR, "keys", ".env"))
     folder_path = "chroma_db_google"
     if os.path.exists(folder_path) and os.path.isdir(folder_path):

@@ -1,22 +1,19 @@
 import streamlit as st
 import os.path
-from pathlib import Path
 from streamlit_pdf_viewer import pdf_viewer
 from streamlit import session_state as ss
-from src.pdf_utils import count_pdf_pages, upload
+from src.pdf_utils import count_pdf_pages
 from google.oauth2 import service_account
-from streamlit_js_eval import streamlit_js_eval
 import vertexai
 from vertexai.generative_models import GenerativeModel
 import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
-from src.work_gemini import get_chat_response, prepare_prompt, start_chat
+from src.work_gemini import get_chat_response, prepare_prompt
 from src.helpers import (
-    reset_session_1,
     init_session_1_prompt,
-    save_df_many,
     visualiza_1_prompt,
+    reload_page_1_doc,
 )
 from src.utils import create_client_logging, print_stack
 import logging
@@ -39,40 +36,6 @@ onlyfiles = df["name_prompt"].to_list()
 
 def selected(st):
     st.session_state["file_prompt_selected"] = True
-
-
-def reload_page_1_doc(st, ss, model, df_answers, pname, placeholder):
-    """
-    reload page
-    params:
-    st (streamlit): streamlit object
-    ss (streamlit.session_state): streamlit session state
-    model (vertexai.generative_models.GenerativeModel): model
-    df_answers (pd.DataFrame): dataframe with all answers
-
-    """
-    # delete files
-    # write_history_1(st)
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
-    # get filename
-    filename = st.session_state["file_history"]
-    # save the response of Model
-    save_df_many(
-        list2=list2,
-        df=df_answers,
-        fname=pname,
-        prompt=st.session_state["prompt_introduced"],
-        filename=filename,
-    )
-
-    chat = start_chat(model)
-    reset_session_1(st, ss, chat)
-    files = [f.unlink() for f in Path(f"{TMP_FOLDER}").glob("*") if f.is_file()]
-    files = [f.unlink() for f in Path(f"{OUT_FOLDER}").glob("*") if f.is_file()]
-
-    placeholder.empty()
-    st.stop()
-    return
 
 
 def main(model, col1, col2, placeholder):
@@ -252,7 +215,14 @@ def main(model, col1, col2, placeholder):
                         # reload page and delete temp files
 
                         reload_page_1_doc(
-                            st, ss, model, df_answers, pname, placeholder_1
+                            st,
+                            ss,
+                            model,
+                            df_answers,
+                            pname,
+                            placeholder_1,
+                            TMP_FOLDER,
+                            OUT_FOLDER,
                         )
 
                     else:

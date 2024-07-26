@@ -20,6 +20,9 @@ from .helpers import (
     reload_page_combina,
     init_session_add_kb,
     reset_session_add_kb,
+    reload_page_many_docs,
+    change_status,
+    reload_page_1_doc,
 )
 from .utils import print_stack, create_client_logging
 from .files import (

@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_js_eval import streamlit_js_eval
 import os
 import json
 import copy
@@ -11,7 +10,6 @@ from src.files import (
     open_table_periciales,
     open_table_answers_no_case,
 )
-import pandas as pd
 from dotenv import dotenv_values
 from google.oauth2 import service_account
 import vertexai
@@ -19,12 +17,10 @@ from src.utils import create_client_logging
 from src.helpers import (
     visualiza_display_page,
     visualiza_pericial,
-    reset_session_visualiza,
     init_visualiza,
-    save_df_many,
     reload_page_combina,
 )
-from src.work_gemini import init_model, start_chat, get_chat_response
+from src.work_gemini import init_model, get_chat_response
 from pericial.gemini_fn import (
     secciones,
     get_embeddings_model,
@@ -33,10 +29,8 @@ from pericial.gemini_fn import (
     section_prompt_selected,
 )
 import logging
-from IPython import embed
 
-# where I am
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+# OPen Necessary tables
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Create folders
@@ -286,7 +280,6 @@ def main(model, embeddings, index, vectorstore, col1, col2, placeholder):
 
 if __name__ == "__main__":
     global col1, col2
-
     col1, col2 = 50, 50
     st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
     # create container

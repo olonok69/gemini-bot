@@ -42,7 +42,6 @@ def main(options, embeddings, index, vectorstore, placeholder):
         st.stop()
     if "selector_selected_add" not in st.session_state:
         st.session_state["selector_selected_add"] = False
-
     if "embeddings" not in st.session_state:
         st.session_state["embeddings"] = embeddings
     if "index" not in st.session_state:
@@ -50,7 +49,7 @@ def main(options, embeddings, index, vectorstore, placeholder):
     if "vectorstore" not in st.session_state:
         st.session_state["vectorstore"] = vectorstore
 
-    selector1 = st.selectbox(
+    _ = st.selectbox(
         "Select type of document to add. Pericial or Prompt to extract Information from document 👇",
         options,
         index=None,
@@ -70,7 +69,6 @@ def main(options, embeddings, index, vectorstore, placeholder):
 if __name__ == "__main__":
     # configure access to table . for now we can add prompts and periciales
     options = ["Prompts", "Periciales"]
-
     # access to keys and service account
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
@@ -100,10 +98,8 @@ if __name__ == "__main__":
 
         # configure embeddings and Pinecone vectorstore
         embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-
         pc = Pinecone(api_key=config.get("PINECONE_API_KEY"))
         index = pc.Index("forensic")
-
         vectorstore = PineconeVectorStore(embedding=embeddings, index_name="forensic")
         # call to main
         main(
