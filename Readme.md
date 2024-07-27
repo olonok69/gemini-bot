@@ -41,6 +41,23 @@ Main Sections
     - Pubmed : Here we do the same than with Google Scholar, but in Pubmed. This section is temporarily hide due to redesing.
     - Add Doc to Kb. Add a new document to a category to the Knowledge Base
 
+# Install the application
+
+- Install in local
+    - Clone repository https://github.com/olonok69/gemini-bot.git
+    - create a conda eenvironment with python 3.11
+    - Install requirements.txt libraries
+
+- Install docker (This is in GCP VM). You need docker desktop installed in this case in Ubuntu 22.04
+    - Clone repository https://github.com/olonok69/gemini-bot.git
+    - from root folder execute sudo docker build --pull --rm --build-arg user_app=app -f "Dockerfile" -t gemini-bot:latest "."
+    - sudo docker compose  -f docker-compose.yml down ("If you are going to install a new version")
+    - sudo docker compose  -f docker-compose.yml up -d
+
+# Run Application
+python -m stramlit run pages.py
+
+
 # Logging
 We use logging capabilties of GCP to keep track of what happens whith the application.
 ### docs
