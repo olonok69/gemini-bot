@@ -4,7 +4,7 @@ pandas
 numpy
 python-dotenv
 streamlit-js-eval
-st-pages
+st-pages==0.5.0
 PyMuPDF
 streamlit_pdf_viewer
 ipython
