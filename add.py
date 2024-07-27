@@ -78,7 +78,7 @@ if __name__ == "__main__":
     with placeholder_add.container():
         config = dotenv_values(os.path.join(ROOT_DIR, "keys", ".env"))
         with open(
-            os.path.join(ROOT_DIR, "keys", "complete-tube-421007-9a7c35cd44e2.json")
+            os.path.join(ROOT_DIR, "keys", "complete-tube-421007-208a4862c992.json")
         ) as source:
             info = json.load(source)
         # Initialize vertex ai

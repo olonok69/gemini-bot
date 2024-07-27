@@ -112,7 +112,7 @@ if __name__ == "__main__":
         # load GCP service account
         with open(
             os.path.join(
-                path.parent.absolute(), "keys", "complete-tube-421007-9a7c35cd44e2.json"
+                path.parent.absolute(), "keys", "complete-tube-421007-208a4862c992.json"
             )
         ) as source:
             info = json.load(source)

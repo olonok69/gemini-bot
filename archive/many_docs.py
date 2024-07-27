@@ -270,7 +270,7 @@ def main(model):
 
 if __name__ == "__main__":
     config = dotenv_values("keys/.env")
-    with open("keys/complete-tube-421007-9a7c35cd44e2.json") as source:
+    with open("keys/complete-tube-421007-208a4862c992.json") as source:
         info = json.load(source)
 
     vertex_credentials = service_account.Credentials.from_service_account_info(info)
