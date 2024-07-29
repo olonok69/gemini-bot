@@ -1,4 +1,4 @@
-# What is Gemini Fornsic Tool .
+# What is Gemini Forensic Tool .
 Gemini Forensic Tool is an application developed in Python that helps forensic doctors perform their work end to end. Forensic doctors are healthcare professionals specialized in evaluating, investigating, and documenting injuries and causes of death within the context of legal investigations. They work closely with judicial and law enforcement authorities to interpret medical findings that may be relevant in trials and other legal actions. Their responsibilities include conducting autopsies, preparing medico-legal reports, and providing expert testimony in court.
 
 
