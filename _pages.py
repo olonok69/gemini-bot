@@ -7,7 +7,12 @@ from dotenv import dotenv_values
 
 def main():
     st.set_page_config(layout="wide", initial_sidebar_state="expanded")
-
+    if "authentication_status" not in st.session_state:
+        st.session_state["authentication_status"] = None
+    if "name" not in st.session_state:
+        st.session_state["name"] = None
+    if "username" not in st.session_state:
+        st.session_state["username"] = None
     st.title("Forensic Reports Tools. Powered by Gemini y Langchain")
 
     show_pages(
@@ -84,6 +89,9 @@ def main():
             ),
         ]
     )
+    if st.session_state["authentication_status"] == None or st.session_state["authentication_status"] == False:
+        st.session_state.runpage = "pages/home.py"
+        st.switch_page("pages/home.py")
 
 
 if __name__ == "__main__":

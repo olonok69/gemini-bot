@@ -123,6 +123,10 @@ if __name__ == "__main__":
     path = path.parent.absolute()
     # Set page layout
     st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    #go to login page if not authenticated
+    if st.session_state["authentication_status"] == None or st.session_state["authentication_status"] == False:
+        st.session_state.runpage = "pages/home.py"
+        st.switch_page("pages/home.py")
     placeholder_kb_1 = st.empty()
     with placeholder_kb_1.container():
         config = dotenv_values(os.path.join(path, "keys", ".env"))

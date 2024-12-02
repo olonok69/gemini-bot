@@ -1,0 +1,656 @@
+[2024-12-02 10:20:27,733] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:20:27,733] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:20:44,803] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:20:44,803] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:20:44,803] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:21:22,737] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:21:22,737] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:21:22,737] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:21:22,737] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:21:24,071] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:21:24,071] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:21:24,071] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:21:24,071] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:21:24,071] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:23:15,260] [ScriptRunner.scriptThread] [INFO    ] Name : Ignacio Lopez Araujo, Autentication Status: True, Username: ignacio_lopez
+[2024-12-02 10:23:15,260] [ScriptRunner.scriptThread] [INFO    ] Name : Ignacio Lopez Araujo, Autentication Status: True, Username: ignacio_lopez
+[2024-12-02 10:23:15,260] [ScriptRunner.scriptThread] [INFO    ] Name : Ignacio Lopez Araujo, Autentication Status: True, Username: ignacio_lopez
+[2024-12-02 10:23:15,260] [ScriptRunner.scriptThread] [INFO    ] Name : Ignacio Lopez Araujo, Autentication Status: True, Username: ignacio_lopez
+[2024-12-02 10:23:15,260] [ScriptRunner.scriptThread] [INFO    ] Name : Ignacio Lopez Araujo, Autentication Status: True, Username: ignacio_lopez
+[2024-12-02 10:23:15,260] [ScriptRunner.scriptThread] [INFO    ] Name : Ignacio Lopez Araujo, Autentication Status: True, Username: ignacio_lopez
+[2024-12-02 10:54:26,622] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:54:26,622] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 10:56:18,657] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:56:18,657] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 10:56:18,657] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:02:27,675] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:02:27,675] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:02:27,675] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:02:27,675] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:13:47,203] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:47,203] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:47,203] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:47,203] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:47,416] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:47,416] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:47,416] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:47,416] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:13:57,427] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:13:57,427] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:13:57,427] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:13:57,427] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:13:57,427] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:18:37,806] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:18:37,806] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:18:37,806] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:18:37,926] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:18:37,926] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:18:37,926] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:18:48,289] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:18:48,289] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:18:48,289] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:18:48,289] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:21:10,529] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:21:10,529] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:21:10,529] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:21:10,648] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:21:10,648] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:21:10,648] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:21:20,169] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:21:20,169] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:21:20,169] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:21:20,169] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:26:18,549] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:26:18,549] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:26:18,549] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:26:18,862] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:26:18,862] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:26:18,862] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:27:29,597] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:27:29,597] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:27:43,531] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:27:43,531] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:27:43,531] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:27:54,509] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:27:54,509] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:27:54,509] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:27:54,509] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:28:03,212] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:28:03,212] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:28:03,212] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:28:03,212] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:28:03,212] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:28:13,824] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:28:13,824] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:28:13,824] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:28:13,824] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:28:13,824] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:36:20,029] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:36:20,029] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:36:31,449] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:36:31,449] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:36:31,449] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:36:43,594] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:36:43,594] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:36:43,594] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:38:19,967] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:38:19,967] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 11:38:28,056] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:28,056] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:28,056] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:38,397] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:38:38,397] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:38:38,397] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:38:39,940] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:39,940] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:39,940] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:39,940] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:41,887] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:41,887] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:41,887] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:41,887] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:38:41,887] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-02 11:39:19,882] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:39:19,882] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:39:19,882] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:39:19,882] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:39:19,882] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:39:19,882] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 11:39:22,482] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:22,482] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:22,482] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:22,482] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:22,482] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:22,482] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:29,037] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:29,037] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:29,037] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:29,037] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:29,037] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:29,037] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:41,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:41,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:41,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:41,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:41,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 11:39:41,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:16,411] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:44:16,411] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:44:26,783] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:44:26,783] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:44:26,783] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:44:39,833] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:39,833] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:39,833] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:40,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:40,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:40,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:41,061] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:41,061] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:41,061] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:46,026] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:46,026] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:46,026] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:46,258] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:46,258] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:46,258] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:46,260] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:46,260] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:46,260] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:51,044] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:51,044] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:51,044] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:44:51,277] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:51,277] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:51,277] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:44:51,279] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:51,279] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:44:51,279] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:45:04,536] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:45:04,536] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:45:04,536] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:45:04,765] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:45:04,765] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:45:04,765] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:45:04,767] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:45:04,767] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:45:04,767] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:45:31,883] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:45:31,883] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:45:31,883] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:45:32,104] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:45:32,104] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:45:32,104] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:45:32,107] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:45:32,107] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:45:32,107] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:20,587] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:49:20,587] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:49:31,344] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:49:31,344] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:49:31,344] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:49:43,046] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:43,046] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:43,046] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:43,178] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:43,178] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:43,178] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:43,307] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:43,307] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:43,307] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:45,503] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:45,503] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:45,503] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:49,641] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:49,641] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:49,641] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:49,767] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:49,767] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:49,767] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:49,851] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:49,851] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:49,851] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:49,853] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:49,853] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:49,853] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:54,908] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:54,908] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:54,908] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:49:55,030] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:55,030] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:55,030] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:49:55,131] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:55,131] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:55,131] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:49:55,133] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:55,133] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:49:55,133] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:50:02,056] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:50:02,056] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:50:02,056] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:50:02,190] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:50:02,190] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:50:02,190] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:50:02,291] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:50:02,291] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:50:02,291] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:50:02,293] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:50:02,293] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:50:02,293] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:50:56,775] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:50:56,775] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:51:09,964] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:51:09,964] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:51:09,964] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:51:20,632] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:20,632] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:20,632] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:20,767] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:20,767] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:20,767] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:20,896] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:20,896] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:20,896] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:21,777] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:21,777] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:21,777] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:25,391] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:25,391] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:25,391] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:25,525] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:25,525] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:25,525] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:25,616] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:25,616] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:25,616] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:25,618] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:25,618] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:25,618] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:30,727] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:30,727] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:30,727] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:30,881] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:30,881] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:30,881] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:30,978] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:30,978] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:30,978] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:30,981] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:30,981] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:30,981] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:35,053] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:35,053] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:35,053] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:35,182] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:35,182] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:35,182] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:35,283] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:35,283] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:35,283] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:35,285] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:35,285] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:35,285] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:38,347] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:38,347] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:38,347] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:38,824] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:38,824] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:38,824] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:49,445] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:49,445] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:49,445] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:51:49,583] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:49,583] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:49,583] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:51:49,679] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:49,679] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:49,679] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:51:49,684] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:49,684] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:51:49,684] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:52:08,919] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:52:08,919] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:52:08,919] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:52:09,050] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:52:09,050] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:52:09,050] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:52:09,148] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:52:09,148] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:52:09,148] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:52:09,153] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:52:09,153] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:52:09,153] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:56:44,387] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:56:44,387] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 13:56:57,998] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:56:57,998] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:56:57,998] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 13:57:10,554] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:57:10,554] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:57:10,554] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:57:10,693] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:57:10,693] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:57:10,693] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:57:10,804] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:57:10,804] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:57:10,804] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:57:12,759] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:57:12,759] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:57:12,759] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:57:37,225] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:57:37,225] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:57:37,225] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 13:57:37,354] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:57:37,354] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:57:37,354] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 13:57:37,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:57:37,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:57:37,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 13:57:37,457] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:57:37,457] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 13:57:37,457] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:31:34,328] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:31:34,328] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:35:46,940] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:35:46,940] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:35:46,940] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:35:59,173] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:35:59,173] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:35:59,173] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:35:59,567] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:35:59,567] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:35:59,567] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:00,442] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:00,442] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:00,442] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:07,453] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:07,453] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:07,453] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:07,717] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:07,717] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:07,717] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:07,719] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:07,719] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:07,719] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:11,802] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:11,802] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:11,802] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:12,046] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:12,046] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:12,046] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:12,048] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:12,048] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:12,048] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:27,923] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:27,923] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:27,923] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:28,155] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:28,155] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:28,155] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:28,160] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:28,160] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:28,160] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:31,224] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:31,224] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:31,224] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:31,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:31,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:31,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:31,458] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:31,458] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:31,458] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:37,026] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:37,026] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:37,026] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:36:37,256] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:37,256] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:37,256] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:36:37,258] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:37,258] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:36:37,258] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:39:29,264] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:39:29,264] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:39:41,953] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:39:41,953] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:39:41,953] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:39:52,113] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:39:52,113] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:39:52,113] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:39:52,400] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:39:52,400] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:39:52,400] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:39:54,800] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:39:54,800] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:39:54,800] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:00,336] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:00,336] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:00,336] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:00,589] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:00,589] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:00,589] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:00,590] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:00,590] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:00,590] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:03,806] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:03,806] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:03,806] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:04,102] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:04,102] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:04,102] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:04,104] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:04,104] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:04,104] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:11,264] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:11,264] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:11,264] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:11,395] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:40:11,395] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:40:11,395] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:40:11,501] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:11,501] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:11,501] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:11,505] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:11,505] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:11,505] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:15,092] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:15,092] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:15,092] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:15,222] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:40:15,222] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:40:15,222] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:40:15,315] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:15,315] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:15,315] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:15,317] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:15,317] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:15,317] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:20,106] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:20,106] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:20,106] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:20,407] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:20,407] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:20,407] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:20,412] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:20,412] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:20,412] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:23,555] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:23,555] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:23,555] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:23,795] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:23,795] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:23,795] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:23,797] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:23,797] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:23,797] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:26,938] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:26,938] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:26,938] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:27,191] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:27,191] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:27,191] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:27,193] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:27,193] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:27,193] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:38,740] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:38,740] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:38,740] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:38,998] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:38,998] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:38,998] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:39,002] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:39,002] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:39,002] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:42,140] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:42,140] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:42,140] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:42,387] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:42,387] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:42,387] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:42,389] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:42,389] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:42,389] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:45,772] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:45,772] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:45,772] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:40:46,025] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:46,025] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:46,025] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:40:46,027] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:46,027] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:40:46,027] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:41:02,098] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:41:02,098] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:41:02,098] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:41:02,349] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:41:02,349] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:41:02,349] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:41:02,354] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:41:02,354] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:41:02,354] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:55:18,474] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:55:18,474] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:55:28,545] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:55:28,545] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:55:28,545] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:56:09,977] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:09,977] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:09,977] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:09,991] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:09,991] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:09,991] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:10,242] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:10,242] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:10,242] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:11,110] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:11,110] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:11,110] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:18,071] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:18,071] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:18,071] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:18,081] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:18,081] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:18,081] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:18,303] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:18,303] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:18,303] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:18,305] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:18,305] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:18,305] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:21,256] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:21,256] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:21,256] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:21,265] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:21,265] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:21,265] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:21,497] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:21,497] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:21,497] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:21,499] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:21,499] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:21,499] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:21,503] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Prompt
+[2024-12-02 15:56:21,503] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Prompt
+[2024-12-02 15:56:21,503] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Prompt
+[2024-12-02 15:56:36,968] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:36,968] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:36,968] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:36,978] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:36,978] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:36,978] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:37,202] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:37,202] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:37,202] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:37,206] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:37,206] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:37,206] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:40,378] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:40,378] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:40,378] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:40,387] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:40,387] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:40,387] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:40,613] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:40,613] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:40,613] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:40,616] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:40,616] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:40,616] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:42,961] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:42,961] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:42,961] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:56:42,971] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:42,971] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:42,971] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:56:43,181] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:43,181] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:43,181] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:56:43,183] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:43,183] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:43,183] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:56:43,192] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-02 15:56:43,192] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-02 15:56:43,192] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-02 15:58:17,739] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:58:17,739] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-02 15:58:30,642] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:58:30,642] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:58:30,642] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-02 15:58:40,991] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:40,991] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:40,991] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:41,005] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:41,005] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:41,005] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:41,254] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:41,254] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:41,254] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:42,656] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:42,656] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:42,656] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:50,952] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:50,952] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:50,952] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:50,962] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:50,962] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:50,962] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:51,191] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:51,191] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:51,191] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:51,193] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:51,193] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:51,193] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:53,683] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:53,683] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:53,683] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-02 15:58:53,692] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:53,692] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:53,692] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-02 15:58:53,904] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:53,904] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:53,904] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-02 15:58:53,906] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:53,906] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:53,906] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-02 15:58:53,915] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-02 15:58:53,915] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-02 15:58:53,915] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
