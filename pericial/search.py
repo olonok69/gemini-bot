@@ -99,6 +99,11 @@ if __name__ == "__main__":
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
     st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    #go to login page if not authenticated
+    if st.session_state["authentication_status"] == None or st.session_state["authentication_status"] == False:
+        st.session_state.runpage = "pages/home.py"
+        st.switch_page("pages/home.py")
+        
     placeholder_search = st.empty()
     with placeholder_search.container():
         config = dotenv_values(os.path.join(path.parent.absolute(), "keys", ".env"))

@@ -4,7 +4,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from pinecone import Pinecone
 
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+
 
 secciones = [
     "antecedentes documentos",
@@ -24,6 +24,7 @@ def embed_fn(title, text, model):
     :param model: str
     :return: list
     """
+    genai.configure(api_key=os.environ["GEMINI_API_KEY"])
     return genai.embed_content(
         model=model, content=text, task_type="retrieval_document", title=title
     )["embedding"]

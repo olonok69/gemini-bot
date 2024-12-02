@@ -4,7 +4,7 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_core.documents import Document
 from typing import Dict
 from src.files import remove_prompts, remove_pericial, remove_anwers
-
+import logging
 
 def selected_add(st):
     st.session_state["selector_selected_add"] = True
@@ -74,6 +74,10 @@ def save_text_add_prompt(
 def visualiza_add_prompt(st, df_prompts, fname):
     """
     Visualiza add prompt
+    args:
+    st (_type_): session streamlit
+    df_prompts (pd.DataFrame): dataframe with all prompts
+    fname (str): filename to save the dataframe
     """
     txt = st.text_input("Introduce name of the prompt", key="name_prompt")
 
@@ -115,6 +119,10 @@ def visualiza_add_prompt(st, df_prompts, fname):
 def visualiza_add_pericial(st, df_pericial, fname, secciones):
     """
     Visualiza add prompt
+    args:
+    st (_type_): session streamlit
+    df_pericial (pd.DataFrame): dataframe with all periciales reports
+    fname (str): filename to save the dataframe
     """
     title = st.text_area("Introduce Titulo Pericial 👇", height=100, key="title")
 
@@ -140,7 +148,7 @@ def visualiza_add_pericial(st, df_pericial, fname, secciones):
                         seccion,
                         df_pericial,
                         fname,
-                        st.session_state["vectorstore"],
+                        st.session_state["vectorstore_10"],
                     ],
                 ):
 
@@ -373,7 +381,7 @@ def visualiza_pericial_modifica(
         on_change=save_text_modifica_pericial,
         args=[st, fname, prompt_dict, df, vectorstore],
     )
-
+    return
 
 def visualiza_delete_prompt(st, df: pd.DataFrame, fname: str):
     """

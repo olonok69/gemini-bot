@@ -74,6 +74,11 @@ if __name__ == "__main__":
     path = Path(ROOT_DIR)
     # Set page layout
     st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+    #go to login page if not authenticated
+    if st.session_state["authentication_status"] == None or st.session_state["authentication_status"] == False:
+        st.session_state.runpage = "pages/home.py"
+        st.switch_page("pages/home.py")
+        
     placeholder_add = st.empty()
     with placeholder_add.container():
         config = dotenv_values(os.path.join(ROOT_DIR, "keys", ".env"))

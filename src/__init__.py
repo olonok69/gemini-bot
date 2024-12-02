@@ -23,6 +23,9 @@ from .helpers import (
     reload_page_many_docs,
     change_status,
     reload_page_1_doc,
+    reset_session_10,
+    reset_session_11,
+    reset_session_12
 )
 from .utils import print_stack, create_client_logging
 from .files import (

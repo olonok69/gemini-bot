@@ -19,3 +19,5 @@ kb/faiss2/forensic.faiss
 kb/faiss2/forensic.pkl
 kb/prompts/table/prompts_backup.csv
 kb/prompts/table/prompts.csv
+config.yaml
+archive/hasher.py

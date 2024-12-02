@@ -1,4 +1,4 @@
-streamlit==1.36.0
+streamlit==1.39.0
 google-cloud-aiplatform
 pandas
 numpy
@@ -6,17 +6,18 @@ python-dotenv
 streamlit-js-eval
 st-pages==0.5.0
 PyMuPDF
-streamlit_pdf_viewer
+streamlit_pdf_viewer==0.0.12
 ipython
 google-cloud-logging
 scikit-learn
 langchain-pinecone
 langchain 
-langchain-community==0.2.6
+langchain-community
 langchain-experimental 
 xmltodict
 pubmed-api
-chroma
+rapidocr-onnxruntime
+pymupdf4llm
 langchain-google-genai
 pypdf
 pinecone-client
@@ -31,3 +32,6 @@ langchain-google-community
 beautifulsoup4
 html2text
 faiss-cpu
+streamlit-authenticator
+rapidocr-onnxruntime
+pymupdf4llm
