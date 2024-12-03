@@ -120,7 +120,7 @@ def reset_session_1(st, ss, chat):
 
 
 def reload_page_1_doc(
-    st, ss, model, df_answers, pname, placeholder, tmp_folder, out_folder
+    st, ss, model, df_answers, pname, placeholder, tmp_folder, out_folder, num=10
 ):
     """
     reload page
@@ -128,25 +128,30 @@ def reload_page_1_doc(
     st (streamlit): streamlit object
     ss (streamlit.session_state): streamlit session state
     model (vertexai.generative_models.GenerativeModel): model
-    df_answers (pd.DataFrame): dataframe with all answers
+    df_answers (pd.DataFrame): dataframe with all answers,
+    pname (str): filename
+    placeholder (streamlit.container): container to reset
+    tmp_folder (str): temp folder
+    out_folder (str): output folder
+    num (int): number of session
 
     """
     # delete files
     # write_history_1(st)
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    list2 = copy.deepcopy(st.session_state[f"chat_answers_history_{num}"])
     # get filename
-    filename = st.session_state["file_history"]
+    filename = st.session_state[f"file_history_{num}"]
     # save the response of Model
     save_df_many(
         list2=list2,
         df=df_answers,
         fname=pname,
-        prompt=st.session_state["prompt_introduced"],
+        prompt=st.session_state[f"prompt_introduced_{num}"],
         filename=filename,
     )
 
-    chat = start_chat(model)
-    reset_session_1(st, ss, chat)
+
+    reset_session_num(st, num)
     # delete files in temp
     _ = [f.unlink() for f in Path(f"{tmp_folder}").glob("*") if f.is_file()]
     _ = [f.unlink() for f in Path(f"{out_folder}").glob("*") if f.is_file()]
@@ -652,8 +657,8 @@ def get_filename_multi(st):
     return filename
 
 
-@st.experimental_dialog("Choose prompt 👇", width="large")
-def visualiza_1_prompt(st, df, page_select, numpages):
+@st.dialog("Choose prompt 👇", width="large")
+def visualiza_1_prompt(st, df, page_select, numpages, num):
     """
     Visualize the prompt
     Args:
@@ -663,7 +668,7 @@ def visualiza_1_prompt(st, df, page_select, numpages):
         numpages (int): number of pages
     """
     # get the name of the file
-    file = st.session_state["select_box"]
+    file = st.session_state[f"select_box_{num}"]
     # transform the row into a dictionary
     prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
     id_ = prompt_dict["id"]
@@ -685,18 +690,18 @@ def visualiza_1_prompt(st, df, page_select, numpages):
         value=prompt_dict.get("prompt"),
     )
     if st.button("Accept"):
-        st.session_state["prompt_introduced"] = (
+        st.session_state[f"prompt_introduced_{num}"] = (
             prompt_dict.get("name_prompt") + "\n" + prompt_dict.get("prompt")
         )
-        st.session_state["file_prompt_selected"] = True
-        upload(page_select, numpages, st)
-        st.session_state.value = 3
+        st.session_state[f"file_prompt_selected_{num}"] = True
+        upload(page_select, numpages, st, num)
+        st.session_state[f"value_{num}"] = 3
         st.rerun()
 
-    if st.button("No accept"):
-        st.session_state["prompt_introduced"] = ""
-        st.session_state["file_prompt_selected"] = False
-        st.session_state.value = 2
+    if st.button("No Accept"):
+        st.session_state[f"prompt_introduced_{num}"] = ""
+        st.session_state["file_prompt_selected_{num}"] = False
+        st.session_state[f"value_{num}"] = 2
         st.rerun()
 
 
@@ -877,3 +882,29 @@ def reset_session_12(st):
     st.session_state["salir_12"] = False
 
     return
+
+def reset_session_num(session, num:int="10"):
+    """
+    Delete session state for multiple files option
+    param: st  session
+    param: ss  session state
+    param: model  chat (gemini model)
+    """
+    for x in session.session.keys():
+        if num in x and "salir" not in x:
+            del session.session[x]
+    # del st.session_state["embeddings_12"]
+    # del st.session_state["index_12"]
+    # del st.session_state["vectorstore_12"]
+    # del st.session_state["select_box_modifica"]
+    # del st.session_state["selector_selected_modifica"]
+    # del st.session_state["selector_selected_section"]
+    # del st.session_state["selector_selected_pericial"]
+    # placeholder for multiple files
+
+    session.session_state[f"salir_{num}"] = False
+
+    return
+
+
+    

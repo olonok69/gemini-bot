@@ -654,3 +654,1011 @@
 [2024-12-02 15:58:53,915] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
 [2024-12-02 15:58:53,915] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
 [2024-12-02 15:58:53,915] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-03 15:12:45,494] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:12:45,494] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:13:04,388] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:13:04,388] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:13:04,388] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:16:24,848] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:16:24,848] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:16:34,355] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:16:34,355] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:16:34,355] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:16:42,615] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:16:42,615] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:16:42,615] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:16:42,910] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:16:42,910] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:16:42,910] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:17:32,950] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:17:32,950] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:17:32,950] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:17:38,815] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:17:38,815] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:17:38,815] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:18:06,167] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:18:06,167] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:18:19,931] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:18:19,931] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:18:19,931] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:18:33,763] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:18:33,763] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:18:33,763] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:18:33,852] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:18:33,852] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:18:33,852] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:04,916] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:04,916] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:04,916] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:05,026] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:05,026] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:05,026] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:05,030] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:05,030] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:05,030] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:05,099] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:05,099] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:05,099] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:18,042] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:18,042] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:18,042] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:18,131] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:18,131] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:18,131] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:18,135] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:18,135] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:18,135] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:18,194] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:18,194] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:18,194] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:24,041] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:24,041] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:24,041] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:20:24,121] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:24,121] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:24,121] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:20:24,125] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:24,125] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:24,125] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:24,184] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:24,184] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:20:24,184] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:22:03,594] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:22:03,594] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:22:03,594] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:22:03,697] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:22:03,697] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:22:03,697] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:22:03,701] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:22:03,701] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:22:03,701] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:22:03,766] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:22:03,766] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:22:03,766] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:19,449] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:29:19,449] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:29:19,449] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:29:19,546] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:29:19,546] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:29:19,546] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:29:19,551] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:19,551] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:19,551] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:19,605] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:19,605] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:19,605] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:33,219] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:29:33,219] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:29:33,219] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:29:33,323] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:29:33,323] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:29:33,323] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:29:33,329] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:33,329] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:33,329] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:33,390] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:33,390] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:33,390] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:29:33,401] [ScriptRunner.scriptThread] [INFO    ] After_click_buttom_send = True
+[2024-12-03 15:29:33,401] [ScriptRunner.scriptThread] [INFO    ] After_click_buttom_send = True
+[2024-12-03 15:29:33,401] [ScriptRunner.scriptThread] [INFO    ] After_click_buttom_send = True
+[2024-12-03 15:31:03,229] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:31:03,229] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:31:19,639] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:31:19,639] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:31:19,639] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:31:28,064] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:28,064] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:28,064] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:28,151] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:28,151] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:28,151] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:43,392] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:43,392] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:43,392] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:43,493] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:43,493] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:43,493] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:43,499] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:43,499] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:43,499] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:43,556] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:43,556] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:43,556] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:49,130] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:49,130] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:49,130] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:49,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:49,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:49,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:49,230] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:49,230] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:49,230] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:49,293] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:49,293] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:49,293] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:54,484] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:54,484] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:54,484] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:31:54,573] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:54,573] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:54,573] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:31:54,578] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:54,578] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:54,578] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:54,638] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:54,638] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:31:54,638] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:52,719] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:36:52,719] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:36:52,719] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:36:52,814] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:36:52,814] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:36:52,814] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:36:52,819] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:52,819] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:52,819] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:52,869] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:52,869] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:52,869] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:56,775] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:36:56,775] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:36:56,775] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:36:56,859] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:36:56,859] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:36:56,859] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:36:56,865] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:56,865] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:56,865] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:56,921] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:56,921] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:56,921] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:36:56,934] [ScriptRunner.scriptThread] [INFO    ] After_click_buttom_send = True
+[2024-12-03 15:36:56,934] [ScriptRunner.scriptThread] [INFO    ] After_click_buttom_send = True
+[2024-12-03 15:36:56,934] [ScriptRunner.scriptThread] [INFO    ] After_click_buttom_send = True
+[2024-12-03 15:36:56,937] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:36:56,937] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:36:56,937] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:37:24,032] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:37:24,032] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:37:34,602] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:37:34,602] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:37:34,602] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:37:42,461] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:37:42,461] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:37:42,461] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:37:42,548] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:37:42,548] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:37:42,548] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:17,855] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:17,855] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:17,855] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:17,940] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:17,940] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:17,940] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:17,944] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:17,944] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:17,944] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:18,001] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:18,001] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:18,001] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:22,256] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:22,256] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:22,256] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:22,357] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:22,357] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:22,357] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:22,361] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:22,361] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:22,361] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:22,425] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:22,425] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:22,425] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:26,700] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:26,700] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:26,700] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:26,804] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:26,804] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:26,804] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:26,809] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:26,809] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:26,809] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:26,860] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:26,860] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:26,860] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:32,079] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:32,079] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:32,079] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:32,160] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:32,160] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:32,160] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:32,165] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:32,165] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:32,165] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:32,216] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:32,216] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:32,216] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:34,528] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 15:38:34,528] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 15:38:34,528] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 15:38:34,531] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:34,531] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:34,531] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:38:34,616] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:34,616] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:34,616] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:38:34,622] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:34,622] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:34,622] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:34,675] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:34,675] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:34,675] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:38:34,684] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 15:38:34,684] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 15:38:34,684] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 15:38:34,688] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:38:34,688] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:38:34,688] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:45:15,543] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:45:15,543] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:45:36,730] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:45:36,730] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:45:36,730] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:45:44,683] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:44,683] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:44,683] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:44,777] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:44,777] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:44,777] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:51,011] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:51,011] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:51,011] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:51,099] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:51,099] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:51,099] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:51,103] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:51,103] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:51,103] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:51,166] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:51,166] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:51,166] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:55,882] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:55,882] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:55,882] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:55,973] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:55,973] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:55,973] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:55,979] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:55,979] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:55,979] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:56,029] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:56,029] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:56,029] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:59,283] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:59,283] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:59,283] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:45:59,373] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:59,373] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:59,373] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:45:59,378] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:59,378] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:59,378] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:59,427] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:59,427] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:45:59,427] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:02,053] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:46:02,053] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:46:02,053] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:46:02,139] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:46:02,139] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:46:02,139] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:46:02,143] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:02,143] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:02,143] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:02,199] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:02,199] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:02,199] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:07,113] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 15:46:07,113] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 15:46:07,113] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 15:46:07,116] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:46:07,116] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:46:07,116] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:46:07,202] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:46:07,202] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:46:07,202] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:46:07,208] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:07,208] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:07,208] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:07,268] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:07,268] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:07,268] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 15:46:07,277] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 15:46:07,277] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 15:46:07,277] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 15:46:07,280] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:46:07,280] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:46:07,280] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 15:50:24,648] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:50:24,648] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 15:50:34,158] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:50:34,158] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:50:34,158] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 15:50:42,348] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:50:42,348] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:50:42,348] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 15:50:42,455] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:50:42,455] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 15:50:42,455] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:00:53,873] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:00:53,873] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:01:03,155] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:01:03,155] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:01:03,155] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:01:17,870] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:17,870] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:17,870] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:17,956] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:17,956] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:17,956] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:26,487] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:26,487] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:26,487] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:26,586] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:26,586] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:26,586] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:26,590] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:26,590] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:26,590] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:26,647] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:26,647] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:26,647] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:31,942] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:31,942] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:31,942] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:32,058] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:32,058] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:32,058] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:32,061] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:32,061] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:32,061] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:32,122] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:32,122] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:32,122] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:36,770] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:36,770] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:36,770] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:36,869] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:36,869] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:36,869] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:36,874] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:36,874] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:36,874] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:36,935] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:36,935] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:36,935] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:39,641] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:39,641] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:39,641] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:39,718] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:39,718] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:39,718] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:39,722] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:39,722] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:39,722] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:39,782] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:39,782] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:39,782] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:42,260] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 16:01:42,260] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 16:01:42,260] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-03 16:01:42,263] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:42,263] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:42,263] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:01:42,358] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:42,358] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:42,358] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:01:42,363] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:42,363] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:42,363] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:42,419] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:42,419] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:42,419] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:01:42,428] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 16:01:42,428] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 16:01:42,428] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-03 16:01:42,433] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 16:01:42,433] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 16:01:42,433] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-03 16:05:57,694] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:05:57,694] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:06:20,391] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:06:20,391] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:06:20,391] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:06:30,510] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:30,510] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:30,510] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:30,597] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:30,597] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:30,597] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:44,310] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:44,310] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:44,310] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:44,401] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:44,401] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:44,401] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:44,405] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:44,405] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:44,405] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:44,460] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:44,460] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:44,460] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:50,065] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:50,065] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:50,065] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:50,147] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:50,147] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:50,147] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:50,153] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:50,153] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:50,153] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:50,210] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:50,210] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:50,210] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:56,355] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:56,355] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:56,355] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:06:56,440] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:56,440] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:56,440] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:06:56,446] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:56,446] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:56,446] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:56,509] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:56,509] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:06:56,509] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:07,078] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:07,078] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:07,078] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:07,162] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:07,162] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:07,162] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:07,167] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:07,167] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:07,167] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:07,223] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:07,223] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:07,223] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:11,339] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:11,339] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:11,339] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:11,449] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:11,449] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:11,449] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:11,453] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:11,453] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:11,453] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:11,516] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:11,516] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:11,516] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:16,133] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:16,133] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:16,133] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:16,222] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:16,222] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:16,222] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:16,227] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:16,227] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:16,227] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:16,297] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:16,297] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:16,297] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:18,734] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:18,734] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:18,734] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:07:18,830] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:18,830] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:18,830] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:07:18,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:18,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:18,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:18,886] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:18,886] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:07:18,886] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:08:43,532] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:08:43,532] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:09:03,676] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:09:03,676] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:09:03,676] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:09:13,301] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:13,301] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:13,301] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:13,392] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:13,392] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:13,392] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:21,241] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:21,241] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:21,241] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:21,332] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:21,332] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:21,332] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:21,337] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:21,337] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:21,337] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:21,398] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:21,398] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:21,398] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:26,167] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:26,167] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:26,167] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:26,273] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:26,273] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:26,273] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:26,279] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:26,279] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:26,279] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:26,339] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:26,339] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:26,339] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:29,700] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:29,700] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:29,700] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:29,797] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:29,797] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:29,797] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:29,801] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:29,801] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:29,801] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:29,861] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:29,861] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:29,861] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:32,726] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:32,726] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:32,726] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:09:32,818] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:32,818] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:32,818] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:09:32,823] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:32,823] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:32,823] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:32,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:32,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:09:32,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:10:29,079] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:10:29,079] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:10:38,075] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-03 16:10:38,075] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-03 16:10:38,075] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-03 16:10:47,733] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:10:47,733] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:10:47,733] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:10:47,733] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:10:55,505] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:10:55,505] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:10:55,505] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:10:55,505] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:10:55,604] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:10:55,604] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:10:55,604] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:10:55,604] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:01,480] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:01,480] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:01,480] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:01,480] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:01,571] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:01,571] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:01,571] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:01,571] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:01,575] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:01,575] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:01,575] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:01,575] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:01,633] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:01,633] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:01,633] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:01,633] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,736] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:05,736] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:05,736] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:05,736] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:05,829] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:05,829] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:05,829] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:05,829] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:05,834] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,834] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,834] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,834] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:05,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,237] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:09,237] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:09,237] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:09,237] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:09,334] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:09,334] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:09,334] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:09,334] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:09,339] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,339] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,339] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,339] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,394] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,394] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,394] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:09,394] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:11,933] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:11,933] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:11,933] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:11,933] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:12,031] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:12,031] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:12,031] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:12,031] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:12,036] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:12,036] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:12,036] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:12,036] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:12,096] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:12,096] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:12,096] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:12,096] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,090] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:19,090] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:19,090] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:19,090] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:19,179] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:19,179] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:19,179] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:19,179] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:19,185] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,185] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,185] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,185] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,242] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,242] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,242] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:19,242] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:11:38,146] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:38,146] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:38,146] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:38,146] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:11:38,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:38,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:38,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:11:38,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:16:46,218] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:16:46,218] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:16:55,709] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:16:55,709] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:16:55,709] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:17:06,141] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:06,141] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:06,141] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:06,241] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:06,241] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:06,241] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:12,411] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:12,411] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:12,411] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:12,506] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:12,506] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:12,506] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:12,510] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:12,510] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:12,510] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:12,567] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:12,567] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:12,567] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:31,864] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:31,864] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:31,864] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:31,960] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:31,960] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:31,960] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:31,964] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:31,964] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:31,964] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:32,020] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:32,020] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:32,020] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:36,784] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:36,784] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:36,784] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:36,874] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:36,874] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:36,874] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:36,880] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:36,880] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:36,880] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:36,941] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:36,941] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:36,941] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:39,502] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:39,502] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:39,502] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:39,589] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:39,589] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:39,589] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:39,593] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:39,593] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:39,593] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:39,656] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:39,656] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:39,656] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:49,207] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:49,207] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:49,207] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:17:49,292] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:49,292] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:49,292] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:17:49,297] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:49,297] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:49,297] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:49,347] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:49,347] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:17:49,347] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:18:57,678] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:18:57,678] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-03 16:19:08,206] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:19:08,206] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:19:08,206] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-03 16:19:15,995] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:15,995] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:15,995] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:16,093] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:16,093] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:16,093] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:23,296] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:23,296] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:23,296] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:23,388] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:23,388] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:23,388] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:23,394] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:23,394] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:23,394] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:23,452] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:23,452] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:23,452] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:28,314] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:28,314] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:28,314] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:28,401] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:28,401] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:28,401] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:28,406] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:28,406] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:28,406] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:28,462] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:28,462] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:28,462] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:32,223] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:32,223] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:32,223] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:32,312] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:32,312] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:32,312] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:32,317] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:32,317] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:32,317] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:32,373] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:32,373] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:32,373] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:35,320] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:35,320] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:35,320] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:35,409] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:35,409] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:35,409] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:35,414] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:35,414] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:35,414] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:35,467] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:35,467] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:35,467] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:52,349] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:52,349] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:52,349] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:19:52,434] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:52,434] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:52,434] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:19:52,440] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:52,440] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:52,440] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:52,494] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:52,494] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:19:52,494] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:20:02,386] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:20:02,386] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:20:02,386] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:20:02,485] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:20:02,485] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:20:02,485] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:02,996] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:02,996] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:02,996] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:03,082] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:03,082] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:03,082] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:12,003] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:12,003] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:12,003] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:12,011] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-03 16:21:12,011] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-03 16:21:12,011] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-03 16:21:12,270] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-03 16:21:12,270] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-03 16:21:12,270] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-03 16:21:14,051] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-03 16:21:14,051] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-03 16:21:14,051] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-03 16:21:16,244] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:16,244] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:16,244] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:16,347] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:16,347] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:16,347] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:21,694] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:21,694] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:21,694] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:21,781] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:21,781] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:21,781] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:21,785] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:21,785] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:21,785] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:21,840] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:21,840] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:21,840] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:26,065] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:26,065] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:26,065] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:26,154] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:26,154] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:26,154] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:26,158] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:26,158] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:26,158] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:26,215] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:26,215] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:26,215] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:29,585] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:29,585] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:29,585] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:29,673] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:29,673] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:29,673] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:29,678] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:29,678] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:29,678] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:29,731] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:29,731] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:29,731] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:31,921] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:31,921] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:31,921] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:32,012] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:32,012] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:32,012] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:32,018] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:32,018] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:32,018] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:32,078] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:32,078] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:32,078] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-03 16:21:32,984] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_20
+[2024-12-03 16:21:32,984] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_20
+[2024-12-03 16:21:32,984] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_20
+[2024-12-03 16:21:32,986] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_20
+[2024-12-03 16:21:32,986] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_20
+[2024-12-03 16:21:32,986] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_20
+[2024-12-03 16:21:32,986] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_20
+[2024-12-03 16:21:32,986] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_20
+[2024-12-03 16:21:32,986] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_20
+[2024-12-03 16:21:32,988] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_20
+[2024-12-03 16:21:32,988] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_20
+[2024-12-03 16:21:32,988] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_20
+[2024-12-03 16:21:32,988] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_20
+[2024-12-03 16:21:32,988] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_20
+[2024-12-03 16:21:32,988] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_20
+[2024-12-03 16:21:32,989] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_20
+[2024-12-03 16:21:32,989] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_20
+[2024-12-03 16:21:32,989] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_20
+[2024-12-03 16:21:32,990] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_20
+[2024-12-03 16:21:32,990] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_20
+[2024-12-03 16:21:32,990] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_20
+[2024-12-03 16:21:32,991] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_20
+[2024-12-03 16:21:32,991] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_20
+[2024-12-03 16:21:32,991] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_20
+[2024-12-03 16:21:32,992] [ScriptRunner.scriptThread] [INFO    ] deleted value_20
+[2024-12-03 16:21:32,992] [ScriptRunner.scriptThread] [INFO    ] deleted value_20
+[2024-12-03 16:21:32,992] [ScriptRunner.scriptThread] [INFO    ] deleted value_20
+[2024-12-03 16:21:32,993] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_20
+[2024-12-03 16:21:32,993] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_20
+[2024-12-03 16:21:32,993] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_20
+[2024-12-03 16:21:32,995] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_20
+[2024-12-03 16:21:32,995] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_20
+[2024-12-03 16:21:32,995] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_20
+[2024-12-03 16:21:32,996] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_20
+[2024-12-03 16:21:32,996] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_20
+[2024-12-03 16:21:32,996] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_20
+[2024-12-03 16:21:32,997] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_20
+[2024-12-03 16:21:32,997] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_20
+[2024-12-03 16:21:32,997] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_20
+[2024-12-03 16:21:32,998] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_20
+[2024-12-03 16:21:32,998] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_20
+[2024-12-03 16:21:32,998] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_20
+[2024-12-03 16:21:32,999] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_20
+[2024-12-03 16:21:32,999] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_20
+[2024-12-03 16:21:32,999] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_20
+[2024-12-03 16:21:33,001] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_20
+[2024-12-03 16:21:33,001] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_20
+[2024-12-03 16:21:33,001] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_20
+[2024-12-03 16:21:33,002] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_20
+[2024-12-03 16:21:33,002] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_20
+[2024-12-03 16:21:33,002] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_20
+[2024-12-03 16:21:33,003] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_20
+[2024-12-03 16:21:33,003] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_20
+[2024-12-03 16:21:33,003] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_20
+[2024-12-03 16:21:33,004] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_20
+[2024-12-03 16:21:33,004] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_20
+[2024-12-03 16:21:33,004] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_20
+[2024-12-03 16:21:33,005] [ScriptRunner.scriptThread] [INFO    ] deleted llm_20
+[2024-12-03 16:21:33,005] [ScriptRunner.scriptThread] [INFO    ] deleted llm_20
+[2024-12-03 16:21:33,005] [ScriptRunner.scriptThread] [INFO    ] deleted llm_20
+[2024-12-03 16:21:33,005] [ScriptRunner.scriptThread] [INFO    ] deleted salir_20
+[2024-12-03 16:21:33,005] [ScriptRunner.scriptThread] [INFO    ] deleted salir_20
+[2024-12-03 16:21:33,005] [ScriptRunner.scriptThread] [INFO    ] deleted salir_20
+[2024-12-03 16:21:33,006] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_20
+[2024-12-03 16:21:33,006] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_20
+[2024-12-03 16:21:33,006] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_20
+[2024-12-03 16:21:33,007] [ScriptRunner.scriptThread] [INFO    ] deleted expander_20
+[2024-12-03 16:21:33,007] [ScriptRunner.scriptThread] [INFO    ] deleted expander_20
+[2024-12-03 16:21:33,007] [ScriptRunner.scriptThread] [INFO    ] deleted expander_20
+[2024-12-03 16:21:33,008] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_20
+[2024-12-03 16:21:33,008] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_20
+[2024-12-03 16:21:33,008] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_20
+[2024-12-03 16:21:33,009] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_20
+[2024-12-03 16:21:33,009] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_20
+[2024-12-03 16:21:33,009] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_20
+[2024-12-03 16:21:37,319] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:37,319] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:37,319] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:37,328] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-03 16:21:37,328] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-03 16:21:37,328] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-03 16:21:37,490] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-03 16:21:37,490] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-03 16:21:37,490] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-03 16:21:37,491] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-03 16:21:37,491] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-03 16:21:37,491] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-03 16:21:39,327] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:39,327] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:39,327] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-03 16:21:39,419] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:39,419] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-03 16:21:39,419] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
