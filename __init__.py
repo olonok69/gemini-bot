@@ -25,7 +25,7 @@ from .src.helpers import (
     reload_page_1_doc,
     reset_session_10,
     reset_session_11,
-    reset_session_12
+    reset_session_12,
 )
 from .src.utils import print_stack, create_client_logging
 from .pericial.gemini_fn import (
@@ -103,3 +103,5 @@ from .kb.utils import (
     get_docs_to_add_vectorstore_faiss,
     add_new_documents_to_faiss,
 )
+
+from .src.maps import config, init_session_num, reset_session_num

@@ -1,5 +1,6 @@
 import streamlit as st
 import os.path
+from pathlib import Path
 from streamlit_pdf_viewer import pdf_viewer
 from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages
@@ -21,6 +22,8 @@ import copy
 from src.files import open_table_answers, create_folders, open_table_prompts
 import logging
 from src.utils import print_stack
+from src.maps import config as conf, init_session_num, reset_session_num
+from IPython import embed
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -43,7 +46,7 @@ def selected(st):
     st.session_state["file_prompt_selected_20"] = True
 
 
-def change_state_20(st, placeholder):
+def change_state_20(session, placeholder):
     """
     change state after leave conversation
     params:
@@ -52,9 +55,9 @@ def change_state_20(st, placeholder):
 
     """
     placeholder.empty()
-    reset_session_20(st)
-    st.stop()
     del placeholder
+    reset_session_num(session,"20")
+    st.stop()
     return
 
 def main( col1, col2, placeholder):
@@ -79,24 +82,23 @@ def main( col1, col2, placeholder):
         if "init_run_20" not in st.session_state:
             st.session_state["init_run_20"] = False
         if st.session_state["init_run_20"] == False:
-            init_session_1_prompt(st, ss, model, col1, col2)
+            init_session_num(st, ss, "20", col1, col2, conf["20"]["config_20"], None)
 
         with row1_1:
-            if st.button("Salir"):
-                placeholder.empty()
-                st.stop()
+            if st.button("Salir", on_click=change_state_20, args=(st, placeholder)):
+                logging.info("Salir and writing history")
 
             # Access the uploaded ref via a key.
-            if st.session_state.value >= 0:
+            if st.session_state['value_20'] >= 0:
                 uploaded_files = st.file_uploader(
                     "Upload PDF file",
                     type=("pdf"),
                     key="pdf",
                     accept_multiple_files=False,
-                    disabled=st.session_state["buttom_send_not_clicked"],
+                    disabled=st.session_state["buttom_send_not_clicked_20"],
                 )  # accept_multiple_files=True,
                 if uploaded_files:
-                    logging.info(f"Gemini 1 Page: file uploaded {uploaded_files.name}")
+                    logging.info(f"Gemini Bot 20: file uploaded {uploaded_files.name}")
                 if uploaded_files:
                     # To read file as bytes:
                     im_bytes = uploaded_files.getvalue()
@@ -112,12 +114,12 @@ def main( col1, col2, placeholder):
                     st.session_state["upload_state_20"] = (
                         f"Numero de paginas del fichero {uploaded_files.name} : {numpages}"
                     )
-                st.session_state.value_20 = 1  # file uploaded
+                st.session_state['value_20'] = 1  # file uploaded
 
         # Now you can access "pdf_ref" anywhere in your app.
         if ss.pdf_ref_20:
             with row1_1:
-                if st.session_state.value_20 >= 1:
+                if st.session_state['value_20'] >= 1:
                     binary_data = ss.pdf_ref_20
                     if st.session_state["vcol1doc_20"] == 40:
                         width = 700
@@ -126,7 +128,7 @@ def main( col1, col2, placeholder):
                     else:
                         width = 700
                     pdf_viewer(input=binary_data, width=width, height=400)
-                    logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
+                    logging.info(f"Gemini Bot Page 20: pdf viewer {uploaded_files.name}")
                     page_select = st.text_input(
                         "Elige paginas a extraer 👇",
                         key="page_select",
@@ -134,8 +136,8 @@ def main( col1, col2, placeholder):
                         disabled=st.session_state["buttom_send_not_clicked_20"],
                     )
                     # if page select TODO control that page is all or a number
-                    if page_select and st.session_state.value_20 >= 1:
-                        st.session_state.value_20 = 2  # pages selected
+                    if page_select and st.session_state['value_20'] >= 1:
+                        st.session_state['value_20'] = 2  # pages selected
                         st.session_state["upload_state_20"] = (
                             f"paginas seleccionadas {page_select}"
                         )
@@ -152,22 +154,22 @@ def main( col1, col2, placeholder):
                         st.session_state["file_prompt_selected_20"] == True
                         and st.session_state["prompt_introduced_20"] == ""
                     ):
-                        visualiza_1_prompt(st, df, page_select, numpages)
+                        visualiza_1_prompt(st, df, page_select, numpages, num="20")
 
                     if st.session_state[
                         "prompt_introduced_20"
-                    ] != "" and st.session_state.value_20 in [2, 3]:
+                    ] != "" and st.session_state['value_20'] in [2, 3]:
                         st.session_state["upload_state_20"] = (
                             f"Instruccion introducida\n{st.session_state['prompt_introduced_20'] }"
                         )
-                        st.session_state.value_20 = 3
+                        st.session_state['value_20'] = 3
 
                     if (
                         st.session_state["buttom_send_not_clicked_20"] == True
                         and st.session_state["chat_true_20"] == "chat activo"
                     ):
                         # chat active session 5
-                        st.session_state.value_20 = 5
+                        st.session_state['value_20'] = 5
                         col1 = 20
                         col2 = 80
                         st.session_state["vcol1doc_20"] = 20
@@ -175,7 +177,7 @@ def main( col1, col2, placeholder):
                         st.session_state["expander_20"] = False
 
                         logging.info(
-                            f"Gemini 1 Page: Session Initialized, first prompt send, session state {st.session_state.value_20}"
+                            f"Gemini 1 Page: Session Initialized, first prompt send, session state {st.session_state['value_20']}"
                         )
                     if st.session_state["initialized_20"] == "True":
                         st.session_state["upload_state_20"] = (
@@ -188,10 +190,10 @@ def main( col1, col2, placeholder):
                     expanded=st.session_state["expander_20"],
                 ):
                     upload_state = st.text_area(
-                        "Status selection", "", key="upload_state_20, height=200
+                        "Status selection", "", key="upload_state_20", height=200
                     )
                 if (
-                    st.session_state.value_20 == 3
+                    st.session_state['value_20'] == 3
                     and st.session_state["file_prompt_selected_20"] == True
                 ):
                     if st.button(
@@ -202,6 +204,7 @@ def main( col1, col2, placeholder):
                             st.session_state["prompt_introduced_20"],
                             page_select,
                             st,
+                            "20",
                         ],
                         key="buttom_send_20",
                         disabled=st.session_state["buttom_send_not_clicked_20"],
@@ -209,7 +212,7 @@ def main( col1, col2, placeholder):
                         logging.info("After_click_buttom_send = True")
                         st.session_state["chat_true_20"] = "chat activo"
                         st.session_state["buttom_has_send_20"] = "buttom_Send"
-                        st.session_state.value_20 = 5
+                        st.session_state['value_20'] = 5
                         st.session_state["buttom_send_not_clicked_20"] = True
                         col1 = 20
                         col2 = 80
@@ -219,7 +222,7 @@ def main( col1, col2, placeholder):
 
                 if st.session_state["chat_true_20"] == "chat activo":
                     logging.info(
-                        f"Gemini 1 Page: Chat active session {st.session_state.value}"
+                        f"Gemini 1 Page: Chat active session {st.session_state['value_20']}"
                     )
                     st.session_state["chat_true_20"] = "chat activo"
                     prompt = st.chat_input(
@@ -229,7 +232,7 @@ def main( col1, col2, placeholder):
                     # first send to google is what we introduce in the input text
                     if prompt == "terminar":
                         logging.info(
-                            f"Gemini 1 Page: Terminar Chat session {st.session_state.value_20}"
+                            f"Gemini 1 Page: Terminar Chat session {st.session_state['value_20']}"
                         )
                         # reload page and delete temp files
 
@@ -242,6 +245,7 @@ def main( col1, col2, placeholder):
                             placeholder_1,
                             TMP_FOLDER,
                             OUT_FOLDER,
+                            "20",
                         )
 
                     else:
@@ -266,7 +270,7 @@ def main( col1, col2, placeholder):
                             # actualiza status
                             st.session_state["prompt_introduced_20"] = prompt
                             logging.info(
-                                f"Gemini 1 Page: Session Initialized, second prompt session state {st.session_state.value_20}"
+                                f"Gemini Bot Page 20: Session Initialized, second prompt session state {st.session_state['value_20']}"
                             )
                             response = get_chat_response(
                                 st.session_state["llm_20"], prompt1
@@ -301,11 +305,11 @@ def main( col1, col2, placeholder):
                                 message2 = st.chat_message("assistant")
                                 message2.write(i)
     except:
-
+        st.session_state["salir_20"] = True
         # get the sys stack and log to gcloud
         placeholder.empty()
         text = print_stack()
-        text = "Gemini 1 Page " + text
+        text = "Gemini Page 20" + text
         logging.error(text)
     return
 
@@ -353,10 +357,10 @@ if __name__ == "__main__":
             )
             if "llm_20" not in st.session_state:
                 st.session_state["llm_20"]  = init_model(config)
+                st.session_state["llm_20"] = st.session_state["llm_20"].start_chat(response_validation=False)
                 
             logging.info(f"Model loaded: {config.get('MODEL')}")
             main(
-
                 col1=col1,
                 col2=col2,
                 placeholder=placeholder_20,

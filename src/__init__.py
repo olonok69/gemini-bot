@@ -25,7 +25,7 @@ from .helpers import (
     reload_page_1_doc,
     reset_session_10,
     reset_session_11,
-    reset_session_12
+    reset_session_12,
 )
 from .utils import print_stack, create_client_logging
 from .files import (
@@ -62,3 +62,5 @@ from .maintenance import (
     selected_delete_answer_gemini_nocase,
     visualiza_delete_answer_gemini_no_case,
 )
+
+from .maps import config, init_session_num, reset_session_num
