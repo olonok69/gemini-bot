@@ -112,28 +112,29 @@ def upload(list_pages, numpages, st, num: 10):
     return
 
 
-def upload_files(st):
+def upload_files(st, num:int = 10):
     """
     upload pdfs file in bytes
 
     :param st: session
+    :param num: number of session
     :return: list of images in bytes
     """
     parent_path = pathlib.Path(__file__).parent.parent.resolve()
     save_path = os.path.join(parent_path, "tmp")
     final_list = []
     final_sizes = []
-    for file in st.session_state["multi_file_name"]:
+    for file in st.session_state[f"multi_file_name_{num}"]:
         complete_name = os.path.join(save_path, file)
         list_images, size_files = extract_pdf_images(
-            complete_name, "all", "all", st, file, multi=True
+            complete_name, "all", "all", st, file, num=num, multi=True
         )
         final_list = final_list + list_images
         final_sizes.append(size_files[0])
     total_size = round(sum(final_sizes) / (1024 * 1024), 2)
-    st.session_state["upload_state"] = (
+    st.session_state[f"upload_state_{num}"] = (
         f"Number of Files extracted: {len(final_list)} con un tamaño total de {total_size} Megabytes"
     )
-    st.session_state["list_images_multi"] = final_list
-    st.session_state.value = 3  # pages procesed
+    st.session_state[f"list_images_multi_{num}"] = final_list
+    st.session_state[f"value_{num}"] = 3  # pages procesed
     return

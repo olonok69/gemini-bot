@@ -1662,3 +1662,579 @@
 [2024-12-03 16:21:39,419] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
 [2024-12-03 16:21:39,419] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
 [2024-12-03 16:21:39,419] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:28:42,357] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-04 17:28:42,357] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-04 17:33:17,594] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:33:17,594] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:33:17,594] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:35:04,971] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:35:04,971] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:35:04,971] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:38:46,511] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-04 17:38:46,511] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-04 17:38:59,668] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:38:59,668] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:38:59,668] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:39:08,324] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:39:08,324] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:39:08,324] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:39:08,438] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:39:08,438] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:39:08,438] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:39:28,537] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:39:28,537] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:39:28,537] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:39:28,648] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:39:28,648] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:39:28,648] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:39:28,651] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:39:28,651] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:39:28,651] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:42:35,406] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-04 17:42:35,406] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-04 17:43:04,795] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:43:04,795] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:43:04,795] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-04 17:43:14,447] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:43:14,447] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:43:14,447] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:43:14,566] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:43:14,566] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:43:14,566] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:43:24,870] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:43:24,870] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:43:24,870] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:43:24,981] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:43:24,981] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:43:24,981] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:43:24,987] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:43:24,987] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:43:24,987] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:18,509] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:18,509] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:18,509] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:18,604] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:18,604] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:18,604] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:18,609] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:18,609] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:18,609] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:18,615] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:18,615] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:18,615] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:22,141] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:44:22,141] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:44:22,141] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:44:22,145] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:22,145] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:22,145] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:22,235] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:22,235] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:22,235] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:22,240] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:22,240] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:22,240] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:22,247] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:22,247] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:22,247] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:22,283] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:44:22,283] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:44:22,283] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:44:22,286] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:44:22,286] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:44:22,286] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:44:42,600] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:44:42,600] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:44:42,600] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:44:42,602] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:44:42,602] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:44:42,602] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:44:42,604] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:44:42,604] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:44:42,604] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:44:42,605] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:44:42,605] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:44:42,605] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:44:42,606] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:44:42,606] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:44:42,606] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:44:42,607] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:44:42,607] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:44:42,607] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:44:42,608] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:44:42,608] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:44:42,608] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:44:42,609] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:44:42,609] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:44:42,609] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:44:42,610] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:44:42,610] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:44:42,610] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:44:42,611] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:44:42,611] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:44:42,611] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:44:42,614] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:44:42,614] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:44:42,614] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:44:42,615] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:44:42,615] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:44:42,615] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:44:42,616] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:44:42,616] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:44:42,616] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:44:42,618] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:44:42,618] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:44:42,618] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:44:42,619] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:44:42,619] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:44:42,619] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:44:42,621] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:44:42,621] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:44:42,621] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:44:42,622] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:44:42,622] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:44:42,622] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:44:42,623] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:44:42,623] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:44:42,623] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:44:42,624] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:44:42,624] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:44:42,624] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:44:42,624] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:44:42,624] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:44:42,624] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:44:42,626] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:44:42,626] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:44:42,626] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:44:42,627] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:44:42,627] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:44:42,627] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:44:42,627] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:44:42,627] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:44:42,627] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:44:42,629] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:44:42,629] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:44:42,629] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:44:52,444] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:52,444] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:52,444] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:52,548] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:52,548] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:52,548] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:52,554] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:52,554] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:52,554] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:44:52,576] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:52,576] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:52,576] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:44:54,968] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:44:54,968] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:44:54,968] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:44:54,970] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:44:54,970] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:44:54,970] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:44:54,971] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:44:54,971] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:44:54,971] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:44:54,972] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:44:54,972] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:44:54,972] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:44:54,973] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:44:54,973] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:44:54,973] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:44:54,974] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:44:54,974] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:44:54,974] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:44:54,975] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:44:54,975] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:44:54,975] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:44:54,976] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:44:54,976] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:44:54,976] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:44:54,977] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:44:54,977] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:44:54,977] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:44:54,978] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:44:54,978] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:44:54,978] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:44:54,979] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:44:54,979] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:44:54,979] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:44:54,980] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:44:54,980] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:44:54,980] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:44:54,981] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:44:54,981] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:44:54,981] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:44:54,982] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:44:54,982] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:44:54,982] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:44:54,983] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:44:54,983] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:44:54,983] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:44:54,984] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_21
+[2024-12-04 17:44:54,984] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_21
+[2024-12-04 17:44:54,984] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_21
+[2024-12-04 17:44:54,985] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:44:54,985] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:44:54,985] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:44:54,986] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:44:54,986] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:44:54,986] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:44:54,987] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:44:54,987] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:44:54,987] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:44:54,988] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:44:54,988] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:44:54,988] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:44:54,989] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:44:54,989] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:44:54,989] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:44:54,990] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:44:54,990] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:44:54,990] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:44:54,991] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:44:54,991] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:44:54,991] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:44:54,992] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:44:54,992] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:44:54,992] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:44:54,993] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:44:54,993] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:44:54,993] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:44:55,904] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:55,904] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:55,904] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:44:56,013] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:56,013] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:44:56,013] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:04,475] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:04,475] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:04,475] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:04,574] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:04,574] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:04,574] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:04,579] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:04,579] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:04,579] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:06,591] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:06,591] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:06,591] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:06,705] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:06,705] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:06,705] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:06,710] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:06,710] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:06,710] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:45,892] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:45,892] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:45,892] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:45,992] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:45,992] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:45,992] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:45,997] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:45,997] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:45,997] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:46,003] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:45:46,003] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:45:46,003] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:45:49,461] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:45:49,461] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:45:49,461] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:45:49,464] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:49,464] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:49,464] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:45:49,569] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:49,569] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:49,569] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:45:49,574] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:49,574] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:49,574] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:45:49,579] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:45:49,579] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:45:49,579] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:45:49,619] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:45:49,619] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:45:49,619] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:45:49,622] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:45:49,622] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:45:49,622] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:47:19,227] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:47:19,227] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:47:19,227] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:47:19,229] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:47:19,229] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:47:19,229] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:47:19,230] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:47:19,230] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:47:19,230] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:47:19,231] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:47:19,231] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:47:19,231] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:47:19,232] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:47:19,232] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:47:19,232] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:47:19,233] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:47:19,233] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:47:19,233] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:47:19,234] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:47:19,234] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:47:19,234] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:47:19,235] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:47:19,235] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:47:19,235] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:47:19,236] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:47:19,236] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:47:19,236] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:47:19,237] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:47:19,237] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:47:19,237] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:47:19,239] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:47:19,239] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:47:19,239] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:47:19,241] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:47:19,241] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:47:19,241] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:47:19,242] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:47:19,242] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:47:19,242] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:47:19,243] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:47:19,243] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:47:19,243] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:47:19,244] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:47:19,244] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:47:19,244] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:47:19,245] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:47:19,245] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:47:19,245] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:47:19,246] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:47:19,246] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:47:19,246] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:47:19,247] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:47:19,247] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:47:19,247] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:47:19,248] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:47:19,248] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:47:19,248] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:47:19,249] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:47:19,249] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:47:19,249] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:47:19,250] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:47:19,250] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:47:19,250] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:47:19,251] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:47:19,251] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:47:19,251] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:47:19,252] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:47:19,252] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:47:19,252] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:47:19,253] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:47:19,253] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:47:19,253] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:47:20,730] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:20,730] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:20,730] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:20,837] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:20,837] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:20,837] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:20,845] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:47:20,845] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:47:20,845] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-04 17:47:20,871] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:47:20,871] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:47:20,871] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:47:23,142] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:47:23,142] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:47:23,142] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:47:23,144] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:47:23,144] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:47:23,144] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:47:23,145] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:47:23,145] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:47:23,145] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:47:23,146] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:47:23,146] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:47:23,146] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:47:23,147] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:47:23,147] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:47:23,147] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:47:23,148] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:47:23,148] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:47:23,148] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:47:23,149] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:47:23,149] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:47:23,149] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:47:23,150] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:47:23,150] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:47:23,150] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:47:23,151] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:47:23,151] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:47:23,151] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:47:23,152] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:47:23,152] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:47:23,152] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:47:23,153] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:47:23,153] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:47:23,153] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:47:23,154] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:47:23,154] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:47:23,154] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:47:23,154] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:47:23,154] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:47:23,154] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:47:23,155] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:47:23,155] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:47:23,155] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:47:23,156] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:47:23,156] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:47:23,156] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:47:23,157] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_21
+[2024-12-04 17:47:23,157] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_21
+[2024-12-04 17:47:23,157] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_21
+[2024-12-04 17:47:23,158] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:47:23,158] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:47:23,158] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:47:23,159] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:47:23,159] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:47:23,159] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:47:23,160] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:47:23,160] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:47:23,160] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:47:23,161] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:47:23,161] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:47:23,161] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:47:23,162] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:47:23,162] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:47:23,162] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:47:23,163] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:47:23,163] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:47:23,163] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:47:23,164] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:47:23,164] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:47:23,164] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:47:23,164] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:47:23,164] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:47:23,164] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:47:23,165] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:47:23,165] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:47:23,165] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:47:23,967] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:23,967] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:23,967] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:24,078] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:24,078] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:24,078] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:37,965] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:37,965] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:37,965] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:47:38,074] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:38,074] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:38,074] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:47:38,086] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:47:38,086] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:47:38,086] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:48:31,399] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:48:31,399] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:48:31,399] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:48:31,498] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:48:31,498] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:48:31,498] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:48:31,510] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:48:31,510] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:48:31,510] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:48:31,535] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:48:31,535] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:48:31,535] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:48:35,046] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:48:35,046] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:48:35,046] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-04 17:48:35,048] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:48:35,048] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:48:35,048] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-04 17:48:35,151] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:48:35,151] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:48:35,151] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-04 17:48:35,163] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:48:35,163] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:48:35,163] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 4
+[2024-12-04 17:48:35,194] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:48:35,194] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:48:35,194] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-04 17:48:35,369] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:48:35,369] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:48:35,369] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-04 17:48:35,372] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:48:35,372] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:48:35,372] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-04 17:50:04,191] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:50:04,191] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:50:04,191] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-04 17:50:04,193] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:50:04,193] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:50:04,193] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-04 17:50:04,195] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:50:04,195] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:50:04,195] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-04 17:50:04,196] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:50:04,196] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:50:04,196] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-04 17:50:04,197] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:50:04,197] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:50:04,197] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-04 17:50:04,198] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:50:04,198] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:50:04,198] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-04 17:50:04,199] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:50:04,199] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:50:04,199] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-04 17:50:04,200] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:50:04,200] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:50:04,200] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-04 17:50:04,202] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:50:04,202] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:50:04,202] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-04 17:50:04,203] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:50:04,203] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:50:04,203] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-04 17:50:04,207] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:50:04,207] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:50:04,207] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-04 17:50:04,208] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:50:04,208] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:50:04,208] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-04 17:50:04,210] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:50:04,210] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:50:04,210] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-04 17:50:04,211] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:50:04,211] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:50:04,211] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-04 17:50:04,212] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:50:04,212] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:50:04,212] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-04 17:50:04,213] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:50:04,213] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:50:04,213] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-04 17:50:04,214] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:50:04,214] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:50:04,214] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-04 17:50:04,215] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:50:04,215] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:50:04,215] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-04 17:50:04,216] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:50:04,216] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:50:04,216] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-04 17:50:04,219] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:50:04,219] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:50:04,219] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-04 17:50:04,221] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:50:04,221] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:50:04,221] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-04 17:50:04,222] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:50:04,222] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:50:04,222] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-04 17:50:04,224] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:50:04,224] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:50:04,224] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-04 17:50:04,226] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:50:04,226] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-04 17:50:04,226] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
