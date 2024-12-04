@@ -9,6 +9,7 @@ import datetime
 from typing import List
 from src.work_gemini import start_chat
 from src.pdf_utils import count_pdf_pages, upload
+from src.maps import reset_session_num
 from pathlib import Path
 
 
@@ -363,7 +364,7 @@ def init_session_multi(st, ss, model, col1, col2):
     return
 
 
-def reload_page_many_docs(st, ss, model, df, fname, placeholder):
+def reload_page_many_docs(st, ss, model, df, fname, placeholder, num:int="10"):
     """
     refresh page and initialize variables page may docs
     Args:
@@ -375,22 +376,20 @@ def reload_page_many_docs(st, ss, model, df, fname, placeholder):
     """
     # delete files
     # write response of model to table
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    list2 = copy.deepcopy(st.session_state[f"chat_answers_history_{num}"])
     # get filename
-    filename = get_filename_multi(st)
+    filename = get_filename_multi(st,num=num)
     # save the response of Model
     save_df_many(
         list2=list2,
         df=df,
         fname=fname,
-        prompt=st.session_state["prompt_introduced"],
+        prompt=st.session_state[f"prompt_introduced_{num}"],
         filename=filename,
     )
     # restart chat
-    chat = start_chat(model)
-    reset_session_multi(st, ss, chat)
+    reset_session_num(st, num)
     placeholder.empty()
-
     st.stop()
     return
 
@@ -645,13 +644,13 @@ def save_df_many(list2: List, df: pd.DataFrame, fname: str, prompt: str, filenam
     return
 
 
-def get_filename_multi(st):
+def get_filename_multi(st, num:int=10):
     """
     extract filename from multi file name
     """
 
     text0 = ""
-    for file in st.session_state["multi_file_name"]:
+    for file in st.session_state[f"multi_file_name_{num}"]:
         text0 = text0 + file.replace(".pdf", "") + "_"
     filename = text0[:-1]
     return filename
@@ -883,28 +882,6 @@ def reset_session_12(st):
 
     return
 
-def reset_session_num(session, num:int="10"):
-    """
-    Delete session state for multiple files option
-    param: st  session
-    param: ss  session state
-    param: model  chat (gemini model)
-    """
-    for x in session.session.keys():
-        if num in x and "salir" not in x:
-            del session.session[x]
-    # del st.session_state["embeddings_12"]
-    # del st.session_state["index_12"]
-    # del st.session_state["vectorstore_12"]
-    # del st.session_state["select_box_modifica"]
-    # del st.session_state["selector_selected_modifica"]
-    # del st.session_state["selector_selected_section"]
-    # del st.session_state["selector_selected_pericial"]
-    # placeholder for multiple files
-
-    session.session_state[f"salir_{num}"] = False
-
-    return
 
 
     

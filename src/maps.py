@@ -1,13 +1,23 @@
 from IPython import embed
 import logging
 # Session configuration
-config ={"20": { "config_20_del" : ["vcol1doc_20",  "vcol2doc_20", "init_run_20", "pdf_ref_20", "file_name_20", "file_history_20", "upload_state_20", "value_20", "buttom_send_not_clicked_20","select_box_20",  
+config ={
+    "20": { "config_20_del" : ["vcol1doc_20",  "vcol2doc_20", "init_run_20", "pdf_ref_20", "file_name_20", "file_history_20", "upload_state_20", "value_20", "buttom_send_not_clicked_20","select_box_20",  
 "file_prompt_selected_20", "prompt_introduced_20", "chat_true_20","expander_20", "initialized_20", "buttom_send_20", "buttom_has_send_20", "llm_20", "prompt_20", "chat_answers_history_20", 
 "user_prompt_history_20","chat_history_20", "buttom_send_clicked_20", "buttom_resfresh_clicked_20", "salir_20"],
 
 "config_20" : ["user_prompt_history_20",  "chat_answers_history_20", "chat_history_20", "initialized_20", "list_images_20", "file_name_20", "file_history_20", "prompt_introduced_20", "prompt_20","chat_true_20",  
 "buttom_popup_20", "buttom_has_send_20", "pdf_ref_20","value_20", "buttom_send_not_clicked_20", "vcol1doc_20", "vcol2doc_20", "expander_20", "file_prompt_selected_20","buttom_send_clicked_20",
-"buttom_resfresh_clicked_20"]}}
+"buttom_resfresh_clicked_20"]},
+    "21": { "config_21_del" : ["vcol1doc_21",  "vcol2doc_21", "init_run_21", "pdf_ref_21", "multi_file_name_21", "multi_file_pages_21", "upload_state_21", "value_21", "buttom_send_not_clicked_21","case_query_21",  
+"file_prompt_selected_21", "prompt_introduced_21", "chat_true_21","expander_21", "initialized_21", "buttom_send_21", "buttom_has_send_21", "llm_21", "prompt_21", "chat_answers_history_21", 
+"user_prompt_history_21","chat_history_21", "buttom_send_clicked_21", "buttom_resfresh_clicked_21", "salir_21"],
+
+"config_21" : ["user_prompt_history_21",  "chat_answers_history_21", "chat_history_21", "initialized_21", "list_images_21", "multi_file_name_21", "multi_file_pages_21", "prompt_introduced_21", "prompt_21","chat_true_21",  
+"buttom_popup_21", "buttom_has_send_21", "pdf_ref_21","value_21", "buttom_send_not_clicked_21", "vcol1doc_21", "vcol2doc_21", "expander_21", "file_prompt_selected_21","buttom_send_clicked_21",
+"buttom_resfresh_clicked_21"]},
+
+}
 
 def reset_session_num(session, num:int="10"):
     """
@@ -47,6 +57,12 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"chat_answers_history_{num}" not in sess.session_state and f"chat_answers_history_{num}" in config:
         sess.session_state[f"chat_answers_history_{num}"] = []
+        
+    if f"multi_file_name_{num}" not in sess.session_state and f"multi_file_name_{num}" in config:
+        sess.session_state[f"multi_file_name_{num}"] = []
+
+    if f"multi_file_pages_{num}" not in sess.session_state and f"multi_file_pages_{num}" in config:
+        sess.session_state[f"multi_file_pages_{num}"] = []
 
     if f"chat_history_{num}" not in sess.session_state and f"chat_history_{num}" in config:
         sess.session_state[f"chat_history_{num}"] = []

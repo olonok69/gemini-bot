@@ -6,13 +6,11 @@ from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages
 from google.oauth2 import service_account
 import vertexai
-from vertexai.generative_models import GenerativeModel
-import vertexai.preview.generative_models as generative_models
 from dotenv import dotenv_values
 import json
 from src.work_gemini import get_chat_response, prepare_prompt, init_model
 from src.helpers import (
-    init_session_1_prompt,
+
     visualiza_1_prompt,
     reload_page_1_doc,
 )
@@ -64,7 +62,6 @@ def main( col1, col2, placeholder):
     """
     main loop
     params:
-    model (vertexai.generative_models.GenerativeModel): model
     col1 (int): size col 1
     col2 (int): size col 2
     placeholder (streamlit.empty): placeholder
@@ -343,11 +340,11 @@ if __name__ == "__main__":
 
             vertex_credentials = service_account.Credentials.from_service_account_info(info)
             # client = create_client_logging(vertex_credentials=vertex_credentials)
+
             # Retrieves a Cloud Logging handler based on the environment
             # you're running in and integrates the handler with the
             # Python logging module. By default this captures all logs
             # at INFO level and higher
-
             # client.setup_logging()
 
             vertexai.init(
