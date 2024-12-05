@@ -120,11 +120,11 @@ def create_folders(root_dir: str):
     return OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR
 
 
-def changed_selector(st):
-    st.session_state["file_and_answer_select_has_changed"] = True
+def changed_selector(st,num:int=10):
+    st.session_state[f"file_and_answer_select_has_changed_{num}"] = True
 
 
-def file_selector(st, df: pd.DataFrame):
+def file_selector(st, df: pd.DataFrame, num:int=10):
     """
     select row from dataframe and return as dict
     st: session object
@@ -139,10 +139,10 @@ def file_selector(st, df: pd.DataFrame):
         filenames,
         placeholder="Select a file",
         index=None,
-        key="file_and_answer_select",
+        key="file_and_answer_select_{}".format(num),
         on_change=changed_selector,
-        args=[st],
-        disabled=st.session_state["buttom_send_visualiza"],
+        args=[st, num],
+        disabled=st.session_state[f"buttom_send_visualiza_{num}"],
     )
     # print(st.session_state["file_and_answer_select"])
 
