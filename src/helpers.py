@@ -589,7 +589,7 @@ def reset_session_faiss(st):
     return
 
 
-@st.experimental_dialog("Choose prompt 👇")
+@st.dialog("Choose prompt 👇")
 def visualiza(st, path):
     file = st.session_state["select_box"]
     with open(os.path.join(path, file), "r") as f:
@@ -704,8 +704,8 @@ def visualiza_1_prompt(st, df, page_select, numpages, num):
         st.rerun()
 
 
-@st.experimental_dialog("Confirm Selection 👇", width="large")
-def visualiza_display_page(st, selection_dict):
+@st.dialog("Confirm Selection 👇", width="large")
+def visualiza_display_page(st, selection_dict, num:int=10):
     """
     Visualize the answers and selected
     Args:
@@ -732,15 +732,15 @@ def visualiza_display_page(st, selection_dict):
         value=selection_dict.get("respuesta_chat"),
     )
     if st.button("Accept", key="accept_inside_select_answer"):
-        st.session_state["answer_introduced"] = selection_dict
-        st.session_state["file_prompt_selected_visualiza"] = True
+        st.session_state[f"answer_introduced_{num}"] = selection_dict
+        st.session_state[f"file_prompt_selected_visualiza_{num}"] = True
         st.rerun()
 
     return
 
 
-@st.experimental_dialog("Confirma Pericial 👇", width="large")
-def visualiza_pericial(st, df, list_matches_textos, list_matches):
+@st.dialog("Confirma Pericial 👇", width="large")
+def visualiza_pericial(st, df, list_matches_textos, list_matches, num:int=10):
     """
     Visualize the prompt
     Args:
@@ -749,7 +749,7 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
         text_selection (text): pericial selected to visualization
     """
     # get the name of the file
-    seccion2 = st.session_state["select_box_2"]
+    seccion2 = st.session_state[f"select_box_{num}"]
     pos = list_matches_textos.index(seccion2)
     idv = list_matches[pos]
 
@@ -774,10 +774,10 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
         key="seccion_area",
         value=text_seccion,
     )
-    if st.button("Accept", key="accept_inside_pericial"):
-        st.session_state["b_accept_inside_pericial"] = True
-        st.session_state["seccion_introduced"] = text_seccion
-        st.session_state["pericial_prompt_selected"] = True
+    if st.button("Accept", key=f"accept_inside_pericial_{num}"):
+        st.session_state[f"b_accept_inside_pericial_{num}"] = True
+        st.session_state[f"seccion_introduced_{num}"] = text_seccion
+        st.session_state[f"pericial_prompt_selected_{num}"] = True
 
         st.rerun()
 
@@ -785,7 +785,7 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
 
 
 def reload_page_combina(
-    st, model, embeddings, index, vectorstore, fname, df, placeholder
+    st, model, embeddings, index, vectorstore, fname, df, placeholder,num:int=10
 ):
     """
     refresh page and initialize variables
@@ -801,19 +801,20 @@ def reload_page_combina(
     """
     # delete files
     # write response of model to table
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    list2 = copy.deepcopy(st.session_state[f"chat_answers_history_{num}"])
     # get filename
-    filename = st.session_state["prompt_combined_filename"]
+    filename = st.session_state[f"prompt_combined_filename_{num}"]
     # save the response of Model
     save_df_many(
         list2=list2,
         df=df,
         fname=fname,
-        prompt=st.session_state["prompt_introduced"],
+        prompt=st.session_state[f"prompt_introduced_{num}"],
         filename=filename,
     )
     # restart
-    reset_session_visualiza(st, model, embeddings, index, vectorstore)
+
+    reset_session_num(st, num)
     placeholder.empty()
     st.stop()
     return
