@@ -36,7 +36,7 @@ def get_docs_to_add_vectorstore_faiss(pages, file, category="legal"):
     return documents, ids, metadatas
 
 
-def add_new_documents_to_faiss(st, documents, ids, metadatas):
+def add_new_documents_to_faiss(st, documents, ids, metadatas, num: int = 10):
     """
     add new documents to Faiss
     Args:
@@ -46,10 +46,10 @@ def add_new_documents_to_faiss(st, documents, ids, metadatas):
 
     """
     # add new documents to Faiss
-    st.session_state["faiss_vectorstore"].add_texts(
+    st.session_state[f"faiss_vectorstore_{num}"].add_texts(
         texts=documents, ids=ids, metadatas=metadatas
     )
-    return st.session_state["faiss_vectorstore"].index.ntotal
+    return st.session_state[f"faiss_vectorstore_{num}"].index.ntotal
 
 
 def get_docs_to_add_vectorstore(pages, file, google_ef):
@@ -68,7 +68,7 @@ def get_docs_to_add_vectorstore(pages, file, google_ef):
     return documents, ids, metadatas, embeddings
 
 
-def sumup_history(st):
+def sumup_history(st, num: int = 10):
     """
     create a text value with the chat history
     Args:
@@ -77,11 +77,11 @@ def sumup_history(st):
     textvalue = ""
 
     for promp, answer, i in zip(
-        st.session_state["user_prompt_history_faiss"],
-        st.session_state["chat_answers_history_faiss"],
+        st.session_state[f"user_prompt_history_faiss_{num}"],
+        st.session_state[f"chat_answers_history_faiss_{num}"],
         range(
             1,
-            len(st.session_state["chat_answers_history_faiss"]) + 1,
+            len(st.session_state[f"chat_answers_history_faiss_{num}"]) + 1,
         ),
     ):
         textvalue = (
@@ -99,7 +99,7 @@ def sumup_history(st):
     return textvalue
 
 
-def update_list_answers_queries(st, result, query):
+def update_list_answers_queries(st, result, query, num: int = 10):
     """
     update list of answers and queries
     Args:
@@ -108,17 +108,17 @@ def update_list_answers_queries(st, result, query):
     """
     # add model answer and user query to history
     if (
-        result["answer"] not in st.session_state["chat_answers_history_faiss"]
-        and st.session_state["buttom_visualiza_faiss_clicked"] == False
+        result["answer"] not in st.session_state[f"chat_answers_history_faiss_{num}"]
+        and st.session_state[f"buttom_visualiza_faiss_clicked_{num}"] == False
     ):
-        st.session_state["chat_answers_history_faiss"].append(
+        st.session_state[f"chat_answers_history_faiss_{num}"].append(
             result["answer"]
         )  # add model answer to history
     if (
-        query not in st.session_state["user_prompt_history_faiss"]
-        and st.session_state["buttom_visualiza_faiss_clicked"] == False
+        query not in st.session_state[f"user_prompt_history_faiss_{num}"]
+        and st.session_state[f"buttom_visualiza_faiss_clicked_{num}"] == False
     ):
-        st.session_state["user_prompt_history_faiss"].append(
+        st.session_state[f"user_prompt_history_faiss_{num}"].append(
             query
         )  # add user query to history
     return

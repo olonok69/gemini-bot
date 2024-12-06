@@ -21,12 +21,33 @@ config ={
 
  "22": { 
 "config_22_del" : ["vcol1doc_22",  "vcol2doc_22", "init_run_22", "file_and_answer_select_22", "multi_file_name_21", "file_prompt_selected_visualiza_22", "file_and_answer_select_has_changed_22", "chat_true_22", "search_pericial_22",
-"buttom_send_visualiza_22",  "section_prompt_selected_22", "prompt_introduced_22", "select_box_221","select_box_222""pericial_prompt_selected_22", "b_accept_inside_pericial_22", "prompt_combined_filename_22", "seccion_introduced_22", "answer_introduced_22",
+"buttom_send_visualiza_22",  "section_prompt_selected_22", "prompt_introduced_22", "select_box_221","select_box_22""pericial_prompt_selected_22", "b_accept_inside_pericial_22", "prompt_combined_filename_22", "seccion_introduced_22", "answer_introduced_22",
 "expander_22", "instruction_to_be_send_22","prompt_1_sample_22", "chat_answers_history_22", "initialized_22", "llm_22", "user_prompt_history_22","chat_history_22", "salir_22", "embeddings_22", "index_22", "vectorstore_22"],
 
 "config_22" : ["file_prompt_selected_visualiza_22",  "file_and_answer_select_has_changed_22", "chat_true_22", "buttom_send_visualiza_22", "section_prompt_selected_22", "pericial_prompt_selected_22",  "prompt_introduced_22", 
 "b_accept_inside_pericial_22","answer_introduced_22", "prompt_combined_filename_22", "seccion_introduced_22", "expander_22","instruction_to_be_send_22", "buttom_send_not_clicked_21", "vcol1doc_22", "vcol2doc_22", 
 "chat_answers_history_22", "initialized_22","user_prompt_history_22", "chat_history_22"]},
+
+ "23": { 
+"config_23_del" : ["vcol1doc_23",  "vcol2doc_23", "init_run_23", "file_and_answer_select_23", "multi_file_name_21", "file_prompt_selected_visualiza_23", "file_and_answer_select_has_changed_23", "chat_true_23", "search_pericial_23",
+"buttom_send_visualiza_23",  "section_prompt_selected_23", "prompt_introduced_23", "select_box_231","select_box_23""pericial_prompt_selected_23", "b_accept_inside_pericial_23", "prompt_combined_filename_23", "seccion_introduced_23", "answer_introduced_23",
+"expander_23", "instruction_to_be_send_23","prompt_1_sample_23", "chat_answers_history_23", "initialized_23", "llm_23", "user_prompt_history_23","chat_history_23", "salir_23", "embeddings_23", "index_23", "vectorstore_23"],
+
+"config_23" : ["file_prompt_selected_visualiza_23",  "file_and_answer_select_has_changed_23", "chat_true_23", "buttom_send_visualiza_23", "section_prompt_selected_23", "pericial_prompt_selected_23",  "prompt_introduced_23", 
+"b_accept_inside_pericial_23","answer_introduced_23", "prompt_combined_filename_23", "seccion_introduced_23", "expander_23","instruction_to_be_send_23", "buttom_send_not_clicked_21", "vcol1doc_23", "vcol2doc_23", 
+"chat_answers_history_23", "initialized_23","user_prompt_history_23", "chat_history_23"]},
+
+ "30": { 
+"config_30_del" : ["salir_30",  "llm_30", "embeddings_30", "vectorstore_30", "init_run_30", "select_file_faiss_30", "checkbox_faiss_30", "file_kb_faiss_selected_30", "checkbox_30", "user_prompt_history_faiss_30",
+"retriever_30",  "name_file_kb_faiss_selected_30", "conversational_rag_chain_30", "store_30","current_prompt_30", "buttom_visualiza_faiss_clicked_30", "docs_context_names_30", "docs_context_30", "expander_30",
+"answer_prompt_30", "chat_history_30","history_conversation_with_model_30", "text_30", "buttom_visualiza_faiss_30", "file_faiss_selected_30", "select_context_faiss_30","kb_text2_faiss_30", "chat_answers_history_faiss_30"],
+"config_30" : ["file_kb_faiss_selected_30", "checkbox_30", "retriever_30", "name_file_kb_faiss_selected_30", "conversational_rag_chain_30", "store_30",  "current_prompt_30", "user_prompt_history_faiss_30",
+"buttom_visualiza_faiss_clicked_30","docs_context_names_30", "docs_context_30",  "expander_30","answer_prompt_30", "chat_history_30", "history_conversation_with_model_30", "file_faiss_selected_30", "chat_answers_history_faiss_30"]},
+
+ "31": { 
+"config_31_del" : ["salir_31",  "llm_31", "embeddings_31", "vectorstore_31", "init_run_31", "api_wrapper_31", "web_research_retriever_31", "checkbox_31", "retrieval_chain_31", "qa_chain_31",
+"map_chain_31",  "combine_parallel_chain_31", "complete_chain_31", "kb_text_31"],
+"config_31" : []},
 
 }
 
@@ -66,6 +87,11 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
     if f"user_prompt_history_{num}" not in sess.session_state and f"user_prompt_history_{num}" in config:
         sess.session_state[f"user_prompt_history_{num}"] = []
 
+    if f"user_prompt_history_faiss_{num}" not in sess.session_state and f"user_prompt_history_faiss_{num}" in config:
+        sess.session_state[f"user_prompt_history_faiss_{num}"] = []
+    if f"chat_answers_history_faiss_{num}" not in sess.session_state and f"chat_answers_history_faiss_{num}" in config:
+        sess.session_state[f"chat_answers_history_faiss_{num}"] = []
+
     if f"chat_answers_history_{num}" not in sess.session_state and f"chat_answers_history_{num}" in config:
         sess.session_state[f"chat_answers_history_{num}"] = []
         
@@ -77,12 +103,24 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"chat_history_{num}" not in sess.session_state and f"chat_history_{num}" in config:
         sess.session_state[f"chat_history_{num}"] = []
+    
+    if f"docs_context_names_{num}" not in sess.session_state and f"docs_context_names_{num}" in config:
+        sess.session_state[f"docs_context_names_{num}"] = []
+
+    if f"docs_context_{num}" not in sess.session_state and f"docs_context_{num}" in config:
+        sess.session_state[f"docs_context_{num}"] = []
 
     if f"initialized_{num}" not in sess.session_state and f"initialized_{num}" in config:
         sess.session_state[f"initialized_{num}"] = "False"
 
     if f"chat_{num}" not in sess.session_state and f"chat_{num}" in config:
         sess.session_state[f"chat_{num}"] = None
+    
+    if f"conversational_rag_chain_{num}" not in sess.session_state and f"conversational_rag_chain_{num}" in config:
+        sess.session_state[f"conversational_rag_chain_{num}"] = None
+
+    if f"retriever_{num}" not in sess.session_state and f"retriever_{num}" in config:
+        sess.session_state[f"retriever_{num}"] = None
 
     if f"embeddings_{num}" not in sess.session_state and f"embeddings_{num}" in config:
         sess.session_state[f"embeddings_{num}"] = None
@@ -111,6 +149,18 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"prompt_introduced_{num}" not in sess.session_state and f"prompt_introduced_{num}" in config:
         sess.session_state[f"prompt_introduced_{num}"] = ""
+    
+    if f"name_file_kb_faiss_selected_{num}" not in sess.session_state and f"name_file_kb_faiss_selected_{num}" in config:
+        sess.session_state[f"name_file_kb_faiss_selected_{num}"] = ""
+    
+    if f"history_conversation_with_model_{num}" not in sess.session_state and f"history_conversation_with_model_{num}" in config:
+        sess.session_state[f"history_conversation_with_model_{num}"] = ""
+    
+    if f"current_prompt_{num}" not in sess.session_state and f"current_prompt_{num}" in config:
+        sess.session_state[f"current_prompt_{num}"] = ""
+    
+    if f"answer_prompt_{num}" not in sess.session_state and f"answer_prompt_{num}" in config:
+        sess.session_state[f"answer_prompt_{num}"] = ""
 
     if f"seccion_introduced_{num}" not in sess.session_state and f"seccion_introduced_{num}" in config:
         sess.session_state[f"seccion_introduced_{num}"] = ""
@@ -120,6 +170,9 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"answer_introduced_{num}" not in sess.session_state and f"answer_introduced_{num}" in config:
         sess.session_state[f"answer_introduced_{num}"] = ""
+    
+    if f"answer_{num}" not in sess.session_state and f"answer_{num}" in config:
+        sess.session_state[f"answer_{num}"] = ""
 
     if f"prompt_combined_filename_{num}" not in sess.session_state and f"prompt_combined_filename_{num}" in config:
         sess.session_state[f"prompt_combined_filename_{num}"] = ""
@@ -141,6 +194,18 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"buttom_send_clicked_{num}" not in sess.session_state and f"buttom_send_clicked_{num}" in config:
         sess.session_state[f"buttom_send_clicked_{num}"] = False
+    
+    if f"file_faiss_selected_{num}" not in sess.session_state and f"file_faiss_selected_{num}" in config:
+        sess.session_state[f"file_faiss_selected_{num}"] = False
+    
+    if f"buttom_visualiza_faiss_clicked_{num}" not in sess.session_state and f"buttom_visualiza_faiss_clicked_{num}" in config:
+        sess.session_state[f"buttom_visualiza_faiss_clicked_{num}"] = False
+
+    if f"checkbox_{num}" not in sess.session_state and f"checkbox_{num}" in config:
+        sess.session_state[f"checkbox_{num}"] = False
+
+    if f"file_kb_faiss_selected_{num}" not in sess.session_state and f"file_kb_faiss_selected_{num}" in config:
+        sess.session_state[f"file_kb_faiss_selected_{num}"] = False
 
     if f"buttom_send_visualiza_{num}" not in sess.session_state and f"buttom_send_visualiza_{num}" in config:
         sess.session_state[f"buttom_send_visualiza_{num}"] = False
@@ -162,7 +227,9 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"b_accept_inside_pericial_{num}" not in sess.session_state and f"b_accept_inside_pericial_{num}" in config:
         sess.session_state[f"b_accept_inside_pericial_{num}"] = False
-
+    
+    if f"store_{num}" not in sess.session_state and f"store_{num}" in config:
+        sess.session_state[f"store_{num}"] = {}
     if f"pdf_ref_{num}" not in ss and f"pdf_ref_{num}" in config:
         ss[f"pdf_ref_{num}"] = None
 

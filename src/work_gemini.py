@@ -1,5 +1,6 @@
 from vertexai.generative_models import GenerativeModel, Part, ChatSession
 import vertexai.generative_models as generative_models
+from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 import base64
 import logging
 
@@ -72,3 +73,27 @@ def init_model(config):
             "top_p": 0.95,
         },
     )
+
+
+def init_llm(model, credentials):
+    """
+    Initialize the chat model
+    :param model: model
+    :param credentials: credentials
+    :return: ChatGoogleGenerativeAI
+    """
+    return ChatGoogleGenerativeAI(model=model, credentials=credentials)
+
+def init_google_embeddings(config, credentials, google_api_key):
+    """
+    get embeddings model
+    :param config: config
+    :param credentials: credentials
+    :param google_api_key: google api key
+    :return: GoogleGenerativeAIEmbeddings
+    """
+    return GoogleGenerativeAIEmbeddings(
+                    model=config.get("EMBEDDINGS2"),
+                    credentials=credentials,
+                    google_api_key=google_api_key,
+                )

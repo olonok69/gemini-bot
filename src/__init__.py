@@ -1,5 +1,5 @@
 from .pdf_utils import extract_pdf_images, count_pdf_pages, upload, upload_files
-from .work_gemini import get_chat_response, prepare_prompt, start_chat, init_model
+from .work_gemini import get_chat_response, prepare_prompt, start_chat, init_model, init_llm, init_google_embeddings
 from .helpers import (
     write_history_1,
     reset_session_1,
