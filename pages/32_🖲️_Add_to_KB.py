@@ -70,7 +70,7 @@ def reload_add_doc_kb(st, ss, placeholder):
 def selected_seccion_add_kb(st, num: int):
     st.session_state[f"add_file_kb_selected_{num}"] = True
 
-def change_state_33(session, placeholder):
+def change_state_32(session, placeholder):
     """
     change state after leave conversation
     params:
@@ -136,7 +136,7 @@ def main( path_faiss, placeholder):
         if ss.pdf_ref_32:
 
             if st.session_state['value_32'] >= 1:
-                binary_data = ss.pdf_ref
+                binary_data = ss.pdf_ref_32
 
                 pdf_viewer(input=binary_data, width=700, height=300)
                 # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
@@ -177,22 +177,22 @@ def main( path_faiss, placeholder):
                         st.session_state["add_file_kb_selected_32"] = False
                         num_documents = len(documents)
                         vector_store_length_before = st.session_state[
-                            "faiss_vectorstore_32"
+                            "vectorstore_32"
                         ].index.ntotal
                         vector_store_length_after = add_new_documents_to_faiss(
-                            st, documents, ids, metadatas
+                            st, documents, ids, metadatas, num="32"
                         )
-                        print(
+                        logging.info(
                             f"Vectorstore length before: {vector_store_length_before}"
                         )
-                        print(f"Vectorstore length after: {vector_store_length_after}")
-                        print(f"Number of documents added: {num_documents}")
+                        logging.info(f"Vectorstore length after: {vector_store_length_after}")
+                        logging.info(f"Number of documents added: {num_documents}")
                         # if length after add = length before + len documents then seraialize database again
                         if (
                             vector_store_length_after
                             == vector_store_length_before + num_documents
                         ):
-                            st.session_state["faiss_vectorstore_32"].save_local(
+                            st.session_state["vectorstore_32"].save_local(
                                 path_faiss, index_name="forensic"
                             )
                             texto = (
@@ -263,8 +263,9 @@ if __name__ == "__main__":
                 st.session_state["embeddings_32"] = init_google_embeddings(config=config, credentials=vertex_credentials, google_api_key=google_api_key)
                 logging.info(f"Embeddings loaded: {config.get('EMBEDDINGS2')}")
             # Vectorstore
+            path_faiss = os.path.join(PROJECT_DIR, "kb","faiss")
             if "vectorstore_32" not in st.session_state:
-                path_faiss = os.path.join(PROJECT_DIR, "kb","faiss")
+
                 st.session_state["vectorstore_32"] = FAISS.load_local(
                     folder_path=path_faiss,
                     embeddings=st.session_state["embeddings_32"],

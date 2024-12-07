@@ -6,8 +6,8 @@ from typing import Dict
 from src.files import remove_prompts, remove_pericial, remove_anwers
 import logging
 
-def selected_add(st):
-    st.session_state["selector_selected_add"] = True
+def selected_add(st, num:int=10):
+    st.session_state[f"selector_selected_add_{num}"] = True
 
 
 def selected_modifica(st):
@@ -71,7 +71,7 @@ def save_text_add_prompt(
     return
 
 
-def visualiza_add_prompt(st, df_prompts, fname):
+def visualiza_add_prompt(st, df_prompts, fname, num: int = 10):
     """
     Visualiza add prompt
     args:
@@ -111,12 +111,12 @@ def visualiza_add_prompt(st, df_prompts, fname):
                 fname,
             ],
         ):
-            st.session_state["selector_selected_add"] = False
-            st.rerun()
+            st.session_state[f"selector_selected_add_{num}"] = False
+
     return
 
 
-def visualiza_add_pericial(st, df_pericial, fname, secciones):
+def visualiza_add_pericial(st, df_pericial, fname, secciones, num="10"):
     """
     Visualiza add prompt
     args:
@@ -148,12 +148,12 @@ def visualiza_add_pericial(st, df_pericial, fname, secciones):
                         seccion,
                         df_pericial,
                         fname,
-                        st.session_state["vectorstore_10"],
+                        st.session_state[f"vectorstore_{num}"],
                     ],
                 ):
 
-                    st.session_state["selector_selected_add"] = False
-                    st.rerun()
+                    st.session_state[f"selector_selected_add_{num}"] = False
+
     return
 
 
@@ -425,7 +425,7 @@ def visualiza_delete_prompt(st, df: pd.DataFrame, fname: str):
         st.session_state["selector_selected_pericial_delete"] = False
         st.session_state["selector_selected_answer_delete"] = False
         st.session_state["selector_selected_answer_delete_no_case"] = False
-        st.rerun()
+
     return
 
 
@@ -470,7 +470,6 @@ def visualiza_delete_pericial(
         st.session_state["selector_selected_pericial_delete"] = False
         st.session_state["selector_selected_answer_delete"] = False
         st.session_state["selector_selected_answer_delete_no_case"] = False
-        st.rerun()
 
 
 def visualiza_delete_answer_gemini(st, df: pd.DataFrame, fname: str):
@@ -520,8 +519,8 @@ def visualiza_delete_answer_gemini(st, df: pd.DataFrame, fname: str):
         st.session_state["selector_selected_pericial_delete"] = False
         st.session_state["selector_selected_answer_delete"] = False
         st.session_state["selector_selected_answer_delete_no_case"] = False
-        st.rerun()
 
+    return
 
 def visualiza_delete_answer_gemini_no_case(st, df: pd.DataFrame, fname: str):
     """
@@ -570,4 +569,4 @@ def visualiza_delete_answer_gemini_no_case(st, df: pd.DataFrame, fname: str):
         st.session_state["selector_selected_pericial_delete"] = False
         st.session_state["selector_selected_answer_delete"] = False
         st.session_state["selector_selected_answer_delete_no_case"] = False
-        st.rerun()
+    return

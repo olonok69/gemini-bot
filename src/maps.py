@@ -48,6 +48,15 @@ config ={
 "config_31_del" : ["salir_31",  "llm_31", "embeddings_31", "vectorstore_31", "init_run_31", "api_wrapper_31", "web_research_retriever_31", "checkbox_31", "retrieval_chain_31", "qa_chain_31",
 "map_chain_31",  "combine_parallel_chain_31", "complete_chain_31", "kb_text_31"],
 "config_31" : []},
+ "32": { 
+"config_32_del" : ["salir_32",  "llm_32", "embeddings_32", "vectorstore_32", "init_run_32", "value_32", "file_name_32", "file_history_32", "upload_state_32", "pdf_ref_32",
+"selectbox_category_32",  "add_file_kb_selected_32", "documents_32", "ids_32", "metadatas_32","pages_32"],
+"config_32" : ["value_32","file_name_32", "file_history_32", "upload_state_32","add_file_kb_selected_32","documents_32", "ids_32", "metadatas_32", "pdf_ref_32", "pages_32"]},
+
+ 
+ "10": { 
+"config_10_del" : ["salir_10",  "index_10", "embeddings_10", "vectorstore_10", "init_run_10", "selector_selected_add_10", "select_box_add_10"],
+"config_10" : ["selector_selected_add_10"]},
 
 }
 
@@ -89,6 +98,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"user_prompt_history_faiss_{num}" not in sess.session_state and f"user_prompt_history_faiss_{num}" in config:
         sess.session_state[f"user_prompt_history_faiss_{num}"] = []
+
     if f"chat_answers_history_faiss_{num}" not in sess.session_state and f"chat_answers_history_faiss_{num}" in config:
         sess.session_state[f"chat_answers_history_faiss_{num}"] = []
 
@@ -101,11 +111,23 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
     if f"multi_file_pages_{num}" not in sess.session_state and f"multi_file_pages_{num}" in config:
         sess.session_state[f"multi_file_pages_{num}"] = []
 
+    if f"pages_{num}" not in sess.session_state and f"pages_{num}" in config:
+        sess.session_state[f"pages_{num}"] = []
+    
+    if f"metadatas_{num}" not in sess.session_state and f"metadatas_{num}" in config:
+        sess.session_state[f"metadatas_{num}"] = []
+    
+    if f"ids_{num}" not in sess.session_state and f"ids_{num}" in config:
+        sess.session_state[f"ids_{num}"] = []
+
     if f"chat_history_{num}" not in sess.session_state and f"chat_history_{num}" in config:
         sess.session_state[f"chat_history_{num}"] = []
     
     if f"docs_context_names_{num}" not in sess.session_state and f"docs_context_names_{num}" in config:
         sess.session_state[f"docs_context_names_{num}"] = []
+    
+    if f"documents_{num}" not in sess.session_state and f"documents_{num}" in config:
+        sess.session_state[f"documents_{num}"] = []
 
     if f"docs_context_{num}" not in sess.session_state and f"docs_context_{num}" in config:
         sess.session_state[f"docs_context_{num}"] = []
@@ -194,6 +216,12 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"buttom_send_clicked_{num}" not in sess.session_state and f"buttom_send_clicked_{num}" in config:
         sess.session_state[f"buttom_send_clicked_{num}"] = False
+
+    if f"selector_selected_add_{num}" not in sess.session_state and f"selector_selected_add_{num}" in config:
+        sess.session_state[f"selector_selected_add_{num}"] = False
+    
+    if f"add_file_kb_selected_{num}" not in sess.session_state and f"add_file_kb_selected_{num}" in config:
+        sess.session_state[f"add_file_kb_selected_{num}"] = False
     
     if f"file_faiss_selected_{num}" not in sess.session_state and f"file_faiss_selected_{num}" in config:
         sess.session_state[f"file_faiss_selected_{num}"] = False

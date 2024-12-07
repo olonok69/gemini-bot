@@ -46,10 +46,10 @@ def add_new_documents_to_faiss(st, documents, ids, metadatas, num: int = 10):
 
     """
     # add new documents to Faiss
-    st.session_state[f"faiss_vectorstore_{num}"].add_texts(
+    st.session_state[f"vectorstore_{num}"].add_texts(
         texts=documents, ids=ids, metadatas=metadatas
     )
-    return st.session_state[f"faiss_vectorstore_{num}"].index.ntotal
+    return st.session_state[f"vectorstore_{num}"].index.ntotal
 
 
 def get_docs_to_add_vectorstore(pages, file, google_ef):
