@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit import session_state as ss
 import os
 from pathlib import Path
 import json
@@ -18,6 +19,7 @@ from src.maintenance import visualiza_add_prompt, visualiza_add_pericial, select
 from src.helpers import reset_session_10
 import logging
 from src.utils import print_stack
+from src.maps import config as conf, init_session_num, reset_session_num
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 path = Path(ROOT_DIR)
@@ -33,7 +35,7 @@ DATA_DIR = os.path.join(PROJECT_DIR, "pericial", "table")
 pname, name2, df_pericial = open_table_periciales(DATA_DIR)
 logging.info(f"DATA DIR: {DATA_DIR}")
 
-def change_state_10(st, placeholder):
+def change_state_10(session, placeholder):
     """
     change state after leave conversation
     params:
@@ -42,9 +44,9 @@ def change_state_10(st, placeholder):
 
     """
     placeholder.empty()
-    reset_session_10(st)
-    st.stop()
     del placeholder
+    reset_session_num(session,"10")
+    st.stop()
     return
 
 
@@ -56,11 +58,15 @@ def main(options,  placeholder):
         options: list of options for the select box
         placeholder: placeholder for the app
     """
+    col1, col2 = 50, 50
+    if "init_run_10" not in st.session_state:
+            st.session_state["init_run_10"] = False
+    if st.session_state["init_run_10"] == False:
+        init_session_num(st, ss, "10", col1, col2, conf["10"]["config_10"], None)
+
     if st.button("Salir", on_click=change_state_10, args=(st, placeholder)):
         logging.info("Salir and writing history")
 
-    if "selector_selected_add" not in st.session_state:
-        st.session_state["selector_selected_add"] = False
 
     try:
         _ = st.selectbox(
@@ -68,16 +74,16 @@ def main(options,  placeholder):
             options,
             index=None,
             on_change=selected_add,
-            args=[st],
-            key="select_box_add",
+            args=[st, "10"],
+            key="select_box_add_10",
         )
-        if st.session_state["selector_selected_add"] == True:
-            if st.session_state.select_box_add == "Prompts":
+        if st.session_state["selector_selected_add_10"] == True:
+            if st.session_state.select_box_add_10 == "Prompts":
                 # fname, fname2, df_prompts
-                visualiza_add_prompt(st, df_prompts, fname)
-            elif st.session_state.select_box_add == "Periciales":
+                visualiza_add_prompt(st, df_prompts, fname, num="10")
+            elif st.session_state.select_box_add_10 == "Periciales":
                 # pname, name2, df_pericial
-                visualiza_add_pericial(st, df_pericial, pname, secciones)
+                visualiza_add_pericial(st, df_pericial, pname, secciones, num="10")
     except :
         st.session_state["salir_10"] = True
         placeholder.empty()

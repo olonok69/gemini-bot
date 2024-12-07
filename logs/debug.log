@@ -4098,3 +4098,984 @@
 [2024-12-06 17:10:41,732] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
 [2024-12-06 17:10:41,732] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
 [2024-12-06 17:10:41,732] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-06 17:12:29,953] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-06 17:12:32,160] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-06 17:12:32,160] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-06 17:12:40,602] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-06 17:12:40,602] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-06 17:12:40,602] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-06 17:12:53,696] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:12:53,696] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:12:53,696] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:12:53,824] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:12:53,824] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:12:53,824] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:12:53,830] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:12:53,830] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:12:53,830] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:12:53,861] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:12:53,861] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:12:53,861] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:12:53,898] [ScriptRunner.scriptThread] [INFO    ] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2024-12-06 17:12:53,898] [ScriptRunner.scriptThread] [INFO    ] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2024-12-06 17:12:53,898] [ScriptRunner.scriptThread] [INFO    ] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2024-12-06 17:12:54,292] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:12:54,292] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:12:54,292] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:12:54,294] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:12:54,294] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:12:54,294] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:13:33,939] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:13:33,939] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:13:33,939] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:13:41,927] [ThreadPoolExecutor-4_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20likuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:13:41,927] [ThreadPoolExecutor-4_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20likuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:13:41,927] [ThreadPoolExecutor-4_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20likuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:14:12,652] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:12,652] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:12,652] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:13,137] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:14:13,137] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:14:13,137] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:14:13,140] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:14:13,140] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:14:13,140] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:14:13,141] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:14:13,141] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:14:13,141] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:14:13,142] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:14:13,142] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:14:13,142] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:14:13,143] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:14:13,143] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:14:13,143] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:14:13,144] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:14:13,144] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:14:13,144] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:14:13,145] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:14:13,145] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:14:13,145] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:14:13,146] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:14:13,146] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:14:13,146] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:14:13,147] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text_31
+[2024-12-06 17:14:13,147] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text_31
+[2024-12-06 17:14:13,147] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text_31
+[2024-12-06 17:14:13,148] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:14:13,148] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:14:13,148] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:14:13,149] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:14:13,149] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:14:13,149] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:14:13,150] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:14:13,150] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:14:13,150] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:14:16,156] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:14:16,156] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:14:16,156] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:14:16,158] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:14:16,158] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:14:16,158] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:14:24,091] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:24,091] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:24,091] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:24,173] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:14:24,173] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:14:24,173] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:14:24,179] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:14:24,179] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:14:24,179] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:14:24,181] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:14:24,181] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:14:24,181] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:14:24,191] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:14:24,191] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:14:24,191] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:14:24,193] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:14:24,193] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:14:24,193] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:14:25,284] [ThreadPoolExecutor-8_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20kikuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:14:25,284] [ThreadPoolExecutor-8_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20kikuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:14:25,284] [ThreadPoolExecutor-8_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20kikuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:14:28,019] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:14:28,019] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:14:28,019] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:14:28,021] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:14:28,021] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:14:28,021] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:14:28,022] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:14:28,022] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:14:28,022] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:14:28,023] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:14:28,023] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:14:28,023] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:14:28,024] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:14:28,024] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:14:28,024] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:14:28,025] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:14:28,025] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:14:28,025] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:14:28,026] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:14:28,026] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:14:28,026] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:14:28,027] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:14:28,027] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:14:28,027] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:14:28,028] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:14:28,028] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:14:28,028] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:14:28,030] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:14:28,030] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:14:28,030] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:14:28,031] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:14:28,031] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:14:28,031] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:14:28,032] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:14:28,032] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:14:28,032] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:14:28,033] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:14:28,033] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:14:28,033] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:14:31,267] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:31,267] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:31,267] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:31,368] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:14:31,368] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:14:31,368] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:14:31,374] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:14:31,374] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:14:31,374] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:14:31,376] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:14:31,376] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:14:31,376] [ScriptRunner.scriptThread] [INFO    ] API Scholar wrapper loaded
+[2024-12-06 17:14:31,386] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:14:31,386] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:14:31,386] [ScriptRunner.scriptThread] [INFO    ] Chroma Vectorstore loaded
+[2024-12-06 17:14:31,387] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:14:31,387] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:14:31,387] [ScriptRunner.scriptThread] [INFO    ] Google Web Research Retriever loaded
+[2024-12-06 17:14:42,535] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:42,535] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:42,535] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:/repos/gemini-bot\kb\docs
+[2024-12-06 17:14:44,078] [ThreadPoolExecutor-12_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20kikuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:14:44,078] [ThreadPoolExecutor-12_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20kikuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:14:44,078] [ThreadPoolExecutor-12_0] [INFO    ] HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=explicame%20la%20enfermedad%20kikuchi.%20simptomas%20y%20tratamiento&fields=title,abstract,venue,year,paperId,citationCount,openAccessPdf,authors,externalIds&offset=0&limit=100 "HTTP/1.1 200 OK"
+[2024-12-06 17:15:12,739] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:15:12,739] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:15:12,739] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_31
+[2024-12-06 17:15:12,741] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:15:12,741] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:15:12,741] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_31
+[2024-12-06 17:15:12,742] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:15:12,742] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:15:12,742] [ScriptRunner.scriptThread] [INFO    ] deleted map_chain_31
+[2024-12-06 17:15:12,743] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:15:12,743] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:15:12,743] [ScriptRunner.scriptThread] [INFO    ] deleted web_research_retriever_31
+[2024-12-06 17:15:12,744] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:15:12,744] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:15:12,744] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_31
+[2024-12-06 17:15:12,745] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text_31
+[2024-12-06 17:15:12,745] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text_31
+[2024-12-06 17:15:12,745] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text_31
+[2024-12-06 17:15:12,746] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:15:12,746] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:15:12,746] [ScriptRunner.scriptThread] [INFO    ] deleted retrieval_chain_31
+[2024-12-06 17:15:12,746] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:15:12,746] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:15:12,746] [ScriptRunner.scriptThread] [INFO    ] deleted complete_chain_31
+[2024-12-06 17:15:12,747] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:15:12,747] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:15:12,747] [ScriptRunner.scriptThread] [INFO    ] deleted api_wrapper_31
+[2024-12-06 17:15:12,748] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:15:12,748] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:15:12,748] [ScriptRunner.scriptThread] [INFO    ] deleted combine_parallel_chain_31
+[2024-12-06 17:15:12,749] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:15:12,749] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:15:12,749] [ScriptRunner.scriptThread] [INFO    ] deleted qa_chain_31
+[2024-12-06 17:15:12,750] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:15:12,750] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:15:12,750] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_31
+[2024-12-06 17:15:12,752] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:15:12,752] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:15:12,752] [ScriptRunner.scriptThread] [INFO    ] deleted llm_31
+[2024-12-06 17:15:12,754] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:15:12,754] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:15:12,754] [ScriptRunner.scriptThread] [INFO    ] deleted salir_31
+[2024-12-06 17:15:16,058] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:15:16,058] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:15:16,058] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:15:16,161] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:15:16,161] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:15:16,161] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-06 17:15:16,166] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:15:16,166] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:15:16,166] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-06 17:15:16,172] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-06 17:15:16,172] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-06 17:15:16,172] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-06 17:15:16,210] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-06 17:15:16,210] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-06 17:15:16,210] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-06 17:15:16,322] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 30: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-06 17:15:16,322] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 30: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-06 17:15:16,322] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 30: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-06 17:25:07,770] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:07,770] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:07,770] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:09,702] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:09,702] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:09,702] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:24,695] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:24,695] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:24,695] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:24,791] [ScriptRunner.scriptThread] [INFO    ] file path vectorstore Guia de Valoración Profesional.pdf
+[2024-12-06 17:25:24,791] [ScriptRunner.scriptThread] [INFO    ] file path vectorstore Guia de Valoración Profesional.pdf
+[2024-12-06 17:25:24,791] [ScriptRunner.scriptThread] [INFO    ] file path vectorstore Guia de Valoración Profesional.pdf
+[2024-12-06 17:25:34,565] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:34,565] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:34,565] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 17:25:49,452] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_30
+[2024-12-06 17:25:49,452] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_30
+[2024-12-06 17:25:49,452] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_30
+[2024-12-06 17:25:49,454] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_faiss_30
+[2024-12-06 17:25:49,454] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_faiss_30
+[2024-12-06 17:25:49,454] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_faiss_30
+[2024-12-06 17:25:49,455] [ScriptRunner.scriptThread] [INFO    ] deleted answer_prompt_30
+[2024-12-06 17:25:49,455] [ScriptRunner.scriptThread] [INFO    ] deleted answer_prompt_30
+[2024-12-06 17:25:49,455] [ScriptRunner.scriptThread] [INFO    ] deleted answer_prompt_30
+[2024-12-06 17:25:49,456] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text2_faiss_30
+[2024-12-06 17:25:49,456] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text2_faiss_30
+[2024-12-06 17:25:49,456] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text2_faiss_30
+[2024-12-06 17:25:49,458] [ScriptRunner.scriptThread] [INFO    ] deleted file_kb_faiss_selected_30
+[2024-12-06 17:25:49,458] [ScriptRunner.scriptThread] [INFO    ] deleted file_kb_faiss_selected_30
+[2024-12-06 17:25:49,458] [ScriptRunner.scriptThread] [INFO    ] deleted file_kb_faiss_selected_30
+[2024-12-06 17:25:49,458] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_faiss_30
+[2024-12-06 17:25:49,458] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_faiss_30
+[2024-12-06 17:25:49,458] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_faiss_30
+[2024-12-06 17:25:49,459] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_30
+[2024-12-06 17:25:49,459] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_30
+[2024-12-06 17:25:49,459] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_30
+[2024-12-06 17:25:49,460] [ScriptRunner.scriptThread] [INFO    ] deleted history_conversation_with_model_30
+[2024-12-06 17:25:49,460] [ScriptRunner.scriptThread] [INFO    ] deleted history_conversation_with_model_30
+[2024-12-06 17:25:49,460] [ScriptRunner.scriptThread] [INFO    ] deleted history_conversation_with_model_30
+[2024-12-06 17:25:49,461] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_30
+[2024-12-06 17:25:49,461] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_30
+[2024-12-06 17:25:49,461] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_30
+[2024-12-06 17:25:49,462] [ScriptRunner.scriptThread] [INFO    ] deleted current_prompt_30
+[2024-12-06 17:25:49,462] [ScriptRunner.scriptThread] [INFO    ] deleted current_prompt_30
+[2024-12-06 17:25:49,462] [ScriptRunner.scriptThread] [INFO    ] deleted current_prompt_30
+[2024-12-06 17:25:49,463] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_30
+[2024-12-06 17:25:49,463] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_30
+[2024-12-06 17:25:49,463] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_30
+[2024-12-06 17:25:49,464] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_30
+[2024-12-06 17:25:49,464] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_30
+[2024-12-06 17:25:49,464] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_30
+[2024-12-06 17:25:49,465] [ScriptRunner.scriptThread] [INFO    ] deleted salir_30
+[2024-12-06 17:25:49,465] [ScriptRunner.scriptThread] [INFO    ] deleted salir_30
+[2024-12-06 17:25:49,465] [ScriptRunner.scriptThread] [INFO    ] deleted salir_30
+[2024-12-06 17:25:49,466] [ScriptRunner.scriptThread] [INFO    ] deleted file_faiss_selected_30
+[2024-12-06 17:25:49,466] [ScriptRunner.scriptThread] [INFO    ] deleted file_faiss_selected_30
+[2024-12-06 17:25:49,466] [ScriptRunner.scriptThread] [INFO    ] deleted file_faiss_selected_30
+[2024-12-06 17:25:49,467] [ScriptRunner.scriptThread] [INFO    ] deleted llm_30
+[2024-12-06 17:25:49,467] [ScriptRunner.scriptThread] [INFO    ] deleted llm_30
+[2024-12-06 17:25:49,467] [ScriptRunner.scriptThread] [INFO    ] deleted llm_30
+[2024-12-06 17:25:49,468] [ScriptRunner.scriptThread] [INFO    ] deleted conversational_rag_chain_30
+[2024-12-06 17:25:49,468] [ScriptRunner.scriptThread] [INFO    ] deleted conversational_rag_chain_30
+[2024-12-06 17:25:49,468] [ScriptRunner.scriptThread] [INFO    ] deleted conversational_rag_chain_30
+[2024-12-06 17:25:49,469] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_30
+[2024-12-06 17:25:49,469] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_30
+[2024-12-06 17:25:49,469] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_30
+[2024-12-06 17:25:49,470] [ScriptRunner.scriptThread] [INFO    ] deleted name_file_kb_faiss_selected_30
+[2024-12-06 17:25:49,470] [ScriptRunner.scriptThread] [INFO    ] deleted name_file_kb_faiss_selected_30
+[2024-12-06 17:25:49,470] [ScriptRunner.scriptThread] [INFO    ] deleted name_file_kb_faiss_selected_30
+[2024-12-06 17:25:49,471] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_faiss_30
+[2024-12-06 17:25:49,471] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_faiss_30
+[2024-12-06 17:25:49,471] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_faiss_30
+[2024-12-06 17:25:49,472] [ScriptRunner.scriptThread] [INFO    ] deleted store_30
+[2024-12-06 17:25:49,472] [ScriptRunner.scriptThread] [INFO    ] deleted store_30
+[2024-12-06 17:25:49,472] [ScriptRunner.scriptThread] [INFO    ] deleted store_30
+[2024-12-06 17:25:49,473] [ScriptRunner.scriptThread] [INFO    ] deleted expander_30
+[2024-12-06 17:25:49,473] [ScriptRunner.scriptThread] [INFO    ] deleted expander_30
+[2024-12-06 17:25:49,473] [ScriptRunner.scriptThread] [INFO    ] deleted expander_30
+[2024-12-06 17:25:49,474] [ScriptRunner.scriptThread] [INFO    ] deleted text_30
+[2024-12-06 17:25:49,474] [ScriptRunner.scriptThread] [INFO    ] deleted text_30
+[2024-12-06 17:25:49,474] [ScriptRunner.scriptThread] [INFO    ] deleted text_30
+[2024-12-06 17:25:49,475] [ScriptRunner.scriptThread] [INFO    ] deleted select_file_faiss_30
+[2024-12-06 17:25:49,475] [ScriptRunner.scriptThread] [INFO    ] deleted select_file_faiss_30
+[2024-12-06 17:25:49,475] [ScriptRunner.scriptThread] [INFO    ] deleted select_file_faiss_30
+[2024-12-06 17:25:49,476] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_clicked_30
+[2024-12-06 17:25:49,476] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_clicked_30
+[2024-12-06 17:25:49,476] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_clicked_30
+[2024-12-06 17:25:49,477] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_names_30
+[2024-12-06 17:25:49,477] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_names_30
+[2024-12-06 17:25:49,477] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_names_30
+[2024-12-06 17:25:49,478] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_30
+[2024-12-06 17:25:49,478] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_30
+[2024-12-06 17:25:49,478] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_30
+[2024-12-06 17:25:49,479] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_30
+[2024-12-06 17:25:49,479] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_30
+[2024-12-06 17:25:49,479] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_30
+[2024-12-06 19:07:11,546] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 19:07:11,546] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-06 19:07:11,546] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 16:44:57,370] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 16:44:57,370] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 16:45:08,490] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 16:45:08,490] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 16:45:08,490] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 16:45:24,576] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 16:45:24,576] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 16:45:24,576] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 16:45:24,736] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 16:45:24,736] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 16:45:24,736] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 16:45:24,742] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 16:45:24,742] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 16:45:24,742] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 16:45:24,751] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 16:45:24,751] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 16:45:24,751] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 16:45:25,186] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 16:45:25,186] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 16:45:25,186] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 16:45:25,555] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 16:45:25,555] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 16:45:25,555] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:47:44,954] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:44,954] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:44,954] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:44,954] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:45,062] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:45,062] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:45,062] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:45,062] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:47:55,436] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:47:55,436] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:47:55,436] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:47:55,436] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:47:55,436] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:48:08,760] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:48:08,760] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:48:08,760] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:48:08,760] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:48:08,760] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:48:08,907] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:48:08,907] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:48:08,907] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:48:08,907] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:48:08,907] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:48:08,915] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:48:08,915] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:48:08,915] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:48:08,915] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:48:08,915] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:48:08,922] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:48:08,922] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:48:08,922] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:48:08,922] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:48:08,922] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:48:09,304] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:48:09,304] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:48:09,304] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:48:09,304] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:48:09,304] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:48:09,426] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:48:09,426] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:48:09,426] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:48:09,426] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:48:09,426] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:48:55,995] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:48:55,995] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:48:55,995] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:49:05,155] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:49:05,155] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:49:05,155] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:49:05,155] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:49:16,358] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:49:16,358] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:49:16,358] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:49:16,358] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:49:16,457] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:49:16,457] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:49:16,457] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:49:16,457] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:49:16,463] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:49:16,463] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:49:16,463] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:49:16,463] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:49:16,470] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:49:16,470] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:49:16,470] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:49:16,470] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:49:16,509] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:49:16,509] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:49:16,509] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:49:16,509] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:49:16,606] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:49:16,606] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:49:16,606] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:49:16,606] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:51:08,662] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:51:08,662] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:51:18,956] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:51:18,956] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:51:18,956] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:51:29,899] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:51:29,899] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:51:29,899] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:51:30,001] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:51:30,001] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:51:30,001] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:51:30,007] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:51:30,007] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:51:30,007] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:51:30,013] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:51:30,013] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:51:30,013] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:51:30,051] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:51:30,051] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:51:30,051] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:51:30,134] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:51:30,134] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:51:30,134] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:52:50,803] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:52:50,803] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:52:50,803] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:53:55,433] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:53:55,433] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:54:05,489] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:54:05,489] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:54:05,489] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:54:17,511] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:54:17,511] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:54:17,511] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:54:17,611] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:54:17,611] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:54:17,611] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:54:17,618] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:54:17,618] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:54:17,618] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:54:17,623] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:54:17,623] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:54:17,623] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:54:17,667] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:54:17,667] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:54:17,667] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:54:17,753] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:54:17,753] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:54:17,753] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:54:43,674] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:54:43,674] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:54:43,674] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:56:19,759] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:56:19,759] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:56:19,759] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:56:19,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:56:19,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:56:19,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:56:31,016] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:56:31,016] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:56:31,016] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:56:31,108] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:56:31,108] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:56:31,108] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:58:34,509] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:58:34,509] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 20:58:44,984] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:58:44,984] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:58:44,984] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 20:58:56,814] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:58:56,814] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:58:56,814] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:58:56,913] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:58:56,913] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:58:56,913] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 20:58:56,919] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:58:56,919] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:58:56,919] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 20:58:56,925] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:58:56,925] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:58:56,925] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 20:58:56,961] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:58:56,961] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:58:56,961] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 20:58:57,051] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:58:57,051] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:58:57,051] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 20:59:21,982] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:21,982] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:21,982] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:22,079] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:22,079] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:22,079] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:25,889] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:25,889] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:25,889] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:25,967] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:25,967] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:25,967] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:36,011] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:36,011] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:36,011] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 20:59:36,119] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:36,119] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 20:59:36,119] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded CryptoCertificte-SS-V0.pdf
+[2024-12-07 21:02:43,128] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 21:02:43,128] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 21:02:54,460] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-07 21:02:54,460] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-07 21:02:54,460] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-07 21:03:02,815] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 21:03:02,815] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 21:03:02,815] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 21:03:02,815] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 21:03:13,909] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:13,909] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:13,909] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:13,909] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:14,013] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:03:14,013] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:03:14,013] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:03:14,013] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:03:14,019] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:03:14,019] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:03:14,019] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:03:14,019] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:03:14,030] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 21:03:14,030] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 21:03:14,030] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 21:03:14,030] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-07 21:03:14,081] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 21:03:14,081] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 21:03:14,081] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 21:03:14,081] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-07 21:03:14,176] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:03:14,176] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:03:14,176] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:03:14,176] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:03:35,891] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:35,891] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:35,891] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:35,891] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:35,985] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:35,985] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:35,985] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:35,985] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:40,967] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:40,967] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:40,967] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:40,967] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:41,048] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:41,048] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:41,048] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:41,048] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:53,506] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:53,506] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:53,506] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:53,506] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:03:53,586] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:53,586] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:53,586] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:53,586] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 32: file uploaded Attention Is All You Need.pdf
+[2024-12-07 21:03:55,843] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length before: 3807
+[2024-12-07 21:03:55,843] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length before: 3807
+[2024-12-07 21:03:55,843] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length before: 3807
+[2024-12-07 21:03:55,843] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length before: 3807
+[2024-12-07 21:03:55,845] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length after: 3823
+[2024-12-07 21:03:55,845] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length after: 3823
+[2024-12-07 21:03:55,845] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length after: 3823
+[2024-12-07 21:03:55,845] [ScriptRunner.scriptThread] [INFO    ] Vectorstore length after: 3823
+[2024-12-07 21:03:55,846] [ScriptRunner.scriptThread] [INFO    ] Number of documents added: 16
+[2024-12-07 21:03:55,846] [ScriptRunner.scriptThread] [INFO    ] Number of documents added: 16
+[2024-12-07 21:03:55,846] [ScriptRunner.scriptThread] [INFO    ] Number of documents added: 16
+[2024-12-07 21:03:55,846] [ScriptRunner.scriptThread] [INFO    ] Number of documents added: 16
+[2024-12-07 21:04:07,766] [ScriptRunner.scriptThread] [INFO    ] deleted value_32
+[2024-12-07 21:04:07,766] [ScriptRunner.scriptThread] [INFO    ] deleted value_32
+[2024-12-07 21:04:07,766] [ScriptRunner.scriptThread] [INFO    ] deleted value_32
+[2024-12-07 21:04:07,766] [ScriptRunner.scriptThread] [INFO    ] deleted value_32
+[2024-12-07 21:04:07,768] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_32
+[2024-12-07 21:04:07,768] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_32
+[2024-12-07 21:04:07,768] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_32
+[2024-12-07 21:04:07,768] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_32
+[2024-12-07 21:04:07,769] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_32
+[2024-12-07 21:04:07,769] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_32
+[2024-12-07 21:04:07,769] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_32
+[2024-12-07 21:04:07,769] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_32
+[2024-12-07 21:04:07,770] [ScriptRunner.scriptThread] [INFO    ] deleted add_file_kb_selected_32
+[2024-12-07 21:04:07,770] [ScriptRunner.scriptThread] [INFO    ] deleted add_file_kb_selected_32
+[2024-12-07 21:04:07,770] [ScriptRunner.scriptThread] [INFO    ] deleted add_file_kb_selected_32
+[2024-12-07 21:04:07,770] [ScriptRunner.scriptThread] [INFO    ] deleted add_file_kb_selected_32
+[2024-12-07 21:04:07,772] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_32
+[2024-12-07 21:04:07,772] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_32
+[2024-12-07 21:04:07,772] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_32
+[2024-12-07 21:04:07,772] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_32
+[2024-12-07 21:04:07,773] [ScriptRunner.scriptThread] [INFO    ] deleted pages_32
+[2024-12-07 21:04:07,773] [ScriptRunner.scriptThread] [INFO    ] deleted pages_32
+[2024-12-07 21:04:07,773] [ScriptRunner.scriptThread] [INFO    ] deleted pages_32
+[2024-12-07 21:04:07,773] [ScriptRunner.scriptThread] [INFO    ] deleted pages_32
+[2024-12-07 21:04:07,783] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_32
+[2024-12-07 21:04:07,783] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_32
+[2024-12-07 21:04:07,783] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_32
+[2024-12-07 21:04:07,783] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_32
+[2024-12-07 21:04:07,784] [ScriptRunner.scriptThread] [INFO    ] deleted documents_32
+[2024-12-07 21:04:07,784] [ScriptRunner.scriptThread] [INFO    ] deleted documents_32
+[2024-12-07 21:04:07,784] [ScriptRunner.scriptThread] [INFO    ] deleted documents_32
+[2024-12-07 21:04:07,784] [ScriptRunner.scriptThread] [INFO    ] deleted documents_32
+[2024-12-07 21:04:07,786] [ScriptRunner.scriptThread] [INFO    ] deleted llm_32
+[2024-12-07 21:04:07,786] [ScriptRunner.scriptThread] [INFO    ] deleted llm_32
+[2024-12-07 21:04:07,786] [ScriptRunner.scriptThread] [INFO    ] deleted llm_32
+[2024-12-07 21:04:07,786] [ScriptRunner.scriptThread] [INFO    ] deleted llm_32
+[2024-12-07 21:04:07,787] [ScriptRunner.scriptThread] [INFO    ] deleted selectbox_category_32
+[2024-12-07 21:04:07,787] [ScriptRunner.scriptThread] [INFO    ] deleted selectbox_category_32
+[2024-12-07 21:04:07,787] [ScriptRunner.scriptThread] [INFO    ] deleted selectbox_category_32
+[2024-12-07 21:04:07,787] [ScriptRunner.scriptThread] [INFO    ] deleted selectbox_category_32
+[2024-12-07 21:04:07,789] [ScriptRunner.scriptThread] [INFO    ] deleted metadatas_32
+[2024-12-07 21:04:07,789] [ScriptRunner.scriptThread] [INFO    ] deleted metadatas_32
+[2024-12-07 21:04:07,789] [ScriptRunner.scriptThread] [INFO    ] deleted metadatas_32
+[2024-12-07 21:04:07,789] [ScriptRunner.scriptThread] [INFO    ] deleted metadatas_32
+[2024-12-07 21:04:10,807] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_32
+[2024-12-07 21:04:10,807] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_32
+[2024-12-07 21:04:10,807] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_32
+[2024-12-07 21:04:10,807] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_32
+[2024-12-07 21:04:10,809] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_32
+[2024-12-07 21:04:10,809] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_32
+[2024-12-07 21:04:10,809] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_32
+[2024-12-07 21:04:10,809] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_32
+[2024-12-07 21:04:10,811] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_32
+[2024-12-07 21:04:10,811] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_32
+[2024-12-07 21:04:10,811] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_32
+[2024-12-07 21:04:10,811] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_32
+[2024-12-07 21:04:10,812] [ScriptRunner.scriptThread] [INFO    ] deleted ids_32
+[2024-12-07 21:04:10,812] [ScriptRunner.scriptThread] [INFO    ] deleted ids_32
+[2024-12-07 21:04:10,812] [ScriptRunner.scriptThread] [INFO    ] deleted ids_32
+[2024-12-07 21:04:10,812] [ScriptRunner.scriptThread] [INFO    ] deleted ids_32
+[2024-12-07 21:04:10,813] [ScriptRunner.scriptThread] [INFO    ] deleted salir_32
+[2024-12-07 21:04:10,813] [ScriptRunner.scriptThread] [INFO    ] deleted salir_32
+[2024-12-07 21:04:10,813] [ScriptRunner.scriptThread] [INFO    ] deleted salir_32
+[2024-12-07 21:04:10,813] [ScriptRunner.scriptThread] [INFO    ] deleted salir_32
+[2024-12-07 21:04:13,914] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:13,914] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:13,914] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:13,914] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:13,995] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:04:13,995] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:04:13,995] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:04:13,995] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-07 21:04:14,000] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:04:14,000] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:04:14,000] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:04:14,000] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/embedding-001
+[2024-12-07 21:04:14,093] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 30: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:04:14,093] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 30: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:04:14,093] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 30: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:04:14,093] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 30: Embeddings models/embedding-001 and Vector Store faiss loaded from D:\repos\gemini-bot\kb\faiss
+[2024-12-07 21:04:52,568] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:52,568] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:52,568] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:52,568] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:04:52,655] [ScriptRunner.scriptThread] [INFO    ] file path vectorstore None
+[2024-12-07 21:04:52,655] [ScriptRunner.scriptThread] [INFO    ] file path vectorstore None
+[2024-12-07 21:04:52,655] [ScriptRunner.scriptThread] [INFO    ] file path vectorstore None
+[2024-12-07 21:04:52,655] [ScriptRunner.scriptThread] [INFO    ] file path vectorstore None
+[2024-12-07 21:05:06,712] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:05:06,712] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:05:06,712] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:05:06,712] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:04,661] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:04,661] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:04,661] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:04,661] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:24,130] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:24,130] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:24,130] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:24,130] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:\repos\gemini-bot, this folder: D:\repos\gemini-bot\pages, Documents folder: D:\repos\gemini-bot\kb\docs
+[2024-12-07 21:06:39,006] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_faiss_30
+[2024-12-07 21:06:39,006] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_faiss_30
+[2024-12-07 21:06:39,006] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_faiss_30
+[2024-12-07 21:06:39,006] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_faiss_30
+[2024-12-07 21:06:39,008] [ScriptRunner.scriptThread] [INFO    ] deleted llm_30
+[2024-12-07 21:06:39,008] [ScriptRunner.scriptThread] [INFO    ] deleted llm_30
+[2024-12-07 21:06:39,008] [ScriptRunner.scriptThread] [INFO    ] deleted llm_30
+[2024-12-07 21:06:39,008] [ScriptRunner.scriptThread] [INFO    ] deleted llm_30
+[2024-12-07 21:06:39,010] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_30
+[2024-12-07 21:06:39,010] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_30
+[2024-12-07 21:06:39,010] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_30
+[2024-12-07 21:06:39,010] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_30
+[2024-12-07 21:06:39,011] [ScriptRunner.scriptThread] [INFO    ] deleted conversational_rag_chain_30
+[2024-12-07 21:06:39,011] [ScriptRunner.scriptThread] [INFO    ] deleted conversational_rag_chain_30
+[2024-12-07 21:06:39,011] [ScriptRunner.scriptThread] [INFO    ] deleted conversational_rag_chain_30
+[2024-12-07 21:06:39,011] [ScriptRunner.scriptThread] [INFO    ] deleted conversational_rag_chain_30
+[2024-12-07 21:06:39,013] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_30
+[2024-12-07 21:06:39,013] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_30
+[2024-12-07 21:06:39,013] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_30
+[2024-12-07 21:06:39,013] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_30
+[2024-12-07 21:06:39,014] [ScriptRunner.scriptThread] [INFO    ] deleted file_kb_faiss_selected_30
+[2024-12-07 21:06:39,014] [ScriptRunner.scriptThread] [INFO    ] deleted file_kb_faiss_selected_30
+[2024-12-07 21:06:39,014] [ScriptRunner.scriptThread] [INFO    ] deleted file_kb_faiss_selected_30
+[2024-12-07 21:06:39,014] [ScriptRunner.scriptThread] [INFO    ] deleted file_kb_faiss_selected_30
+[2024-12-07 21:06:39,015] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text2_faiss_30
+[2024-12-07 21:06:39,015] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text2_faiss_30
+[2024-12-07 21:06:39,015] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text2_faiss_30
+[2024-12-07 21:06:39,015] [ScriptRunner.scriptThread] [INFO    ] deleted kb_text2_faiss_30
+[2024-12-07 21:06:39,016] [ScriptRunner.scriptThread] [INFO    ] deleted file_faiss_selected_30
+[2024-12-07 21:06:39,016] [ScriptRunner.scriptThread] [INFO    ] deleted file_faiss_selected_30
+[2024-12-07 21:06:39,016] [ScriptRunner.scriptThread] [INFO    ] deleted file_faiss_selected_30
+[2024-12-07 21:06:39,016] [ScriptRunner.scriptThread] [INFO    ] deleted file_faiss_selected_30
+[2024-12-07 21:06:39,018] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_clicked_30
+[2024-12-07 21:06:39,018] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_clicked_30
+[2024-12-07 21:06:39,018] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_clicked_30
+[2024-12-07 21:06:39,018] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_clicked_30
+[2024-12-07 21:06:39,019] [ScriptRunner.scriptThread] [INFO    ] deleted expander_30
+[2024-12-07 21:06:39,019] [ScriptRunner.scriptThread] [INFO    ] deleted expander_30
+[2024-12-07 21:06:39,019] [ScriptRunner.scriptThread] [INFO    ] deleted expander_30
+[2024-12-07 21:06:39,019] [ScriptRunner.scriptThread] [INFO    ] deleted expander_30
+[2024-12-07 21:06:39,020] [ScriptRunner.scriptThread] [INFO    ] deleted name_file_kb_faiss_selected_30
+[2024-12-07 21:06:39,020] [ScriptRunner.scriptThread] [INFO    ] deleted name_file_kb_faiss_selected_30
+[2024-12-07 21:06:39,020] [ScriptRunner.scriptThread] [INFO    ] deleted name_file_kb_faiss_selected_30
+[2024-12-07 21:06:39,020] [ScriptRunner.scriptThread] [INFO    ] deleted name_file_kb_faiss_selected_30
+[2024-12-07 21:06:39,022] [ScriptRunner.scriptThread] [INFO    ] deleted store_30
+[2024-12-07 21:06:39,022] [ScriptRunner.scriptThread] [INFO    ] deleted store_30
+[2024-12-07 21:06:39,022] [ScriptRunner.scriptThread] [INFO    ] deleted store_30
+[2024-12-07 21:06:39,022] [ScriptRunner.scriptThread] [INFO    ] deleted store_30
+[2024-12-07 21:06:39,023] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_30
+[2024-12-07 21:06:39,023] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_30
+[2024-12-07 21:06:39,023] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_30
+[2024-12-07 21:06:39,023] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_30
+[2024-12-07 21:06:39,025] [ScriptRunner.scriptThread] [INFO    ] deleted salir_30
+[2024-12-07 21:06:39,025] [ScriptRunner.scriptThread] [INFO    ] deleted salir_30
+[2024-12-07 21:06:39,025] [ScriptRunner.scriptThread] [INFO    ] deleted salir_30
+[2024-12-07 21:06:39,025] [ScriptRunner.scriptThread] [INFO    ] deleted salir_30
+[2024-12-07 21:06:39,026] [ScriptRunner.scriptThread] [INFO    ] deleted text_30
+[2024-12-07 21:06:39,026] [ScriptRunner.scriptThread] [INFO    ] deleted text_30
+[2024-12-07 21:06:39,026] [ScriptRunner.scriptThread] [INFO    ] deleted text_30
+[2024-12-07 21:06:39,026] [ScriptRunner.scriptThread] [INFO    ] deleted text_30
+[2024-12-07 21:06:39,027] [ScriptRunner.scriptThread] [INFO    ] deleted select_file_faiss_30
+[2024-12-07 21:06:39,027] [ScriptRunner.scriptThread] [INFO    ] deleted select_file_faiss_30
+[2024-12-07 21:06:39,027] [ScriptRunner.scriptThread] [INFO    ] deleted select_file_faiss_30
+[2024-12-07 21:06:39,027] [ScriptRunner.scriptThread] [INFO    ] deleted select_file_faiss_30
+[2024-12-07 21:06:39,028] [ScriptRunner.scriptThread] [INFO    ] deleted answer_prompt_30
+[2024-12-07 21:06:39,028] [ScriptRunner.scriptThread] [INFO    ] deleted answer_prompt_30
+[2024-12-07 21:06:39,028] [ScriptRunner.scriptThread] [INFO    ] deleted answer_prompt_30
+[2024-12-07 21:06:39,028] [ScriptRunner.scriptThread] [INFO    ] deleted answer_prompt_30
+[2024-12-07 21:06:39,030] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_faiss_30
+[2024-12-07 21:06:39,030] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_faiss_30
+[2024-12-07 21:06:39,030] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_faiss_30
+[2024-12-07 21:06:39,030] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_faiss_30
+[2024-12-07 21:06:39,031] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_30
+[2024-12-07 21:06:39,031] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_30
+[2024-12-07 21:06:39,031] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_30
+[2024-12-07 21:06:39,031] [ScriptRunner.scriptThread] [INFO    ] deleted checkbox_30
+[2024-12-07 21:06:39,032] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_30
+[2024-12-07 21:06:39,032] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_30
+[2024-12-07 21:06:39,032] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_30
+[2024-12-07 21:06:39,032] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_30
+[2024-12-07 21:06:39,034] [ScriptRunner.scriptThread] [INFO    ] deleted current_prompt_30
+[2024-12-07 21:06:39,034] [ScriptRunner.scriptThread] [INFO    ] deleted current_prompt_30
+[2024-12-07 21:06:39,034] [ScriptRunner.scriptThread] [INFO    ] deleted current_prompt_30
+[2024-12-07 21:06:39,034] [ScriptRunner.scriptThread] [INFO    ] deleted current_prompt_30
+[2024-12-07 21:06:39,035] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_faiss_30
+[2024-12-07 21:06:39,035] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_faiss_30
+[2024-12-07 21:06:39,035] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_faiss_30
+[2024-12-07 21:06:39,035] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_faiss_30
+[2024-12-07 21:06:39,037] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_names_30
+[2024-12-07 21:06:39,037] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_names_30
+[2024-12-07 21:06:39,037] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_names_30
+[2024-12-07 21:06:39,037] [ScriptRunner.scriptThread] [INFO    ] deleted docs_context_names_30
+[2024-12-07 21:06:39,038] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_30
+[2024-12-07 21:06:39,038] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_30
+[2024-12-07 21:06:39,038] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_30
+[2024-12-07 21:06:39,038] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_30
+[2024-12-07 21:06:39,039] [ScriptRunner.scriptThread] [INFO    ] deleted history_conversation_with_model_30
+[2024-12-07 21:06:39,039] [ScriptRunner.scriptThread] [INFO    ] deleted history_conversation_with_model_30
+[2024-12-07 21:06:39,039] [ScriptRunner.scriptThread] [INFO    ] deleted history_conversation_with_model_30
+[2024-12-07 21:06:39,039] [ScriptRunner.scriptThread] [INFO    ] deleted history_conversation_with_model_30
+[2024-12-07 21:06:39,041] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_30
+[2024-12-07 21:06:39,041] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_30
+[2024-12-07 21:06:39,041] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_30
+[2024-12-07 21:06:39,041] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_visualiza_faiss_30
+[2024-12-07 21:06:39,042] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_30
+[2024-12-07 21:06:39,042] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_30
+[2024-12-07 21:06:39,042] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_30
+[2024-12-07 21:06:39,042] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_30
+[2024-12-07 22:00:06,035] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:00:06,035] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:00:16,488] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:00:16,488] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:00:16,488] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:00:27,031] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:00:27,031] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:00:27,031] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:00:27,325] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:00:27,325] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:00:27,325] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:00:27,441] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:00:27,441] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:00:27,441] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:00:28,206] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:00:28,206] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:00:28,206] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:01:19,924] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:01:19,924] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:01:29,833] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-07 22:01:29,833] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-07 22:01:29,833] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: False, Username: None
+[2024-12-07 22:01:36,206] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:01:36,206] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:01:36,206] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:01:36,206] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:01:47,117] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:01:47,117] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:01:47,117] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:01:47,117] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:01:47,212] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:01:47,212] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:01:47,212] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:01:47,212] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:01:47,314] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:01:47,314] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:01:47,314] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:01:47,314] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:01:48,015] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:01:48,015] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:01:48,015] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:01:48,015] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:07,399] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:03:07,399] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:03:17,316] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:03:17,316] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:03:17,316] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:03:28,829] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:28,829] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:28,829] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:28,937] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:28,937] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:28,937] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:29,047] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:29,047] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:29,047] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:29,777] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:29,777] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:29,777] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:35,592] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:35,592] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:35,592] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:35,691] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:35,691] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:35,691] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:35,747] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:35,747] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:35,747] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:35,749] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:35,749] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:35,749] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:42,007] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:42,007] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:42,007] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:42,117] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:42,117] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:42,117] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:42,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:42,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:42,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:42,191] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:42,191] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:42,191] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:57,492] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:57,492] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:57,492] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:03:57,594] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:57,594] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:57,594] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:03:57,660] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:57,660] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:57,660] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:03:57,662] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:57,662] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:03:57,662] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:04:07,117] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:04:07,117] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:04:07,117] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:04:07,220] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:04:07,220] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:04:07,220] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:04:07,287] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:04:07,287] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:04:07,287] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:04:07,289] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:04:07,289] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:04:07,289] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:04:09,901] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:04:09,901] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:04:09,901] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:04:10,019] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:04:10,019] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:04:10,019] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:04:10,075] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:04:10,075] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:04:10,075] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:04:10,077] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:04:10,077] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:04:10,077] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:08:30,080] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:08:30,080] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-07 22:08:40,673] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:08:40,673] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:08:40,673] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-07 22:08:52,942] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:08:52,942] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:08:52,942] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:08:52,957] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:08:52,957] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:08:52,957] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:08:53,313] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:08:53,313] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:08:53,313] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:08:55,034] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:08:55,034] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:08:55,034] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:00,381] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:00,381] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:00,381] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:00,391] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:00,391] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:00,391] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:00,560] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:00,560] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:00,560] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:00,562] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:00,562] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:00,562] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:00,566] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:00,566] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:00,566] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:05,324] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:05,324] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:05,324] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:05,334] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:05,334] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:05,334] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:05,557] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:05,557] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:05,557] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:05,559] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:05,559] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:05,559] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:05,562] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:05,562] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:05,562] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:09,300] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:09,300] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:09,300] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-07 22:09:09,321] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:09,321] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:09,321] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-07 22:09:09,508] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:09,508] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:09,508] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-07 22:09:09,510] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:09,510] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:09,510] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-07 22:09:09,513] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:09,513] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-07 22:09:09,513] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
