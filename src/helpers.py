@@ -9,6 +9,7 @@ import datetime
 from typing import List
 from src.work_gemini import start_chat
 from src.pdf_utils import count_pdf_pages, upload
+from src.maps import reset_session_num
 from pathlib import Path
 
 
@@ -120,7 +121,7 @@ def reset_session_1(st, ss, chat):
 
 
 def reload_page_1_doc(
-    st, ss, model, df_answers, pname, placeholder, tmp_folder, out_folder
+    st, ss,  df_answers, pname, placeholder, tmp_folder, out_folder, num=10
 ):
     """
     reload page
@@ -128,25 +129,30 @@ def reload_page_1_doc(
     st (streamlit): streamlit object
     ss (streamlit.session_state): streamlit session state
     model (vertexai.generative_models.GenerativeModel): model
-    df_answers (pd.DataFrame): dataframe with all answers
+    df_answers (pd.DataFrame): dataframe with all answers,
+    pname (str): filename
+    placeholder (streamlit.container): container to reset
+    tmp_folder (str): temp folder
+    out_folder (str): output folder
+    num (int): number of session
 
     """
     # delete files
     # write_history_1(st)
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    list2 = copy.deepcopy(st.session_state[f"chat_answers_history_{num}"])
     # get filename
-    filename = st.session_state["file_history"]
+    filename = st.session_state[f"file_history_{num}"]
     # save the response of Model
     save_df_many(
         list2=list2,
         df=df_answers,
         fname=pname,
-        prompt=st.session_state["prompt_introduced"],
+        prompt=st.session_state[f"prompt_introduced_{num}"],
         filename=filename,
     )
 
-    chat = start_chat(model)
-    reset_session_1(st, ss, chat)
+
+    reset_session_num(st, num)
     # delete files in temp
     _ = [f.unlink() for f in Path(f"{tmp_folder}").glob("*") if f.is_file()]
     _ = [f.unlink() for f in Path(f"{out_folder}").glob("*") if f.is_file()]
@@ -358,7 +364,7 @@ def init_session_multi(st, ss, model, col1, col2):
     return
 
 
-def reload_page_many_docs(st, ss, model, df, fname, placeholder):
+def reload_page_many_docs(st, ss,  df, fname, placeholder, num:int="10"):
     """
     refresh page and initialize variables page may docs
     Args:
@@ -370,22 +376,20 @@ def reload_page_many_docs(st, ss, model, df, fname, placeholder):
     """
     # delete files
     # write response of model to table
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    list2 = copy.deepcopy(st.session_state[f"chat_answers_history_{num}"])
     # get filename
-    filename = get_filename_multi(st)
+    filename = get_filename_multi(st,num=num)
     # save the response of Model
     save_df_many(
         list2=list2,
         df=df,
         fname=fname,
-        prompt=st.session_state["prompt_introduced"],
+        prompt=st.session_state[f"prompt_introduced_{num}"],
         filename=filename,
     )
     # restart chat
-    chat = start_chat(model)
-    reset_session_multi(st, ss, chat)
+    reset_session_num(st, num)
     placeholder.empty()
-
     st.stop()
     return
 
@@ -585,7 +589,7 @@ def reset_session_faiss(st):
     return
 
 
-@st.experimental_dialog("Choose prompt 👇")
+@st.dialog("Choose prompt 👇")
 def visualiza(st, path):
     file = st.session_state["select_box"]
     with open(os.path.join(path, file), "r") as f:
@@ -640,20 +644,20 @@ def save_df_many(list2: List, df: pd.DataFrame, fname: str, prompt: str, filenam
     return
 
 
-def get_filename_multi(st):
+def get_filename_multi(st, num:int=10):
     """
     extract filename from multi file name
     """
 
     text0 = ""
-    for file in st.session_state["multi_file_name"]:
+    for file in st.session_state[f"multi_file_name_{num}"]:
         text0 = text0 + file.replace(".pdf", "") + "_"
     filename = text0[:-1]
     return filename
 
 
-@st.experimental_dialog("Choose prompt 👇", width="large")
-def visualiza_1_prompt(st, df, page_select, numpages):
+@st.dialog("Choose prompt 👇", width="large")
+def visualiza_1_prompt(st, df, page_select, numpages, num):
     """
     Visualize the prompt
     Args:
@@ -663,7 +667,7 @@ def visualiza_1_prompt(st, df, page_select, numpages):
         numpages (int): number of pages
     """
     # get the name of the file
-    file = st.session_state["select_box"]
+    file = st.session_state[f"select_box_{num}"]
     # transform the row into a dictionary
     prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
     id_ = prompt_dict["id"]
@@ -685,23 +689,23 @@ def visualiza_1_prompt(st, df, page_select, numpages):
         value=prompt_dict.get("prompt"),
     )
     if st.button("Accept"):
-        st.session_state["prompt_introduced"] = (
+        st.session_state[f"prompt_introduced_{num}"] = (
             prompt_dict.get("name_prompt") + "\n" + prompt_dict.get("prompt")
         )
-        st.session_state["file_prompt_selected"] = True
-        upload(page_select, numpages, st)
-        st.session_state.value = 3
+        st.session_state[f"file_prompt_selected_{num}"] = True
+        upload(page_select, numpages, st, num)
+        st.session_state[f"value_{num}"] = 3
         st.rerun()
 
-    if st.button("No accept"):
-        st.session_state["prompt_introduced"] = ""
-        st.session_state["file_prompt_selected"] = False
-        st.session_state.value = 2
+    if st.button("No Accept"):
+        st.session_state[f"prompt_introduced_{num}"] = ""
+        st.session_state["file_prompt_selected_{num}"] = False
+        st.session_state[f"value_{num}"] = 2
         st.rerun()
 
 
-@st.experimental_dialog("Confirm Selection 👇", width="large")
-def visualiza_display_page(st, selection_dict):
+@st.dialog("Confirm Selection 👇", width="large")
+def visualiza_display_page(st, selection_dict, num:int=10):
     """
     Visualize the answers and selected
     Args:
@@ -728,15 +732,15 @@ def visualiza_display_page(st, selection_dict):
         value=selection_dict.get("respuesta_chat"),
     )
     if st.button("Accept", key="accept_inside_select_answer"):
-        st.session_state["answer_introduced"] = selection_dict
-        st.session_state["file_prompt_selected_visualiza"] = True
+        st.session_state[f"answer_introduced_{num}"] = selection_dict
+        st.session_state[f"file_prompt_selected_visualiza_{num}"] = True
         st.rerun()
 
     return
 
 
-@st.experimental_dialog("Confirma Pericial 👇", width="large")
-def visualiza_pericial(st, df, list_matches_textos, list_matches):
+@st.dialog("Confirma Pericial 👇", width="large")
+def visualiza_pericial(st, df, list_matches_textos, list_matches, num:int=10):
     """
     Visualize the prompt
     Args:
@@ -745,7 +749,7 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
         text_selection (text): pericial selected to visualization
     """
     # get the name of the file
-    seccion2 = st.session_state["select_box_2"]
+    seccion2 = st.session_state[f"select_box_{num}"]
     pos = list_matches_textos.index(seccion2)
     idv = list_matches[pos]
 
@@ -770,10 +774,10 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
         key="seccion_area",
         value=text_seccion,
     )
-    if st.button("Accept", key="accept_inside_pericial"):
-        st.session_state["b_accept_inside_pericial"] = True
-        st.session_state["seccion_introduced"] = text_seccion
-        st.session_state["pericial_prompt_selected"] = True
+    if st.button("Accept", key=f"accept_inside_pericial_{num}"):
+        st.session_state[f"b_accept_inside_pericial_{num}"] = True
+        st.session_state[f"seccion_introduced_{num}"] = text_seccion
+        st.session_state[f"pericial_prompt_selected_{num}"] = True
 
         st.rerun()
 
@@ -781,7 +785,7 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches):
 
 
 def reload_page_combina(
-    st, model, embeddings, index, vectorstore, fname, df, placeholder
+    st,  fname, df, placeholder,num:int=10
 ):
     """
     refresh page and initialize variables
@@ -797,83 +801,27 @@ def reload_page_combina(
     """
     # delete files
     # write response of model to table
-    list2 = copy.deepcopy(st.session_state["chat_answers_history"])
+    list2 = copy.deepcopy(st.session_state[f"chat_answers_history_{num}"])
     # get filename
-    filename = st.session_state["prompt_combined_filename"]
+    filename = st.session_state[f"prompt_combined_filename_{num}"]
     # save the response of Model
     save_df_many(
         list2=list2,
         df=df,
         fname=fname,
-        prompt=st.session_state["prompt_introduced"],
+        prompt=st.session_state[f"prompt_introduced_{num}"],
         filename=filename,
     )
     # restart
-    reset_session_visualiza(st, model, embeddings, index, vectorstore)
+
+    reset_session_num(st, num)
     placeholder.empty()
     st.stop()
     return
 
 
-def reset_session_10(st):
-    """
-    Delete session state for multiple files option
-    param: st  session
-    param: ss  session state
-    param: model  chat (gemini model)
-    """
 
-    del st.session_state["embeddings_10"]
-    del st.session_state["index_10"]
-    del st.session_state["vectorstore_10"]
-    del st.session_state["select_box_add"]
-    del st.session_state["selector_selected_add"]
-    # placeholder for multiple files
 
-    st.session_state["salir_10"] = False
 
-    return
 
-def reset_session_11(st):
-    """
-    Delete session state for multiple files option
-    param: st  session
-    param: ss  session state
-    param: model  chat (gemini model)
-    """
-
-    del st.session_state["embeddings_11"]
-    del st.session_state["index_11"]
-    del st.session_state["vectorstore_11"]
-    del st.session_state["select_box_delete"]
-    del st.session_state["selector_selected_delete"]
-    del st.session_state["selector_selected_section_delete"]
-    del st.session_state["selector_selected_pericial_delete"]
-    del st.session_state["selector_selected_answer_delete"]
-    del st.session_state["selector_selected_answer_delete_no_case"]
-    # placeholder for multiple files
-
-    st.session_state["salir_11"] = False
-
-    return
-
-def reset_session_12(st):
-    """
-    Delete session state for multiple files option
-    param: st  session
-    param: ss  session state
-    param: model  chat (gemini model)
-    """
-
-    del st.session_state["embeddings_12"]
-    del st.session_state["index_12"]
-    del st.session_state["vectorstore_12"]
-    del st.session_state["select_box_modifica"]
-    del st.session_state["selector_selected_modifica"]
-    del st.session_state["selector_selected_section"]
-    del st.session_state["selector_selected_pericial"]
-    # placeholder for multiple files
-
-    st.session_state["salir_12"] = False
-
-    return
+    

@@ -43,9 +43,9 @@ def get_pinecone_objects(config, embeddings, index_name: str = "forensic"):
     return index, vectorstore
 
 
-def pericial_prompt_selected(st):
-    st.session_state["pericial_prompt_selected"] = True
+def pericial_prompt_selected(st, num):
+    st.session_state[f"pericial_prompt_selected_{num}"] = True
 
 
-def section_prompt_selected(st):
-    st.session_state["section_prompt_selected"] = True
+def section_prompt_selected(st, num):
+    st.session_state[f"section_prompt_selected_{num}"] = True

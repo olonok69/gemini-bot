@@ -1,5 +1,5 @@
 from .pdf_utils import extract_pdf_images, count_pdf_pages, upload, upload_files
-from .work_gemini import get_chat_response, prepare_prompt, start_chat, init_model
+from .work_gemini import get_chat_response, prepare_prompt, start_chat, init_model, init_llm, init_google_embeddings
 from .helpers import (
     write_history_1,
     reset_session_1,
@@ -23,9 +23,7 @@ from .helpers import (
     reload_page_many_docs,
     change_status,
     reload_page_1_doc,
-    reset_session_10,
-    reset_session_11,
-    reset_session_12
+
 )
 from .utils import print_stack, create_client_logging
 from .files import (
@@ -62,3 +60,5 @@ from .maintenance import (
     selected_delete_answer_gemini_nocase,
     visualiza_delete_answer_gemini_no_case,
 )
+
+from .maps import config, init_session_num, reset_session_num
