@@ -14,8 +14,8 @@ def selected_modifica(st):
     st.session_state["selector_selected_modifica"] = True
 
 
-def selected_delete(st):
-    st.session_state["selector_selected_delete"] = True
+def selected_delete(st, num):
+    st.session_state[f"selector_selected_delete_{num}"] = True
 
 
 # this is for modifica
@@ -28,20 +28,20 @@ def selected_modify_percial(st):
 
 
 # this is for delete.py
-def selected_delete_prompt(st):
-    st.session_state["selector_selected_section_delete"] = True
+def selected_delete_prompt(st, num):
+    st.session_state[f"selector_selected_section_delete_{num}"] = True
 
 
-def selected_delete_percial(st):
-    st.session_state["selector_selected_pericial_delete"] = True
+def selected_delete_percial(st,num):
+    st.session_state[f"selector_selected_pericial_delete_{num}"] = True
 
 
-def selected_delete_answer_gemini(st):
-    st.session_state["selector_selected_answer_delete"] = True
+def selected_delete_answer_gemini(st,num):
+    st.session_state[f"selector_selected_answer_delete_{num}"] = True
 
 
-def selected_delete_answer_gemini_nocase(st):
-    st.session_state["selector_selected_answer_delete_no_case"] = True
+def selected_delete_answer_gemini_nocase(st,num):
+    st.session_state[f"selector_selected_answer_delete_no_case_{num}"] = True
 
 
 def save_text_add_prompt(
@@ -383,7 +383,7 @@ def visualiza_pericial_modifica(
     )
     return
 
-def visualiza_delete_prompt(st, df: pd.DataFrame, fname: str):
+def visualiza_delete_prompt(st, df: pd.DataFrame, fname: str, num: int = 10):
     """
     Visualize prompt
     Args:
@@ -391,7 +391,7 @@ def visualiza_delete_prompt(st, df: pd.DataFrame, fname: str):
         df (pd.DataFrame): dataframe with all prompts
         fname (str): name of the file
     """
-    file = st.session_state["select_box_delete_prompt"]
+    file = st.session_state[f"select_box_delete_prompt_{num}"]
 
     # transform the row into a dictionary
     prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
@@ -420,17 +420,17 @@ def visualiza_delete_prompt(st, df: pd.DataFrame, fname: str):
         on_click=remove_prompts,
         args=[df, id_, fname],
     ):
-        st.session_state["selector_selected_delete"] = False
-        st.session_state["selector_selected_section_delete"] = False
-        st.session_state["selector_selected_pericial_delete"] = False
-        st.session_state["selector_selected_answer_delete"] = False
-        st.session_state["selector_selected_answer_delete_no_case"] = False
+        st.session_state[f"selector_selected_delete_{num}"] = False
+        st.session_state[f"selector_selected_section_delete_{num}"] = False
+        st.session_state[f"selector_selected_pericial_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_no_case_{num}"] = False
 
     return
 
 
 def visualiza_delete_pericial(
-    st, df: pd.DataFrame, fname: str, vectorstore: PineconeVectorStore
+    st, df: pd.DataFrame, fname: str, vectorstore: PineconeVectorStore, num:str="10"
 ):
     """
     Visualize Seccion percial to delete
@@ -440,7 +440,7 @@ def visualiza_delete_pericial(
         fname (str): name of the file
         vectorstore (PineconeVectorStore): vectorstore with all prompts
     """
-    file = st.session_state["select_box_delete_pericial"]
+    file = st.session_state[f"select_box_delete_pericial_{num}"]
 
     # transform the row into a dictionary
     prompt_dict = df[df.Title == file].to_dict(orient="records")[0]
@@ -465,14 +465,14 @@ def visualiza_delete_pericial(
         on_click=remove_pericial,
         args=[df, id_, pine_id, fname, vectorstore],
     ):
-        st.session_state["selector_selected_delete"] = False
-        st.session_state["selector_selected_section_delete"] = False
-        st.session_state["selector_selected_pericial_delete"] = False
-        st.session_state["selector_selected_answer_delete"] = False
-        st.session_state["selector_selected_answer_delete_no_case"] = False
+        st.session_state[f"selector_selected_delete_{num}"] = False
+        st.session_state[f"selector_selected_section_delete_{num}"] = False
+        st.session_state[f"selector_selected_pericial_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_no_case_{num}"] = False
 
 
-def visualiza_delete_answer_gemini(st, df: pd.DataFrame, fname: str):
+def visualiza_delete_answer_gemini(st, df: pd.DataFrame, fname: str, num:str="10"):
     """
     Visualize answer gemini  to delete
     Args:
@@ -481,7 +481,7 @@ def visualiza_delete_answer_gemini(st, df: pd.DataFrame, fname: str):
         fname (str): name of the file
         vectorstore (PineconeVectorStore): vectorstore with all prompts
     """
-    file = st.session_state["select_box_delete_answers_gemini"]
+    file = st.session_state[f"select_box_delete_answers_gemini_{num}"]
 
     # transform the row into a dictionary
     filename = file.split("_")[0]
@@ -514,15 +514,15 @@ def visualiza_delete_answer_gemini(st, df: pd.DataFrame, fname: str):
         on_click=remove_anwers,
         args=[df, id_, fname],
     ):
-        st.session_state["selector_selected_delete"] = False
-        st.session_state["selector_selected_section_delete"] = False
-        st.session_state["selector_selected_pericial_delete"] = False
-        st.session_state["selector_selected_answer_delete"] = False
-        st.session_state["selector_selected_answer_delete_no_case"] = False
+        st.session_state[f"selector_selected_delete_{num}"] = False
+        st.session_state[f"selector_selected_section_delete_{num}"] = False
+        st.session_state[f"selector_selected_pericial_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_no_case_{num}"] = False
 
     return
 
-def visualiza_delete_answer_gemini_no_case(st, df: pd.DataFrame, fname: str):
+def visualiza_delete_answer_gemini_no_case(st, df: pd.DataFrame, fname: str, num:str="10"):
     """
     Visualize answer gemini no case to delete
     Args:
@@ -531,7 +531,7 @@ def visualiza_delete_answer_gemini_no_case(st, df: pd.DataFrame, fname: str):
         fname (str): name of the file
         vectorstore (PineconeVectorStore): vectorstore with all prompts
     """
-    file = st.session_state["select_box_delete_answers_gemini_no_case"]
+    file = st.session_state[f"select_box_delete_answers_gemini_no_case_{num}"]
 
     # transform the row into a dictionary
     filename = file.split("_")[0]
@@ -564,9 +564,9 @@ def visualiza_delete_answer_gemini_no_case(st, df: pd.DataFrame, fname: str):
         on_click=remove_anwers,
         args=[df, id_, fname],
     ):
-        st.session_state["selector_selected_delete"] = False
-        st.session_state["selector_selected_section_delete"] = False
-        st.session_state["selector_selected_pericial_delete"] = False
-        st.session_state["selector_selected_answer_delete"] = False
-        st.session_state["selector_selected_answer_delete_no_case"] = False
+        st.session_state[f"selector_selected_delete_{num}"] = False
+        st.session_state[f"selector_selected_section_delete_{num}"] = False
+        st.session_state[f"selector_selected_pericial_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_{num}"] = False
+        st.session_state[f"selector_selected_answer_delete_no_case_{num}"] = False
     return
