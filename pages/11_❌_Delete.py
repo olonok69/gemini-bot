@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit import session_state as ss
 import os
 from pathlib import Path
 import json
@@ -16,7 +17,7 @@ from src.files import (
     open_table_answers_final,
     open_table_answers_no_case,
 )
-from src.helpers import reset_session_11
+
 from src.maintenance import (
     selected_delete,
     selected_delete_prompt,
@@ -31,6 +32,7 @@ from src.maintenance import (
 
 import logging
 from src.utils import print_stack
+from src.maps import config as conf, init_session_num, reset_session_num
 
 #### OPEN all necesary Tables
 # where I am
@@ -74,7 +76,7 @@ for x, y in zip(onlyfiles_anwers_gemini2_nocase, onlyfiles_anwers_gemini3_nocase
 
     onlyfiles_anwers_gemini4_nocase.append(x + "_" + y)
 
-def change_state_11(st, placeholder):
+def change_state_11(session, placeholder):
     """
     change state after leave conversation
     params:
@@ -83,9 +85,9 @@ def change_state_11(st, placeholder):
 
     """
     placeholder.empty()
-    reset_session_11(st)
-    st.stop()
     del placeholder
+    reset_session_num(session,"10")
+    st.stop()
     return
 
 def main(options,  placeholder):
@@ -100,21 +102,11 @@ def main(options,  placeholder):
     """
     if st.button("Salir", on_click=change_state_11, args=(st, placeholder)):
         logging.info("Salir and writing history")
-    # setup session
-    if "selector_selected_delete" not in st.session_state:
-        st.session_state["selector_selected_delete"] = False
-
-    if "selector_selected_section_delete" not in st.session_state:
-        st.session_state["selector_selected_section_delete"] = False
-
-    if "selector_selected_pericial_delete" not in st.session_state:
-        st.session_state["selector_selected_pericial_delete"] = False
-
-    if "selector_selected_answer_delete" not in st.session_state:
-        st.session_state["selector_selected_answer_delete"] = False
-
-    if "selector_selected_answer_delete_no_case" not in st.session_state:
-        st.session_state["selector_selected_answer_delete_no_case"] = False
+    col1, col2 = 50, 50
+    if "init_run_11" not in st.session_state:
+            st.session_state["init_run_11"] = False
+    if st.session_state["init_run_11"] == False:
+        init_session_num(st, ss, "11", col1, col2, conf["11"]["config_11"], None)
 
     try:
         selector1 = st.selectbox(
@@ -122,64 +114,64 @@ def main(options,  placeholder):
             options,
             index=None,
             on_change=selected_delete,
-            args=[st],
-            key="select_box_delete",
+            args=[st, "11"],
+            key="select_box_delete_11",
         )
-        if st.session_state["selector_selected_delete"] == True:
-            if st.session_state.select_box_delete == "Prompts":
+        if st.session_state["selector_selected_delete_11"] == True:
+            if st.session_state.select_box_delete_11 == "Prompts":
                 # fname, fname2, df_prompts
                 _ = st.selectbox(
                     "select prompt 👇",
                     onlyfiles_prompts,
                     on_change=selected_delete_prompt,
-                    key="select_box_delete_prompt",
-                    args=[st],
+                    key="select_box_delete_prompt_11",
+                    args=[st, "11"],
                 )
                 logging.info("Selected Delete Prompts")
-                if st.session_state["selector_selected_section_delete"] == True:
-                    visualiza_delete_prompt(st, df_prompts, fname)
+                if st.session_state["selector_selected_section_delete_11"] == True:
+                    visualiza_delete_prompt(st, df_prompts, fname, num="11")
 
-            elif st.session_state.select_box_delete == "Periciales":
+            elif st.session_state.select_box_delete_11 == "Periciales":
                 # pname, name2, df_pericial
                 _ = st.selectbox(
                     "select pericial 👇",
                     onlyfiles_periciales,
                     on_change=selected_delete_percial,
-                    args=[st],
-                    key="select_box_delete_pericial",
+                    args=[st,"11"],
+                    key="select_box_delete_pericial_11",
                 )
-                if st.session_state["selector_selected_pericial_delete"] == True:
+                if st.session_state["selector_selected_pericial_delete_11"] == True:
                     # df_pericial, pname, st.session_state["vectorstore"]
                     logging.info("Selected Delete Pericial")
                     visualiza_delete_pericial(
-                        st, df_pericial, pname, st.session_state["vectorstore_11"]
+                        st, df_pericial, pname, st.session_state["vectorstore_11"], num="11"
                     )
-            elif st.session_state.select_box_delete == "Answer_gemini":
+            elif st.session_state.select_box_delete_11 == "Answer_gemini":
                 # pname, name2, df_pericial
                 _ = st.selectbox(
                     "select answer from gemini 👇",
                     onlyfiles_anwers_gemini4,
                     on_change=selected_delete_answer_gemini,
-                    args=[st],
-                    key="select_box_delete_answers_gemini",
+                    args=[st, "11"],
+                    key="select_box_delete_answers_gemini_11",
                 )
                 logging.info("Selected Delete Answer Gemini")
-                if st.session_state["selector_selected_answer_delete"] == True:
-                    visualiza_delete_answer_gemini(st, df_answers, paname)
+                if st.session_state["selector_selected_answer_delete_11"] == True:
+                    visualiza_delete_answer_gemini(st, df_answers, paname, num="11")
 
-            elif st.session_state.select_box_delete == "Answer_gemini_no_case":
+            elif st.session_state.select_box_delete_11 == "Answer_gemini_no_case":
                 # pname, name2, df_pericial
                 _ = st.selectbox(
                     "select answer from gemini 👇",
                     onlyfiles_anwers_gemini4_nocase,
                     on_change=selected_delete_answer_gemini_nocase,
-                    args=[st],
-                    key="select_box_delete_answers_gemini_no_case",
+                    args=[st, "11"],
+                    key="select_box_delete_answers_gemini_no_case_11",
                 )
                 logging.info("Selected Delete Answer Gemini No Case")
-                if st.session_state["selector_selected_answer_delete_no_case"] == True:
+                if st.session_state["selector_selected_answer_delete_no_case_11"] == True:
                     visualiza_delete_answer_gemini_no_case(
-                        st, df_answers_no_case, pname_no_case
+                        st, df_answers_no_case, pname_no_case, num="11"
                     )
     except :
         st.session_state["salir_11"] = True
