@@ -33,4 +33,4 @@ RUN chmod -R 776 /home/${USER_APP}
 EXPOSE 8501
 USER ${USER_APP}
 
-ENTRYPOINT [ "streamlit", "run", "pages.py", "--server.port", "8501" ]
+ENTRYPOINT [ "streamlit", "run", "main.py", "--server.port", "8501" ]
