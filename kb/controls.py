@@ -1,12 +1,12 @@
 import streamlit as st
 
 
-def selected_faiss(st):
-    st.session_state["file_faiss_selected"] = True
+def selected_faiss(st, num: int=10):
+    st.session_state[f"file_faiss_selected_{num}"] = True
 
 
-@st.experimental_dialog("Visualiza contexto 👇", width="large")
-def visualiza_context_faiss(st, out):
+@st.dialog("Visualiza contexto 👇", width="large")
+def visualiza_context_faiss(st, out, num: int = 10):
     """
     Function to visualize the context of a document using FAISS.
     Args:
@@ -16,38 +16,38 @@ def visualiza_context_faiss(st, out):
         None
 
     """
-    if "docs_context" in st.session_state:
-        st.session_state["docs_context"] = out["context"]
+    if f"docs_context_{num}" in st.session_state:
+        st.session_state[f"docs_context_{num}"] = out["context"]
 
-    for doc in st.session_state["docs_context"]:
-        st.session_state["docs_context_names"].append(
+    for doc in st.session_state[f"docs_context_{num}"]:
+        st.session_state[f"docs_context_names_{num}"].append(
             f"{doc.metadata.get('filename')}_page_{doc.metadata.get('page')}"
         )
-    if st.session_state["file_faiss_selected"] == False:
+    if st.session_state[f"file_faiss_selected_{num}"] == False:
         selector = st.selectbox(
             "Selecciona documento 👇",
-            st.session_state["docs_context_names"],
+            st.session_state[f"docs_context_names_{num}"],
             index=None,
-            key="select_context_faiss",
+            key=f"select_context_faiss_{num}",
             on_change=selected_faiss,
-            args=[st],
+            args=[st, num],
         )
 
     if (
-        st.session_state["file_faiss_selected"] == True
-        and len(st.session_state["docs_context_names"]) > 0
+        st.session_state[f"file_faiss_selected_{num}"] == True
+        and len(st.session_state[f"docs_context_names_{num}"]) > 0
     ):
         with st.expander("Contexto", expanded=True):
-            indice = st.session_state["docs_context_names"].index(
-                st.session_state["select_context_faiss"]
+            indice = st.session_state[f"docs_context_names_{num}"].index(
+                st.session_state[f"select_context_faiss_{num}"]
             )
             st.text_area(
-                st.session_state["docs_context_names"][indice],
+                st.session_state[f"docs_context_names_{num}"][indice],
                 height=300,
-                key="kb_text2_faiss",
-                value=st.session_state["docs_context"][indice].page_content,
+                key=f"kb_text2_faiss_{num}",
+                value=st.session_state[f"docs_context_{num}"][indice].page_content,
             )
-            st.session_state["file_faiss_selected"] = False
+            st.session_state[f"file_faiss_selected_{num}"] = False
             if st.button("More"):
-                st.session_state["file_faiss_selected"] = True
+                st.session_state[f"file_faiss_selected_{num}"] = True
     return
