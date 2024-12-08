@@ -21,3 +21,5 @@ kb/prompts/table/prompts_backup.csv
 kb/prompts/table/prompts.csv
 config.yaml
 archive/hasher.py
+.vscode/
+archive/login/

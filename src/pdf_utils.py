@@ -3,7 +3,7 @@ import pathlib
 import fitz
 
 
-def extract_pdf_images(pdf_path, numpages, list_pages, st, file="", multi=False):
+def extract_pdf_images(pdf_path, numpages, list_pages, st, file="", num=10, multi=False):
     """
     extract images from a pdf file
     :param pdf_path: path to pdf file
@@ -30,7 +30,8 @@ def extract_pdf_images(pdf_path, numpages, list_pages, st, file="", multi=False)
         if multi:
             filepath = f"out/{file}"
         else:
-            filepath = f"out/{st.session_state['file_history']}"
+            key_session = f"file_history_{num}"
+            filepath = f"out/{st.session_state[key_session]}"
         with open(filepath, "wb") as f:
             f.write(pdf_file.read())
         with open(filepath, "rb") as img:
@@ -68,29 +69,33 @@ def count_pdf_pages(pdf_path):
     return num_pages
 
 
-def upload(list_pages, numpages, st):
+def upload(list_pages, numpages, st, num: 10):
     """
     upload pdf file and extract images
     :param list_pages: list of pages to extract
     :param numpages: number of pages in pdf
+    :param st: session
+    :param num: number of session
     :return: list of images in bytes
     """
 
     parent_path = pathlib.Path(__file__).parent.resolve()
     save_path = os.path.join(parent_path, "data")
-    complete_name = st.session_state["file_name"]
+    complete_name = st.session_state[f"file_name_{num}"]
 
     # write list of images to session
-    if len(st.session_state["list_images"]) == 0:
+    if len(st.session_state[f"list_images_{num}"]) == 0:
         list_images, size_files = extract_pdf_images(
-            complete_name, numpages, list_pages, st, complete_name, multi=False
+            complete_name, numpages, list_pages, st, complete_name,num=num, multi=False
         )
-        st.session_state["list_images"] = list_images
+        st.session_state[f"list_images_{num}"] = list_images
         if list_pages == "all":
             numpages = count_pdf_pages(complete_name)
             total_size = round(sum(size_files) / (1024 * 1024), 2)
+            # file name size
+            filename = st.session_state[f'file_history_{num}']
             st.session_state["upload_state"] = (
-                f"Ficheros extraído {st.session_state['file_history']} con y un tamaño total de {total_size} Megabytes"
+                f"Ficheros extraído {filename} con y un tamaño total de {total_size} Megabytes"
             )
         else:
             total_size = 0
@@ -100,35 +105,36 @@ def upload(list_pages, numpages, st):
                 paginas_size = paginas_size + f"{s}, "
 
             total_size = round(sum(size_files) / (1024 * 1024), 2)
-            st.session_state["upload_state"] = (
+            st.session_state[f"upload_state_{num}"] = (
                 f"lista de ficheros extraídos {len(list_images) } con tamaños en Megabytes {paginas_size[:-2]} y un tamaño total de {total_size} Megabytes"
             )
-    st.session_state.value = 3  # pages procesed
+    st.session_state[f"value_{num}"] = 3  # pages procesed
     return
 
 
-def upload_files(st):
+def upload_files(st, num:int = 10):
     """
     upload pdfs file in bytes
 
     :param st: session
+    :param num: number of session
     :return: list of images in bytes
     """
     parent_path = pathlib.Path(__file__).parent.parent.resolve()
     save_path = os.path.join(parent_path, "tmp")
     final_list = []
     final_sizes = []
-    for file in st.session_state["multi_file_name"]:
+    for file in st.session_state[f"multi_file_name_{num}"]:
         complete_name = os.path.join(save_path, file)
         list_images, size_files = extract_pdf_images(
-            complete_name, "all", "all", st, file, multi=True
+            complete_name, "all", "all", st, file, num=num, multi=True
         )
         final_list = final_list + list_images
         final_sizes.append(size_files[0])
     total_size = round(sum(final_sizes) / (1024 * 1024), 2)
-    st.session_state["upload_state"] = (
+    st.session_state[f"upload_state_{num}"] = (
         f"Number of Files extracted: {len(final_list)} con un tamaño total de {total_size} Megabytes"
     )
-    st.session_state["list_images_multi"] = final_list
-    st.session_state.value = 3  # pages procesed
+    st.session_state[f"list_images_multi_{num}"] = final_list
+    st.session_state[f"value_{num}"] = 3  # pages procesed
     return

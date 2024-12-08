@@ -32,6 +32,7 @@ langchain-google-community
 beautifulsoup4
 html2text
 faiss-cpu
+tavily-python
 streamlit-authenticator
 rapidocr-onnxruntime
 pymupdf4llm
