@@ -58,8 +58,13 @@ config ={
 "config_10_del" : ["salir_10",  "index_10", "embeddings_10", "vectorstore_10", "init_run_10", "selector_selected_add_10", "select_box_add_10"],
 "config_10" : ["selector_selected_add_10"]},
 
-}
+ "11": { 
+"config_11_del" : ["salir_11",  "index_11", "embeddings_11", "vectorstore_11", "selector_selected_delete_11", "select_box_delete_11", "select_box_delete_prompt_11", "selector_selected_section_delete_11",
+"select_box_delete_pericial_11", "selector_selected_pericial_delete_11", "select_box_delete_answers_gemini_11", "selector_selected_answer_delete_11", "select_box_delete_answers_gemini_11",
+"selector_selected_answer_delete_no_case_11", "select_box_delete_answers_gemini_no_case_11"],
+"config_11" : ["selector_selected_delete_11", "selector_selected_section_delete_11", "selector_selected_pericial_delete_11", "selector_selected_answer_delete_11", "selector_selected_answer_delete_no_case_11"]},
 
+}
 def reset_session_num(session, num:int="10"):
     """
     Delete session state for multiple files option
@@ -216,15 +221,30 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
 
     if f"buttom_send_clicked_{num}" not in sess.session_state and f"buttom_send_clicked_{num}" in config:
         sess.session_state[f"buttom_send_clicked_{num}"] = False
+    
+    if f"selector_selected_section_delete_{num}" not in sess.session_state and f"selector_selected_section_delete_{num}" in config:
+        sess.session_state[f"selector_selected_section_delete_{num}"] = False
+
+    if f"selector_selected_delete_{num}" not in sess.session_state and f"selector_selected_delete_{num}" in config:
+        sess.session_state[f"selector_selected_delete_{num}"] = False
 
     if f"selector_selected_add_{num}" not in sess.session_state and f"selector_selected_add_{num}" in config:
         sess.session_state[f"selector_selected_add_{num}"] = False
     
+    if f"selector_selected_answer_delete_{num}" not in sess.session_state and f"selector_selected_answer_delete_{num}" in config:
+        sess.session_state[f"selector_selected_answer_delete_{num}"] = False
+    
+    if f"selector_selected_answer_delete_no_case_{num}" not in sess.session_state and f"selector_selected_answer_delete_no_case_{num}" in config:
+        sess.session_state[f"selector_selected_answer_delete_no_case_{num}"] = False
+
     if f"add_file_kb_selected_{num}" not in sess.session_state and f"add_file_kb_selected_{num}" in config:
         sess.session_state[f"add_file_kb_selected_{num}"] = False
     
     if f"file_faiss_selected_{num}" not in sess.session_state and f"file_faiss_selected_{num}" in config:
         sess.session_state[f"file_faiss_selected_{num}"] = False
+
+    if f"selector_selected_pericial_delete_{num}" not in sess.session_state and f"selector_selected_pericial_delete_{num}" in config:
+        sess.session_state[f"selector_selected_pericial_delete_{num}"] = False
     
     if f"buttom_visualiza_faiss_clicked_{num}" not in sess.session_state and f"buttom_visualiza_faiss_clicked_{num}" in config:
         sess.session_state[f"buttom_visualiza_faiss_clicked_{num}"] = False
