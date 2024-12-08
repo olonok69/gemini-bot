@@ -3,7 +3,6 @@ google-cloud-aiplatform
 pandas
 numpy
 python-dotenv
-streamlit-js-eval
 st-pages==0.5.0
 PyMuPDF
 streamlit_pdf_viewer==0.0.12
@@ -36,3 +35,4 @@ tavily-python
 streamlit-authenticator
 rapidocr-onnxruntime
 pymupdf4llm
+detectaicore
