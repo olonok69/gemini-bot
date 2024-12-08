@@ -236,10 +236,9 @@ def main( col1, col2, placeholder):
                         reload_page_1_doc(
                             st,
                             ss,
-                            model,
                             df_answers,
                             pname,
-                            placeholder_1,
+                            placeholder,
                             TMP_FOLDER,
                             OUT_FOLDER,
                             "20",

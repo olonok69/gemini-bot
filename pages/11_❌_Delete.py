@@ -17,7 +17,7 @@ from src.files import (
     open_table_answers_final,
     open_table_answers_no_case,
 )
-from src.helpers import reset_session_11
+
 from src.maintenance import (
     selected_delete,
     selected_delete_prompt,
@@ -107,9 +107,6 @@ def main(options,  placeholder):
             st.session_state["init_run_11"] = False
     if st.session_state["init_run_11"] == False:
         init_session_num(st, ss, "11", col1, col2, conf["11"]["config_11"], None)
-
-    # setup session
-
 
     try:
         selector1 = st.selectbox(

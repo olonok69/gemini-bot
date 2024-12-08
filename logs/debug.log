@@ -5328,3 +5328,996 @@
 [2024-12-08 12:18:05,615] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
 [2024-12-08 12:18:05,615] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
 [2024-12-08 12:18:05,615] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:21:18,809] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 12:21:18,809] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 12:21:29,193] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:21:29,193] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:21:29,193] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:21:40,294] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:40,294] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:40,294] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:40,403] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:40,403] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:40,403] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:40,512] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:40,512] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:40,512] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:41,401] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:41,401] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:41,401] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:45,941] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:45,941] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:45,941] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:46,057] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:46,057] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:46,057] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:46,127] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:46,127] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:46,127] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:46,129] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:46,129] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:46,129] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:51,927] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:51,927] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:51,927] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:52,044] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:52,044] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:52,044] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:52,141] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:52,141] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:52,141] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:52,143] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:52,143] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:52,143] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:57,057] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:57,057] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:57,057] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:21:57,164] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:57,164] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:57,164] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:21:57,248] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:57,248] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:57,248] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:21:57,250] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:57,250] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:21:57,250] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:04,186] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:04,186] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:04,186] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:04,316] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:04,316] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:04,316] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:04,388] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:04,388] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:04,388] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:04,390] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:04,390] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:04,390] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:05,887] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:05,887] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:05,887] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:06,016] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:06,016] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:06,016] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:06,100] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:06,100] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:06,100] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:06,101] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:06,101] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:06,101] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:10,173] [ScriptRunner.scriptThread] [INFO    ] deleted salir_10
+[2024-12-08 12:22:10,173] [ScriptRunner.scriptThread] [INFO    ] deleted salir_10
+[2024-12-08 12:22:10,173] [ScriptRunner.scriptThread] [INFO    ] deleted salir_10
+[2024-12-08 12:22:10,175] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_add_10
+[2024-12-08 12:22:10,175] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_add_10
+[2024-12-08 12:22:10,175] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_add_10
+[2024-12-08 12:22:10,176] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_10
+[2024-12-08 12:22:10,176] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_10
+[2024-12-08 12:22:10,176] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_10
+[2024-12-08 12:22:10,178] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_10
+[2024-12-08 12:22:10,178] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_10
+[2024-12-08 12:22:10,178] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_10
+[2024-12-08 12:22:10,180] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_add_10
+[2024-12-08 12:22:10,180] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_add_10
+[2024-12-08 12:22:10,180] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_add_10
+[2024-12-08 12:22:13,187] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_10
+[2024-12-08 12:22:13,187] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_10
+[2024-12-08 12:22:13,187] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_10
+[2024-12-08 12:22:13,190] [ScriptRunner.scriptThread] [INFO    ] error deleting index_10
+[2024-12-08 12:22:13,190] [ScriptRunner.scriptThread] [INFO    ] error deleting index_10
+[2024-12-08 12:22:13,190] [ScriptRunner.scriptThread] [INFO    ] error deleting index_10
+[2024-12-08 12:22:13,216] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:13,216] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:13,216] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:13,479] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:13,479] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:13,479] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:13,689] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:13,689] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:13,689] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:13,694] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:13,694] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:13,694] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:16,551] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:16,551] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:16,551] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:16,561] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:16,561] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:16,561] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:16,756] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:16,756] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:16,756] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:16,758] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:16,758] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:16,758] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:16,762] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:16,762] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:16,762] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:22,527] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:22,527] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:22,527] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:22,536] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:22,536] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:22,536] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:22,745] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:22,745] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:22,745] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:22,747] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:22,747] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:22,747] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:22,750] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:22,750] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:22,750] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:29,224] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:29,224] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:29,224] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:22:29,249] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:29,249] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:29,249] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:22:29,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:29,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:29,455] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:22:29,458] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:29,458] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:29,458] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:22:29,464] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:29,464] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:29,464] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Prompts
+[2024-12-08 12:22:40,192] [ScriptRunner.scriptThread] [INFO    ] deleted index_10
+[2024-12-08 12:22:40,192] [ScriptRunner.scriptThread] [INFO    ] deleted index_10
+[2024-12-08 12:22:40,192] [ScriptRunner.scriptThread] [INFO    ] deleted index_10
+[2024-12-08 12:23:14,032] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:14,032] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:14,032] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:14,204] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:14,204] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:14,204] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:14,307] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:14,307] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:14,307] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:14,311] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:14,311] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:14,311] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:16,729] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:16,729] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:16,729] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:16,841] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:16,841] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:16,841] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:16,912] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:16,912] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:16,912] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:16,914] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:16,914] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:16,914] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:33,021] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:33,021] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:33,021] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:33,129] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:33,129] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:33,129] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:33,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:33,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:33,188] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:33,189] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:33,189] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:33,189] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:38,901] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:38,901] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:38,901] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:39,008] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:39,008] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:39,008] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:39,080] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:39,080] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:39,080] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:39,082] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:39,082] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:39,082] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:48,817] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:48,817] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:48,817] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:48,942] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:48,942] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:48,942] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:49,016] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:49,016] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:49,016] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:49,018] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:49,018] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:49,018] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:52,460] [ScriptRunner.scriptThread] [INFO    ] deleted salir_10
+[2024-12-08 12:23:52,460] [ScriptRunner.scriptThread] [INFO    ] deleted salir_10
+[2024-12-08 12:23:52,460] [ScriptRunner.scriptThread] [INFO    ] deleted salir_10
+[2024-12-08 12:23:52,463] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_add_10
+[2024-12-08 12:23:52,463] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_add_10
+[2024-12-08 12:23:52,463] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_add_10
+[2024-12-08 12:23:52,464] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_10
+[2024-12-08 12:23:52,464] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_10
+[2024-12-08 12:23:52,464] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_10
+[2024-12-08 12:23:52,465] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_10
+[2024-12-08 12:23:52,465] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_10
+[2024-12-08 12:23:52,465] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_10
+[2024-12-08 12:23:52,466] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_add_10
+[2024-12-08 12:23:52,466] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_add_10
+[2024-12-08 12:23:52,466] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_add_10
+[2024-12-08 12:23:52,467] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_10
+[2024-12-08 12:23:52,467] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_10
+[2024-12-08 12:23:52,467] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_10
+[2024-12-08 12:23:52,470] [ScriptRunner.scriptThread] [INFO    ] deleted index_10
+[2024-12-08 12:23:52,470] [ScriptRunner.scriptThread] [INFO    ] deleted index_10
+[2024-12-08 12:23:52,470] [ScriptRunner.scriptThread] [INFO    ] deleted index_10
+[2024-12-08 12:23:54,662] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:54,662] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:54,662] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:54,673] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:54,673] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:54,673] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:54,878] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:54,878] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:54,878] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:54,881] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:54,881] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:54,881] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:57,477] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:57,477] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:57,477] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:23:57,544] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:57,544] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:57,544] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:23:57,715] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:57,715] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:57,715] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:23:57,717] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:57,717] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:23:57,717] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:24:09,555] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:24:09,555] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:24:09,555] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:24:09,565] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:24:09,565] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:24:09,565] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:24:09,749] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:24:09,749] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:24:09,749] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:24:09,752] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:24:09,752] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:24:09,752] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:24:09,760] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Pericial
+[2024-12-08 12:24:09,760] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Pericial
+[2024-12-08 12:24:09,760] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Pericial
+[2024-12-08 12:24:15,080] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:24:15,080] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:24:15,080] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 12:24:15,087] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:24:15,087] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:24:15,087] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 12:24:15,292] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:24:15,292] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:24:15,292] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 12:24:15,294] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:24:15,294] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:24:15,294] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 12:24:15,301] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Pericial
+[2024-12-08 12:24:15,301] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Pericial
+[2024-12-08 12:24:15,301] [ScriptRunner.scriptThread] [INFO    ] Selected Delete Pericial
+[2024-12-08 12:58:18,815] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 12:58:18,815] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 12:58:36,674] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:58:36,674] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:58:36,674] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:59:48,661] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 12:59:48,661] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 12:59:59,324] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:59:59,324] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 12:59:59,324] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:00:12,014] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:12,014] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:12,014] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:12,045] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:12,045] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:12,045] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:12,334] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:12,334] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:12,334] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:13,265] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:13,265] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:13,265] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:18,680] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:18,680] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:18,680] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:18,689] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:18,689] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:18,689] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:18,868] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:18,868] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:18,868] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:18,870] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:18,870] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:18,870] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:22,206] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:22,206] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:22,206] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:22,218] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:22,218] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:22,218] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:22,406] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:22,406] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:22,406] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:22,408] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:22,408] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:22,408] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:22,413] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Prompt
+[2024-12-08 13:00:22,413] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Prompt
+[2024-12-08 13:00:22,413] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Prompt
+[2024-12-08 13:00:31,933] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:31,933] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:31,933] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:31,943] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:31,943] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:31,943] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:32,110] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:32,110] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:32,110] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:32,112] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:32,112] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:32,112] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:40,852] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:40,852] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:40,852] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:00:40,861] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:40,861] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:40,861] [ScriptRunner.scriptThread] [INFO    ] DATA DIR: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:00:41,050] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:41,050] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:41,050] [ScriptRunner.scriptThread] [INFO    ] Embeddings models/text-embedding-004 loaded
+[2024-12-08 13:00:41,052] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:41,052] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:41,052] [ScriptRunner.scriptThread] [INFO    ] Pinecone Vectore Store with index forensic loaded
+[2024-12-08 13:00:41,058] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-08 13:00:41,058] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-08 13:00:41,058] [ScriptRunner.scriptThread] [INFO    ] Selected visualiza Pericial
+[2024-12-08 13:00:44,214] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_modifica_12
+[2024-12-08 13:00:44,214] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_modifica_12
+[2024-12-08 13:00:44,214] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_modifica_12
+[2024-12-08 13:00:44,215] [ScriptRunner.scriptThread] [INFO    ] deleted index_12
+[2024-12-08 13:00:44,215] [ScriptRunner.scriptThread] [INFO    ] deleted index_12
+[2024-12-08 13:00:44,215] [ScriptRunner.scriptThread] [INFO    ] deleted index_12
+[2024-12-08 13:00:44,216] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_pericial_12
+[2024-12-08 13:00:44,216] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_pericial_12
+[2024-12-08 13:00:44,216] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_pericial_12
+[2024-12-08 13:00:44,217] [ScriptRunner.scriptThread] [INFO    ] deleted salir_12
+[2024-12-08 13:00:44,217] [ScriptRunner.scriptThread] [INFO    ] deleted salir_12
+[2024-12-08 13:00:44,217] [ScriptRunner.scriptThread] [INFO    ] deleted salir_12
+[2024-12-08 13:00:44,219] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_modifica_12
+[2024-12-08 13:00:44,219] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_modifica_12
+[2024-12-08 13:00:44,219] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_modifica_12
+[2024-12-08 13:00:44,220] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_modifica_pericial_12
+[2024-12-08 13:00:44,220] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_modifica_pericial_12
+[2024-12-08 13:00:44,220] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_modifica_pericial_12
+[2024-12-08 13:00:44,220] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_12
+[2024-12-08 13:00:44,220] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_12
+[2024-12-08 13:00:44,220] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_12
+[2024-12-08 13:00:44,221] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_section_12
+[2024-12-08 13:00:44,221] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_section_12
+[2024-12-08 13:00:44,221] [ScriptRunner.scriptThread] [INFO    ] deleted selector_selected_section_12
+[2024-12-08 13:00:44,223] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_12
+[2024-12-08 13:00:44,223] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_12
+[2024-12-08 13:00:44,223] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_12
+[2024-12-08 13:00:44,224] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_12
+[2024-12-08 13:00:44,224] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_12
+[2024-12-08 13:00:44,224] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_12
+[2024-12-08 13:01:37,165] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:01:37,165] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:01:37,165] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:01:37,268] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:01:37,268] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:01:37,268] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:01:58,451] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:01:58,451] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:01:58,451] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:01:58,549] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:01:58,549] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:01:58,549] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:01:58,553] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:01:58,553] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:01:58,553] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:01:58,614] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:01:58,614] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:01:58,614] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:05,724] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:05,724] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:05,724] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:05,832] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:05,832] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:05,832] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:05,838] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:05,838] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:05,838] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:05,908] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:05,908] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:05,908] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:10,000] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:10,000] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:10,000] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:10,119] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:10,119] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:10,119] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:10,126] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:10,126] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:10,126] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:10,185] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:10,185] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:10,185] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:19,453] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:19,453] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:19,453] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:19,576] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:19,576] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:19,576] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:19,583] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:19,583] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:19,583] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:19,655] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:19,655] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:19,655] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:23,743] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:02:23,743] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:02:23,743] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:02:23,746] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:23,746] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:23,746] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:23,857] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:23,857] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:23,857] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:23,862] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:23,862] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:23,862] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:23,917] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:23,917] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:23,917] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:23,927] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:02:23,927] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:02:23,927] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:02:23,931] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:02:23,931] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:02:23,931] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:02:58,486] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:58,486] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:58,486] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:02:58,602] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:58,602] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:58,602] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:02:58,608] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:58,608] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:58,608] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:58,676] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:58,676] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:58,676] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:02:58,687] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:02:58,687] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:02:58,687] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:02:58,691] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:02:58,691] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:02:58,691] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:02:58,694] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Terminar Chat session 5
+[2024-12-08 13:02:58,694] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Terminar Chat session 5
+[2024-12-08 13:02:58,694] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Terminar Chat session 5
+[2024-12-08 13:06:46,445] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 13:06:46,445] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 13:07:11,620] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:07:11,620] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:07:11,620] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:07:23,101] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:23,101] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:23,101] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:23,232] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:23,232] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:23,232] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:34,981] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:34,981] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:34,981] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:35,104] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:35,104] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:35,104] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:35,111] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:35,111] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:35,111] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:35,189] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:35,189] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:35,189] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:42,738] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:42,738] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:42,738] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:42,828] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:42,828] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:42,828] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:42,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:42,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:42,835] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:42,890] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:42,890] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:42,890] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:46,626] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:46,626] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:46,626] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:46,729] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:46,729] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:46,729] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:46,735] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:46,735] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:46,735] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:46,804] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:46,804] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:46,804] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:50,155] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:50,155] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:50,155] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:50,262] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:50,262] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:50,262] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:50,266] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:50,266] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:50,266] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:50,334] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:50,334] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:50,334] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:52,047] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:07:52,047] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:07:52,047] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:07:52,050] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:52,050] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:52,050] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:07:52,144] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:52,144] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:52,144] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:07:52,150] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:52,150] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:52,150] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:52,215] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:52,215] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:52,215] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:07:52,226] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:07:52,226] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:07:52,226] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:07:52,230] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:07:52,230] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:07:52,230] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:08:34,748] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:08:34,748] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:08:34,748] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:08:34,879] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:08:34,879] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:08:34,879] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:08:34,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:08:34,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:08:34,885] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot 20: file uploaded reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:08:34,957] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:08:34,957] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:08:34,957] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page 20: pdf viewer reumatólogo 18-03-2024 16.45.pdf
+[2024-12-08 13:08:34,977] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:08:34,977] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:08:34,977] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:08:34,982] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:08:34,982] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:08:34,982] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Chat active session 5
+[2024-12-08 13:08:34,986] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Terminar Chat session 5
+[2024-12-08 13:08:34,986] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Terminar Chat session 5
+[2024-12-08 13:08:34,986] [ScriptRunner.scriptThread] [INFO    ] Gemini 1 Page: Terminar Chat session 5
+[2024-12-08 13:08:35,004] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_20
+[2024-12-08 13:08:35,004] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_20
+[2024-12-08 13:08:35,004] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_20
+[2024-12-08 13:08:35,006] [ScriptRunner.scriptThread] [INFO    ] deleted expander_20
+[2024-12-08 13:08:35,006] [ScriptRunner.scriptThread] [INFO    ] deleted expander_20
+[2024-12-08 13:08:35,006] [ScriptRunner.scriptThread] [INFO    ] deleted expander_20
+[2024-12-08 13:08:35,007] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_20
+[2024-12-08 13:08:35,007] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_20
+[2024-12-08 13:08:35,007] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_20
+[2024-12-08 13:08:35,008] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_20
+[2024-12-08 13:08:35,008] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_20
+[2024-12-08 13:08:35,008] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_20
+[2024-12-08 13:08:35,010] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_20
+[2024-12-08 13:08:35,010] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_20
+[2024-12-08 13:08:35,010] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_20
+[2024-12-08 13:08:35,011] [ScriptRunner.scriptThread] [INFO    ] deleted value_20
+[2024-12-08 13:08:35,011] [ScriptRunner.scriptThread] [INFO    ] deleted value_20
+[2024-12-08 13:08:35,011] [ScriptRunner.scriptThread] [INFO    ] deleted value_20
+[2024-12-08 13:08:35,013] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_20
+[2024-12-08 13:08:35,013] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_20
+[2024-12-08 13:08:35,013] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_20
+[2024-12-08 13:08:35,014] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_20
+[2024-12-08 13:08:35,014] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_20
+[2024-12-08 13:08:35,014] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_20
+[2024-12-08 13:08:35,016] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_20
+[2024-12-08 13:08:35,016] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_20
+[2024-12-08 13:08:35,016] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_20
+[2024-12-08 13:08:35,017] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_20
+[2024-12-08 13:08:35,017] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_20
+[2024-12-08 13:08:35,017] [ScriptRunner.scriptThread] [INFO    ] deleted select_box_20
+[2024-12-08 13:08:35,018] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_20
+[2024-12-08 13:08:35,018] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_20
+[2024-12-08 13:08:35,018] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_20
+[2024-12-08 13:08:35,020] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_20
+[2024-12-08 13:08:35,020] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_20
+[2024-12-08 13:08:35,020] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_20
+[2024-12-08 13:08:35,021] [ScriptRunner.scriptThread] [INFO    ] deleted salir_20
+[2024-12-08 13:08:35,021] [ScriptRunner.scriptThread] [INFO    ] deleted salir_20
+[2024-12-08 13:08:35,021] [ScriptRunner.scriptThread] [INFO    ] deleted salir_20
+[2024-12-08 13:08:35,022] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_20
+[2024-12-08 13:08:35,022] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_20
+[2024-12-08 13:08:35,022] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_20
+[2024-12-08 13:08:35,026] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_20
+[2024-12-08 13:08:35,026] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_20
+[2024-12-08 13:08:35,026] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_20
+[2024-12-08 13:08:35,028] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_20
+[2024-12-08 13:08:35,028] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_20
+[2024-12-08 13:08:35,028] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_20
+[2024-12-08 13:08:35,031] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_20
+[2024-12-08 13:08:35,031] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_20
+[2024-12-08 13:08:35,031] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_20
+[2024-12-08 13:08:35,032] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_20
+[2024-12-08 13:08:35,032] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_20
+[2024-12-08 13:08:35,032] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_20
+[2024-12-08 13:08:35,033] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_20
+[2024-12-08 13:08:35,033] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_20
+[2024-12-08 13:08:35,033] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_20
+[2024-12-08 13:08:35,035] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_20
+[2024-12-08 13:08:35,035] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_20
+[2024-12-08 13:08:35,035] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_20
+[2024-12-08 13:08:35,038] [ScriptRunner.scriptThread] [INFO    ] deleted llm_20
+[2024-12-08 13:08:35,038] [ScriptRunner.scriptThread] [INFO    ] deleted llm_20
+[2024-12-08 13:08:35,038] [ScriptRunner.scriptThread] [INFO    ] deleted llm_20
+[2024-12-08 13:08:35,039] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_20
+[2024-12-08 13:08:35,039] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_20
+[2024-12-08 13:08:35,039] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_20
+[2024-12-08 13:08:35,041] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_20
+[2024-12-08 13:08:35,041] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_20
+[2024-12-08 13:08:35,041] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_20
+[2024-12-08 13:08:35,042] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_20
+[2024-12-08 13:08:35,042] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_20
+[2024-12-08 13:08:35,042] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_20
+[2024-12-08 13:08:41,015] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:08:41,015] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:08:41,015] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:08:41,144] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:08:41,144] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:08:41,144] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:04,783] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:04,783] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:04,783] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:04,889] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:04,889] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:04,889] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:04,894] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:04,894] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:04,894] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:07,283] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:07,283] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:07,283] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:07,415] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:07,415] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:07,415] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:07,420] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:07,420] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:07,420] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:48,771] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:48,771] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:48,771] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:48,874] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:48,874] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:48,874] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:48,879] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:48,879] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:48,879] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:48,886] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:09:48,886] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:09:48,886] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:09:51,319] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:09:51,319] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:09:51,319] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:09:51,323] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:51,323] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:51,323] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:09:51,434] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:51,434] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:51,434] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:09:51,440] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:51,440] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:51,440] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:09:51,448] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:09:51,448] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:09:51,448] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:09:51,488] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:09:51,488] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:09:51,488] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:09:51,492] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:09:51,492] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:09:51,492] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:10:28,094] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:10:28,094] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:10:28,094] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:10:28,198] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:10:28,198] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:10:28,198] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:10:28,203] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:10:28,203] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:10:28,203] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:10:28,211] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:10:28,211] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:10:28,211] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:10:28,249] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:10:28,249] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:10:28,249] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:10:28,252] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:10:28,252] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:10:28,252] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:10:28,254] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:10:28,254] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:10:28,254] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:13:00,779] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 13:13:00,779] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 13:13:14,571] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:13:14,571] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:13:14,571] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:13:27,921] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:27,921] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:27,921] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:28,042] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:28,042] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:28,042] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:47,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:47,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:47,742] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:47,869] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:47,869] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:47,869] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:47,880] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:13:47,880] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:13:47,880] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:13:49,445] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:49,445] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:49,445] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:13:49,546] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:49,546] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:49,546] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:13:49,552] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:13:49,552] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:13:49,552] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:14:42,252] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:14:42,252] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:14:42,252] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:14:42,351] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:14:42,351] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:14:42,351] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:14:42,357] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:14:42,357] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:14:42,357] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:14:42,366] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:14:42,366] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:14:42,366] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:14:44,426] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:14:44,426] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:14:44,426] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:14:44,429] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:14:44,429] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:14:44,429] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:14:44,523] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:14:44,523] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:14:44,523] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:14:44,529] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:14:44,529] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:14:44,529] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:14:44,536] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:14:44,536] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:14:44,536] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:14:44,578] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:14:44,578] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:14:44,578] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:14:44,581] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:14:44,581] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:14:44,581] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:15:41,135] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:15:41,135] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:15:41,135] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:15:41,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:15:41,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:15:41,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:15:41,232] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:15:41,232] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:15:41,232] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:15:41,240] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:15:41,240] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:15:41,240] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:15:41,283] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:15:41,283] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:15:41,283] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:15:41,287] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:15:41,287] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:15:41,287] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:15:41,290] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:15:41,290] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:15:41,290] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:16:55,199] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 13:16:55,199] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-08 13:17:05,919] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:17:05,919] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:17:05,919] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-08 13:17:17,635] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:17,635] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:17,635] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:17,756] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:17,756] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:17,756] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:29,034] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:29,034] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:29,034] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:29,152] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:29,152] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:29,152] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:29,159] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:29,159] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:29,159] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:35,485] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:35,485] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:35,485] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:35,590] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:35,590] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:35,593] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:35,590] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:35,593] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:35,593] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:35,905] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:35,905] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:35,905] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:35,909] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:35,909] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:35,909] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:35,918] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:17:35,918] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:17:35,918] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:17:37,324] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:17:37,324] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:17:37,324] [ScriptRunner.scriptThread] [INFO    ] Gemini app: prompt ready
+[2024-12-08 13:17:37,327] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:37,327] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:37,327] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:17:37,422] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:37,422] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:37,422] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:17:37,428] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:37,428] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:37,428] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:17:37,435] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:17:37,435] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:17:37,435] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:17:37,477] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:17:37,477] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:17:37,477] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:17:37,481] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:17:37,481] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:17:37,481] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:18:00,404] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:18:00,404] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:18:00,404] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-08 13:18:00,504] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:18:00,504] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:18:00,504] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:18:00,510] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:18:00,510] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:18:00,510] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Files Uploaded 1
+[2024-12-08 13:18:00,517] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:18:00,517] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:18:00,517] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Intruccion introduced, session state 2
+[2024-12-08 13:18:00,553] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:18:00,553] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:18:00,553] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Session Initialized, first prompt send, session state 5
+[2024-12-08 13:18:00,557] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:18:00,557] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:18:00,557] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Chat active session 5
+[2024-12-08 13:18:00,559] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:18:00,559] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:18:00,559] [ScriptRunner.scriptThread] [INFO    ] Gemini multi Page: Terminar Chat session 5
+[2024-12-08 13:18:00,572] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-08 13:18:00,572] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-08 13:18:00,572] [ScriptRunner.scriptThread] [INFO    ] deleted llm_21
+[2024-12-08 13:18:00,574] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-08 13:18:00,574] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-08 13:18:00,574] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_21
+[2024-12-08 13:18:00,575] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-08 13:18:00,575] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-08 13:18:00,575] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_21
+[2024-12-08 13:18:00,576] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-08 13:18:00,576] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-08 13:18:00,576] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_21
+[2024-12-08 13:18:00,576] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-08 13:18:00,576] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-08 13:18:00,576] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_pages_21
+[2024-12-08 13:18:00,577] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-08 13:18:00,577] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-08 13:18:00,577] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_not_clicked_21
+[2024-12-08 13:18:00,578] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-08 13:18:00,578] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-08 13:18:00,578] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_send_clicked_21
+[2024-12-08 13:18:00,579] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-08 13:18:00,579] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-08 13:18:00,579] [ScriptRunner.scriptThread] [INFO    ] deleted case_query_21
+[2024-12-08 13:18:00,580] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-08 13:18:00,580] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-08 13:18:00,580] [ScriptRunner.scriptThread] [INFO    ] deleted value_21
+[2024-12-08 13:18:00,581] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-08 13:18:00,581] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-08 13:18:00,581] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_21
+[2024-12-08 13:18:00,583] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-08 13:18:00,583] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-08 13:18:00,583] [ScriptRunner.scriptThread] [INFO    ] deleted initialized_21
+[2024-12-08 13:18:00,585] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-08 13:18:00,585] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-08 13:18:00,585] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_21
+[2024-12-08 13:18:00,586] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-08 13:18:00,586] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-08 13:18:00,586] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_21
+[2024-12-08 13:18:00,588] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-08 13:18:00,588] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-08 13:18:00,588] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_21
+[2024-12-08 13:18:00,589] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-08 13:18:00,589] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-08 13:18:00,589] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_resfresh_clicked_21
+[2024-12-08 13:18:00,589] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-08 13:18:00,589] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-08 13:18:00,589] [ScriptRunner.scriptThread] [INFO    ] deleted buttom_has_send_21
+[2024-12-08 13:18:00,591] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-08 13:18:00,591] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-08 13:18:00,591] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_21
+[2024-12-08 13:18:00,592] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-08 13:18:00,592] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-08 13:18:00,592] [ScriptRunner.scriptThread] [INFO    ] deleted chat_answers_history_21
+[2024-12-08 13:18:00,592] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-08 13:18:00,592] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-08 13:18:00,592] [ScriptRunner.scriptThread] [INFO    ] deleted expander_21
+[2024-12-08 13:18:00,593] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-08 13:18:00,593] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-08 13:18:00,593] [ScriptRunner.scriptThread] [INFO    ] deleted file_prompt_selected_21
+[2024-12-08 13:18:00,594] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-08 13:18:00,594] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-08 13:18:00,594] [ScriptRunner.scriptThread] [INFO    ] deleted user_prompt_history_21
+[2024-12-08 13:18:00,595] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-08 13:18:00,595] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-08 13:18:00,595] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_21
+[2024-12-08 13:18:00,596] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-08 13:18:00,596] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-08 13:18:00,596] [ScriptRunner.scriptThread] [INFO    ] deleted multi_file_name_21
+[2024-12-08 13:18:00,597] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-08 13:18:00,597] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-08 13:18:00,597] [ScriptRunner.scriptThread] [INFO    ] deleted salir_21
+[2024-12-08 13:18:08,100] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Data folder: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:18:08,100] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Data folder: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:18:08,100] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages, Data folder: D:/repos/gemini-bot\pericial\table
+[2024-12-08 13:18:08,174] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:18:08,174] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:18:08,174] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-flash-002
+[2024-12-08 13:18:08,183] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/text-embedding-004
+[2024-12-08 13:18:08,183] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/text-embedding-004
+[2024-12-08 13:18:08,183] [ScriptRunner.scriptThread] [INFO    ] Embeddings loaded: models/text-embedding-004
+[2024-12-08 13:18:09,283] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 22: Embeddings and Pinecone loaded
+[2024-12-08 13:18:09,283] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 22: Embeddings and Pinecone loaded
+[2024-12-08 13:18:09,283] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 22: Embeddings and Pinecone loaded

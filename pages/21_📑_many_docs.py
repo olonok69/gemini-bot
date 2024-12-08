@@ -222,13 +222,12 @@ def main( col1, col2, placeholder):
                             f"Gemini multi Page: Terminar Chat session {st.session_state['value_21']}"
                         )
                         # reload page and delete temp files
-                        if st.session_state["case_query"] == True:
-                            reload_page_many_docs(st, ss, model, df_answers, pname, num="21")
+                        if st.session_state["case_query_21"] == True:
+                            reload_page_many_docs(st, ss,  df_answers, pname, placeholder, num="21")
                         else:
                             reload_page_many_docs(
                                 st,
                                 ss,
-                                model,
                                 df_answers_no_case,
                                 pname_no_case,
                                 placeholder,
