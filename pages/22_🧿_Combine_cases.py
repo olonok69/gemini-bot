@@ -240,10 +240,6 @@ def main(col1, col2, placeholder):
                         # write answer and reset page pfname, pfname2, df_answers_final
                         reload_page_combina(
                             st,
-                            model,
-                            embeddings,
-                            index,
-                            vectorstore,
                             pfname,
                             df_answers_final,
                             placeholder,

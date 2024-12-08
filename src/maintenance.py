@@ -10,8 +10,8 @@ def selected_add(st, num:int=10):
     st.session_state[f"selector_selected_add_{num}"] = True
 
 
-def selected_modifica(st):
-    st.session_state["selector_selected_modifica"] = True
+def selected_modifica(st, num:int=10):
+    st.session_state[f"selector_selected_modifica_{num}"] = True
 
 
 def selected_delete(st, num):
@@ -19,12 +19,12 @@ def selected_delete(st, num):
 
 
 # this is for modifica
-def selected_modify_prompt(st):
-    st.session_state["selector_selected_section"] = True
+def selected_modify_prompt(st, num):
+    st.session_state[f"selector_selected_section_{num}"] = True
 
 
-def selected_modify_percial(st):
-    st.session_state["selector_selected_pericial"] = True
+def selected_modify_percial(st, num):
+    st.session_state[f"selector_selected_pericial_{num}"] = True
 
 
 # this is for delete.py
@@ -190,7 +190,7 @@ def save_text_add_pericial(
     )
     index = vectorstore.add_documents(documents=[d])
     temp_df["pinecone_id"] = index[0]
-    print(index[0])
+    logging.info(f"Pericial add to index {index[0]}")
     # check if id already exists, if not add to dataframe
 
     df = pd.concat([df, temp_df], ignore_index=True)
@@ -246,7 +246,7 @@ def save_text_modifica_prompt(st, fname: str, prompt_dict: Dict, df: pd.DataFram
     return
 
 
-def visualiza_modify_prompt(st, df: pd.DataFrame, fname: str):
+def visualiza_modify_prompt(st, df: pd.DataFrame, fname: str, num: int = 10):
     """
     Visualize prompt
     Args:
@@ -254,7 +254,7 @@ def visualiza_modify_prompt(st, df: pd.DataFrame, fname: str):
         df (pd.DataFrame): dataframe with all prompts
         fname (str): name of the file
     """
-    file = st.session_state["select_box_modifica_prompt"]
+    file = st.session_state[f"select_box_modifica_prompt_{num}"]
 
     # transform the row into a dictionary
     prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
@@ -290,6 +290,7 @@ def save_text_modifica_pericial(
     prompt_dict: Dict,
     df: pd.DataFrame,
     vectorstore: PineconeVectorStore,
+    num: str = "10",
 ):
     """
     Save text after modification
@@ -308,7 +309,7 @@ def save_text_modifica_pericial(
         p_dict = {}
         # if Title Change
         if st.session_state["tt_title"] != prompt_dict.get("Title"):
-            print(st.session_state["tt_title"])
+            
 
             p_dict["Title"] = st.session_state["tt_title"]
         else:
@@ -341,16 +342,17 @@ def save_text_modifica_pericial(
         df = pd.concat([df, row], ignore_index=True)
         # save the new dataframe
         df.to_csv(fname, index=False)
-        st.session_state["selector_selected_modifica"] = False
-        st.session_state["selector_selected_section"] = False
-        st.session_state["selector_selected_pericial"] = False
+        logging.info(f"Pericial modify to index {index[0]}")
+        st.session_state[f"selector_selected_modifica_{num}"] = False
+        st.session_state[f"selector_selected_section_{num}"] = False
+        st.session_state[f"selector_selected_pericial_{num}"] = False
     except:
         raise AttributeError("Error al guardar el archivo")
     return
 
 
 def visualiza_pericial_modifica(
-    st, df: pd.DataFrame, fname: str, vectorstore: PineconeVectorStore
+    st, df: pd.DataFrame, fname: str, vectorstore: PineconeVectorStore, num: str = "10"
 ):
     """
     Visualize prompt
@@ -360,7 +362,7 @@ def visualiza_pericial_modifica(
         fname (str): name of the file
         vectorstore (PineconeVectorStore): vectorstore with all sections
     """
-    file = st.session_state["select_box_modifica_pericial"]
+    file = st.session_state[f"select_box_modifica_pericial_{num}"]
 
     # transform the row into a dictionary
     prompt_dict = df[df.Title == file].to_dict(orient="records")[0]
@@ -370,7 +372,7 @@ def visualiza_pericial_modifica(
         value=prompt_dict.get("Title"),
         key="tt_title",
         on_change=save_text_modifica_pericial,
-        args=[st, fname, prompt_dict, df, vectorstore],
+        args=[st, fname, prompt_dict, df, vectorstore, num],
     )
 
     txt2 = st.text_area(
@@ -379,7 +381,7 @@ def visualiza_pericial_modifica(
         key="tt_text",
         value=prompt_dict.get("Text"),
         on_change=save_text_modifica_pericial,
-        args=[st, fname, prompt_dict, df, vectorstore],
+        args=[st, fname, prompt_dict, df, vectorstore, num],
     )
     return
 

@@ -121,7 +121,7 @@ def reset_session_1(st, ss, chat):
 
 
 def reload_page_1_doc(
-    st, ss, model, df_answers, pname, placeholder, tmp_folder, out_folder, num=10
+    st, ss,  df_answers, pname, placeholder, tmp_folder, out_folder, num=10
 ):
     """
     reload page
@@ -364,7 +364,7 @@ def init_session_multi(st, ss, model, col1, col2):
     return
 
 
-def reload_page_many_docs(st, ss, model, df, fname, placeholder, num:int="10"):
+def reload_page_many_docs(st, ss,  df, fname, placeholder, num:int="10"):
     """
     refresh page and initialize variables page may docs
     Args:
@@ -785,7 +785,7 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches, num:int=10):
 
 
 def reload_page_combina(
-    st, model, embeddings, index, vectorstore, fname, df, placeholder,num:int=10
+    st,  fname, df, placeholder,num:int=10
 ):
     """
     refresh page and initialize variables
@@ -820,68 +820,7 @@ def reload_page_combina(
     return
 
 
-def reset_session_10(st):
-    """
-    Delete session state for multiple files option
-    param: st  session
-    param: ss  session state
-    param: model  chat (gemini model)
-    """
 
-    del st.session_state["embeddings_10"]
-    del st.session_state["index_10"]
-    del st.session_state["vectorstore_10"]
-    del st.session_state["select_box_add"]
-    del st.session_state["selector_selected_add"]
-    # placeholder for multiple files
-
-    st.session_state["salir_10"] = False
-
-    return
-
-def reset_session_11(st):
-    """
-    Delete session state for multiple files option
-    param: st  session
-    param: ss  session state
-    param: model  chat (gemini model)
-    """
-
-    del st.session_state["embeddings_11"]
-    del st.session_state["index_11"]
-    del st.session_state["vectorstore_11"]
-    del st.session_state["select_box_delete"]
-    del st.session_state["selector_selected_delete"]
-    del st.session_state["selector_selected_section_delete"]
-    del st.session_state["selector_selected_pericial_delete"]
-    del st.session_state["selector_selected_answer_delete"]
-    del st.session_state["selector_selected_answer_delete_no_case"]
-    # placeholder for multiple files
-
-    st.session_state["salir_11"] = False
-
-    return
-
-def reset_session_12(st):
-    """
-    Delete session state for multiple files option
-    param: st  session
-    param: ss  session state
-    param: model  chat (gemini model)
-    """
-
-    del st.session_state["embeddings_12"]
-    del st.session_state["index_12"]
-    del st.session_state["vectorstore_12"]
-    del st.session_state["select_box_modifica"]
-    del st.session_state["selector_selected_modifica"]
-    del st.session_state["selector_selected_section"]
-    del st.session_state["selector_selected_pericial"]
-    # placeholder for multiple files
-
-    st.session_state["salir_12"] = False
-
-    return
 
 
 

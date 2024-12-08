@@ -52,18 +52,19 @@ config ={
 "config_32_del" : ["salir_32",  "llm_32", "embeddings_32", "vectorstore_32", "init_run_32", "value_32", "file_name_32", "file_history_32", "upload_state_32", "pdf_ref_32",
 "selectbox_category_32",  "add_file_kb_selected_32", "documents_32", "ids_32", "metadatas_32","pages_32"],
 "config_32" : ["value_32","file_name_32", "file_history_32", "upload_state_32","add_file_kb_selected_32","documents_32", "ids_32", "metadatas_32", "pdf_ref_32", "pages_32"]},
-
- 
  "10": { 
 "config_10_del" : ["salir_10",  "index_10", "embeddings_10", "vectorstore_10", "init_run_10", "selector_selected_add_10", "select_box_add_10"],
 "config_10" : ["selector_selected_add_10"]},
-
  "11": { 
 "config_11_del" : ["salir_11",  "index_11", "embeddings_11", "vectorstore_11", "selector_selected_delete_11", "select_box_delete_11", "select_box_delete_prompt_11", "selector_selected_section_delete_11",
 "select_box_delete_pericial_11", "selector_selected_pericial_delete_11", "select_box_delete_answers_gemini_11", "selector_selected_answer_delete_11", "select_box_delete_answers_gemini_11",
 "selector_selected_answer_delete_no_case_11", "select_box_delete_answers_gemini_no_case_11"],
 "config_11" : ["selector_selected_delete_11", "selector_selected_section_delete_11", "selector_selected_pericial_delete_11", "selector_selected_answer_delete_11", "selector_selected_answer_delete_no_case_11"]},
 
+ "12": { 
+"config_12_del" : ["salir_12",  "index_12", "embeddings_12", "vectorstore_12", "init_run_12", "select_box_modifica_12", "selector_selected_modifica_12", "select_box_modifica_prompt_12","select_box_modifica_pericial_12",
+"selector_selected_section_12", "selector_selected_pericial_12"],
+"config_12" : ["selector_selected_modifica_12", "selector_selected_section_12", "selector_selected_pericial_12"]},
 }
 def reset_session_num(session, num:int="10"):
     """
@@ -222,6 +223,15 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
     if f"buttom_send_clicked_{num}" not in sess.session_state and f"buttom_send_clicked_{num}" in config:
         sess.session_state[f"buttom_send_clicked_{num}"] = False
     
+    if f"selector_selected_pericial_{num}" not in sess.session_state and f"selector_selected_pericial_{num}" in config:
+        sess.session_state[f"selector_selected_pericial_{num}"] = False
+    
+    if f"selector_selected_section_{num}" not in sess.session_state and f"selector_selected_section_{num}" in config:
+        sess.session_state[f"selector_selected_section_{num}"] = False
+    
+    if f"selector_selected_modifica_{num}" not in sess.session_state and f"selector_selected_modifica_{num}" in config:
+        sess.session_state[f"selector_selected_modifica_{num}"] = False
+
     if f"selector_selected_section_delete_{num}" not in sess.session_state and f"selector_selected_section_delete_{num}" in config:
         sess.session_state[f"selector_selected_section_delete_{num}"] = False
 

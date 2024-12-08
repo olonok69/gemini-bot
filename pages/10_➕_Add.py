@@ -16,7 +16,6 @@ from src.files import (
     open_table_prompts,
 )
 from src.maintenance import visualiza_add_prompt, visualiza_add_pericial, selected_add
-from src.helpers import reset_session_10
 import logging
 from src.utils import print_stack
 from src.maps import config as conf, init_session_num, reset_session_num

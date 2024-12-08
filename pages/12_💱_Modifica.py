@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit import session_state as ss
 import os
 from pathlib import Path
 import json
@@ -23,7 +24,7 @@ from src.maintenance import (
 )
 import logging
 from src.utils import print_stack
-from src.helpers import reset_session_12
+from src.maps import config as conf, init_session_num, reset_session_num
 
 # Read all Dataframe need in this page
 # where I am
@@ -44,7 +45,7 @@ onlyfiles_prompts = df_prompts["name_prompt"].to_list()
 # all names of the perciales
 onlyfiles_periciales = df_pericial["Title"].to_list()
 
-def change_state_12(st, placeholder):
+def change_state_12(session, placeholder):
     """
     change state after leave conversation
     params:
@@ -53,9 +54,9 @@ def change_state_12(st, placeholder):
 
     """
     placeholder.empty()
-    reset_session_12(st)
-    st.stop()
     del placeholder
+    reset_session_num(session,"12")
+    st.stop()
     return
 
 def main(options, placeholder):
@@ -70,13 +71,16 @@ def main(options, placeholder):
     """
     if st.button("Salir", on_click=change_state_12, args=(st, placeholder)):
         logging.info("Salir and writing history")
+    col1, col2 = 50, 50
+    if "init_run_12" not in st.session_state:
+            st.session_state["init_run_12"] = False
+    if st.session_state["init_run_12"] == False:
+        init_session_num(st, ss, "12", col1, col2, conf["12"]["config_12"], None)
 
-    if "selector_selected_modifica" not in st.session_state:
-        st.session_state["selector_selected_modifica"] = False
-    if "selector_selected_section" not in st.session_state:
-        st.session_state["selector_selected_section"] = False
-    if "selector_selected_pericial" not in st.session_state:
-        st.session_state["selector_selected_pericial"] = False
+
+
+    if "selector_selected_pericial_12" not in st.session_state:
+        st.session_state["selector_selected_pericial_12"] = False
 
     try:
         # select which type of document to modify
@@ -85,37 +89,37 @@ def main(options, placeholder):
             options,
             index=None,
             on_change=selected_modifica,
-            args=[st],
-            key="select_box_modifica",
+            args=[st, "12"],
+            key="select_box_modifica_12",
         )
-        if st.session_state["selector_selected_modifica"] == True:
-            if st.session_state.select_box_modifica == "Prompts":
+        if st.session_state["selector_selected_modifica_12"] == True:
+            if st.session_state.select_box_modifica_12 == "Prompts":
                 # fname, fname2, df_prompts
                 option = st.selectbox(
                     "select prompt 👇",
                     onlyfiles_prompts,
                     on_change=selected_modify_prompt,
-                    key="select_box_modifica_prompt",
-                    args=[st],
+                    key="select_box_modifica_prompt_12",
+                    args=[st, "12"],
                 )
-                if st.session_state["selector_selected_section"] == True:
+                if st.session_state["selector_selected_section_12"] == True:
                     logging.info("Selected visualiza Prompt")
-                    visualiza_modify_prompt(st, df_prompts, fname)
+                    visualiza_modify_prompt(st, df_prompts, fname, num="12")
 
-            elif st.session_state.select_box_modifica == "Periciales":
+            elif st.session_state.select_box_modifica_12 == "Periciales":
                 # pname, name2, df_pericial
                 option_pericial = st.selectbox(
                     "select pericial 👇",
                     onlyfiles_periciales,
                     on_change=selected_modify_percial,
-                    args=[st],
-                    key="select_box_modifica_pericial",
+                    args=[st, "12"],
+                    key="select_box_modifica_pericial_12",
                 )
-                if st.session_state["selector_selected_pericial"] == True:
+                if st.session_state["selector_selected_pericial_12"] == True:
                     # df_pericial, pname, st.session_state["vectorstore"]
                     logging.info("Selected visualiza Pericial")
                     visualiza_pericial_modifica(
-                        st, df_pericial, pname, st.session_state["vectorstore_12"]
+                        st, df_pericial, pname, st.session_state["vectorstore_12"], num="12"
                     )
     except :
         st.session_state["salir_12"] = True
