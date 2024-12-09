@@ -60,80 +60,90 @@ def visualiza_context(st, out):
 
                     break
 
-def change_state_31(session, placeholder):
+def change_state_31(session, pp):
     """
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session,"31")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 def main(col1, col2, placeholder):
-    if "init_run_31" not in st.session_state:
-            st.session_state["init_run_31"] = False
-    if st.session_state["init_run_31"] == False:
-        init_session_num(st, ss, "31", col1, col2, conf["31"]["config_31"], None)
+    """
+    Main function
+    Argr:
+        col1: column 1
+        col2: column 2
+        placeholder: placeholder for the app
+    """
 
-    if "checkbox_31" not in st.session_state:
-        st.session_state["checkbox_31"] = False
+    with placeholder.container():
+        if "init_run_31" not in st.session_state:
+                st.session_state["init_run_31"] = False
+        if st.session_state["init_run_31"] == False:
+            init_session_num(st, ss, "31", col1, col2, conf["31"]["config_31"], None)
+
+        if "checkbox_31" not in st.session_state:
+            st.session_state["checkbox_31"] = False
 
 
-    row1_1, row1_2 = st.columns((col1, col2))
+        row1_1, row1_2 = st.columns((col1, col2))
 
-    with row1_1:
-        # if you press salir any time you close the conainer
-        if st.button("Salir", on_click=change_state_31, args=(st, placeholder)):
-            logging.info("Salir and writing history")
-        query = st.text_input("Enter your query here 👇")
+        with row1_1:
+            # if you press salir any time you close the conainer
+            if st.button("Salir", on_click=change_state_31, args=(st, placeholder)):
+                logging.info("Salir and writing history")
+            query = st.text_input("Enter your query here 👇")
 
-        if len(query) > 0:
-            with row1_2:
+            if len(query) > 0:
+                with row1_2:
 
-                if query:
-                    st.session_state["retrieval_chain_31"] = create_semantic_retrieval_chain(
-                        llm=st.session_state["llm_31"], api_wrapper=st.session_state["api_wrapper_31"], prompt_query=semantic_query
-                    )
-
-                    st.session_state["qa_chain_31"] = create_retrieval_qa_source_chain(
-                        llm=st.session_state["llm_31"], web_research_retriever=st.session_state["web_research_retriever_31"] 
-                    )
-
-                    user_input = f"{query} Based on your findings write a description, main symptoms and how to treat them "
-
-                    # chain runnable parallel to run semantic and google search chains in paralell
-                    st.session_state["map_chain_31"] = create_Runnable_Parallel_chain(
-                        retrieval_chain=st.session_state["retrieval_chain_31"], qa_chain=st.session_state["qa_chain_31"]
-                    )
-                    # create combine chain to combine output of parallel chains
-                    st.session_state["combine_parallel_chain_31"] = create_combine_parallel_outputs_chain(
-                        prompt_last=combine_research_prompt, llm=st.session_state["llm_31"]
-                    )
-                    # create complete sequential chain, which run all chains created before
-                    st.session_state["complete_chain_31"] = create_complete_chain(
-                        map_chain=st.session_state["map_chain_31"], second_chain=st.session_state["combine_parallel_chain_31"]
-                    )
-                    if st.session_state["complete_chain_31"]:
-
-                        # call complete chain with user query
-                        response = st.session_state["complete_chain_31"].invoke(
-                            {"question": user_input, "query": query}
+                    if query:
+                        st.session_state["retrieval_chain_31"] = create_semantic_retrieval_chain(
+                            llm=st.session_state["llm_31"], api_wrapper=st.session_state["api_wrapper_31"], prompt_query=semantic_query
                         )
 
-                        st.text_area(
-                            "Knowledge Base Response 👇",
-                            height=600,
-                            key="kb_text_31",
-                            value=response["d"].content,
+                        st.session_state["qa_chain_31"] = create_retrieval_qa_source_chain(
+                            llm=st.session_state["llm_31"], web_research_retriever=st.session_state["web_research_retriever_31"] 
                         )
-                        # if st.button("Ver contexto completo"):
-                        #     visualiza_context(st, out)
-                        st.session_state["complete_chain_31"] = None
+
+                        user_input = f"{query} Based on your findings write a description, main symptoms and how to treat them "
+
+                        # chain runnable parallel to run semantic and google search chains in paralell
+                        st.session_state["map_chain_31"] = create_Runnable_Parallel_chain(
+                            retrieval_chain=st.session_state["retrieval_chain_31"], qa_chain=st.session_state["qa_chain_31"]
+                        )
+                        # create combine chain to combine output of parallel chains
+                        st.session_state["combine_parallel_chain_31"] = create_combine_parallel_outputs_chain(
+                            prompt_last=combine_research_prompt, llm=st.session_state["llm_31"]
+                        )
+                        # create complete sequential chain, which run all chains created before
+                        st.session_state["complete_chain_31"] = create_complete_chain(
+                            map_chain=st.session_state["map_chain_31"], second_chain=st.session_state["combine_parallel_chain_31"]
+                        )
+                        if st.session_state["complete_chain_31"]:
+
+                            # call complete chain with user query
+                            response = st.session_state["complete_chain_31"].invoke(
+                                {"question": user_input, "query": query}
+                            )
+
+                            st.text_area(
+                                "Knowledge Base Response 👇",
+                                height=600,
+                                key="kb_text_31",
+                                value=response["d"].content,
+                            )
+                            # if st.button("Ver contexto completo"):
+                            #     visualiza_context(st, out)
+                            st.session_state["complete_chain_31"] = None
 
 
 if __name__ == "__main__":
