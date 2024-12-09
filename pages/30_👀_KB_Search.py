@@ -108,18 +108,19 @@ def change_checkbox_faiss(st,num:int=10):
 def selected_file_kb(st, num:int=10):
     st.session_state[f"file_kb_faiss_selected_{num}"] = True
 
-def change_state_30(session, placeholder):
+def change_state_30(session, pp):
     """
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session,"30")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 def main( col1, col2, onlyfiles, fname, df, placeholder):
@@ -134,170 +135,170 @@ def main( col1, col2, onlyfiles, fname, df, placeholder):
         df ([type]): dataframe  final aswers
         placeholder ([type]): conatiner to reset
     """
+    with placeholder.container():
+        try:
 
-    try:
+            # get config
+            row1_1, row1_2 = st.columns((col1, col2))
 
-        # get config
-        row1_1, row1_2 = st.columns((col1, col2))
+            # Initialize Vars
+            if "init_run_30" not in st.session_state:
+                st.session_state["init_run_30"] = False
+            if st.session_state["init_run_30"] == False:
+                init_session_num(st, ss, "30", col1, col2, conf["30"]["config_30"], None)
+            # Col 1 = row1_1
+            with row1_1:
+                # if you press salir any time you close the conainer
+                if st.button("Salir", on_click=change_state_30, args=(st, placeholder)):
+                    logging.info("Salir and writing history")
+                seccion = st.selectbox(
+                    "Selecciona fichero 👇",
+                    onlyfiles,
+                    index=None,
+                    key="select_file_faiss_30",
+                    on_change=selected_file_kb,
+                    args=[st, "30"],
+                )
+                checkbox_30 = st.checkbox(
+                    "Use only file seclected to search for Information",
+                    key="checkbox_faiss_30",
+                    on_change=change_checkbox_faiss,
+                    args=[st, "30"],
+                )
 
-        # Initialize Vars
-        if "init_run_30" not in st.session_state:
-            st.session_state["init_run_30"] = False
-        if st.session_state["init_run_30"] == False:
-            init_session_num(st, ss, "30", col1, col2, conf["30"]["config_30"], None)
-        # Col 1 = row1_1
-        with row1_1:
-            # if you press salir any time you close the conainer
-            if st.button("Salir", on_click=change_state_30, args=(st, placeholder)):
-                logging.info("Salir and writing history")
-            seccion = st.selectbox(
-                "Selecciona fichero 👇",
-                onlyfiles,
-                index=None,
-                key="select_file_faiss_30",
-                on_change=selected_file_kb,
-                args=[st, "30"],
-            )
-            checkbox_30 = st.checkbox(
-                "Use only file seclected to search for Information",
-                key="checkbox_faiss_30",
-                on_change=change_checkbox_faiss,
-                args=[st, "30"],
-            )
-
-            # Enter instruction
-            query = st.text_input(
-                "Enter your intruction here 👇. To end conversation, write terminar# then number of answer to save or all, ex. terminar#1 or terminar#all"
-            )
-            if (
-                st.session_state["select_file_faiss_30"] != None
-                and len(query) > 5
-                and st.session_state["checkbox_30"]
-            ) or (
-                st.session_state["select_file_faiss_30"] == None
-                and len(query) > 5
-                and not st.session_state["checkbox_30"]
-            ):
-                # Col 2 = row1_2
-                with row1_2:
-                    if (
-                        st.session_state["select_file_faiss_30"]
-                        != st.session_state["name_file_kb_faiss_selected_30"]
-                    ):
-                        # use all files in Faiss or only one file
-                        st.session_state["retriever_30"] = None
-                        logging.info(f'file path vectorstore {st.session_state["select_file_faiss_30"]}')
-                        if st.session_state["checkbox_30"]:
-                            st.session_state["retriever_30"] = st.session_state["vectorstore_30"].as_retriever(
-                                search_kwargs={"k": 3},
-                                filter={
-                                    "filename": str(
-                                        st.session_state["select_file_faiss_30"]
-                                    )
-                                },
+                # Enter instruction
+                query = st.text_input(
+                    "Enter your intruction here 👇. To end conversation, write terminar# then number of answer to save or all, ex. terminar#1 or terminar#all"
+                )
+                if (
+                    st.session_state["select_file_faiss_30"] != None
+                    and len(query) > 5
+                    and st.session_state["checkbox_30"]
+                ) or (
+                    st.session_state["select_file_faiss_30"] == None
+                    and len(query) > 5
+                    and not st.session_state["checkbox_30"]
+                ):
+                    # Col 2 = row1_2
+                    with row1_2:
+                        if (
+                            st.session_state["select_file_faiss_30"]
+                            != st.session_state["name_file_kb_faiss_selected_30"]
+                        ):
+                            # use all files in Faiss or only one file
+                            st.session_state["retriever_30"] = None
+                            logging.info(f'file path vectorstore {st.session_state["select_file_faiss_30"]}')
+                            if st.session_state["checkbox_30"]:
+                                st.session_state["retriever_30"] = st.session_state["vectorstore_30"].as_retriever(
+                                    search_kwargs={"k": 3},
+                                    filter={
+                                        "filename": str(
+                                            st.session_state["select_file_faiss_30"]
+                                        )
+                                    },
+                                )
+                            else:
+                                st.session_state["retriever_30"] = st.session_state["vectorstore_30"].as_retriever(
+                                    search_kwargs={"k": 3},
+                                )
+                            # keep status in memory
+                            
+                            st.session_state["name_file_kb_faiss_selected_30"] = (
+                                st.session_state["select_file_faiss_30"]
                             )
                         else:
-                            st.session_state["retriever_30"] = st.session_state["vectorstore_30"].as_retriever(
-                                search_kwargs={"k": 3},
+                            st.session_state["name_file_kb_faiss_selected_30"] =  st.session_state["select_file_faiss_30"]
+
+                        # create runnable with message history
+                        if st.session_state["conversational_rag_chain_30"] == None:
+                            conversational_rag_chain = create_conversational_rag_chain(
+                                llm=st.session_state["llm_30"],
+                                retriever=st.session_state["retriever_30"],
+                                contex_q_prompt=contextualize_q_prompt,
+                                qaprompt=qa_prompt,
+                                store=st.session_state["store_30"],
                             )
-                        # keep status in memory
-                        
-                        st.session_state["name_file_kb_faiss_selected_30"] = (
-                            st.session_state["select_file_faiss_30"]
-                        )
-                    else:
-                        st.session_state["name_file_kb_faiss_selected_30"] =  st.session_state["select_file_faiss_30"]
+                        else:
+                            conversational_rag_chain = st.session_state[
+                                "conversational_rag_chain_30"
+                            ]
 
-                    # create runnable with message history
-                    if st.session_state["conversational_rag_chain_30"] == None:
-                        conversational_rag_chain = create_conversational_rag_chain(
-                            llm=st.session_state["llm_30"],
-                            retriever=st.session_state["retriever_30"],
-                            contex_q_prompt=contextualize_q_prompt,
-                            qaprompt=qa_prompt,
-                            store=st.session_state["store_30"],
-                        )
-                    else:
-                        conversational_rag_chain = st.session_state[
-                            "conversational_rag_chain_30"
-                        ]
+                        if len(query) > 5:
+                            if "terminar#" in query:  # end conversation
+                                reload_page_kb_faiss(
+                                    st,
+                                    df,
+                                    fname,
+                                    query,
+                                    placeholder_30,
+                                )
+                            # if new query
+                            if (
+                                query != st.session_state["current_prompt_30"]
+                                and st.session_state["buttom_visualiza_faiss_clicked_30"]
+                                == True
+                            ):
+                                st.session_state["docs_context_names_30"] = []
+                                st.session_state["docs_context_30"] = []
 
-                    if len(query) > 5:
-                        if "terminar#" in query:  # end conversation
-                            reload_page_kb_faiss(
-                                st,
-                                df,
-                                fname,
-                                query,
-                                placeholder_30,
-                            )
-                        # if new query
-                        if (
-                            query != st.session_state["current_prompt_30"]
-                            and st.session_state["buttom_visualiza_faiss_clicked_30"]
-                            == True
-                        ):
-                            st.session_state["docs_context_names_30"] = []
-                            st.session_state["docs_context_30"] = []
+                                st.session_state["buttom_visualiza_faiss_clicked_30"] = False
+                            if query != st.session_state["current_prompt_30"]:
+                                
+                                result = conversational_rag_chain.invoke(
+                                    {"input": query},
+                                    config={
+                                        "configurable": {"session_id": "abc123"}
+                                    },  # constructs a key "abc123" in `store`.
+                                )
+                                if result["answer"] == None:
+                                    st.write("No answer found")
+                                else:
+                                    # update list answers and queries
+                                    update_list_answers_queries(st, result, query, num="30")
 
-                            st.session_state["buttom_visualiza_faiss_clicked_30"] = False
-                        if query != st.session_state["current_prompt_30"]:
-                            
-                            result = conversational_rag_chain.invoke(
-                                {"input": query},
-                                config={
-                                    "configurable": {"session_id": "abc123"}
-                                },  # constructs a key "abc123" in `store`.
-                            )
-                            if result["answer"] == None:
-                                st.write("No answer found")
-                            else:
-                                # update list answers and queries
-                                update_list_answers_queries(st, result, query, num="30")
-
-                                with st.expander(
-                                    "Conversation with model 👇",
-                                    expanded=st.session_state["expander_30"],
-                                ):
-                                    # create text to post in text area
-                                    textvalue = sumup_history(st, num="30")
-                                    st.session_state["answer_prompt_30"] = textvalue
-
-                                    if len(result["chat_history"]) > 1:
-                                        st.session_state[
-                                            "history_conversation_with_model_30"
-                                        ] = result["chat_history"]
-
-                                    upload_state = st.text_area(
-                                        "Status selection",
-                                        value=st.session_state["answer_prompt_30"],
-                                        key="text_30",
-                                        height=600,
-                                    )
-                                    if (
-                                        st.button(
-                                            "Visualiza Documents Context Use",
-                                            key="buttom_visualiza_faiss_30",
-                                        )
-                                        or st.session_state[
-                                            "buttom_visualiza_faiss_clicked_30"
-                                        ]
-                                        == True
+                                    with st.expander(
+                                        "Conversation with model 👇",
+                                        expanded=st.session_state["expander_30"],
                                     ):
-                                        st.session_state[
-                                            "buttom_visualiza_faiss_clicked_30"
-                                        ] = True
+                                        # create text to post in text area
+                                        textvalue = sumup_history(st, num="30")
+                                        st.session_state["answer_prompt_30"] = textvalue
 
-                                        st.session_state["current_prompt_30"] = query
-                                        visualiza_context_faiss(st, result, num="30")
+                                        if len(result["chat_history"]) > 1:
+                                            st.session_state[
+                                                "history_conversation_with_model_30"
+                                            ] = result["chat_history"]
 
-    except:
-        st.session_state["salir_30"] = True
-        # get the sys stack and log to gcloud
-        placeholder.empty()
-        text = print_stack()
-        text = "Gemini Page 30" + text
-        logging.error(text)
+                                        upload_state = st.text_area(
+                                            "Status selection",
+                                            value=st.session_state["answer_prompt_30"],
+                                            key="text_30",
+                                            height=600,
+                                        )
+                                        if (
+                                            st.button(
+                                                "Visualiza Documents Context Use",
+                                                key="buttom_visualiza_faiss_30",
+                                            )
+                                            or st.session_state[
+                                                "buttom_visualiza_faiss_clicked_30"
+                                            ]
+                                            == True
+                                        ):
+                                            st.session_state[
+                                                "buttom_visualiza_faiss_clicked_30"
+                                            ] = True
+
+                                            st.session_state["current_prompt_30"] = query
+                                            visualiza_context_faiss(st, result, num="30")
+
+        except:
+            st.session_state["salir_30"] = True
+            # get the sys stack and log to gcloud
+            placeholder.empty()
+            text = print_stack()
+            text = "Gemini Page 30" + text
+            logging.error(text)
 
 if __name__ == "__main__":
 

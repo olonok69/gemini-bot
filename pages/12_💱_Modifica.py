@@ -45,18 +45,19 @@ onlyfiles_prompts = df_prompts["name_prompt"].to_list()
 # all names of the perciales
 onlyfiles_periciales = df_pericial["Title"].to_list()
 
-def change_state_12(session, placeholder):
+def change_state_12(session, pp):
     """
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session,"12")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 def main(options, placeholder):
@@ -69,64 +70,65 @@ def main(options, placeholder):
         vectorstore: pinecone vectorstore
         placeholder: placeholder for the streamlit app
     """
-    if st.button("Salir", on_click=change_state_12, args=(st, placeholder)):
-        logging.info("Salir and writing history")
-    col1, col2 = 50, 50
-    if "init_run_12" not in st.session_state:
-            st.session_state["init_run_12"] = False
-    if st.session_state["init_run_12"] == False:
-        init_session_num(st, ss, "12", col1, col2, conf["12"]["config_12"], None)
+    with placeholder.container():
+        if st.button("Salir", on_click=change_state_12, args=(st, placeholder)):
+            logging.info("Salir and writing history")
+        col1, col2 = 50, 50
+        if "init_run_12" not in st.session_state:
+                st.session_state["init_run_12"] = False
+        if st.session_state["init_run_12"] == False:
+            init_session_num(st, ss, "12", col1, col2, conf["12"]["config_12"], None)
 
 
 
-    if "selector_selected_pericial_12" not in st.session_state:
-        st.session_state["selector_selected_pericial_12"] = False
+        if "selector_selected_pericial_12" not in st.session_state:
+            st.session_state["selector_selected_pericial_12"] = False
 
-    try:
-        # select which type of document to modify
-        selector1 = st.selectbox(
-            "Select type of document to modify. Pericial or Prompt to extract Information from document 👇",
-            options,
-            index=None,
-            on_change=selected_modifica,
-            args=[st, "12"],
-            key="select_box_modifica_12",
-        )
-        if st.session_state["selector_selected_modifica_12"] == True:
-            if st.session_state.select_box_modifica_12 == "Prompts":
-                # fname, fname2, df_prompts
-                option = st.selectbox(
-                    "select prompt 👇",
-                    onlyfiles_prompts,
-                    on_change=selected_modify_prompt,
-                    key="select_box_modifica_prompt_12",
-                    args=[st, "12"],
-                )
-                if st.session_state["selector_selected_section_12"] == True:
-                    logging.info("Selected visualiza Prompt")
-                    visualiza_modify_prompt(st, df_prompts, fname, num="12")
-
-            elif st.session_state.select_box_modifica_12 == "Periciales":
-                # pname, name2, df_pericial
-                option_pericial = st.selectbox(
-                    "select pericial 👇",
-                    onlyfiles_periciales,
-                    on_change=selected_modify_percial,
-                    args=[st, "12"],
-                    key="select_box_modifica_pericial_12",
-                )
-                if st.session_state["selector_selected_pericial_12"] == True:
-                    # df_pericial, pname, st.session_state["vectorstore"]
-                    logging.info("Selected visualiza Pericial")
-                    visualiza_pericial_modifica(
-                        st, df_pericial, pname, st.session_state["vectorstore_12"], num="12"
+        try:
+            # select which type of document to modify
+            selector1 = st.selectbox(
+                "Select type of document to modify. Pericial or Prompt to extract Information from document 👇",
+                options,
+                index=None,
+                on_change=selected_modifica,
+                args=[st, "12"],
+                key="select_box_modifica_12",
+            )
+            if st.session_state["selector_selected_modifica_12"] == True:
+                if st.session_state.select_box_modifica_12 == "Prompts":
+                    # fname, fname2, df_prompts
+                    option = st.selectbox(
+                        "select prompt 👇",
+                        onlyfiles_prompts,
+                        on_change=selected_modify_prompt,
+                        key="select_box_modifica_prompt_12",
+                        args=[st, "12"],
                     )
-    except :
-        st.session_state["salir_12"] = True
-        placeholder.empty()
-        text = print_stack()
-        text = "Menu 12 Modify " + text
-        logging.error(text)
+                    if st.session_state["selector_selected_section_12"] == True:
+                        logging.info("Selected visualiza Prompt")
+                        visualiza_modify_prompt(st, df_prompts, fname, num="12")
+
+                elif st.session_state.select_box_modifica_12 == "Periciales":
+                    # pname, name2, df_pericial
+                    option_pericial = st.selectbox(
+                        "select pericial 👇",
+                        onlyfiles_periciales,
+                        on_change=selected_modify_percial,
+                        args=[st, "12"],
+                        key="select_box_modifica_pericial_12",
+                    )
+                    if st.session_state["selector_selected_pericial_12"] == True:
+                        # df_pericial, pname, st.session_state["vectorstore"]
+                        logging.info("Selected visualiza Pericial")
+                        visualiza_pericial_modifica(
+                            st, df_pericial, pname, st.session_state["vectorstore_12"], num="12"
+                        )
+        except :
+            st.session_state["salir_12"] = True
+            placeholder.empty()
+            text = print_stack()
+            text = "Menu 12 Modify " + text
+            logging.error(text)
 
 if __name__ == "__main__":
     # configure access to table . for now we can add prompts and periciales
