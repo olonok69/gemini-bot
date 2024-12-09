@@ -5,7 +5,7 @@ config ={
     "20": { 
 "config_20_del" : ["vcol1doc_20",  "vcol2doc_20", "init_run_20", "pdf_ref_20", "file_name_20", "file_history_20", "upload_state_20", "value_20", "buttom_send_not_clicked_20","select_box_20",  
 "file_prompt_selected_20", "prompt_introduced_20", "chat_true_20","expander_20", "initialized_20", "buttom_send_20", "buttom_has_send_20", "llm_20", "prompt_20", "chat_answers_history_20", 
-"user_prompt_history_20","chat_history_20", "buttom_send_clicked_20", "buttom_resfresh_clicked_20", "salir_20"],
+"user_prompt_history_20","chat_history_20", "buttom_send_clicked_20", "buttom_resfresh_clicked_20", "salir_20", "pdf_page_20"],
 
 "config_20" : ["user_prompt_history_20",  "chat_answers_history_20", "chat_history_20", "initialized_20", "list_images_20", "file_name_20", "file_history_20", "prompt_introduced_20", "prompt_20","chat_true_20",  
 "buttom_popup_20", "buttom_has_send_20", "pdf_ref_20","value_20", "buttom_send_not_clicked_20", "vcol1doc_20", "vcol2doc_20", "expander_20", "file_prompt_selected_20","buttom_send_clicked_20",
