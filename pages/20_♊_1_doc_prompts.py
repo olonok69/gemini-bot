@@ -10,11 +10,10 @@ from dotenv import dotenv_values
 import json
 from src.work_gemini import get_chat_response, prepare_prompt, init_model
 from src.helpers import (
-
     visualiza_1_prompt,
     reload_page_1_doc,
 )
-from src.utils import create_client_logging, print_stack
+from src.utils import print_stack
 import logging
 import copy
 from src.files import open_table_answers, create_folders, open_table_prompts
@@ -29,7 +28,9 @@ path = Path(ROOT_DIR)
 PROJECT_DIR = path.parent.absolute().as_posix()
 logging.info(f"PROJECT DIR: {PROJECT_DIR}, this folder: {ROOT_DIR}")
 # Create folders
-OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(PROJECT_DIR)
+OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(
+    PROJECT_DIR
+)
 # open table with all prompts
 pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
 
@@ -52,14 +53,15 @@ def change_state_20(session, pp):
     pp (streamlit.empty): placeholder
 
     """
-    reset_session_num(session,"20")
+    reset_session_num(session, "20")
     pp.empty()
     del pp
     session.empty()
     session.stop()
     return
 
-def main( col1, col2, placeholder):
+
+def main(col1, col2, placeholder):
     """
     main loop
     params:
@@ -83,14 +85,16 @@ def main( col1, col2, placeholder):
             if "init_run_20" not in st.session_state:
                 st.session_state["init_run_20"] = False
             if st.session_state["init_run_20"] == False:
-                init_session_num(st, ss, "20", col1, col2, conf["20"]["config_20"], None)
+                init_session_num(
+                    st, ss, "20", col1, col2, conf["20"]["config_20"], None
+                )
 
             with row1_1:
                 if st.button("Salir", on_click=change_state_20, args=(st, placeholder)):
                     logging.info("Salir and writing history")
 
                 # Access the uploaded ref via a key.
-                if st.session_state['value_20'] >= 0:
+                if st.session_state["value_20"] >= 0:
                     uploaded_files = st.file_uploader(
                         "Upload PDF file",
                         type=("pdf"),
@@ -99,7 +103,9 @@ def main( col1, col2, placeholder):
                         disabled=st.session_state["buttom_send_not_clicked_20"],
                     )  # accept_multiple_files=True,
                     if uploaded_files:
-                        logging.info(f"Gemini Bot 20: file uploaded {uploaded_files.name}")
+                        logging.info(
+                            f"Gemini Bot 20: file uploaded {uploaded_files.name}"
+                        )
                     if uploaded_files:
                         # To read file as bytes:
                         im_bytes = uploaded_files.getvalue()
@@ -108,20 +114,20 @@ def main( col1, col2, placeholder):
                             f.write(im_bytes)
                             f.close()
                         if ss.pdf_page_20:
-                            ss.pdf_ref_20 = im_bytes
+                            st.session_state["file_bytes_20"] = im_bytes
                         numpages = count_pdf_pages(file_path)
                         st.session_state["file_name_20"] = file_path
                         st.session_state["file_history_20"] = uploaded_files.name
                         st.session_state["upload_state_20"] = (
                             f"Numero de paginas del fichero {uploaded_files.name} : {numpages}"
                         )
-                    st.session_state['value_20'] = 1  # file uploaded
+                    st.session_state["value_20"] = 1  # file uploaded
 
             # Now you can access "pdf_ref" anywhere in your app.
-            if ss.pdf_ref_20:
+            if st.session_state["file_bytes_20"]:
                 with row1_1:
-                    if st.session_state['value_20'] >= 1:
-                        binary_data = ss.pdf_ref_20
+                    if st.session_state["value_20"] >= 1:
+                        binary_data = st.session_state["file_bytes_20"]
                         if st.session_state["vcol1doc_20"] == 40:
                             width = 700
                         elif st.session_state["vcol1doc_20"] == 20:
@@ -129,7 +135,9 @@ def main( col1, col2, placeholder):
                         else:
                             width = 700
                         pdf_viewer(input=binary_data, width=width, height=400)
-                        logging.info(f"Gemini Bot Page 20: pdf viewer {uploaded_files.name}")
+                        logging.info(
+                            f"Gemini Bot Page 20: pdf viewer {uploaded_files.name}"
+                        )
                         page_select = st.text_input(
                             "Elige paginas a extraer 👇",
                             key="page_select",
@@ -137,8 +145,8 @@ def main( col1, col2, placeholder):
                             disabled=st.session_state["buttom_send_not_clicked_20"],
                         )
                         # if page select TODO control that page is all or a number
-                        if page_select and st.session_state['value_20'] >= 1:
-                            st.session_state['value_20'] = 2  # pages selected
+                        if page_select and st.session_state["value_20"] >= 1:
+                            st.session_state["value_20"] = 2  # pages selected
                             st.session_state["upload_state_20"] = (
                                 f"paginas seleccionadas {page_select}"
                             )
@@ -159,18 +167,18 @@ def main( col1, col2, placeholder):
 
                         if st.session_state[
                             "prompt_introduced_20"
-                        ] != "" and st.session_state['value_20'] in [2, 3]:
+                        ] != "" and st.session_state["value_20"] in [2, 3]:
                             st.session_state["upload_state_20"] = (
                                 f"Instruccion introducida\n{st.session_state['prompt_introduced_20'] }"
                             )
-                            st.session_state['value_20'] = 3
+                            st.session_state["value_20"] = 3
 
                         if (
                             st.session_state["buttom_send_not_clicked_20"] == True
                             and st.session_state["chat_true_20"] == "chat activo"
                         ):
                             # chat active session 5
-                            st.session_state['value_20'] = 5
+                            st.session_state["value_20"] = 5
                             col1 = 20
                             col2 = 80
                             st.session_state["vcol1doc_20"] = 20
@@ -194,7 +202,7 @@ def main( col1, col2, placeholder):
                             "Status selection", "", key="upload_state_20", height=200
                         )
                     if (
-                        st.session_state['value_20'] == 3
+                        st.session_state["value_20"] == 3
                         and st.session_state["file_prompt_selected_20"] == True
                     ):
                         if st.button(
@@ -213,7 +221,7 @@ def main( col1, col2, placeholder):
                             logging.info("After_click_buttom_send = True")
                             st.session_state["chat_true_20"] = "chat activo"
                             st.session_state["buttom_has_send_20"] = "buttom_Send"
-                            st.session_state['value_20'] = 5
+                            st.session_state["value_20"] = 5
                             st.session_state["buttom_send_not_clicked_20"] = True
                             col1 = 20
                             col2 = 80
@@ -252,9 +260,12 @@ def main( col1, col2, placeholder):
                             if st.session_state["initialized_20"] == "False":
 
                                 response = get_chat_response(
-                                    st.session_state["llm_20"], st.session_state["prompt_20"]
+                                    st.session_state["llm_20"],
+                                    st.session_state["prompt_20"],
                                 )
-                                st.session_state["chat_answers_history_20"].append(response)
+                                st.session_state["chat_answers_history_20"].append(
+                                    response
+                                )
                                 st.session_state["user_prompt_history_20"].append(
                                     st.session_state["prompt_introduced_20"]
                                 )
@@ -276,8 +287,12 @@ def main( col1, col2, placeholder):
                                     st.session_state["llm_20"], prompt1
                                 )
                                 # actualiza buffer chat
-                                st.session_state["chat_answers_history_20"].append(response)
-                                st.session_state["user_prompt_history_20"].append(prompt1[0])
+                                st.session_state["chat_answers_history_20"].append(
+                                    response
+                                )
+                                st.session_state["user_prompt_history_20"].append(
+                                    prompt1[0]
+                                )
                                 st.session_state["chat_history_20"].append(
                                     (prompt1[0], response)
                                 )
@@ -318,30 +333,37 @@ if __name__ == "__main__":
     global col1, col2
 
     st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-   # access to keys and service account
+    # access to keys and service account
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
     PROJECT_DIR = path.parent.absolute().as_posix()
-    #go to login page if not authenticated
-    if st.session_state["authentication_status"] == None or st.session_state["authentication_status"] == False:
+    # go to login page if not authenticated
+    if (
+        st.session_state["authentication_status"] == None
+        or st.session_state["authentication_status"] == False
+    ):
         st.session_state.runpage = "main.py"
         st.switch_page("main.py")
 
     if "salir_20" not in st.session_state:
-        st.session_state["salir_20"] = False  
+        st.session_state["salir_20"] = False
 
-    if st.session_state["salir_20"] == False:  
+    if st.session_state["salir_20"] == False:
 
         placeholder_20 = st.empty()
         with placeholder_20.container():
             col1, col2 = 40, 60
             config = dotenv_values(os.path.join(PROJECT_DIR, "keys", ".env"))
             with open(
-                os.path.join(PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json")
+                os.path.join(
+                    PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json"
+                )
             ) as source:
                 info = json.load(source)
 
-            vertex_credentials = service_account.Credentials.from_service_account_info(info)
+            vertex_credentials = service_account.Credentials.from_service_account_info(
+                info
+            )
             # client = create_client_logging(vertex_credentials=vertex_credentials)
 
             # Retrieves a Cloud Logging handler based on the environment
@@ -356,9 +378,11 @@ if __name__ == "__main__":
                 credentials=vertex_credentials,
             )
             if "llm_20" not in st.session_state:
-                st.session_state["llm_20"]  = init_model(config)
-                st.session_state["llm_20"] = st.session_state["llm_20"].start_chat(response_validation=False)
-                
+                st.session_state["llm_20"] = init_model(config)
+                st.session_state["llm_20"] = st.session_state["llm_20"].start_chat(
+                    response_validation=False
+                )
+
             logging.info(f"Model loaded: {config.get('MODEL')}")
             main(
                 col1=col1,
