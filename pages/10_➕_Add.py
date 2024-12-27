@@ -43,7 +43,7 @@ def change_state_10(session, pp):
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
     reset_session_num(session, "10")
@@ -67,8 +67,8 @@ def main(options, placeholder):
     if st.session_state["init_run_10"] == False:
         init_session_num(st, ss, "10", col1, col2, conf["10"]["config_10"], None)
 
-    if st.button("Salir", on_click=change_state_10, args=(st, placeholder)):
-        logging.info("Salir and writing history")
+        if st.button("Salir", on_click=change_state_10, args=(st, placeholder)):
+            logging.info("Salir and writing history")
 
     try:
         with placeholder.container():

@@ -40,7 +40,7 @@ def change_state_21(session, pp):
     change state after leave conversation
     params:
     session (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
     reset_session_num(session, "21")
@@ -303,10 +303,22 @@ def main(col1, col2, placeholder):
                                 list2 = copy.deepcopy(
                                     st.session_state["user_prompt_history_21"]
                                 )
+                            # write chat in window
+                            if len(st.session_state["chat_answers_history_21"]) > 0:
+                                list1 = copy.deepcopy(
+                                    st.session_state["chat_answers_history_21"]
+                                )
+                                list2 = copy.deepcopy(
+                                    st.session_state["user_prompt_history_21"]
+                                )
 
                                 if len(st.session_state["chat_answers_history_21"]) > 1:
                                     list1.reverse()
+                                if len(st.session_state["chat_answers_history_21"]) > 1:
+                                    list1.reverse()
 
+                                if len(st.session_state["user_prompt_history_21"]) > 1:
+                                    list2.reverse()
                                 if len(st.session_state["user_prompt_history_21"]) > 1:
                                     list2.reverse()
 

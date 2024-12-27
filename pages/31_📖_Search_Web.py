@@ -70,7 +70,7 @@ def change_state_31(session, pp):
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
     reset_session_num(session, "31")
@@ -87,8 +87,8 @@ def main(col1, col2, placeholder):
     if st.session_state["init_run_31"] == False:
         init_session_num(st, ss, "31", col1, col2, conf["31"]["config_31"], None)
 
-    if "checkbox_31" not in st.session_state:
-        st.session_state["checkbox_31"] = False
+        if "checkbox_31" not in st.session_state:
+            st.session_state["checkbox_31"] = False
 
     row1_1, row1_2 = st.columns((col1, col2))
     with placeholder.container():
@@ -98,6 +98,8 @@ def main(col1, col2, placeholder):
                 logging.info("Salir and writing history")
             query = st.text_input("Enter your query here 👇")
 
+            if len(query) > 0:
+                with row1_2:
             if len(query) > 0:
                 with row1_2:
 
@@ -119,6 +121,7 @@ def main(col1, col2, placeholder):
                             )
                         )
 
+                        user_input = f"{query} Based on your findings write a description, main symptoms and how to treat them "
                         user_input = f"{query} Based on your findings write a description, main symptoms and how to treat them "
 
                         # chain runnable parallel to run semantic and google search chains in paralell
@@ -146,7 +149,20 @@ def main(col1, col2, placeholder):
                             response = st.session_state["complete_chain_31"].invoke(
                                 {"question": user_input, "query": query}
                             )
+                            # call complete chain with user query
+                            response = st.session_state["complete_chain_31"].invoke(
+                                {"question": user_input, "query": query}
+                            )
 
+                            st.text_area(
+                                "Knowledge Base Response 👇",
+                                height=600,
+                                key="kb_text_31",
+                                value=response["d"].content,
+                            )
+                            # if st.button("Ver contexto completo"):
+                            #     visualiza_context(st, out)
+                            st.session_state["complete_chain_31"] = None
                             st.text_area(
                                 "Knowledge Base Response 👇",
                                 height=600,

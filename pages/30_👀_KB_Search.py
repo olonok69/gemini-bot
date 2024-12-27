@@ -114,10 +114,14 @@ def change_state_30(session, pp):
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
     reset_session_num(session,"30")
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     pp.empty()
     del pp
     session.empty()
@@ -234,6 +238,19 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
                             conversational_rag_chain = st.session_state[
                                 "conversational_rag_chain_30"
                             ]
+                        # create runnable with message history
+                        if st.session_state["conversational_rag_chain_30"] == None:
+                            conversational_rag_chain = create_conversational_rag_chain(
+                                llm=st.session_state["llm_30"],
+                                retriever=st.session_state["retriever_30"],
+                                contex_q_prompt=contextualize_q_prompt,
+                                qaprompt=qa_prompt,
+                                store=st.session_state["store_30"],
+                            )
+                        else:
+                            conversational_rag_chain = st.session_state[
+                                "conversational_rag_chain_30"
+                            ]
 
                         if len(query) > 5:
                             if "terminar#" in query:  # end conversation
@@ -281,12 +298,42 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
                                         # create text to post in text area
                                         textvalue = sumup_history(st, num="30")
                                         st.session_state["answer_prompt_30"] = textvalue
+                                    with st.expander(
+                                        "Conversation with model 👇",
+                                        expanded=st.session_state["expander_30"],
+                                    ):
+                                        # create text to post in text area
+                                        textvalue = sumup_history(st, num="30")
+                                        st.session_state["answer_prompt_30"] = textvalue
 
                                         if len(result["chat_history"]) > 1:
                                             st.session_state[
                                                 "history_conversation_with_model_30"
                                             ] = result["chat_history"]
+                                        if len(result["chat_history"]) > 1:
+                                            st.session_state[
+                                                "history_conversation_with_model_30"
+                                            ] = result["chat_history"]
 
+                                        upload_state = st.text_area(
+                                            "Status selection",
+                                            value=st.session_state["answer_prompt_30"],
+                                            key="text_30",
+                                            height=600,
+                                        )
+                                        if (
+                                            st.button(
+                                                "Visualiza Documents Context Use",
+                                                key="buttom_visualiza_faiss_30",
+                                            )
+                                            or st.session_state[
+                                                "buttom_visualiza_faiss_clicked_30"
+                                            ]
+                                            == True
+                                        ):
+                                            st.session_state[
+                                                "buttom_visualiza_faiss_clicked_30"
+                                            ] = True
                                         upload_state = st.text_area(
                                             "Status selection",
                                             value=st.session_state["answer_prompt_30"],
@@ -314,13 +361,13 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
                                                 st, result, num="30"
                                             )
 
-    except:
-        st.session_state["salir_30"] = True
-        # get the sys stack and log to gcloud
-        placeholder.empty()
-        text = print_stack()
-        text = "Gemini Page 30" + text
-        logging.error(text)
+        except:
+            st.session_state["salir_30"] = True
+            # get the sys stack and log to gcloud
+            placeholder.empty()
+            text = print_stack()
+            text = "Gemini Page 30" + text
+            logging.error(text)
 
 
 if __name__ == "__main__":

@@ -10,6 +10,9 @@ from langchain_community.document_loaders import PyMuPDFLoader
 def extract_pdf_images(
     pdf_path, numpages, list_pages, st, file="", num=10, multi=False
 ):
+def extract_pdf_images(
+    pdf_path, numpages, list_pages, st, file="", num=10, multi=False
+):
     """
     extract images from a pdf file
     :param pdf_path: path to pdf file
@@ -47,7 +50,7 @@ def extract_pdf_images(
 
         doc = fitz.open(pdf_path)
         # Iterate through the pages of the PDF file
-        print(f"number of pages {len(doc)}")
+        logging.info(f"number of pages {len(doc)}")
         for page, page_index in zip(doc, range(len(doc))):
             # Get the images on the page
             if page_index in list_pages:
@@ -93,6 +96,7 @@ def upload(list_pages, numpages, st, num: 10):
     if len(st.session_state[f"list_images_{num}"]) == 0:
         list_images, size_files = extract_pdf_images(
             complete_name, numpages, list_pages, st, complete_name, num=num, multi=False
+            complete_name, numpages, list_pages, st, complete_name, num=num, multi=False
         )
         st.session_state[f"list_images_{num}"] = list_images
         if list_pages == "all":
@@ -118,6 +122,7 @@ def upload(list_pages, numpages, st, num: 10):
     return
 
 
+def upload_files(st, num: int = 10):
 def upload_files(st, num: int = 10):
     """
     upload pdfs file in bytes

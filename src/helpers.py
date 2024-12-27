@@ -121,7 +121,7 @@ def reset_session_1(st, ss, chat):
 
 
 def reload_page_1_doc(
-    st, ss,  df_answers, pname, placeholder, tmp_folder, out_folder, num=10
+    st, ss, df_answers, pname, placeholder, tmp_folder, out_folder, num=10
 ):
     """
     reload page
@@ -150,7 +150,6 @@ def reload_page_1_doc(
         prompt=st.session_state[f"prompt_introduced_{num}"],
         filename=filename,
     )
-
 
     reset_session_num(st, num)
     # delete files in temp
@@ -364,7 +363,7 @@ def init_session_multi(st, ss, model, col1, col2):
     return
 
 
-def reload_page_many_docs(st, ss,  df, fname, placeholder, num:int="10"):
+def reload_page_many_docs(st, ss, df, fname, placeholder, num: int = "10"):
     """
     refresh page and initialize variables page may docs
     Args:
@@ -378,7 +377,7 @@ def reload_page_many_docs(st, ss,  df, fname, placeholder, num:int="10"):
     # write response of model to table
     list2 = copy.deepcopy(st.session_state[f"chat_answers_history_{num}"])
     # get filename
-    filename = get_filename_multi(st,num=num)
+    filename = get_filename_multi(st, num=num)
     # save the response of Model
     save_df_many(
         list2=list2,
@@ -644,7 +643,7 @@ def save_df_many(list2: List, df: pd.DataFrame, fname: str, prompt: str, filenam
     return
 
 
-def get_filename_multi(st, num:int=10):
+def get_filename_multi(st, num: int = 10):
     """
     extract filename from multi file name
     """
@@ -699,13 +698,13 @@ def visualiza_1_prompt(st, df, page_select, numpages, num):
 
     if st.button("No Accept"):
         st.session_state[f"prompt_introduced_{num}"] = ""
-        st.session_state["file_prompt_selected_{num}"] = False
+        st.session_state[f"file_prompt_selected_{num}"] = False
         st.session_state[f"value_{num}"] = 2
         st.rerun()
 
 
 @st.dialog("Confirm Selection 👇", width="large")
-def visualiza_display_page(st, selection_dict, num:int=10):
+def visualiza_display_page(st, selection_dict, num: int = 10):
     """
     Visualize the answers and selected
     Args:
@@ -740,7 +739,7 @@ def visualiza_display_page(st, selection_dict, num:int=10):
 
 
 @st.dialog("Confirma Pericial 👇", width="large")
-def visualiza_pericial(st, df, list_matches_textos, list_matches, num:int=10):
+def visualiza_pericial(st, df, list_matches_textos, list_matches, num: int = 10):
     """
     Visualize the prompt
     Args:
@@ -784,9 +783,7 @@ def visualiza_pericial(st, df, list_matches_textos, list_matches, num:int=10):
     return
 
 
-def reload_page_combina(
-    st,  fname, df, placeholder,num:int=10
-):
+def reload_page_combina(st, fname, df, placeholder, num: int = 10):
     """
     refresh page and initialize variables
     Args:
@@ -818,10 +815,3 @@ def reload_page_combina(
     placeholder.empty()
     st.stop()
     return
-
-
-
-
-
-
-    
