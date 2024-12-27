@@ -74,21 +74,21 @@ def main(options, placeholder):
         vectorstore: pinecone vectorstore
         placeholder: placeholder for the streamlit app
     """
-    if st.button("Salir", on_click=change_state_12, args=(st, placeholder)):
-        logging.info("Salir and writing history")
-    col1, col2 = 50, 50
-    if "init_run_12" not in st.session_state:
-        st.session_state["init_run_12"] = False
-    if st.session_state["init_run_12"] == False:
-        init_session_num(st, ss, "12", col1, col2, conf["12"]["config_12"], None)
+    with placeholder.container():
+        if st.button("Salir", on_click=change_state_12, args=(st, placeholder)):
+            logging.info("Salir and writing history")
+        col1, col2 = 50, 50
+        if "init_run_12" not in st.session_state:
+            st.session_state["init_run_12"] = False
+        if st.session_state["init_run_12"] == False:
+            init_session_num(st, ss, "12", col1, col2, conf["12"]["config_12"], None)
 
-    if "selector_selected_pericial_12" not in st.session_state:
-        st.session_state["selector_selected_pericial_12"] = False
+        if "selector_selected_pericial_12" not in st.session_state:
+            st.session_state["selector_selected_pericial_12"] = False
 
-    try:
-        with placeholder.container():
+        try:
             # select which type of document to modify
-            selector1 = st.selectbox(
+            _ = st.selectbox(
                 "Select type of document to modify. Pericial or Prompt to extract Information from document 👇",
                 options,
                 index=None,
@@ -129,12 +129,12 @@ def main(options, placeholder):
                             st.session_state["vectorstore_12"],
                             num="12",
                         )
-    except:
-        st.session_state["salir_12"] = True
-        placeholder.empty()
-        text = print_stack()
-        text = "Menu 12 Modify " + text
-        logging.error(text)
+        except:
+            st.session_state["salir_12"] = True
+            placeholder.empty()
+            text = print_stack()
+            text = "Menu 12 Modify " + text
+            logging.error(text)
 
 
 if __name__ == "__main__":

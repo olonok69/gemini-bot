@@ -3,33 +3,27 @@ from streamlit import session_state as ss
 import os.path
 from pathlib import Path
 from streamlit_pdf_viewer import pdf_viewer
-from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages
 from google.oauth2 import service_account
 from langchain_community.vectorstores import FAISS
 import vertexai
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from dotenv import dotenv_values
 import json
 from src.helpers import (
     reset_session_add_kb,
-    init_session_add_kb,
 )
-from src.utils import create_client_logging, print_stack
+from src.utils import print_stack
 from kb.utils import (
     load_file,
     get_docs_to_add_vectorstore_faiss,
     add_new_documents_to_faiss,
 )
-from src.utils import print_stack
 import logging
 from src.maps import config as conf, init_session_num, reset_session_num
 from src.work_gemini import init_llm, init_google_embeddings
 import time
 from src.files import (
-    open_table_answers,
     create_folders,
-    open_table_prompts,
 )
 
 # where I am
@@ -97,9 +91,8 @@ def main(path_faiss, placeholder):
     path_faiss (str): path to faiss file
     placeholder (streamlit.empty): placeholder
     """
-
-    try:
-        with placeholder.container():
+    with placeholder.container():
+        try:
             # Initialize Vars
             # Initialice state
             if "init_run_32" not in st.session_state:
@@ -112,16 +105,13 @@ def main(path_faiss, placeholder):
             # if you press salir any time you close the conainer
             if st.button("Salir", on_click=change_state_32, args=(st, placeholder)):
                 logging.info("Salir and writing history")
-            # if you press salir any time you close the conainer
-            if st.button("Salir", on_click=change_state_32, args=(st, placeholder)):
-                logging.info("Salir and writing history")
 
             # Access the uploaded ref via a key.
             if st.session_state["value_32"] >= 0:
                 uploaded_files = st.file_uploader(
                     "Upload PDF file",
                     type=("pdf"),
-                    key="pdf_32",
+                    key="pdf",
                     accept_multiple_files=False,
                 )  # accept_multiple_files=True,
                 if uploaded_files:
@@ -133,7 +123,7 @@ def main(path_faiss, placeholder):
                     with open(file_path, "wb") as f:
                         f.write(im_bytes)
                         f.close()
-                    if ss.pdf_32:
+                    if ss.pdf:
                         ss.pdf_ref_32 = im_bytes
                     numpages = count_pdf_pages(file_path)
                     st.session_state[f"file_name_32"] = file_path
@@ -145,23 +135,10 @@ def main(path_faiss, placeholder):
 
             # Now you can access "pdf_ref" anywhere in your app.
             if ss.pdf_ref_32:
-            # Now you can access "pdf_ref" anywhere in your app.
-            if ss.pdf_ref_32:
 
                 if st.session_state["value_32"] >= 1:
                     binary_data = ss.pdf_ref_32
 
-                    pdf_viewer(input=binary_data, width=700, height=300)
-                    # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
-                    _ = st.selectbox(
-                        "Choose category 👇",
-                        key="selectbox_category_32",
-                        index=None,
-                        options=secciones,
-                        on_change=selected_seccion_add_kb,
-                        args=[st, "32"],
-                    )
-                    if st.session_state[f"add_file_kb_selected_32"]:
                     pdf_viewer(input=binary_data, width=700, height=300)
                     # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
                     _ = st.selectbox(

@@ -103,9 +103,8 @@ def main(col1, col2, placeholder):
             st.session_state["init_run_22"] = False
         if st.session_state["init_run_22"] == False:
 
-        init_session_num(st, ss, "22", col1, col2, conf["22"]["config_22"], None)
-    try:
-        with placeholder.container():
+            init_session_num(st, ss, "22", col1, col2, conf["22"]["config_22"], None)
+        try:
             with row1_1:
                 # columna 1
                 if st.button("Salir", on_click=change_state_22, args=(st, placeholder)):
@@ -123,18 +122,6 @@ def main(col1, col2, placeholder):
                         st=st, selection_dict=selection_dict, num="22"
                     )
 
-                elif (
-                    st.session_state["file_and_answer_select_has_changed_22"] == True
-                    and st.session_state["file_prompt_selected_visualiza_22"] == True
-                    and st.session_state["chat_true_22"] == "no_chat"
-                ):
-                    title = st.text_area(
-                        "Introduce texto a Buscar Pericial separa con una # y dame el numero de documentos a buscar 👇",
-                        height=100,
-                        key="search_pericial_22",
-                        placeholder="Ejemplo: texto a buscar aqui y no puede haber este caracter--># 10",
-                        disabled=st.session_state["buttom_send_visualiza_22"],
-                    )
                 elif (
                     st.session_state["file_and_answer_select_has_changed_22"] == True
                     and st.session_state["file_prompt_selected_visualiza_22"] == True
@@ -225,15 +212,6 @@ def main(col1, col2, placeholder):
                                         file
                                     )
 
-                if (
-                    st.session_state["chat_true_22"] == "chat activo"
-                    and st.session_state["b_accept_inside_pericial_22"] == True
-                ):
-                    col1 = 30
-                    col2 = 70
-                    st.session_state["chat_true_22"] = "chat activo"
-                    st.session_state["b_accept_inside_pericial_22"] = True
-                    st.session_state["buttom_send_visualiza_22"] = True
                 if (
                     st.session_state["chat_true_22"] == "chat activo"
                     and st.session_state["b_accept_inside_pericial_22"] == True
@@ -351,11 +329,7 @@ def main(col1, col2, placeholder):
 
                                 if len(st.session_state["chat_answers_history_22"]) > 1:
                                     list1.reverse()
-                                if len(st.session_state["chat_answers_history_22"]) > 1:
-                                    list1.reverse()
 
-                                if len(st.session_state["user_prompt_history_22"]) > 1:
-                                    list2.reverse()
                                 if len(st.session_state["user_prompt_history_22"]) > 1:
                                     list2.reverse()
 
@@ -364,13 +338,13 @@ def main(col1, col2, placeholder):
                                     message1.write(j)
                                     message2 = st.chat_message("assistant")
                                     message2.write(i)
-    except Exception as e:
-        st.session_state["salir_22"] = True
-        # get the sys stack and log to gcloud
-        placeholder.empty()
-        text = print_stack()
-        text = "Gemini Page 22" + text
-        logging.error(text)
+        except Exception as e:
+            st.session_state["salir_22"] = True
+            # get the sys stack and log to gcloud
+            placeholder.empty()
+            text = print_stack()
+            text = "Gemini Page 22" + text
+            logging.error(text)
     return
 
 

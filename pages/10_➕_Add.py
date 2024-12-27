@@ -61,17 +61,17 @@ def main(options, placeholder):
         options: list of options for the select box
         placeholder: placeholder for the app
     """
-    col1, col2 = 50, 50
-    if "init_run_10" not in st.session_state:
-        st.session_state["init_run_10"] = False
-    if st.session_state["init_run_10"] == False:
-        init_session_num(st, ss, "10", col1, col2, conf["10"]["config_10"], None)
+    with placeholder.container():
+        col1, col2 = 50, 50
+        if "init_run_10" not in st.session_state:
+            st.session_state["init_run_10"] = False
+        if st.session_state["init_run_10"] == False:
+            init_session_num(st, ss, "10", col1, col2, conf["10"]["config_10"], None)
 
         if st.button("Salir", on_click=change_state_10, args=(st, placeholder)):
             logging.info("Salir and writing history")
 
-    try:
-        with placeholder.container():
+        try:
             _ = st.selectbox(
                 "Select type of document to add. Pericial or Prompt to extract Information from document 👇",
                 options,
@@ -84,15 +84,16 @@ def main(options, placeholder):
                 if st.session_state.select_box_add_10 == "Prompts":
                     # fname, fname2, df_prompts
                     visualiza_add_prompt(st, df_prompts, fname, num="10")
+
                 elif st.session_state.select_box_add_10 == "Periciales":
                     # pname, name2, df_pericial
                     visualiza_add_pericial(st, df_pericial, pname, secciones, num="10")
-    except:
-        st.session_state["salir_10"] = True
-        placeholder.empty()
-        text = print_stack()
-        text = "Menu 10 Add " + text
-        logging.error(text)
+        except:
+            st.session_state["salir_10"] = True
+            placeholder.empty()
+            text = print_stack()
+            text = "Menu 10 Add " + text
+            logging.error(text)
 
 
 if __name__ == "__main__":

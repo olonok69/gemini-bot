@@ -105,17 +105,18 @@ def main(options, placeholder):
         vectorstore: pinecone vectorstore
         placeholder: placeholder for the main page
     """
-    if st.button("Salir", on_click=change_state_11, args=(st, placeholder)):
-        logging.info("Salir and writing history")
-    col1, col2 = 50, 50
-    if "init_run_11" not in st.session_state:
-        st.session_state["init_run_11"] = False
-    if st.session_state["init_run_11"] == False:
-        init_session_num(st, ss, "11", col1, col2, conf["11"]["config_11"], None)
+    with placeholder.container():
+        if st.button("Salir", on_click=change_state_11, args=(st, placeholder)):
+            logging.info("Salir and writing history")
+        col1, col2 = 50, 50
+        if "init_run_11" not in st.session_state:
+            st.session_state["init_run_11"] = False
+        if st.session_state["init_run_11"] == False:
+            init_session_num(st, ss, "11", col1, col2, conf["11"]["config_11"], None)
 
-    try:
-        with placeholder.container():
-            selector1 = st.selectbox(
+        try:
+
+            _ = st.selectbox(
                 "Select type of document to delete. Pericial or Prompt 👇",
                 options,
                 index=None,
@@ -186,12 +187,12 @@ def main(options, placeholder):
                         visualiza_delete_answer_gemini_no_case(
                             st, df_answers_no_case, pname_no_case, num="11"
                         )
-    except:
-        st.session_state["salir_11"] = True
-        placeholder.empty()
-        text = print_stack()
-        text = "Menu 11 delete " + text
-        logging.error(text)
+        except:
+            st.session_state["salir_11"] = True
+            placeholder.empty()
+            text = print_stack()
+            text = "Menu 11 delete " + text
+            logging.error(text)
 
 
 if __name__ == "__main__":

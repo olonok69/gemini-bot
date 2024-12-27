@@ -60,14 +60,13 @@ def main(col1, col2, placeholder):
         col2 (int): size col 2
         placeholder (streamlit.empty): placeholder
     """
-
-    if "vcol1doc_21" in st.session_state and "vcol2doc_21" in st.session_state:
-        col1 = st.session_state["vcol1doc_21"]
-        col2 = st.session_state["vcol2doc_21"]
-    # Configure columns layout
-    row1_1, row1_2 = st.columns((col1, col2))
-    try:
-        with placeholder.container():
+    with placeholder.container():
+        if "vcol1doc_21" in st.session_state and "vcol2doc_21" in st.session_state:
+            col1 = st.session_state["vcol1doc_21"]
+            col2 = st.session_state["vcol2doc_21"]
+        # Configure columns layout
+        row1_1, row1_2 = st.columns((col1, col2))
+        try:
             # Initialize Vars
             if "init_run_21" not in st.session_state:
                 st.session_state["init_run_21"] = False
@@ -303,22 +302,10 @@ def main(col1, col2, placeholder):
                                 list2 = copy.deepcopy(
                                     st.session_state["user_prompt_history_21"]
                                 )
-                            # write chat in window
-                            if len(st.session_state["chat_answers_history_21"]) > 0:
-                                list1 = copy.deepcopy(
-                                    st.session_state["chat_answers_history_21"]
-                                )
-                                list2 = copy.deepcopy(
-                                    st.session_state["user_prompt_history_21"]
-                                )
 
                                 if len(st.session_state["chat_answers_history_21"]) > 1:
                                     list1.reverse()
-                                if len(st.session_state["chat_answers_history_21"]) > 1:
-                                    list1.reverse()
 
-                                if len(st.session_state["user_prompt_history_21"]) > 1:
-                                    list2.reverse()
                                 if len(st.session_state["user_prompt_history_21"]) > 1:
                                     list2.reverse()
 
@@ -327,14 +314,14 @@ def main(col1, col2, placeholder):
                                     message1.write(j)
                                     message2 = st.chat_message("assistant")
                                     message2.write(i)
-    except:
-        st.session_state["salir_21"] = True
-        # if exception log error to google for debugging purposes
-        placeholder.empty()
-        # get the sys stack and log to gcloud
-        text = print_stack()
-        text = "Gemini Page 21 " + text
-        logging.error(text)
+        except:
+            st.session_state["salir_21"] = True
+            # if exception log error to google for debugging purposes
+            placeholder.empty()
+            # get the sys stack and log to gcloud
+            text = print_stack()
+            text = "Gemini Page 21 " + text
+            logging.error(text)
     return
 
 

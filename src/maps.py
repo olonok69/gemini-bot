@@ -31,8 +31,9 @@ config = {
             "buttom_send_clicked_20",
             "buttom_resfresh_clicked_20",
             "salir_20",
-            "pdf_20",
+            "pdf_viewer_20",
             "chat_input_20",
+            "pdf_page_20",
         ],
         "config_20": [
             "user_prompt_history_20",
@@ -407,6 +408,7 @@ config = {
             "chat_history_33",
             "expander_33",
             "pdf_33",
+            "pdf_viewer_33",
         ],
         "config_33": [
             "vcol1doc_33",
@@ -449,7 +451,6 @@ def reset_session_num(session, num: int = "10"):
     return
 
 
-
 def init_session_num(sess, ss, num, col1, col2, config, model: None):
     """
     initialize session state
@@ -467,16 +468,9 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"user_prompt_history_{num}" not in sess.session_state
         and f"user_prompt_history_{num}" in config
     ):
-    if (
-        f"user_prompt_history_{num}" not in sess.session_state
-        and f"user_prompt_history_{num}" in config
-    ):
+
         sess.session_state[f"user_prompt_history_{num}"] = []
 
-    if (
-        f"user_prompt_history_faiss_{num}" not in sess.session_state
-        and f"user_prompt_history_faiss_{num}" in config
-    ):
     if (
         f"user_prompt_history_faiss_{num}" not in sess.session_state
         and f"user_prompt_history_faiss_{num}" in config
@@ -487,16 +481,8 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"chat_answers_history_faiss_{num}" not in sess.session_state
         and f"chat_answers_history_faiss_{num}" in config
     ):
-    if (
-        f"chat_answers_history_faiss_{num}" not in sess.session_state
-        and f"chat_answers_history_faiss_{num}" in config
-    ):
         sess.session_state[f"chat_answers_history_faiss_{num}"] = []
 
-    if (
-        f"chat_answers_history_{num}" not in sess.session_state
-        and f"chat_answers_history_{num}" in config
-    ):
     if (
         f"chat_answers_history_{num}" not in sess.session_state
         and f"chat_answers_history_{num}" in config
@@ -508,29 +494,20 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         and f"multi_file_name_{num}" in config
     ):
 
-    if (
-        f"multi_file_name_{num}" not in sess.session_state
-        and f"multi_file_name_{num}" in config
-    ):
         sess.session_state[f"multi_file_name_{num}"] = []
 
     if (
         f"multi_file_pages_{num}" not in sess.session_state
         and f"multi_file_pages_{num}" in config
     ):
-    if (
-        f"multi_file_pages_{num}" not in sess.session_state
-        and f"multi_file_pages_{num}" in config
-    ):
+
         sess.session_state[f"multi_file_pages_{num}"] = []
 
     if f"pages_{num}" not in sess.session_state and f"pages_{num}" in config:
         sess.session_state[f"pages_{num}"] = []
 
-
     if f"metadatas_{num}" not in sess.session_state and f"metadatas_{num}" in config:
         sess.session_state[f"metadatas_{num}"] = []
-
 
     if f"ids_{num}" not in sess.session_state and f"ids_{num}" in config:
         sess.session_state[f"ids_{num}"] = []
@@ -539,23 +516,14 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"chat_history_{num}" not in sess.session_state
         and f"chat_history_{num}" in config
     ):
-    if (
-        f"chat_history_{num}" not in sess.session_state
-        and f"chat_history_{num}" in config
-    ):
+
         sess.session_state[f"chat_history_{num}"] = []
 
     if (
         f"docs_context_names_{num}" not in sess.session_state
         and f"docs_context_names_{num}" in config
     ):
-
-    if (
-        f"docs_context_names_{num}" not in sess.session_state
-        and f"docs_context_names_{num}" in config
-    ):
         sess.session_state[f"docs_context_names_{num}"] = []
-
 
     if f"documents_{num}" not in sess.session_state and f"documents_{num}" in config:
         sess.session_state[f"documents_{num}"] = []
@@ -564,20 +532,14 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"docs_context_{num}" not in sess.session_state
         and f"docs_context_{num}" in config
     ):
-    if (
-        f"docs_context_{num}" not in sess.session_state
-        and f"docs_context_{num}" in config
-    ):
+
         sess.session_state[f"docs_context_{num}"] = []
 
     if (
         f"initialized_{num}" not in sess.session_state
         and f"initialized_{num}" in config
     ):
-    if (
-        f"initialized_{num}" not in sess.session_state
-        and f"initialized_{num}" in config
-    ):
+
         sess.session_state[f"initialized_{num}"] = "False"
 
     if f"chat_{num}" not in sess.session_state and f"chat_{num}" in config:
@@ -588,10 +550,6 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         and f"conversational_rag_chain_{num}" in config
     ):
 
-    if (
-        f"conversational_rag_chain_{num}" not in sess.session_state
-        and f"conversational_rag_chain_{num}" in config
-    ):
         sess.session_state[f"conversational_rag_chain_{num}"] = None
 
     if f"retriever_{num}" not in sess.session_state and f"retriever_{num}" in config:
@@ -607,10 +565,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"vectorstore_{num}" not in sess.session_state
         and f"vectorstore_{num}" in config
     ):
-    if (
-        f"vectorstore_{num}" not in sess.session_state
-        and f"vectorstore_{num}" in config
-    ):
+
         sess.session_state[f"vectorstore_{num}"] = None
 
     if f"index_{num}" not in sess.session_state and f"index_{num}" in config:
@@ -620,26 +575,15 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"list_images_{num}" not in sess.session_state
         and f"list_images_{num}" in config
     ):
-    if (
-        f"list_images_{num}" not in sess.session_state
-        and f"list_images_{num}" in config
-    ):
+
         sess.session_state[f"list_images_{num}"] = []
 
     if (
         f"user_prompt_history_{num}" not in sess.session_state
         and f"user_prompt_history_{num}" in config
     ):
-    if (
-        f"user_prompt_history_{num}" not in sess.session_state
-        and f"user_prompt_history_{num}" in config
-    ):
         sess.session_state[f"user_prompt_history_{num}"] = []
 
-    if (
-        f"chat_answers_history_{num}" not in sess.session_state
-        and f"chat_answers_history_{num}" in config
-    ):
     if (
         f"chat_answers_history_{num}" not in sess.session_state
         and f"chat_answers_history_{num}" in config
@@ -654,26 +598,13 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"file_history_{num}" not in sess.session_state
         and f"file_history_{num}" in config
     ):
-    if (
-        f"file_history_{num}" not in sess.session_state
-        and f"file_history_{num}" in config
-    ):
         sess.session_state[f"file_history_{num}"] = "no file"
 
     if (
         f"prompt_introduced_{num}" not in sess.session_state
         and f"prompt_introduced_{num}" in config
     ):
-    if (
-        f"prompt_introduced_{num}" not in sess.session_state
-        and f"prompt_introduced_{num}" in config
-    ):
         sess.session_state[f"prompt_introduced_{num}"] = ""
-
-    if (
-        f"name_file_kb_faiss_selected_{num}" not in sess.session_state
-        and f"name_file_kb_faiss_selected_{num}" in config
-    ):
 
     if (
         f"name_file_kb_faiss_selected_{num}" not in sess.session_state
@@ -685,17 +616,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"history_conversation_with_model_{num}" not in sess.session_state
         and f"history_conversation_with_model_{num}" in config
     ):
-
-    if (
-        f"history_conversation_with_model_{num}" not in sess.session_state
-        and f"history_conversation_with_model_{num}" in config
-    ):
         sess.session_state[f"history_conversation_with_model_{num}"] = ""
-
-    if (
-        f"current_prompt_{num}" not in sess.session_state
-        and f"current_prompt_{num}" in config
-    ):
 
     if (
         f"current_prompt_{num}" not in sess.session_state
@@ -707,17 +628,8 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"answer_prompt_{num}" not in sess.session_state
         and f"answer_prompt_{num}" in config
     ):
-
-    if (
-        f"answer_prompt_{num}" not in sess.session_state
-        and f"answer_prompt_{num}" in config
-    ):
         sess.session_state[f"answer_prompt_{num}"] = ""
 
-    if (
-        f"seccion_introduced_{num}" not in sess.session_state
-        and f"seccion_introduced_{num}" in config
-    ):
     if (
         f"seccion_introduced_{num}" not in sess.session_state
         and f"seccion_introduced_{num}" in config
@@ -728,22 +640,13 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"upload_state_{num}" not in sess.session_state
         and f"upload_state_{num}" in config
     ):
-    if (
-        f"upload_state_{num}" not in sess.session_state
-        and f"upload_state_{num}" in config
-    ):
         sess.session_state[f"upload_state_{num}"] = ""
 
     if (
         f"answer_introduced_{num}" not in sess.session_state
         and f"answer_introduced_{num}" in config
     ):
-    if (
-        f"answer_introduced_{num}" not in sess.session_state
-        and f"answer_introduced_{num}" in config
-    ):
         sess.session_state[f"answer_introduced_{num}"] = ""
-
 
     if f"answer_{num}" not in sess.session_state and f"answer_{num}" in config:
         sess.session_state[f"answer_{num}"] = ""
@@ -752,16 +655,8 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"prompt_combined_filename_{num}" not in sess.session_state
         and f"prompt_combined_filename_{num}" in config
     ):
-    if (
-        f"prompt_combined_filename_{num}" not in sess.session_state
-        and f"prompt_combined_filename_{num}" in config
-    ):
         sess.session_state[f"prompt_combined_filename_{num}"] = ""
 
-    if (
-        f"instruction_to_be_send_{num}" not in sess.session_state
-        and f"instruction_to_be_send_{num}" in config
-    ):
     if (
         f"instruction_to_be_send_{num}" not in sess.session_state
         and f"instruction_to_be_send_{num}" in config
@@ -778,16 +673,8 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"buttom_popup_{num}" not in sess.session_state
         and f"buttom_popup_{num}" in config
     ):
-    if (
-        f"buttom_popup_{num}" not in sess.session_state
-        and f"buttom_popup_{num}" in config
-    ):
         sess.session_state[f"buttom_popup_{num}"] = "no_buttom"
 
-    if (
-        f"buttom_has_send_{num}" not in sess.session_state
-        and f"buttom_has_send_{num}" in config
-    ):
     if (
         f"buttom_has_send_{num}" not in sess.session_state
         and f"buttom_has_send_{num}" in config
@@ -798,16 +685,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"buttom_send_clicked_{num}" not in sess.session_state
         and f"buttom_send_clicked_{num}" in config
     ):
-    if (
-        f"buttom_send_clicked_{num}" not in sess.session_state
-        and f"buttom_send_clicked_{num}" in config
-    ):
         sess.session_state[f"buttom_send_clicked_{num}"] = False
-
-    if (
-        f"selector_selected_pericial_{num}" not in sess.session_state
-        and f"selector_selected_pericial_{num}" in config
-    ):
 
     if (
         f"selector_selected_pericial_{num}" not in sess.session_state
@@ -819,17 +697,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"selector_selected_section_{num}" not in sess.session_state
         and f"selector_selected_section_{num}" in config
     ):
-
-    if (
-        f"selector_selected_section_{num}" not in sess.session_state
-        and f"selector_selected_section_{num}" in config
-    ):
         sess.session_state[f"selector_selected_section_{num}"] = False
-
-    if (
-        f"selector_selected_modifica_{num}" not in sess.session_state
-        and f"selector_selected_modifica_{num}" in config
-    ):
 
     if (
         f"selector_selected_modifica_{num}" not in sess.session_state
@@ -841,16 +709,8 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"selector_selected_section_delete_{num}" not in sess.session_state
         and f"selector_selected_section_delete_{num}" in config
     ):
-    if (
-        f"selector_selected_section_delete_{num}" not in sess.session_state
-        and f"selector_selected_section_delete_{num}" in config
-    ):
         sess.session_state[f"selector_selected_section_delete_{num}"] = False
 
-    if (
-        f"selector_selected_delete_{num}" not in sess.session_state
-        and f"selector_selected_delete_{num}" in config
-    ):
     if (
         f"selector_selected_delete_{num}" not in sess.session_state
         and f"selector_selected_delete_{num}" in config
@@ -861,16 +721,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"selector_selected_add_{num}" not in sess.session_state
         and f"selector_selected_add_{num}" in config
     ):
-    if (
-        f"selector_selected_add_{num}" not in sess.session_state
-        and f"selector_selected_add_{num}" in config
-    ):
         sess.session_state[f"selector_selected_add_{num}"] = False
-
-    if (
-        f"selector_selected_answer_delete_{num}" not in sess.session_state
-        and f"selector_selected_answer_delete_{num}" in config
-    ):
 
     if (
         f"selector_selected_answer_delete_{num}" not in sess.session_state
@@ -882,27 +733,13 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"selector_selected_answer_delete_no_case_{num}" not in sess.session_state
         and f"selector_selected_answer_delete_no_case_{num}" in config
     ):
-
-    if (
-        f"selector_selected_answer_delete_no_case_{num}" not in sess.session_state
-        and f"selector_selected_answer_delete_no_case_{num}" in config
-    ):
         sess.session_state[f"selector_selected_answer_delete_no_case_{num}"] = False
 
     if (
         f"add_file_kb_selected_{num}" not in sess.session_state
         and f"add_file_kb_selected_{num}" in config
     ):
-    if (
-        f"add_file_kb_selected_{num}" not in sess.session_state
-        and f"add_file_kb_selected_{num}" in config
-    ):
         sess.session_state[f"add_file_kb_selected_{num}"] = False
-
-    if (
-        f"file_faiss_selected_{num}" not in sess.session_state
-        and f"file_faiss_selected_{num}" in config
-    ):
 
     if (
         f"file_faiss_selected_{num}" not in sess.session_state
@@ -914,10 +751,6 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"selector_selected_pericial_delete_{num}" not in sess.session_state
         and f"selector_selected_pericial_delete_{num}" in config
     ):
-    if (
-        f"selector_selected_pericial_delete_{num}" not in sess.session_state
-        and f"selector_selected_pericial_delete_{num}" in config
-    ):
         sess.session_state[f"selector_selected_pericial_delete_{num}"] = False
 
     if (
@@ -925,19 +758,11 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         and f"buttom_visualiza_faiss_clicked_{num}" in config
     ):
 
-    if (
-        f"buttom_visualiza_faiss_clicked_{num}" not in sess.session_state
-        and f"buttom_visualiza_faiss_clicked_{num}" in config
-    ):
         sess.session_state[f"buttom_visualiza_faiss_clicked_{num}"] = False
 
     if f"checkbox_{num}" not in sess.session_state and f"checkbox_{num}" in config:
         sess.session_state[f"checkbox_{num}"] = False
 
-    if (
-        f"file_kb_faiss_selected_{num}" not in sess.session_state
-        and f"file_kb_faiss_selected_{num}" in config
-    ):
     if (
         f"file_kb_faiss_selected_{num}" not in sess.session_state
         and f"file_kb_faiss_selected_{num}" in config
@@ -948,16 +773,8 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"buttom_send_visualiza_{num}" not in sess.session_state
         and f"buttom_send_visualiza_{num}" in config
     ):
-    if (
-        f"buttom_send_visualiza_{num}" not in sess.session_state
-        and f"buttom_send_visualiza_{num}" in config
-    ):
         sess.session_state[f"buttom_send_visualiza_{num}"] = False
 
-    if (
-        f"file_prompt_selected_visualiza_{num}" not in sess.session_state
-        and f"file_prompt_selected_visualiza_{num}" in config
-    ):
     if (
         f"file_prompt_selected_visualiza_{num}" not in sess.session_state
         and f"file_prompt_selected_visualiza_{num}" in config
@@ -968,16 +785,8 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"file_and_answer_select_has_changed_{num}" not in sess.session_state
         and f"file_and_answer_select_has_changed_{num}" in config
     ):
-    if (
-        f"file_and_answer_select_has_changed_{num}" not in sess.session_state
-        and f"file_and_answer_select_has_changed_{num}" in config
-    ):
         sess.session_state[f"file_and_answer_select_has_changed_{num}"] = False
 
-    if (
-        f"section_prompt_selected_{num}" not in sess.session_state
-        and f"section_prompt_selected_{num}" in config
-    ):
     if (
         f"section_prompt_selected_{num}" not in sess.session_state
         and f"section_prompt_selected_{num}" in config
@@ -988,16 +797,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"pericial_prompt_selected_{num}" not in sess.session_state
         and f"pericial_prompt_selected_{num}" in config
     ):
-    if (
-        f"pericial_prompt_selected_{num}" not in sess.session_state
-        and f"pericial_prompt_selected_{num}" in config
-    ):
         sess.session_state[f"pericial_prompt_selected_{num}"] = False
-
-    if (
-        f"buttom_resfresh_clicked_{num}" not in sess.session_state
-        and f"buttom_resfresh_clicked_{num}" in config
-    ):
 
     if (
         f"buttom_resfresh_clicked_{num}" not in sess.session_state
@@ -1009,12 +809,7 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"b_accept_inside_pericial_{num}" not in sess.session_state
         and f"b_accept_inside_pericial_{num}" in config
     ):
-    if (
-        f"b_accept_inside_pericial_{num}" not in sess.session_state
-        and f"b_accept_inside_pericial_{num}" in config
-    ):
         sess.session_state[f"b_accept_inside_pericial_{num}"] = False
-
 
     if f"store_{num}" not in sess.session_state and f"store_{num}" in config:
         sess.session_state[f"store_{num}"] = {}
@@ -1033,20 +828,14 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         f"buttom_send_not_clicked_{num}" not in sess.session_state
         and f"buttom_send_not_clicked_{num}" in config
     ):
-    if (
-        f"buttom_send_not_clicked_{num}" not in sess.session_state
-        and f"buttom_send_not_clicked_{num}" in config
-    ):
+
         sess.session_state[f"buttom_send_not_clicked_{num}"] = False
 
     if (
         f"file_prompt_selected_{num}" not in sess.session_state
         and f"file_prompt_selected_{num}" in config
     ):
-    if (
-        f"file_prompt_selected_{num}" not in sess.session_state
-        and f"file_prompt_selected_{num}" in config
-    ):
+
         sess.session_state[f"file_prompt_selected_{num}"] = False
 
     if f"vcol1doc_{num}" not in sess.session_state and f"vcol1doc_{num}" in config:
@@ -1059,4 +848,3 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         sess.session_state[f"expander_{num}"] = True
     sess.session_state[f"init_run_{num}"] = True
     return
-

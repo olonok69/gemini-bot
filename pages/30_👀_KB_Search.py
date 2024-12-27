@@ -117,11 +117,7 @@ def change_state_30(session, pp):
     pp (streamlit.empty): placeholder
 
     """
-    reset_session_num(session,"30")
-    pp.empty()
-    del pp
-    session.empty()
-    session.stop()
+    reset_session_num(session, "30")
     pp.empty()
     del pp
     session.empty()
@@ -141,9 +137,9 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
         df ([type]): dataframe  final aswers
         placeholder ([type]): conatiner to reset
     """
+    with placeholder.container():
+        try:
 
-    try:
-        with placeholder.container():
             # get config
             row1_1, row1_2 = st.columns((col1, col2))
 
@@ -202,7 +198,7 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
                                 st.session_state["retriever_30"] = st.session_state[
                                     "vectorstore_30"
                                 ].as_retriever(
-                                    search_kwargs={"k": 3},
+                                    search_kwargs={"k": 5},
                                     filter={
                                         "filename": str(
                                             st.session_state["select_file_faiss_30"]
@@ -213,7 +209,7 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
                                 st.session_state["retriever_30"] = st.session_state[
                                     "vectorstore_30"
                                 ].as_retriever(
-                                    search_kwargs={"k": 3},
+                                    search_kwargs={"k": 5},
                                 )
                             # keep status in memory
 
@@ -225,19 +221,6 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
                                 st.session_state["select_file_faiss_30"]
                             )
 
-                        # create runnable with message history
-                        if st.session_state["conversational_rag_chain_30"] == None:
-                            conversational_rag_chain = create_conversational_rag_chain(
-                                llm=st.session_state["llm_30"],
-                                retriever=st.session_state["retriever_30"],
-                                contex_q_prompt=contextualize_q_prompt,
-                                qaprompt=qa_prompt,
-                                store=st.session_state["store_30"],
-                            )
-                        else:
-                            conversational_rag_chain = st.session_state[
-                                "conversational_rag_chain_30"
-                            ]
                         # create runnable with message history
                         if st.session_state["conversational_rag_chain_30"] == None:
                             conversational_rag_chain = create_conversational_rag_chain(
@@ -298,42 +281,12 @@ def main(col1, col2, onlyfiles, fname, df, placeholder):
                                         # create text to post in text area
                                         textvalue = sumup_history(st, num="30")
                                         st.session_state["answer_prompt_30"] = textvalue
-                                    with st.expander(
-                                        "Conversation with model 👇",
-                                        expanded=st.session_state["expander_30"],
-                                    ):
-                                        # create text to post in text area
-                                        textvalue = sumup_history(st, num="30")
-                                        st.session_state["answer_prompt_30"] = textvalue
 
                                         if len(result["chat_history"]) > 1:
                                             st.session_state[
                                                 "history_conversation_with_model_30"
                                             ] = result["chat_history"]
-                                        if len(result["chat_history"]) > 1:
-                                            st.session_state[
-                                                "history_conversation_with_model_30"
-                                            ] = result["chat_history"]
 
-                                        upload_state = st.text_area(
-                                            "Status selection",
-                                            value=st.session_state["answer_prompt_30"],
-                                            key="text_30",
-                                            height=600,
-                                        )
-                                        if (
-                                            st.button(
-                                                "Visualiza Documents Context Use",
-                                                key="buttom_visualiza_faiss_30",
-                                            )
-                                            or st.session_state[
-                                                "buttom_visualiza_faiss_clicked_30"
-                                            ]
-                                            == True
-                                        ):
-                                            st.session_state[
-                                                "buttom_visualiza_faiss_clicked_30"
-                                            ] = True
                                         upload_state = st.text_area(
                                             "Status selection",
                                             value=st.session_state["answer_prompt_30"],

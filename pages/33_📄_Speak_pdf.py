@@ -130,7 +130,7 @@ def main(
                                 input=binary_data,
                                 width=width,
                                 height=400,
-                                key="pdf_viewer",
+                                key="pdf_viewer_33",
                             )
                     if st.button("Parse pdf"):
                         if st.session_state["vectorstore_33"] == None:

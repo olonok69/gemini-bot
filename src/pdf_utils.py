@@ -6,10 +6,9 @@ from typing import List
 import pymupdf4llm
 from langchain_community.document_loaders import PyMuPDFLoader
 
+import logging
 
-def extract_pdf_images(
-    pdf_path, numpages, list_pages, st, file="", num=10, multi=False
-):
+
 def extract_pdf_images(
     pdf_path, numpages, list_pages, st, file="", num=10, multi=False
 ):
@@ -96,7 +95,6 @@ def upload(list_pages, numpages, st, num: 10):
     if len(st.session_state[f"list_images_{num}"]) == 0:
         list_images, size_files = extract_pdf_images(
             complete_name, numpages, list_pages, st, complete_name, num=num, multi=False
-            complete_name, numpages, list_pages, st, complete_name, num=num, multi=False
         )
         st.session_state[f"list_images_{num}"] = list_images
         if list_pages == "all":
@@ -122,7 +120,6 @@ def upload(list_pages, numpages, st, num: 10):
     return
 
 
-def upload_files(st, num: int = 10):
 def upload_files(st, num: int = 10):
     """
     upload pdfs file in bytes
