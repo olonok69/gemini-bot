@@ -81,7 +81,7 @@ def change_state_32(session, pp):
     placeholder (streamlit.empty): placeholder
 
     """
-     reset_session_num(session,"32")
+    reset_session_num(session, "32")
     pp.empty()
     del pp
     session.empty()
