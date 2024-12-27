@@ -1,5 +1,12 @@
 from .src.pdf_utils import extract_pdf_images, count_pdf_pages, upload, upload_files
-from .src.work_gemini import get_chat_response, prepare_prompt, start_chat, init_model, init_llm, init_google_embeddings
+from .src.work_gemini import (
+    get_chat_response,
+    prepare_prompt,
+    start_chat,
+    init_model,
+    init_llm,
+    init_google_embeddings,
+)
 from .src.helpers import (
     write_history_1,
     reset_session_1,
@@ -102,3 +109,4 @@ from .kb.utils import (
 )
 
 from .src.maps import config, init_session_num, reset_session_num
+from .src.vector import add_documents_vector_store

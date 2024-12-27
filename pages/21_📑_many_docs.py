@@ -25,13 +25,14 @@ path = Path(ROOT_DIR)
 PROJECT_DIR = path.parent.absolute().as_posix()
 logging.info(f"PROJECT DIR: {PROJECT_DIR}, this folder: {ROOT_DIR}")
 # Create folders
-OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(PROJECT_DIR)
+OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(
+    PROJECT_DIR
+)
 # open table with all prompts
 pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
 pname_no_case, pname2_no_case, df_answers_no_case = open_table_answers_no_case(
     ANSWERS_DIR
 )
-
 
 
 def change_state_21(session, pp):
@@ -42,14 +43,15 @@ def change_state_21(session, pp):
     pp (streamlit.empty): placeholder
 
     """
-    reset_session_num(session,"21")
+    reset_session_num(session, "21")
     pp.empty()
     del pp
     session.empty()
     session.stop()
     return
 
-def main( col1, col2, placeholder):
+
+def main(col1, col2, placeholder):
     """
     main loop. Get Model
     Args:
@@ -58,18 +60,21 @@ def main( col1, col2, placeholder):
         col2 (int): size col 2
         placeholder (streamlit.empty): placeholder
     """
-    with placeholder.container():
-        if "vcol1doc_21" in st.session_state and "vcol2doc_21" in st.session_state:
-            col1 = st.session_state["vcol1doc_21"]
-            col2 = st.session_state["vcol2doc_21"]
-        # Configure columns layout
-        row1_1, row1_2 = st.columns((col1, col2))
-        try:
+
+    if "vcol1doc_21" in st.session_state and "vcol2doc_21" in st.session_state:
+        col1 = st.session_state["vcol1doc_21"]
+        col2 = st.session_state["vcol2doc_21"]
+    # Configure columns layout
+    row1_1, row1_2 = st.columns((col1, col2))
+    try:
+        with placeholder.container():
             # Initialize Vars
             if "init_run_21" not in st.session_state:
                 st.session_state["init_run_21"] = False
             if st.session_state["init_run_21"] == False:
-                init_session_num(st, ss, "21", col1, col2, conf["21"]["config_21"], None)
+                init_session_num(
+                    st, ss, "21", col1, col2, conf["21"]["config_21"], None
+                )
             # Col 1 Upload file and write prompt
             with row1_1:
                 # if salir kill placeholder
@@ -77,11 +82,11 @@ def main( col1, col2, placeholder):
                     logging.info("Salir and writing history")
 
                 # Access the uploaded ref via a key.
-                if st.session_state['value_21'] >= 0:
+                if st.session_state["value_21"] >= 0:
                     uploaded_files = st.file_uploader(
                         "Upload PDF file",
                         type=("pdf"),
-                        key="pdf",
+                        key="pdf_21",
                         accept_multiple_files=True,
                         disabled=st.session_state["buttom_send_not_clicked_21"],
                     )  # accept_multiple_files=True,
@@ -103,7 +108,7 @@ def main( col1, col2, placeholder):
                                 st.session_state["multi_file_pages_21"].append(
                                     count_pdf_pages(file_path)
                                 )
-                            if ss.pdf:
+                            if ss.pdf_21:
                                 ss.pdf_ref_21 = im_bytes
 
                         texto = ""
@@ -116,17 +121,17 @@ def main( col1, col2, placeholder):
                         st.session_state["upload_state_21"] = (
                             f"Number of files uploaded {len(st.session_state['multi_file_name_21'])}\n{texto}"
                         )
-                    st.session_state['value_21'] = 1  # file uploaded
+                    st.session_state["value_21"] = 1  # file uploaded
 
             # Now you can access "pdf_ref" anywhere in your app.
             if ss.pdf_ref_21:
                 with row1_1:
-                    if st.session_state['value_21'] >= 1:
+                    if st.session_state["value_21"] >= 1:
                         # if file uploaded
                         if len(
                             st.session_state["multi_file_name_21"]
-                        ) > 0 and st.session_state['value_21'] in [1, 2, 3]:
-                            st.session_state['value_21'] = 2
+                        ) > 0 and st.session_state["value_21"] in [1, 2, 3]:
+                            st.session_state["value_21"] = 2
                             introduce_prompt = st.text_input(
                                 "Introduce instruccion a mandar a gemini 👇",
                                 key="introduce_prompt_21",
@@ -139,7 +144,10 @@ def main( col1, col2, placeholder):
                             else:
                                 st.session_state["case_query_21"] = False
                             # placeholder=f"Extraer fechas, nombre y apellidos de todos los {len(st.session_state['multi_file_name'])} ficheros",
-                            if introduce_prompt and st.session_state['value_21'] in [2, 3]:
+                            if introduce_prompt and st.session_state["value_21"] in [
+                                2,
+                                3,
+                            ]:
                                 # print(st.session_state["case_query"])
                                 logging.info(
                                     f"Gemini multi Page: Intruccion introduced, session state {st.session_state['value_21']}"
@@ -149,14 +157,18 @@ def main( col1, col2, placeholder):
                                 st.session_state["upload_state_21"] = (
                                     f"Instruccion introducida\n{introduce_prompt}"
                                 )
-                                st.session_state["prompt_introduced_21"] = introduce_prompt
+                                st.session_state["prompt_introduced_21"] = (
+                                    introduce_prompt
+                                )
                                 # send not clicked but send file and initial prompt to Gemini
                                 if (
-                                    st.session_state["buttom_send_not_clicked_21"] == True
-                                    and st.session_state["chat_true_21"] == "chat activo"
+                                    st.session_state["buttom_send_not_clicked_21"]
+                                    == True
+                                    and st.session_state["chat_true_21"]
+                                    == "chat activo"
                                 ):
                                     # chat active session 5
-                                    st.session_state['value_21'] = 5
+                                    st.session_state["value_21"] = 5
                                     col1 = 1
                                     col2 = 4
                                     st.session_state["vcol1doc_21"] = 1
@@ -181,7 +193,7 @@ def main( col1, col2, placeholder):
                             "Status selection", "", key="upload_state_21", height=130
                         )
                     # Dedice when to show butten send instruction
-                    if st.session_state['value_21'] == 3 and introduce_prompt:
+                    if st.session_state["value_21"] == 3 and introduce_prompt:
                         if st.button(
                             "Send Promt to Gemini",
                             on_click=prepare_prompt,
@@ -199,7 +211,7 @@ def main( col1, col2, placeholder):
                             logging.info("Page 21 after_click_buttom_send")
                             st.session_state["chat_true_21"] = "chat activo"
                             st.session_state["buttom_has_send_21"] = "buttom_Send"
-                            st.session_state['value_21'] = 5
+                            st.session_state["value_21"] = 5
                             st.session_state["buttom_send_not_clicked_21"] = True
                             col1 = 1
                             col2 = 4
@@ -214,7 +226,9 @@ def main( col1, col2, placeholder):
                         st.session_state["chat_true_21"] = "chat activo"
                         # chat object to speak with Gemini
                         prompt = st.chat_input(
-                            "Enter your questions here", disabled=not input
+                            "Enter your questions here",
+                            disabled=not input,
+                            key="chat_input_21",
                         )
 
                         # first send to google is what we introduce in the input text
@@ -224,7 +238,9 @@ def main( col1, col2, placeholder):
                             )
                             # reload page and delete temp files
                             if st.session_state["case_query_21"] == True:
-                                reload_page_many_docs(st, ss,  df_answers, pname, placeholder, num="21")
+                                reload_page_many_docs(
+                                    st, ss, df_answers, pname, placeholder, num="21"
+                                )
                             else:
                                 reload_page_many_docs(
                                     st,
@@ -240,9 +256,12 @@ def main( col1, col2, placeholder):
                             if st.session_state["initialized_21"] == "False":
                                 # in first prompt we send the document and the prompt introduced manually
                                 response = get_chat_response(
-                                    st.session_state["llm_21"], st.session_state["prompt_21"]
+                                    st.session_state["llm_21"],
+                                    st.session_state["prompt_21"],
                                 )
-                                st.session_state["chat_answers_history_21"].append(response)
+                                st.session_state["chat_answers_history_21"].append(
+                                    response
+                                )
                                 st.session_state["user_prompt_history_21"].append(
                                     st.session_state["prompt_introduced_21"]
                                 )
@@ -264,8 +283,12 @@ def main( col1, col2, placeholder):
                                     st.session_state["llm_21"], prompt1
                                 )
                                 # actualiza buffer chat
-                                st.session_state["chat_answers_history_21"].append(response)
-                                st.session_state["user_prompt_history_21"].append(prompt1[0])
+                                st.session_state["chat_answers_history_21"].append(
+                                    response
+                                )
+                                st.session_state["user_prompt_history_21"].append(
+                                    prompt1[0]
+                                )
                                 st.session_state["chat_history_21"].append(
                                     (prompt1[0], response)
                                 )
@@ -280,10 +303,22 @@ def main( col1, col2, placeholder):
                                 list2 = copy.deepcopy(
                                     st.session_state["user_prompt_history_21"]
                                 )
+                            # write chat in window
+                            if len(st.session_state["chat_answers_history_21"]) > 0:
+                                list1 = copy.deepcopy(
+                                    st.session_state["chat_answers_history_21"]
+                                )
+                                list2 = copy.deepcopy(
+                                    st.session_state["user_prompt_history_21"]
+                                )
 
                                 if len(st.session_state["chat_answers_history_21"]) > 1:
                                     list1.reverse()
+                                if len(st.session_state["chat_answers_history_21"]) > 1:
+                                    list1.reverse()
 
+                                if len(st.session_state["user_prompt_history_21"]) > 1:
+                                    list2.reverse()
                                 if len(st.session_state["user_prompt_history_21"]) > 1:
                                     list2.reverse()
 
@@ -292,44 +327,51 @@ def main( col1, col2, placeholder):
                                     message1.write(j)
                                     message2 = st.chat_message("assistant")
                                     message2.write(i)
-        except:
-            st.session_state["salir_21"] = True
-            # if exception log error to google for debugging purposes
-            placeholder.empty()
-            # get the sys stack and log to gcloud
-            text = print_stack()
-            text = "Gemini Page 21 " + text
-            logging.error(text)
-        return
+    except:
+        st.session_state["salir_21"] = True
+        # if exception log error to google for debugging purposes
+        placeholder.empty()
+        # get the sys stack and log to gcloud
+        text = print_stack()
+        text = "Gemini Page 21 " + text
+        logging.error(text)
+    return
 
 
 if __name__ == "__main__":
     # setup environtment
     global col1, col2
     st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-   # access to keys and service account
+    # access to keys and service account
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     path = Path(ROOT_DIR)
     PROJECT_DIR = path.parent.absolute().as_posix()
-    #go to login page if not authenticated
-    if st.session_state["authentication_status"] == None or st.session_state["authentication_status"] == False:
+    # go to login page if not authenticated
+    if (
+        st.session_state["authentication_status"] == None
+        or st.session_state["authentication_status"] == False
+    ):
         st.session_state.runpage = "main.py"
         st.switch_page("main.py")
 
     if "salir_21" not in st.session_state:
-        st.session_state["salir_21"] = False  
+        st.session_state["salir_21"] = False
 
-    if st.session_state["salir_21"] == False:  
+    if st.session_state["salir_21"] == False:
         placeholder_21 = st.empty()
         with placeholder_21.container():
             col1, col2 = 2, 3
             config = dotenv_values(os.path.join(PROJECT_DIR, "keys", ".env"))
             with open(
-                os.path.join(PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json")
+                os.path.join(
+                    PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json"
+                )
             ) as source:
                 info = json.load(source)
 
-            vertex_credentials = service_account.Credentials.from_service_account_info(info)
+            vertex_credentials = service_account.Credentials.from_service_account_info(
+                info
+            )
             # Disable Gcloud logging
             # client = create_client_logging(vertex_credentials=vertex_credentials)
 
@@ -345,12 +387,13 @@ if __name__ == "__main__":
                 credentials=vertex_credentials,
             )
             if "llm_21" not in st.session_state:
-                st.session_state["llm_21"]  = init_model(config)
-                st.session_state["llm_21"] = st.session_state["llm_21"].start_chat(response_validation=False)
-                
+                st.session_state["llm_21"] = init_model(config)
+                st.session_state["llm_21"] = st.session_state["llm_21"].start_chat(
+                    response_validation=False
+                )
+
             logging.info(f"Model loaded: {config.get('MODEL')}")
             main(
-
                 col1=col1,
                 col2=col2,
                 placeholder=placeholder_21,

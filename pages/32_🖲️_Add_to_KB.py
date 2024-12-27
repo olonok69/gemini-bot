@@ -37,7 +37,9 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 path = Path(ROOT_DIR)
 PROJECT_DIR = path.parent.absolute().as_posix()
 # Create folders
-OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(PROJECT_DIR)
+OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(
+    PROJECT_DIR
+)
 
 secciones = ["legal", "medicine", "engineering", "science", "procedures", "other"]
 
@@ -70,6 +72,7 @@ def reload_add_doc_kb(st, ss, placeholder):
 def selected_seccion_add_kb(st, num: int):
     st.session_state[f"add_file_kb_selected_{num}"] = True
 
+
 def change_state_32(session, pp):
     """
     change state after leave conversation
@@ -78,14 +81,15 @@ def change_state_32(session, pp):
     pp (streamlit.empty): placeholder
 
     """
-    reset_session_num(session,"32")
+    reset_session_num(session, "32")
     pp.empty()
     del pp
     session.empty()
     session.stop()
     return
 
-def main( path_faiss, placeholder):
+
+def main(path_faiss, placeholder):
     """
     main loop
     params:
@@ -93,25 +97,31 @@ def main( path_faiss, placeholder):
     path_faiss (str): path to faiss file
     placeholder (streamlit.empty): placeholder
     """
-    with placeholder.container():
-        try:
+
+    try:
+        with placeholder.container():
             # Initialize Vars
             # Initialice state
             if "init_run_32" not in st.session_state:
                 st.session_state["init_run_32"] = False
             if st.session_state["init_run_32"] == False:
-                init_session_num(st, ss, "32", col1, col2, conf["32"]["config_32"], None)
+                init_session_num(
+                    st, ss, "32", col1, col2, conf["32"]["config_32"], None
+                )
 
+            # if you press salir any time you close the conainer
+            if st.button("Salir", on_click=change_state_32, args=(st, placeholder)):
+                logging.info("Salir and writing history")
             # if you press salir any time you close the conainer
             if st.button("Salir", on_click=change_state_32, args=(st, placeholder)):
                 logging.info("Salir and writing history")
 
             # Access the uploaded ref via a key.
-            if st.session_state['value_32'] >= 0:
+            if st.session_state["value_32"] >= 0:
                 uploaded_files = st.file_uploader(
                     "Upload PDF file",
                     type=("pdf"),
-                    key="pdf",
+                    key="pdf_32",
                     accept_multiple_files=False,
                 )  # accept_multiple_files=True,
                 if uploaded_files:
@@ -123,7 +133,7 @@ def main( path_faiss, placeholder):
                     with open(file_path, "wb") as f:
                         f.write(im_bytes)
                         f.close()
-                    if ss.pdf:
+                    if ss.pdf_32:
                         ss.pdf_ref_32 = im_bytes
                     numpages = count_pdf_pages(file_path)
                     st.session_state[f"file_name_32"] = file_path
@@ -131,14 +141,27 @@ def main( path_faiss, placeholder):
                     st.session_state[f"upload_state_32"] = (
                         f"Numero de paginas del fichero {uploaded_files.name} : {numpages}"
                     )
-                st.session_state['value_32'] = 1  # file uploaded
+                st.session_state["value_32"] = 1  # file uploaded
 
             # Now you can access "pdf_ref" anywhere in your app.
             if ss.pdf_ref_32:
+            # Now you can access "pdf_ref" anywhere in your app.
+            if ss.pdf_ref_32:
 
-                if st.session_state['value_32'] >= 1:
+                if st.session_state["value_32"] >= 1:
                     binary_data = ss.pdf_ref_32
 
+                    pdf_viewer(input=binary_data, width=700, height=300)
+                    # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
+                    _ = st.selectbox(
+                        "Choose category 👇",
+                        key="selectbox_category_32",
+                        index=None,
+                        options=secciones,
+                        on_change=selected_seccion_add_kb,
+                        args=[st, "32"],
+                    )
+                    if st.session_state[f"add_file_kb_selected_32"]:
                     pdf_viewer(input=binary_data, width=700, height=300)
                     # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
                     _ = st.selectbox(
@@ -158,10 +181,12 @@ def main( path_faiss, placeholder):
                             )
                             pages = st.session_state["pages_32"]
                             #  get embeddings, ids and text to add to vectorestore
-                            documents, ids, metadatas = get_docs_to_add_vectorstore_faiss(
-                                pages=pages,
-                                file=st.session_state["file_history_32"],
-                                category=st.session_state["selectbox_category_32"],
+                            documents, ids, metadatas = (
+                                get_docs_to_add_vectorstore_faiss(
+                                    pages=pages,
+                                    file=st.session_state["file_history_32"],
+                                    category=st.session_state["selectbox_category_32"],
+                                )
                             )
                             st.session_state["documents_32"] = documents
                             st.session_state["ids_32"] = ids
@@ -186,7 +211,9 @@ def main( path_faiss, placeholder):
                             logging.info(
                                 f"Vectorstore length before: {vector_store_length_before}"
                             )
-                            logging.info(f"Vectorstore length after: {vector_store_length_after}")
+                            logging.info(
+                                f"Vectorstore length after: {vector_store_length_after}"
+                            )
                             logging.info(f"Number of documents added: {num_documents}")
                             # if length after add = length before + len documents then seraialize database again
                             if (
@@ -201,7 +228,9 @@ def main( path_faiss, placeholder):
                                     + "\n"
                                     + f"Length vector Store {vector_store_length_after}"
                                 )
-                                st.text_area("Status adding to Knowledge Base", value=texto)
+                                st.text_area(
+                                    "Status adding to Knowledge Base", value=texto
+                                )
                                 time.sleep(15)
                             else:
                                 st.error("Error adding documents to vectorstore")
@@ -222,18 +251,23 @@ if __name__ == "__main__":
     path = Path(ROOT_DIR)
     PROJECT_DIR = path.parent.absolute()
     DOCS_DIR = os.path.join(PROJECT_DIR, "kb", "docs")
-    logging.info(f"PROJECT DIR: {PROJECT_DIR}, this folder: {ROOT_DIR}, Documents folder: {DOCS_DIR}")
+    logging.info(
+        f"PROJECT DIR: {PROJECT_DIR}, this folder: {ROOT_DIR}, Documents folder: {DOCS_DIR}"
+    )
 
     # set layout
     st.set_page_config(layout="centered", initial_sidebar_state="collapsed")
-    if st.session_state["authentication_status"] == None or st.session_state["authentication_status"] == False:
+    if (
+        st.session_state["authentication_status"] == None
+        or st.session_state["authentication_status"] == False
+    ):
         st.session_state.runpage = "main.py"
         st.switch_page("main.py")
 
     if "salir_32" not in st.session_state:
-        st.session_state["salir_32"] = False  
+        st.session_state["salir_32"] = False
 
-    if st.session_state["salir_32"] == False:  
+    if st.session_state["salir_32"] == False:
         placeholder_32 = st.empty()
         global col1, col2
         with placeholder_32.container():
@@ -242,10 +276,14 @@ if __name__ == "__main__":
             # config Session
             config = dotenv_values(os.path.join(PROJECT_DIR, "keys", ".env"))
             with open(
-                os.path.join(PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json")
+                os.path.join(
+                    PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json"
+                )
             ) as source:
                 info = json.load(source)
-            vertex_credentials = service_account.Credentials.from_service_account_info(info)
+            vertex_credentials = service_account.Credentials.from_service_account_info(
+                info
+            )
             vertexai.init(
                 project=config["PROJECT"],
                 location=config["REGION"],
@@ -257,14 +295,20 @@ if __name__ == "__main__":
 
             # get gemini model
             if "llm_32" not in st.session_state:
-                st.session_state["llm_32"]  = init_llm(model=config.get('MODEL'), credentials=vertex_credentials) 
+                st.session_state["llm_32"] = init_llm(
+                    model=config.get("MODEL"), credentials=vertex_credentials
+                )
                 logging.info(f"Model loaded: {config.get('MODEL')}")
             # get embeddings model
             if "embeddings_32" not in st.session_state:
-                st.session_state["embeddings_32"] = init_google_embeddings(config=config, credentials=vertex_credentials, google_api_key=google_api_key)
+                st.session_state["embeddings_32"] = init_google_embeddings(
+                    config=config,
+                    credentials=vertex_credentials,
+                    google_api_key=google_api_key,
+                )
                 logging.info(f"Embeddings loaded: {config.get('EMBEDDINGS2')}")
             # Vectorstore
-            path_faiss = os.path.join(PROJECT_DIR, "kb","faiss")
+            path_faiss = os.path.join(PROJECT_DIR, "kb", "faiss")
             if "vectorstore_32" not in st.session_state:
 
                 st.session_state["vectorstore_32"] = FAISS.load_local(
@@ -273,7 +317,9 @@ if __name__ == "__main__":
                     index_name="forensic",
                     allow_dangerous_deserialization=True,
                 )
-                logging.info(f"Gemini Page 32: Embeddings {config.get('EMBEDDINGS2')} and Vector Store faiss loaded from {path_faiss}")
+                logging.info(
+                    f"Gemini Page 32: Embeddings {config.get('EMBEDDINGS2')} and Vector Store faiss loaded from {path_faiss}"
+                )
             # Initialize
 
             main(
