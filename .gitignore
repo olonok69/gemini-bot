@@ -23,3 +23,4 @@ config.yaml
 archive/hasher.py
 .vscode/
 archive/login/
+logs/
