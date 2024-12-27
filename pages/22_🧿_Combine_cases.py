@@ -69,7 +69,7 @@ def change_state_22(session, pp):
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
     reset_session_num(session, "22")
@@ -92,16 +92,16 @@ def main(col1, col2, placeholder):
         param col2: column 2
         param placeholder: placeholder
     """
+    with placeholder.container():
+        if "vcol1doc_22" in st.session_state and "vcol2doc_22" in st.session_state:
+            col1 = st.session_state["vcol1doc_22"]
+            col2 = st.session_state["vcol2doc_22"]
 
-    if "vcol1doc_22" in st.session_state and "vcol2doc_22" in st.session_state:
-        col1 = st.session_state["vcol1doc_22"]
-        col2 = st.session_state["vcol2doc_22"]
-
-    row1_1, row1_2 = st.columns((col1, col2))
-    # Initialice state
-    if "init_run_22" not in st.session_state:
-        st.session_state["init_run_22"] = False
-    if st.session_state["init_run_22"] == False:
+        row1_1, row1_2 = st.columns((col1, col2))
+        # Initialice state
+        if "init_run_22" not in st.session_state:
+            st.session_state["init_run_22"] = False
+        if st.session_state["init_run_22"] == False:
 
         init_session_num(st, ss, "22", col1, col2, conf["22"]["config_22"], None)
     try:
@@ -123,6 +123,18 @@ def main(col1, col2, placeholder):
                         st=st, selection_dict=selection_dict, num="22"
                     )
 
+                elif (
+                    st.session_state["file_and_answer_select_has_changed_22"] == True
+                    and st.session_state["file_prompt_selected_visualiza_22"] == True
+                    and st.session_state["chat_true_22"] == "no_chat"
+                ):
+                    title = st.text_area(
+                        "Introduce texto a Buscar Pericial separa con una # y dame el numero de documentos a buscar 👇",
+                        height=100,
+                        key="search_pericial_22",
+                        placeholder="Ejemplo: texto a buscar aqui y no puede haber este caracter--># 10",
+                        disabled=st.session_state["buttom_send_visualiza_22"],
+                    )
                 elif (
                     st.session_state["file_and_answer_select_has_changed_22"] == True
                     and st.session_state["file_prompt_selected_visualiza_22"] == True
@@ -213,6 +225,15 @@ def main(col1, col2, placeholder):
                                         file
                                     )
 
+                if (
+                    st.session_state["chat_true_22"] == "chat activo"
+                    and st.session_state["b_accept_inside_pericial_22"] == True
+                ):
+                    col1 = 30
+                    col2 = 70
+                    st.session_state["chat_true_22"] = "chat activo"
+                    st.session_state["b_accept_inside_pericial_22"] = True
+                    st.session_state["buttom_send_visualiza_22"] = True
                 if (
                     st.session_state["chat_true_22"] == "chat activo"
                     and st.session_state["b_accept_inside_pericial_22"] == True
@@ -330,7 +351,11 @@ def main(col1, col2, placeholder):
 
                                 if len(st.session_state["chat_answers_history_22"]) > 1:
                                     list1.reverse()
+                                if len(st.session_state["chat_answers_history_22"]) > 1:
+                                    list1.reverse()
 
+                                if len(st.session_state["user_prompt_history_22"]) > 1:
+                                    list2.reverse()
                                 if len(st.session_state["user_prompt_history_22"]) > 1:
                                     list2.reverse()
 

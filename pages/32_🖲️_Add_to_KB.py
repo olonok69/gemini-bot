@@ -78,7 +78,7 @@ def change_state_32(session, pp):
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
     reset_session_num(session, "32")
@@ -112,6 +112,9 @@ def main(path_faiss, placeholder):
             # if you press salir any time you close the conainer
             if st.button("Salir", on_click=change_state_32, args=(st, placeholder)):
                 logging.info("Salir and writing history")
+            # if you press salir any time you close the conainer
+            if st.button("Salir", on_click=change_state_32, args=(st, placeholder)):
+                logging.info("Salir and writing history")
 
             # Access the uploaded ref via a key.
             if st.session_state["value_32"] >= 0:
@@ -142,10 +145,23 @@ def main(path_faiss, placeholder):
 
             # Now you can access "pdf_ref" anywhere in your app.
             if ss.pdf_ref_32:
+            # Now you can access "pdf_ref" anywhere in your app.
+            if ss.pdf_ref_32:
 
                 if st.session_state["value_32"] >= 1:
                     binary_data = ss.pdf_ref_32
 
+                    pdf_viewer(input=binary_data, width=700, height=300)
+                    # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
+                    _ = st.selectbox(
+                        "Choose category 👇",
+                        key="selectbox_category_32",
+                        index=None,
+                        options=secciones,
+                        on_change=selected_seccion_add_kb,
+                        args=[st, "32"],
+                    )
+                    if st.session_state[f"add_file_kb_selected_32"]:
                     pdf_viewer(input=binary_data, width=700, height=300)
                     # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
                     _ = st.selectbox(
@@ -221,13 +237,13 @@ def main(path_faiss, placeholder):
                             # clear container
                             reload_add_doc_kb(st, ss, placeholder)
 
-    except:
-        # get the sys stack and log to gcloud
-        placeholder.empty()
-        text = print_stack()
-        text = "Gemini add doc kb " + text
-        logging.error(text)
-    return
+        except:
+            # get the sys stack and log to gcloud
+            placeholder.empty()
+            text = print_stack()
+            text = "Gemini add doc kb " + text
+            logging.error(text)
+        return
 
 
 if __name__ == "__main__":

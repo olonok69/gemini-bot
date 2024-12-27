@@ -76,10 +76,14 @@ def change_state_23(session, pp):
     change state after leave conversation
     params:
     st (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
+    pp (streamlit.empty): placeholder
 
     """
     reset_session_num(session,"23")
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     pp.empty()
     del pp
     session.empty()
@@ -96,10 +100,10 @@ def main(col1, col2, placeholder):
         param col2: column 2
         param placeholder: placeholder
     """
-
-    if "vcol1doc_23" in st.session_state and "vcol2doc_23" in st.session_state:
-        col1 = st.session_state["vcol1doc_23"]
-        col2 = st.session_state["vcol2doc_23"]
+    with placeholder.container():
+        if "vcol1doc_23" in st.session_state and "vcol2doc_23" in st.session_state:
+            col1 = st.session_state["vcol1doc_23"]
+            col2 = st.session_state["vcol2doc_23"]
 
     row1_1, row1_2 = st.columns((col1, col2))
     # Initialice state
@@ -119,9 +123,28 @@ def main(col1, col2, placeholder):
                 and st.session_state["file_prompt_selected_visualiza_23"] == False
                 and st.session_state["file_and_answer_select_has_changed_23"] == True
             ):
+            selection_dict = file_selector(st, df_answers_no_case, "23")
+            if (
+                len(selection_dict.keys()) >= 5
+                and st.session_state["file_prompt_selected_visualiza_23"] == False
+                and st.session_state["file_and_answer_select_has_changed_23"] == True
+            ):
 
                 visualiza_display_page(st=st, selection_dict=selection_dict, num="23")
+                visualiza_display_page(st=st, selection_dict=selection_dict, num="23")
 
+            elif (
+                st.session_state["file_and_answer_select_has_changed_23"] == True
+                and st.session_state["file_prompt_selected_visualiza_23"] == True
+                and st.session_state["chat_true_23"] == "no_chat"
+            ):
+                title = st.text_area(
+                    "Introduce texto a Buscar Pericial separa con una # y dame el numero de documentos a buscar 👇",
+                    height=100,
+                    key="search_pericial_23",
+                    placeholder="Ejemplo: texto a buscar aqui y no puede haber este caracter--># 10",
+                    disabled=st.session_state["buttom_send_visualiza_23"],
+                )
             elif (
                 st.session_state["file_and_answer_select_has_changed_23"] == True
                 and st.session_state["file_prompt_selected_visualiza_23"] == True
@@ -150,6 +173,20 @@ def main(col1, col2, placeholder):
                         and st.session_state["section_prompt_selected_23"] == True
                     ):
 
+                        numero = title.split("#")[-1].strip()
+                        title = title.split("#")[0].strip()
+                        st.session_state["prompt_introduced_23"] = title
+                        v_query = st.session_state["embeddings_23"].embed_query(title)
+                        r = st.session_state["index_23"].query(
+                            vector=list(v_query),
+                            top_k=int(numero),
+                            include_metadata=True,
+                            filter={"sections": seccion},
+                        )
+                        if len(r["matches"]) > 0:
+                            list_matches = []
+                            list_matches_textos = []
+                            for match in r["matches"]:
                         numero = title.split("#")[-1].strip()
                         title = title.split("#")[0].strip()
                         st.session_state["prompt_introduced_23"] = title
@@ -211,7 +248,56 @@ def main(col1, col2, placeholder):
                 st.session_state["chat_true_23"] = "chat activo"
                 st.session_state["b_accept_inside_pericial_23"] = True
                 st.session_state["buttom_send_visualiza_23"] = True
+            if (
+                st.session_state["chat_true_23"] == "chat activo"
+                and st.session_state["b_accept_inside_pericial_23"] == True
+            ):
+                col1 = 30
+                col2 = 70
+                st.session_state["chat_true_23"] = "chat activo"
+                st.session_state["b_accept_inside_pericial_23"] = True
+                st.session_state["buttom_send_visualiza_23"] = True
 
+        with row1_2:
+            if (
+                len(st.session_state["seccion_introduced_23"]) > 10
+                and len(st.session_state["answer_introduced_23"].keys()) >= 5
+            ):
+                with st.expander(
+                    "���️Instruccion to send to Gemini 👇",
+                    expanded=st.session_state["expander_23"],
+                ):
+                    st.session_state["instruction_to_be_send_23"] = (
+                        "Formatear este texto: \n"
+                        + st.session_state["answer_introduced_23"].get("respuesta_chat")
+                        + "\n\n"
+                        + "Usa este Ejemplo:"
+                        + "\n\n"
+                        + st.session_state["seccion_introduced_23"]
+                    )
+                    st.text_area(
+                        "Intruction to be send to gemini Gemini",
+                        height=300,
+                        key="prompt_1_sample_23",
+                        value=st.session_state["instruction_to_be_send_23"],
+                        disabled=st.session_state["buttom_send_visualiza_23"],
+                    )
+                if st.button(
+                    "Send Instruction",
+                    disabled=st.session_state["buttom_send_visualiza_23"],
+                ):
+                    st.session_state["chat_true_23"] = "chat activo"
+                    st.session_state["vcol1doc_23"] = 30
+                    st.session_state["vcol2doc_23"] = 70
+                    st.session_state["buttom_send_visualiza_23"] = True
+                    st.session_state["expander_23"] = False
+                    st.rerun()
+                # Conversacion con el modelo
+                if st.session_state["chat_true_23"] == "chat activo":
+                    # change status
+                    st.session_state["expander_23"] = False
+                    st.session_state["chat_true_23"] = "chat activo"
+                    st.session_state["buttom_send_visualiza_23"] = True
         with row1_2:
             if (
                 len(st.session_state["seccion_introduced_23"]) > 10
@@ -313,7 +399,11 @@ def main(col1, col2, placeholder):
 
                             if len(st.session_state["chat_answers_history_23"]) > 1:
                                 list1.reverse()
+                            if len(st.session_state["chat_answers_history_23"]) > 1:
+                                list1.reverse()
 
+                            if len(st.session_state["user_prompt_history_23"]) > 1:
+                                list2.reverse()
                             if len(st.session_state["user_prompt_history_23"]) > 1:
                                 list2.reverse()
 
