@@ -24,3 +24,4 @@ archive/hasher.py
 .vscode/
 archive/login/
 logs/
+logs/debug.log

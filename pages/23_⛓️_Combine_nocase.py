@@ -71,7 +71,7 @@ df_answers_no_case["file_and_answer"] = df_answers_no_case.apply(
 )
 
 
-def change_state_23(session, placeholder):
+def change_state_23(session, pp):
     """
     change state after leave conversation
     params:
@@ -79,10 +79,11 @@ def change_state_23(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
-    reset_session_num(session, "23")
-    st.stop()
+    reset_session_num(session,"23")
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

@@ -43,7 +43,7 @@ def selected(st):
     st.session_state["file_prompt_selected_20"] = True
 
 
-def change_state_20(session, placeholder):
+def change_state_20(session, pp):
     """
     change state after leave conversation
     params:
@@ -51,10 +51,11 @@ def change_state_20(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session, "20")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

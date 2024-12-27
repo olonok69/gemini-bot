@@ -73,7 +73,7 @@ def selected_seccion_add_kb(st, num: int):
     st.session_state[f"add_file_kb_selected_{num}"] = True
 
 
-def change_state_32(session, placeholder):
+def change_state_32(session, pp):
     """
     change state after leave conversation
     params:
@@ -81,10 +81,11 @@ def change_state_32(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
-    reset_session_num(session, "32")
-    st.stop()
+     reset_session_num(session,"32")
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 
