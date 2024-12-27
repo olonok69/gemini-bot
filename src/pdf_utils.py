@@ -1,9 +1,15 @@
 import os
 import pathlib
 import fitz
+import uuid
+from typing import List
+import pymupdf4llm
+from langchain_community.document_loaders import PyMuPDFLoader
 
 
-def extract_pdf_images(pdf_path, numpages, list_pages, st, file="", num=10, multi=False):
+def extract_pdf_images(
+    pdf_path, numpages, list_pages, st, file="", num=10, multi=False
+):
     """
     extract images from a pdf file
     :param pdf_path: path to pdf file
@@ -86,14 +92,14 @@ def upload(list_pages, numpages, st, num: 10):
     # write list of images to session
     if len(st.session_state[f"list_images_{num}"]) == 0:
         list_images, size_files = extract_pdf_images(
-            complete_name, numpages, list_pages, st, complete_name,num=num, multi=False
+            complete_name, numpages, list_pages, st, complete_name, num=num, multi=False
         )
         st.session_state[f"list_images_{num}"] = list_images
         if list_pages == "all":
             numpages = count_pdf_pages(complete_name)
             total_size = round(sum(size_files) / (1024 * 1024), 2)
             # file name size
-            filename = st.session_state[f'file_history_{num}']
+            filename = st.session_state[f"file_history_{num}"]
             st.session_state["upload_state"] = (
                 f"Ficheros extraído {filename} con y un tamaño total de {total_size} Megabytes"
             )
@@ -112,7 +118,7 @@ def upload(list_pages, numpages, st, num: 10):
     return
 
 
-def upload_files(st, num:int = 10):
+def upload_files(st, num: int = 10):
     """
     upload pdfs file in bytes
 
@@ -138,3 +144,45 @@ def upload_files(st, num:int = 10):
     st.session_state[f"list_images_multi_{num}"] = final_list
     st.session_state[f"value_{num}"] = 3  # pages procesed
     return
+
+
+def load_file(path):
+    # load pdf file and transform into Langchain Documents
+    loader = PyMuPDFLoader(path)
+    pages = loader.load()
+    return pages
+
+
+def create_documents_metadatas(files: List = [], category: str = "legal"):
+    # add documents to Faiss
+    documents_all = []
+    metadatas_all = []
+    ids_all = []
+
+    for file in files:
+
+        pages = load_file(file)
+        print(f" Loaded file {file} with {len(pages)} ")
+        documents, ids, metadatas = get_docs_to_add_vectorstore(pages, file, category)
+        # add documents to collection
+        documents_all = documents_all + documents
+        metadatas_all = metadatas_all + metadatas
+        ids_all = ids_all + ids
+    return documents_all, metadatas_all, ids_all
+
+
+def get_docs_to_add_vectorstore(pages, file, category="legal"):
+    # get components to add to Faiis
+    documents = []
+    ids = []
+    metadatas = []
+
+    for page in pages:
+
+        metadatas.append(
+            {"page": page.metadata.get("page"), "filename": file, "category": category}
+        )
+        ids.append(uuid.uuid1().hex)
+        documents.append(page.page_content)
+
+    return documents, ids, metadatas

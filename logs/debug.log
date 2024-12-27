@@ -6321,3 +6321,717 @@
 [2024-12-08 13:18:09,283] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 22: Embeddings and Pinecone loaded
 [2024-12-08 13:18:09,283] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 22: Embeddings and Pinecone loaded
 [2024-12-08 13:18:09,283] [ScriptRunner.scriptThread] [INFO    ] Gemini Page 22: Embeddings and Pinecone loaded
+[2024-12-26 21:21:28,894] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:21:28,894] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:21:43,213] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:21:43,213] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:21:43,213] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:21:54,947] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:21:54,947] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:21:54,947] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:21:55,126] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:21:55,126] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:21:55,126] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:24:08,884] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:24:08,884] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:24:19,064] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:24:19,064] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:24:19,064] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:24:29,673] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:24:29,673] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:24:29,673] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:24:29,739] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:24:29,739] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:24:29,739] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:24:29,757] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:24:29,757] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:24:29,757] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:25:53,527] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:25:53,527] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:25:53,527] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:25:53,593] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:25:53,593] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:25:53,593] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:25:53,595] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:25:53,595] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:25:53,595] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:25:53,599] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:25:53,599] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:25:53,599] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:25:53,601] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:25:53,601] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:25:53,601] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:25:53,629] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:25:53,629] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:25:53,629] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:26:27,633] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:26:27,633] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:26:27,633] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:26:31,216] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:26:31,216] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:26:31,216] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:26:44,050] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:26:44,050] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:27:25,968] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:27:25,968] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:27:25,968] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:27:37,733] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:37,733] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:37,733] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:37,802] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:37,802] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:37,802] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:37,823] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:37,823] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:37,823] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:47,714] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:47,714] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:47,714] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:47,784] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:47,784] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:47,784] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:47,786] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:47,786] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:47,786] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:47,790] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:47,790] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:47,790] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:47,792] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:47,792] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:47,792] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:47,820] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:27:47,820] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:27:47,820] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:27:53,033] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:53,033] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:53,033] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:27:53,105] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:53,105] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:53,105] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:27:53,106] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:53,106] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:53,106] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:27:53,109] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:53,109] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:53,109] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:53,111] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:53,111] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:53,111] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:27:53,145] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:27:53,145] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:27:53,145] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:28:09,251] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:28:09,251] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:28:09,251] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:28:09,280] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:28:09,280] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:28:09,280] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:28:45,791] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:28:45,791] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:28:45,791] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:28:45,855] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:28:45,855] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:28:45,855] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:28:45,858] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:28:45,858] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:28:45,858] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:28:45,861] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:28:45,861] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:28:45,861] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:28:45,863] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:28:45,863] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:28:45,863] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:28:45,888] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:28:45,888] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:28:45,888] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:33:30,723] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:33:30,723] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:33:41,791] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:33:41,791] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:33:41,791] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:33:53,365] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:33:53,365] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:33:53,365] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:33:53,455] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:33:53,455] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:33:53,455] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:33:53,460] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:33:53,460] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:33:53,460] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:02,229] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:02,229] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:02,229] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:02,295] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:02,295] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:02,295] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:02,297] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:02,297] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:02,297] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:02,301] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:02,301] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:02,301] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:02,302] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:02,302] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:02,302] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:02,332] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:02,332] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:02,332] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:16,068] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:16,068] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:16,068] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:16,126] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:16,126] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:16,126] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:16,128] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:16,128] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:16,128] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:16,131] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:16,131] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:16,131] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:16,132] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:16,132] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:16,132] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:16,156] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:16,156] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:16,156] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:32,043] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:34:32,043] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:34:32,043] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:34:32,071] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:34:32,071] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:34:32,071] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:34:41,144] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:41,144] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:41,144] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:34:41,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:41,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:41,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:34:41,227] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:41,227] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:41,227] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:34:41,230] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:41,230] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:41,230] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:41,232] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:41,232] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:41,232] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:34:41,261] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:41,261] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:34:41,261] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:35:21,684] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:35:21,684] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:35:21,684] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:35:21,747] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:35:21,747] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:35:21,747] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:35:21,748] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:35:21,748] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:35:21,748] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:35:21,752] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:35:21,752] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:35:21,752] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:35:21,753] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:35:21,753] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:35:21,753] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:35:21,778] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:35:21,778] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:35:21,778] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:36:28,061] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:36:28,061] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:36:28,061] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:36:28,129] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:36:28,129] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:36:28,129] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:36:28,130] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:36:28,130] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:36:28,130] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:36:28,135] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:36:28,135] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:36:28,135] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:36:28,137] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:36:28,137] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:36:28,137] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:36:28,166] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:36:28,166] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:36:28,166] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:29,146] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:29,146] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:29,146] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:29,208] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:29,208] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:29,208] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:29,210] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:29,210] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:29,210] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:29,212] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:29,212] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:29,212] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:29,214] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:29,214] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:29,214] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:29,241] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:29,241] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:29,241] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:48,589] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:37:48,589] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:37:48,589] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:37:48,591] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:37:48,591] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:37:48,591] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:37:48,593] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:37:48,593] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:37:48,593] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:37:48,594] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:37:48,594] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:37:48,594] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:37:48,595] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:37:48,595] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:37:48,595] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:37:48,597] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:37:48,597] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:37:48,597] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:37:48,598] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:37:48,598] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:37:48,598] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:37:48,600] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:37:48,600] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:37:48,600] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:37:48,601] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:37:48,601] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:37:48,601] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:37:48,602] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:37:48,602] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:37:48,602] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:37:48,604] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:37:48,604] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:37:48,604] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:37:48,605] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:37:48,605] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:37:48,605] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:37:48,606] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:37:48,606] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:37:48,606] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:37:48,607] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:37:48,607] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:37:48,607] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:37:48,609] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:37:48,609] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:37:48,609] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:37:48,612] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:37:48,612] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:37:48,612] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:37:48,613] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:37:48,613] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:37:48,613] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:37:52,535] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:52,535] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:52,535] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:52,600] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:52,600] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:52,600] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:52,604] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:52,604] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:52,604] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:52,608] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:52,608] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:52,608] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:52,609] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:52,609] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:52,609] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:52,629] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:52,629] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:52,629] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:58,758] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:58,758] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:58,758] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:37:58,816] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:58,816] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:58,816] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:37:58,818] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:58,818] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:58,818] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:37:58,821] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:58,821] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:58,821] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:58,823] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:58,823] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:58,823] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Tablas_indemnizatorias_Baremo_2024.pdf : D:/repos/gemini-bot\tmp/Tablas_indemnizatorias_Baremo_2024.pdf
+[2024-12-26 21:37:58,845] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:58,845] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:37:58,845] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Tablas_indemnizatorias_Baremo_2024.pdf : 13
+[2024-12-26 21:38:01,593] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:38:01,593] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:38:01,593] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:38:01,595] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:38:01,595] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:38:01,595] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:38:01,595] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:38:01,595] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:38:01,595] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:38:01,596] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:38:01,596] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:38:01,596] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:38:01,597] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:38:01,597] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:38:01,597] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:38:01,597] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:38:01,597] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:38:01,597] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:38:01,598] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:38:01,598] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:38:01,598] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:38:01,599] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:38:01,599] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:38:01,599] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:38:01,600] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:38:01,600] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:38:01,600] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:38:01,600] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:38:01,600] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:38:01,600] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:38:01,601] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:38:01,601] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:38:01,601] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:38:01,602] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:38:01,602] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:38:01,602] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:38:01,603] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:38:01,603] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:38:01,603] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:38:01,604] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:38:01,604] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:38:01,604] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:38:01,605] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:38:01,605] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:38:01,605] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:38:01,606] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:38:01,606] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:38:01,606] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:38:01,607] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:38:01,607] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:38:01,607] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:38:03,008] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:38:03,008] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:38:03,008] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:38:03,084] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:38:03,084] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:38:03,084] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:38:03,089] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:38:03,089] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:38:03,089] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:39:24,229] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:39:24,229] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:39:24,229] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:39:24,285] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:39:24,285] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:39:24,285] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:39:24,286] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:39:24,286] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:39:24,286] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:39:24,295] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:39:24,295] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:39:24,295] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:39:24,297] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:39:24,297] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:39:24,297] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:39:24,355] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:39:24,355] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:39:24,355] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:39:30,875] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:39:30,875] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:39:30,875] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:39:30,948] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:39:30,948] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:39:30,948] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:39:30,950] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:39:30,950] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:39:30,950] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:39:30,963] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:39:30,963] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:39:30,963] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:39:30,965] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:39:30,965] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:39:30,965] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:39:31,035] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:39:31,035] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:39:31,035] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:41:04,233] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:41:04,233] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:41:04,233] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:41:04,299] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:41:04,299] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:41:04,299] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:41:04,300] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:41:04,300] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:41:04,300] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:41:04,308] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:41:04,308] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:41:04,308] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:41:04,310] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:41:04,310] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:41:04,310] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:41:04,705] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:41:04,705] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:41:04,705] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:41:59,996] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:41:59,996] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:41:59,996] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:42:00,061] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:42:00,061] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:42:00,061] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:42:00,062] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:42:00,062] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:42:00,062] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:42:00,072] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:42:00,072] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:42:00,072] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:42:00,075] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:42:00,075] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:42:00,075] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:42:00,460] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:42:00,460] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:42:00,460] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:43:25,162] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:43:25,162] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:43:25,162] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:43:25,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:43:25,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:43:25,225] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:43:25,226] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:43:25,226] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:43:25,226] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:43:25,240] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:43:25,240] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:43:25,240] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:43:25,241] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:43:25,241] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:43:25,241] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:43:25,643] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:43:25,643] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:43:25,643] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:44:53,528] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:44:53,528] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:44:53,528] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:44:53,530] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:44:53,530] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:44:53,530] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:44:53,531] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:44:53,531] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:44:53,531] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:44:53,532] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:44:53,532] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:44:53,532] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:44:53,533] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:44:53,533] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:44:53,533] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:44:53,534] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:44:53,534] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:44:53,534] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:44:53,535] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:44:53,535] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:44:53,535] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:44:53,536] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:44:53,536] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:44:53,536] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:44:53,537] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:44:53,537] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:44:53,537] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:44:53,538] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:44:53,538] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:44:53,538] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:44:53,541] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:44:53,541] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:44:53,541] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:44:53,542] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:44:53,542] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:44:53,542] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:44:53,544] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:44:53,544] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:44:53,544] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:44:53,545] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:44:53,545] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:44:53,545] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:44:53,546] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:44:53,546] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:44:53,546] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:44:53,553] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:44:53,553] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:44:53,553] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:44:53,554] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:44:53,554] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:44:53,554] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:45:12,385] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:45:12,385] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:45:41,939] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:45:41,939] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:45:41,939] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:45:53,394] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:45:53,394] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:45:53,394] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:45:53,484] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:45:53,484] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:45:53,484] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:45:53,490] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:45:53,490] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:45:53,490] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:46:05,729] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:46:05,729] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:46:05,729] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:46:05,787] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:46:05,787] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:46:05,787] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:46:05,788] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:46:05,788] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:46:05,788] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:46:05,798] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:46:05,798] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:46:05,798] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:46:05,799] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:46:05,799] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:46:05,799] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:46:05,859] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:46:05,859] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:46:05,859] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:46:13,606] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:46:13,606] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:46:13,606] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:46:13,667] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:46:13,667] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:46:13,667] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:46:13,668] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:46:13,668] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:46:13,668] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:46:13,678] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:46:13,678] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:46:13,678] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:46:13,680] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:46:13,680] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:46:13,680] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:46:13,824] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:46:13,824] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:46:13,824] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:47:14,786] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:47:14,786] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:47:14,786] [ScriptRunner.scriptThread] [INFO    ] Loading faiss with AVX2 support.
+[2024-12-26 21:47:14,830] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:47:14,830] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:47:14,830] [ScriptRunner.scriptThread] [INFO    ] Successfully loaded faiss with AVX2 support.
+[2024-12-26 21:48:10,444] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:48:10,444] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:48:10,444] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:48:10,508] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:48:10,508] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:48:10,508] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:48:10,510] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:48:10,510] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:48:10,510] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:48:10,521] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:48:10,521] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:48:10,521] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:48:10,523] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:48:10,523] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:48:10,523] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:48:10,908] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:48:10,908] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:48:10,908] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:49:04,246] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:49:04,246] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:49:04,246] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:49:04,310] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:49:04,310] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:49:04,310] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:49:04,311] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:49:04,311] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:49:04,311] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:49:04,322] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:49:04,322] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:49:04,322] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:49:04,324] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:49:04,324] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:49:04,324] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:49:04,718] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:49:04,718] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:49:04,718] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:49:21,885] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:49:21,885] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:49:21,885] [ScriptRunner.scriptThread] [INFO    ] deleted expander_33
+[2024-12-26 21:49:21,887] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:49:21,887] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:49:21,887] [ScriptRunner.scriptThread] [INFO    ] deleted upload_state_33
+[2024-12-26 21:49:21,888] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:49:21,888] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:49:21,888] [ScriptRunner.scriptThread] [INFO    ] deleted chat_history_33
+[2024-12-26 21:49:21,889] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:49:21,889] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:49:21,889] [ScriptRunner.scriptThread] [INFO    ] deleted init_run_33
+[2024-12-26 21:49:21,891] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:49:21,891] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:49:21,891] [ScriptRunner.scriptThread] [INFO    ] deleted file_name_33
+[2024-12-26 21:49:21,892] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:49:21,892] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:49:21,892] [ScriptRunner.scriptThread] [INFO    ] deleted chat_true_33
+[2024-12-26 21:49:21,894] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:49:21,894] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:49:21,894] [ScriptRunner.scriptThread] [INFO    ] deleted llm_33
+[2024-12-26 21:49:21,895] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:49:21,895] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:49:21,895] [ScriptRunner.scriptThread] [INFO    ] deleted prompt_introduced_33
+[2024-12-26 21:49:21,897] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:49:21,897] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:49:21,897] [ScriptRunner.scriptThread] [INFO    ] deleted retriever_33
+[2024-12-26 21:49:21,898] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:49:21,898] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:49:21,898] [ScriptRunner.scriptThread] [INFO    ] deleted vcol1doc_33
+[2024-12-26 21:49:21,899] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:49:21,899] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:49:21,899] [ScriptRunner.scriptThread] [INFO    ] deleted value_33
+[2024-12-26 21:49:21,901] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:49:21,901] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:49:21,901] [ScriptRunner.scriptThread] [INFO    ] deleted pdf_ref_33
+[2024-12-26 21:49:21,903] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:49:21,903] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:49:21,903] [ScriptRunner.scriptThread] [INFO    ] deleted file_history_33
+[2024-12-26 21:49:21,906] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:49:21,906] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:49:21,906] [ScriptRunner.scriptThread] [INFO    ] deleted vectorstore_33
+[2024-12-26 21:49:21,909] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:49:21,909] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:49:21,909] [ScriptRunner.scriptThread] [INFO    ] deleted embeddings_33
+[2024-12-26 21:49:21,910] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:49:21,910] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:49:21,910] [ScriptRunner.scriptThread] [INFO    ] deleted vcol2doc_33
+[2024-12-26 21:49:21,912] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:49:21,912] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:49:21,912] [ScriptRunner.scriptThread] [INFO    ] deleted salir_33
+[2024-12-26 21:49:26,242] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:49:26,242] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:49:26,242] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:49:26,307] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:49:26,307] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:49:26,307] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:49:26,312] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:49:26,312] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:49:26,312] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:49:26,325] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:49:26,325] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:49:26,325] [ScriptRunner.scriptThread] [INFO    ] Gemini Bot Page  33 : Files Uploaded Baremo 2015.pdf
+[2024-12-26 21:49:26,327] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:49:26,327] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:49:26,327] [ScriptRunner.scriptThread] [INFO    ] Path Temporal fichero Baremo 2015.pdf : D:/repos/gemini-bot\tmp/Baremo 2015.pdf
+[2024-12-26 21:49:26,470] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:49:26,470] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:49:26,470] [ScriptRunner.scriptThread] [INFO    ] Numero de paginas del fichero Baremo 2015.pdf : 507
+[2024-12-26 21:52:43,067] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:52:43,067] [ScriptRunner.scriptThread] [INFO    ] Name : None, Autentication Status: None, Username: None
+[2024-12-26 21:52:52,562] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:52:52,562] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:52:52,562] [ScriptRunner.scriptThread] [INFO    ] Name : Juanito, Autentication Status: True, Username: juan
+[2024-12-26 21:53:03,797] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:53:03,797] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:53:03,797] [ScriptRunner.scriptThread] [INFO    ] PROJECT DIR: D:/repos/gemini-bot, this folder: D:\repos\gemini-bot\pages
+[2024-12-26 21:53:03,888] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:53:03,888] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:53:03,888] [ScriptRunner.scriptThread] [INFO    ] Model loaded: gemini-1.5-pro-002
+[2024-12-26 21:53:03,893] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:53:03,893] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
+[2024-12-26 21:53:03,893] [ScriptRunner.scriptThread] [INFO    ] Model Embeddings: models/embedding-001 initialized
