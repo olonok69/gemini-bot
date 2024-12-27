@@ -48,7 +48,7 @@ onlyfiles_prompts = df_prompts["name_prompt"].to_list()
 onlyfiles_periciales = df_pericial["Title"].to_list()
 
 
-def change_state_12(session, placeholder):
+def change_state_12(session, pp):
     """
     change state after leave conversation
     params:
@@ -56,10 +56,11 @@ def change_state_12(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session, "12")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

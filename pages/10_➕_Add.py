@@ -38,7 +38,7 @@ pname, name2, df_pericial = open_table_periciales(DATA_DIR)
 logging.info(f"DATA DIR: {DATA_DIR}")
 
 
-def change_state_10(session, placeholder):
+def change_state_10(session, pp):
     """
     change state after leave conversation
     params:
@@ -46,10 +46,11 @@ def change_state_10(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session, "10")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

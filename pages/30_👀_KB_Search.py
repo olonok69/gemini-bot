@@ -109,7 +109,7 @@ def selected_file_kb(st, num: int = 10):
     st.session_state[f"file_kb_faiss_selected_{num}"] = True
 
 
-def change_state_30(session, placeholder):
+def change_state_30(session, pp):
     """
     change state after leave conversation
     params:
@@ -117,10 +117,11 @@ def change_state_30(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
-    reset_session_num(session, "30")
-    st.stop()
+    reset_session_num(session,"30")
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

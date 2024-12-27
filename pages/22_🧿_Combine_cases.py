@@ -64,7 +64,7 @@ def concat_date_row(row):
 df_answers["file_and_answer"] = df_answers.apply(concat_date_row, axis=1)
 
 
-def change_state_22(session, placeholder):
+def change_state_22(session, pp):
     """
     change state after leave conversation
     params:
@@ -72,10 +72,11 @@ def change_state_22(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session, "22")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

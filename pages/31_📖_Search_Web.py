@@ -65,7 +65,7 @@ def visualiza_context(st, out):
                     break
 
 
-def change_state_31(session, placeholder):
+def change_state_31(session, pp):
     """
     change state after leave conversation
     params:
@@ -73,10 +73,11 @@ def change_state_31(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session, "31")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

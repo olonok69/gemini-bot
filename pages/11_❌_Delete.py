@@ -79,7 +79,7 @@ for x, y in zip(onlyfiles_anwers_gemini2_nocase, onlyfiles_anwers_gemini3_nocase
     onlyfiles_anwers_gemini4_nocase.append(x + "_" + y)
 
 
-def change_state_11(session, placeholder):
+def change_state_11(session, pp):
     """
     change state after leave conversation
     params:
@@ -87,10 +87,11 @@ def change_state_11(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
-    reset_session_num(session, "10")
-    st.stop()
+    reset_session_num(session, "11")
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 

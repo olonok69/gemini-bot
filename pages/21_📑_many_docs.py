@@ -35,7 +35,7 @@ pname_no_case, pname2_no_case, df_answers_no_case = open_table_answers_no_case(
 )
 
 
-def change_state_21(session, placeholder):
+def change_state_21(session, pp):
     """
     change state after leave conversation
     params:
@@ -43,10 +43,11 @@ def change_state_21(session, placeholder):
     placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session, "21")
-    st.stop()
+    pp.empty()
+    del pp
+    session.empty()
+    session.stop()
     return
 
 
