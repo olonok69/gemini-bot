@@ -41,7 +41,8 @@ def change_state_33(session, placeholder):
     placeholder.empty()
     del placeholder
     reset_session_num(session, "33")
-    st.stop()
+    session.cache_data.clear()
+    session.stop()
     return
 
 
