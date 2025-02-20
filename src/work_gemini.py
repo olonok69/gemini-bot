@@ -3,6 +3,7 @@ import vertexai.generative_models as generative_models
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 import base64
 import logging
+from vertexai.preview import caching
 
 
 def get_chat_response(chat: ChatSession, prompt: str) -> str:
@@ -82,7 +83,10 @@ def init_llm(model, credentials):
     :param credentials: credentials
     :return: ChatGoogleGenerativeAI
     """
-    return ChatGoogleGenerativeAI(model=model, credentials=credentials)
+    return ChatGoogleGenerativeAI(
+        model=model, credentials=credentials, max_output_tokens=8192
+    )
+
 
 def init_google_embeddings(config, credentials, google_api_key):
     """
@@ -93,7 +97,7 @@ def init_google_embeddings(config, credentials, google_api_key):
     :return: GoogleGenerativeAIEmbeddings
     """
     return GoogleGenerativeAIEmbeddings(
-                    model=config.get("EMBEDDINGS2"),
-                    credentials=credentials,
-                    google_api_key=google_api_key,
-                )
+        model=config.get("EMBEDDINGS2"),
+        credentials=credentials,
+        google_api_key=google_api_key,
+    )

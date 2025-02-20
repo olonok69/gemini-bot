@@ -47,6 +47,7 @@ def change_state_21(session, pp):
     pp.empty()
     del pp
     session.empty()
+    session.cache_data.clear()
     session.stop()
     return
 
