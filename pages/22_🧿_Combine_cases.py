@@ -13,7 +13,6 @@ from src.files import (
 from dotenv import dotenv_values
 from google.oauth2 import service_account
 import vertexai
-from src.utils import create_client_logging
 from src.helpers import (
     visualiza_display_page,
     visualiza_pericial,
@@ -31,7 +30,6 @@ import logging
 from pathlib import Path
 from src.utils import print_stack
 from src.maps import config as conf, init_session_num, reset_session_num
-from IPython import embed
 
 # OPEN necessary tables
 # where I am

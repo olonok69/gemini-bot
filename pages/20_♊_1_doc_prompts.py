@@ -1,7 +1,12 @@
 import streamlit as st
 import os.path
 from pathlib import Path
-from streamlit_pdf_viewer import pdf_viewer
+from streamlit_pdf_viewer import (
+    pdf_viewer,
+    RENDERING_IFRAME,
+    RENDERING_EMBED,
+    RENDERING_UNWRAP,
+)
 from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages
 from google.oauth2 import service_account
@@ -35,6 +40,7 @@ OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(
 # open table with all prompts
 pname, pname2, df_answers = open_table_answers(ANSWERS_DIR)
 
+
 # open table with all prompts
 fname, fname2, df = open_table_prompts(PROMPTS_DIR)
 # all names of the prompts
@@ -62,6 +68,23 @@ def change_state_20(session, pp):
     return
 
 
+@st.dialog("Visualiza PDF 👇", width="large")
+def open_pdf_dialog(binary_data, num=20, width=2000, height=1000):
+    """Opens a PDF viewer in a Streamlit dialog."""
+    if st.session_state.get(f"pdf_dialog_open_{num}", False):
+
+        pdf_viewer(
+            input=binary_data,
+            width=width,
+            height=height,
+            key=f"pdf_viewer_dialog_{num}",
+            rendering=RENDERING_UNWRAP,
+        )
+        if st.button("Close"):
+            st.session_state[f"pdf_dialog_open_{num}"] = False
+            st.rerun()  # force rerun to close the dialog.
+
+
 def main(col1, col2, placeholder):
     """
     main loop
@@ -79,6 +102,7 @@ def main(col1, col2, placeholder):
             col2 = st.session_state["vcol2doc_20"]
 
         row1_1, row1_2 = st.columns((col1, col2))
+
         try:
 
             # Initialize Vars
@@ -130,18 +154,19 @@ def main(col1, col2, placeholder):
                 with row1_1:
                     if st.session_state["value_20"] >= 1:
                         binary_data = st.session_state["pdf_ref_20"]
+
                         if st.session_state["vcol1doc_20"] == 40:
-                            width = 700
+                            width = 750
                         elif st.session_state["vcol1doc_20"] == 20:
                             width = 350
                         else:
-                            width = 700
-                        pdf_viewer(
-                            input=binary_data,
-                            width=width,
-                            height=400,
-                            key="pdf_viewer_20",
-                        )
+                            width = 750
+                        if st.button(
+                            "Open PDF in Dialog",
+                            disabled=st.session_state["buttom_send_not_clicked_20"],
+                        ):
+                            st.session_state["pdf_dialog_open_20"] = True
+                            open_pdf_dialog(binary_data, num=20)
                         logging.info(
                             f"Gemini Bot Page 20: pdf viewer {uploaded_files.name}"
                         )
