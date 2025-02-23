@@ -11,13 +11,11 @@ from src.work_gemini import get_chat_response, prepare_prompt, init_model
 from src.helpers import (
     reload_page_many_docs,
 )
-from src.utils import create_client_logging, print_stack
+from src.utils import print_stack
 from src.files import open_table_answers, create_folders, open_table_answers_no_case
 import copy
 import logging
-from src.utils import print_stack
 from src.maps import config as conf, init_session_num, reset_session_num
-from IPython import embed
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))

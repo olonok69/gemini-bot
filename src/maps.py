@@ -34,6 +34,7 @@ config = {
             "pdf_viewer_20",
             "chat_input_20",
             "pdf_page_20",
+            "pdf_dialog_open_20",
         ],
         "config_20": [
             "user_prompt_history_20",
@@ -704,6 +705,12 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
         and f"selector_selected_modifica_{num}" in config
     ):
         sess.session_state[f"selector_selected_modifica_{num}"] = False
+
+    if (
+        f"pdf_dialog_open_{num}" not in sess.session_state
+        and f"pdf_dialog_open_{num}" in config
+    ):
+        sess.session_state[f"pdf_dialog_open_{num}"] = False
 
     if (
         f"selector_selected_section_delete_{num}" not in sess.session_state

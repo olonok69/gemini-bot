@@ -3,7 +3,9 @@ import pathlib
 import fitz
 import uuid
 from typing import List
-import pymupdf4llm
+import pymupdf
+import base64
+import streamlit as st
 from langchain_community.document_loaders import PyMuPDFLoader
 
 import logging
@@ -188,3 +190,46 @@ def get_docs_to_add_vectorstore(pages, file, category="legal"):
         documents.append(page.page_content)
 
     return documents, ids, metadatas
+
+
+def display_pdf_in_window_bytes(pdf_bytes, width=600, height=400):
+    """Displays a PDF from bytes in a smaller window using an iframe."""
+    try:
+        base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="{width}" height="{height}" type="application/pdf"></iframe>'
+        st.markdown(pdf_display, unsafe_allow_html=True)
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
+
+
+def display_scanned_pdf_images(pdf_bytes):
+    """Displays scanned PDF pages as images in Streamlit."""
+    try:
+        pdf_document = pymupdf.open(stream=pdf_bytes, filetype="pdf")
+        for page_num in range(pdf_document.page_count):
+            page = pdf_document[page_num]
+            pix = page.get_pixmap()
+            image_bytes = pix.tobytes("png")
+            st.image(image_bytes, caption=f"Page {page_num + 1}")
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
+
+
+def display_scanned_pdf_images_scrollable(pdf_bytes, window_width=800):
+    """Displays scanned PDF pages as scrollable images in a single window."""
+    try:
+        pdf_document = pymupdf.open(stream=pdf_bytes, filetype="pdf")
+        st.markdown(
+            f'<div style="width: {window_width}px; overflow-y: auto;">',
+            unsafe_allow_html=True,
+        )  # Start scrollable div
+        for page_num in range(pdf_document.page_count):
+            page = pdf_document[page_num]
+            pix = page.get_pixmap()
+            image_bytes = pix.tobytes("png")
+            st.image(
+                image_bytes, caption=f"Page {page_num + 1}", use_container_width=True
+            )  # use_column_width to scale images to fit div.
+        st.markdown("</div>", unsafe_allow_html=True)  # Close scrollable div
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
