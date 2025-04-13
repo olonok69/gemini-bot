@@ -30,6 +30,7 @@ from .helpers import (
     reload_page_many_docs,
     change_status,
     reload_page_1_doc,
+    visualiza_1_prompt_no_upload,
 )
 from .utils import print_stack, create_client_logging
 from .files import (
@@ -69,3 +70,4 @@ from .maintenance import (
 
 from .maps import config, init_session_num, reset_session_num
 from .vector import add_documents_vector_store
+from .model import init_model, generate_generative_model
