@@ -703,6 +703,55 @@ def visualiza_1_prompt(st, df, page_select, numpages, num):
         st.rerun()
 
 
+@st.dialog("Choose prompt 👇", width="large")
+def visualiza_1_prompt_no_upload(st, df, num):
+    """
+    Visualize the prompt
+    Args:
+        st (streamlit): streamlit object
+        df (pd.DataFrame): dataframe with all prompts
+        page_select (int): page selected
+        numpages (int): number of pages
+    """
+    # get the name of the file
+    file = st.session_state[f"select_box_{num}"]
+    # transform the row into a dictionary
+    prompt_dict = df[df.name_prompt == file].to_dict(orient="records")[0]
+    id_ = prompt_dict["id"]
+
+    txt = st.text_area(
+        "Introduce name of the prompt",
+        value=prompt_dict.get("name_prompt"),
+        key="name_prompt",
+    )
+    txt3 = st.text_area(
+        "Introduce keywords",
+        value=prompt_dict.get("keywords"),
+        key="keywords",
+    )
+    txt2 = st.text_area(
+        "Introduce prompt",
+        height=300,
+        key="prompt",
+        value=prompt_dict.get("prompt"),
+    )
+    if st.button("Accept"):
+        st.session_state[f"prompt_introduced_{num}"] = (
+            prompt_dict.get("name_prompt") + "\n" + prompt_dict.get("prompt")
+        )
+        st.session_state[f"file_prompt_selected_{num}"] = True
+        st.session_state[f"prompt_{num}"] = prompt_dict.get("prompt")
+        st.session_state[f"value_{num}"] = 3
+
+        st.rerun()
+
+    if st.button("No Accept"):
+        st.session_state[f"prompt_introduced_{num}"] = ""
+        st.session_state[f"file_prompt_selected_{num}"] = False
+        st.session_state[f"value_{num}"] = 2
+        st.rerun()
+
+
 @st.dialog("Confirm Selection 👇", width="large")
 def visualiza_display_page(st, selection_dict, num: int = 10):
     """

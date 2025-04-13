@@ -1,4 +1,5 @@
-from IPython import embed
+# -*- coding: utf-8 -*-
+
 import logging
 
 
@@ -35,6 +36,7 @@ config = {
             "chat_input_20",
             "pdf_page_20",
             "pdf_dialog_open_20",
+            "file_uploaded_gcs_20",
         ],
         "config_20": [
             "user_prompt_history_20",
@@ -58,6 +60,65 @@ config = {
             "file_prompt_selected_20",
             "buttom_send_clicked_20",
             "buttom_resfresh_clicked_20",
+            "file_uploaded_gcs_20",
+        ],
+    },
+    "200": {
+        "config_200_del": [
+            "vcol1doc_200",
+            "vcol2doc_200",
+            "init_run_200",
+            "pdf_ref_200",
+            "file_name_200",
+            "file_history_200",
+            "upload_state_200",
+            "value_200",
+            "buttom_send_not_clicked_200",
+            "select_box_200",
+            "file_prompt_selected_200",
+            "prompt_introduced_200",
+            "chat_true_200",
+            "expander_200",
+            "initialized_200",
+            "buttom_send_200",
+            "buttom_has_send_200",
+            "llm_200",
+            "prompt_200",
+            "chat_answers_history_200",
+            "user_prompt_history_200",
+            "chat_history_200",
+            "buttom_send_clicked_200",
+            "buttom_resfresh_clicked_200",
+            "salir_200",
+            "pdf_viewer_200",
+            "chat_input_200",
+            "pdf_page_200",
+            "pdf_dialog_open_200",
+            "file_uploaded_gcs_200",
+        ],
+        "config_200": [
+            "user_prompt_history_200",
+            "chat_answers_history_200",
+            "chat_history_200",
+            "initialized_200",
+            "list_images_200",
+            "file_name_200",
+            "file_history_200",
+            "prompt_introduced_200",
+            "prompt_200",
+            "chat_true_200",
+            "buttom_popup_200",
+            "buttom_has_send_200",
+            "pdf_ref_200",
+            "value_200",
+            "buttom_send_not_clicked_200",
+            "vcol1doc_200",
+            "vcol2doc_200",
+            "expander_200",
+            "file_prompt_selected_200",
+            "buttom_send_clicked_200",
+            "buttom_resfresh_clicked_200",
+            "file_uploaded_gcs_200",
         ],
     },
     "21": {
@@ -688,6 +749,11 @@ def init_session_num(sess, ss, num, col1, col2, config, model: None):
     ):
         sess.session_state[f"buttom_send_clicked_{num}"] = False
 
+    if (
+        f"file_uploaded_gcs_{num}" not in sess.session_state
+        and f"file_uploaded_gcs_{num}" in config
+    ):
+        sess.session_state[f"file_uploaded_gcs_{num}"] = False
     if (
         f"selector_selected_pericial_{num}" not in sess.session_state
         and f"selector_selected_pericial_{num}" in config
