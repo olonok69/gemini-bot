@@ -30,6 +30,7 @@ from .src.helpers import (
     reload_page_many_docs,
     change_status,
     reload_page_1_doc,
+    visualiza_1_prompt_no_upload,
 )
 from .src.utils import print_stack, create_client_logging
 from .pericial.gemini_fn import (
@@ -110,3 +111,4 @@ from .kb.utils import (
 
 from .src.maps import config, init_session_num, reset_session_num
 from .src.vector import add_documents_vector_store
+from .src.model import init_model, generate_generative_model
