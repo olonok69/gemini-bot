@@ -2,7 +2,6 @@ import streamlit as st
 from streamlit import session_state as ss
 import os.path
 from pathlib import Path
-from streamlit_pdf_viewer import pdf_viewer
 from src.pdf_utils import count_pdf_pages
 from google.oauth2 import service_account
 from langchain_community.vectorstores import FAISS
@@ -25,6 +24,7 @@ import time
 from src.files import (
     create_folders,
 )
+from src.components.pdf_viewer import render_pdf
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -140,7 +140,7 @@ def main(path_faiss, placeholder):
                 if st.session_state["value_32"] >= 1:
                     binary_data = ss.pdf_ref_32
 
-                    pdf_viewer(input=binary_data, width=700, height=300)
+                    render_pdf(binary=binary_data, width=700, height=300, title="PDF preview")
                     # logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
                     _ = st.selectbox(
                         "Choose category 👇",

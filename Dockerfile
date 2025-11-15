@@ -5,11 +5,12 @@ ARG user_app
 
 ENV USER_APP $user_app
 ENV FAISS_ENABLE_GPU ON
+ENV UV_INSTALL_DIR=/usr/local/bin
 # Install necessary packages
 RUN apt-get update && apt-get -y upgrade \
-    && apt-get install -y libsm6 libxext6 git net-tools  python3-magic nano iputils-ping procps \
-    && pip install --upgrade pip \
-    && pip --version
+    && apt-get install -y libsm6 libxext6 git net-tools python3-magic nano iputils-ping procps curl \
+    && curl -LsSf https://astral.sh/uv/install.sh | sh \
+    && uv --version
 
 # Ref:
 # * https://github.com/GoogleCloudPlatform/python-runtime/blob/8cdc91a88cd67501ee5190c934c786a7e91e13f1/README.md#kubernetes-engine--other-docker-hosts
@@ -22,8 +23,7 @@ WORKDIR /home/${USER_APP}/gemini
 
 COPY ./requirements.txt /home/${USER_APP}/gemini/requirements.txt
 
-
-RUN pip install -r /home/${USER_APP}/gemini/requirements.txt
+RUN uv pip install --system --requirements /home/${USER_APP}/gemini/requirements.txt
 
 COPY . .
 

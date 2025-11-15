@@ -112,3 +112,6 @@ from .kb.utils import (
 from .src.maps import config, init_session_num, reset_session_num
 from .src.vector import add_documents_vector_store
 from .src.model import init_model, generate_generative_model
+from .src.logger_util import (
+    set_up_logging,
+)

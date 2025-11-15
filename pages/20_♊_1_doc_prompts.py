@@ -1,12 +1,6 @@
 import streamlit as st
 import os.path
 from pathlib import Path
-from streamlit_pdf_viewer import (
-    pdf_viewer,
-    RENDERING_IFRAME,
-    RENDERING_EMBED,
-    RENDERING_UNWRAP,
-)
 from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages
 from google.oauth2 import service_account
@@ -23,6 +17,7 @@ import logging
 import copy
 from src.files import open_table_answers, create_folders, open_table_prompts
 from src.maps import config as conf, init_session_num, reset_session_num
+from src.components.pdf_viewer import render_pdf
 
 
 # where I am
@@ -73,12 +68,12 @@ def open_pdf_dialog(binary_data, num=20, width=2000, height=1000):
     """Opens a PDF viewer in a Streamlit dialog."""
     if st.session_state.get(f"pdf_dialog_open_{num}", False):
 
-        pdf_viewer(
-            input=binary_data,
+        render_pdf(
+            binary=binary_data,
             width=width,
             height=height,
             key=f"pdf_viewer_dialog_{num}",
-            rendering=RENDERING_UNWRAP,
+            title="PDF preview",
         )
         if st.button("Close"):
             st.session_state[f"pdf_dialog_open_{num}"] = False

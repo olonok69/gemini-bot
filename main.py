@@ -1,13 +1,13 @@
 import os
 import streamlit as st
 import yaml
-from streamlit_authenticator import Authenticate
 from yaml.loader import SafeLoader
 import logging
 import shutil
 from dotenv import dotenv_values
 from pathlib import Path
-from detectaicore import (
+import bcrypt
+from src.logger_util import (
     set_up_logging,
 )
 
@@ -17,36 +17,46 @@ def main(config):
     Main page APP
     """
     st.set_page_config(layout="wide", initial_sidebar_state="expanded")
-    if "authentication_status" not in st.session_state:
-        st.session_state["authentication_status"] = None
-    if "name" not in st.session_state:
-        st.session_state["name"] = None
-    if "username" not in st.session_state:
-        st.session_state["username"] = None
     st.title("Forensic Reports Tools. Powered by Gemini y Langchain")
     if "root_dir" not in st.session_state:
         st.session_state["root_dir"] = os.path.dirname(os.path.abspath(__file__))
 
-    authenticator = Authenticate(
-        config["credentials"],
-        config["cookie"]["name"],
-        config["cookie"]["key"],
-        config["cookie"]["expiry_days"],
-    )
+    # Initialize session state keys for compatibility with pages
+    if "authentication_status" not in st.session_state:
+        st.session_state["authentication_status"] = None
+    if "authenticated" not in st.session_state:
+        st.session_state["authenticated"] = False
+    if "name" not in st.session_state:
+        st.session_state["name"] = None
+    if "username" not in st.session_state:
+        st.session_state["username"] = None
 
-    authenticator.login(key="Login", location="main")
-
-    logging.info(
-        f'Name : {st.session_state["name"]}, Autentication Status: {st.session_state["authentication_status"]}, Username: {st.session_state["username"]}'
-    )
-
-    if st.session_state["authentication_status"]:
-        authenticator.logout("Logout", "main")
+    if not st.session_state["authenticated"]:
+        st.subheader("Login")
+        username = st.text_input("Username")
+        password = st.text_input("Password", type="password")
+        if st.button("Login"):
+            # Check hashed password
+            if username in config["credentials"]["usernames"]:
+                stored_hash = config["credentials"]["usernames"][username]["password"]
+                if bcrypt.checkpw(password.encode('utf-8'), stored_hash.encode('utf-8')):
+                    st.session_state["authenticated"] = True
+                    st.session_state["authentication_status"] = True
+                    st.session_state["username"] = username
+                    st.session_state["name"] = config["credentials"]["usernames"][username]["name"]
+                    st.rerun()
+                else:
+                    st.error("Invalid username or password")
+            else:
+                st.error("Invalid username or password")
+    else:
         st.write(f'Welcome *{st.session_state["name"]}*')
-    elif st.session_state["authentication_status"] == False:
-        st.error("Username/password is incorrect")
-    elif st.session_state["authentication_status"] == None:
-        st.warning("Please enter your username and password")
+        if st.button("Logout"):
+            st.session_state["authenticated"] = False
+            st.session_state["authentication_status"] = None
+            st.session_state["name"] = None
+            st.session_state["username"] = None
+            st.rerun()
 
 
 if __name__ == "__main__":

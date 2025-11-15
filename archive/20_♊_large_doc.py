@@ -11,7 +11,7 @@ from google.oauth2 import service_account
 import vertexai
 from vertexai.generative_models import Part, GenerativeModel
 
-from streamlit_pdf_viewer import pdf_viewer, RENDERING_UNWRAP
+from src.components.pdf_viewer import render_pdf
 from streamlit import session_state as ss
 
 from src.pdf_utils import count_pdf_pages
@@ -178,12 +178,12 @@ def display_pdf_dialog(
     dialog_key = f"pdf_dialog_open_{sk}"
 
     if st.session_state.get(dialog_key, False):
-        pdf_viewer(
-            input=binary_data,
+        render_pdf(
+            binary_data,
             width=width,
             height=height,
             key=f"pdf_viewer_dialog_{sk}",
-            rendering=RENDERING_UNWRAP,
+            title="PDF preview dialog",
         )
         if st.button("Close"):
             st.session_state[dialog_key] = False

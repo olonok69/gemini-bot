@@ -1,7 +1,7 @@
 import streamlit as st
 import os.path
 from pathlib import Path
-from streamlit_pdf_viewer import pdf_viewer
+from src.components.pdf_viewer import render_pdf
 from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages, upload
 from google.oauth2 import service_account
@@ -110,7 +110,13 @@ def main(model):
             with row1_1:
                 if st.session_state.value >= 1:
                     binary_data = ss.pdf_ref
-                    pdf_viewer(input=binary_data, width=700, height=400)
+                    render_pdf(
+                        binary_data,
+                        width=700,
+                        height=400,
+                        key="pdf_viewer_archive_1_doc",
+                        title="PDF preview",
+                    )
                     logging.info(f"Gemini 1 Page: pdf viewer {uploaded_files.name}")
                     page_select = st.text_input(
                         "Elige paginas a extraer 👇",

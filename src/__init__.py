@@ -71,3 +71,6 @@ from .maintenance import (
 from .maps import config, init_session_num, reset_session_num
 from .vector import add_documents_vector_store
 from .model import init_model, generate_generative_model
+from .logger_util import (
+    set_up_logging,
+)

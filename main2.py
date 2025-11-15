@@ -1,12 +1,6 @@
 import streamlit as st
 import os.path
 from pathlib import Path
-from streamlit_pdf_viewer import (
-    pdf_viewer,
-    RENDERING_IFRAME,
-    RENDERING_EMBED,
-    RENDERING_UNWRAP,
-)
 from vertexai.generative_models import Part
 from streamlit import session_state as ss
 from src.pdf_utils import count_pdf_pages
@@ -24,6 +18,7 @@ from src.helpers import (
     visualiza_1_prompt_no_upload,
     reload_page_1_doc,
 )
+from src.components.pdf_viewer import render_pdf
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -71,12 +66,12 @@ def open_pdf_dialog(binary_data, num=20, width=2000, height=1000):
     """Opens a PDF viewer in a Streamlit dialog."""
     if st.session_state.get(f"pdf_dialog_open_{num}", False):
 
-        pdf_viewer(
-            input=binary_data,
+        render_pdf(
+            binary=binary_data,
             width=width,
             height=height,
             key=f"pdf_viewer_dialog_{num}",
-            rendering=RENDERING_UNWRAP,
+            title="PDF preview",
         )
         if st.button("Close"):
             st.session_state[f"pdf_dialog_open_{num}"] = False

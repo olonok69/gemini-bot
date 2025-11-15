@@ -1,6 +1,5 @@
 import streamlit as st
 import os.path
-from streamlit_pdf_viewer import pdf_viewer
 from streamlit import session_state as ss
 from pathlib import Path
 from google.oauth2 import service_account
@@ -18,6 +17,7 @@ from src.vector import (
 )
 from IPython import embed
 from langchain.chains import ConversationalRetrievalChain
+from src.components.pdf_viewer import render_pdf
 
 # where I am
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -30,16 +30,13 @@ OUT_FOLDER, TMP_FOLDER, ANSWERS_DIR, PROMPTS_DIR, DICTS_DIR = create_folders(
 )
 
 
-def change_state_33(session, placeholder):
+def change_state_33(session):
     """
     change state after leave conversation
     params:
     session (streamlit): streamlit object
-    placeholder (streamlit.empty): placeholder
 
     """
-    placeholder.empty()
-    del placeholder
     reset_session_num(session, "33")
     session.cache_data.clear()
     session.stop()
@@ -49,7 +46,6 @@ def change_state_33(session, placeholder):
 def main(
     col1,
     col2,
-    placeholder,
     config,
 ):
     """
@@ -71,13 +67,12 @@ def main(
     try:
         # Initialize Vars
         # Initialize Vars
-        with placeholder.container():
-            if "init_run_33" not in st.session_state:
-                st.session_state["init_run_33"] = False
-            if st.session_state["init_run_33"] == False:
-                init_session_num(
-                    st, ss, "33", col1, col2, conf["33"]["config_33"], None
-                )
+        if "init_run_33" not in st.session_state:
+            st.session_state["init_run_33"] = False
+        if st.session_state["init_run_33"] == False:
+            init_session_num(
+                st, ss, "33", col1, col2, conf["33"]["config_33"], None
+            )
 
             with row1_1:
                 # Access the uploaded ref via a key.
@@ -116,22 +111,27 @@ def main(
 
                     st.session_state["value_33"] = 1  # file uploaded
 
+                # Persist the PDF bytes
+                if ss.pdf_33 and "pdf_ref_33" not in st.session_state:
+                    st.session_state["pdf_ref_33"] = ss.pdf_33.getvalue()
+
                 # Now you can access "pdf_ref1" anywhere in your app.
-                if ss.pdf_ref_33:
+                if st.session_state.get("pdf_ref_33"):
                     with row1_1:
                         if st.session_state["value_33"] >= 1:
-                            binary_data = ss.pdf_ref_33
+                            binary_data = st.session_state["pdf_ref_33"]
                             if st.session_state["vcol1doc_33"] == 50:
                                 width = 900
                             elif st.session_state["vcol1doc_33"] == 20:
                                 width = 350
                             else:
                                 width = 700
-                            pdf_viewer(
-                                input=binary_data,
+                            render_pdf(
+                                binary=binary_data,
                                 width=width,
                                 height=400,
                                 key="pdf_viewer_33",
+                                title="PDF preview",
                             )
                     if st.button("Parse pdf"):
                         if st.session_state["vectorstore_33"] == None:
@@ -163,7 +163,7 @@ def main(
                             key="pdf_query",
                         )
                         if (
-                            input_prompt
+                            st.button("Ask", key="ask_button") and input_prompt
                             and st.session_state["value_33"] >= 1
                             and st.session_state["salir_33"] == False
                         ):
@@ -193,7 +193,7 @@ def main(
                                 (input_prompt, result["answer"])
                             )
             with row1_2:
-                if st.button("Salir", on_click=change_state_33, args=(st, placeholder)):
+                if st.button("Salir", on_click=change_state_33, args=(st,)):
                     logging.info("Salir and writing history")
 
                 with st.expander(
@@ -208,7 +208,6 @@ def main(
 
         st.session_state["salir_33"] = True
         # get the sys stack and log to gcloud
-        placeholder.empty()
         text = print_stack()
         text = "Gemini Page 33" + text
         logging.error(text)
@@ -234,49 +233,46 @@ if __name__ == "__main__":
 
     if st.session_state["salir_33"] == False:
         # Empty placeholder for session objects
-        placeholder_33 = st.empty()
-        with placeholder_33.container():
-            col1, col2 = 50, 50
-            config = dotenv_values(os.path.join(PROJECT_DIR, "keys", ".env"))
-            with open(
-                os.path.join(
-                    PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json"
-                )
-            ) as source:
-                info = json.load(source)
-
-            vertex_credentials = service_account.Credentials.from_service_account_info(
-                info
+        col1, col2 = 50, 50
+        config = dotenv_values(os.path.join(PROJECT_DIR, "keys", ".env"))
+        with open(
+            os.path.join(
+                PROJECT_DIR, "keys", "complete-tube-421007-208a4862c992.json"
             )
-            google_api_key = config["GEMINI-API-KEY"]
-            os.environ["GEMINI_API_KEY"] = google_api_key
-            # setup rebuild Elastic Index
+        ) as source:
+            info = json.load(source)
 
-            vertexai.init(
-                project=config["PROJECT"],
-                location=config["REGION"],
+        vertex_credentials = service_account.Credentials.from_service_account_info(
+            info
+        )
+        google_api_key = config["GEMINI-API-KEY"]
+        os.environ["GEMINI_API_KEY"] = google_api_key
+        # setup rebuild Elastic Index
+
+        vertexai.init(
+            project=config["PROJECT"],
+            location=config["REGION"],
+            credentials=vertex_credentials,
+        )
+        # Initialize Model
+        if "llm_33" not in st.session_state:
+            st.session_state["llm_33"] = init_llm(
+                model=config.get("MODEL"), credentials=vertex_credentials
+            )
+
+        logging.info(f"Model loaded: {config.get('MODEL')}")
+        # Initialize embeddings models
+
+        if "embeddings_33" not in st.session_state:
+            st.session_state["embeddings_33"] = init_google_embeddings(
                 credentials=vertex_credentials,
-            )
-            # Initialize Model
-            if "llm_33" not in st.session_state:
-                st.session_state["llm_33"] = init_llm(
-                    model=config.get("MODEL"), credentials=vertex_credentials
-                )
-
-            logging.info(f"Model loaded: {config.get('MODEL')}")
-            # Initialize embeddings models
-
-            if "embeddings_33" not in st.session_state:
-                st.session_state["embeddings_33"] = init_google_embeddings(
-                    credentials=vertex_credentials,
-                    google_api_key=config["GEMINI-API-KEY"],
-                    config=config,
-                )
-            logging.info(f"Model Embeddings: {config.get('EMBEDDINGS2')} initialized")
-
-            main(
-                col1=col1,
-                col2=col2,
-                placeholder=placeholder_33,
+                google_api_key=config["GEMINI-API-KEY"],
                 config=config,
             )
+        logging.info(f"Model Embeddings: {config.get('EMBEDDINGS2')} initialized")
+
+        main(
+            col1=col1,
+            col2=col2,
+            config=config,
+        )
