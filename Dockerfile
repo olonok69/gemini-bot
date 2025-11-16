@@ -1,10 +1,10 @@
-FROM python:3.11-slim
+FROM python:3.13-slim
 
 # USER to Run this docker
 ARG user_app
 
-ENV USER_APP $user_app
-ENV FAISS_ENABLE_GPU ON
+ENV USER_APP=$user_app
+ENV FAISS_ENABLE_GPU=ON
 ENV UV_INSTALL_DIR=/usr/local/bin
 # Install necessary packages
 RUN apt-get update && apt-get -y upgrade \
@@ -17,7 +17,7 @@ RUN apt-get update && apt-get -y upgrade \
 # * https://github.com/GoogleCloudPlatform/python-runtime/blob/8cdc91a88cd67501ee5190c934c786a7e91e13f1/scripts/testdata/hello_world_golden/Dockerfile
 
 RUN groupadd ${USER_APP} && useradd --create-home -g ${USER_APP} ${USER_APP}
-ENV PATH /home/${USER_APP}/.local/bin:${PATH}
+ENV PATH=/home/${USER_APP}/.local/bin:${PATH}
 
 WORKDIR /home/${USER_APP}/gemini
 
