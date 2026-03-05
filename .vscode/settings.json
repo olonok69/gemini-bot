@@ -1,4 +1,5 @@
 {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter"
+    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
+    "files.autoSave": "afterDelay"
 }

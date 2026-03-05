@@ -9,7 +9,7 @@ ipython
 google-cloud-logging
 scikit-learn
 langchain-pinecone
-langchain 
+langchain
 langgraph
 langchain-community
 langchain-experimental 
